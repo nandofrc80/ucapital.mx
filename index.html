@@ -37,18 +37,17 @@
       border-bottom: 1px solid rgba(201,169,110,0.2);
     }
 
-    .nav-logo-text {
-      font-family: 'Cinzel', serif;
-      font-size: 1.15rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      color: var(--blanco);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+    .nav-logo { height: 48px; width: auto; display: block; }
+
+    @media (max-width: 600px) {
+      .nav-cta {
+        font-size: 0.65rem;
+        padding: 8px 12px;
+        letter-spacing: 0.08em;
+        text-align: center;
+        line-height: 1.3;
+      }
     }
-    .nav-logo-text span { color: var(--oro); }
 
     .nav-cta {
       font-family: 'Jost', sans-serif;
@@ -430,7 +429,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo-text">U<span>·</span>CAPITAL <span style="color:rgba(248,246,242,0.3);font-weight:300;font-size:0.7rem;letter-spacing:0.25em;margin-left:4px;">INMOBILIARIA</span></a>
+  <a href="#"><img src="logo_ucapital.png" alt="U·Capital Inmobiliaria" class="nav-logo" /></a>
   <a href="#contacto" class="nav-cta">Solicitar Información</a>
 </nav>
 
@@ -453,12 +452,12 @@
 <section class="propuesta">
   <div class="propuesta-texto">
     <h2>Por qué elegir<br /><em>U·Capital</em></h2>
-    <p>Somos corredores independientes con acceso a prácticamente todos los desarrollos activos en Mérida. No trabajamos para un solo desarrollador — trabajamos para ti. Te mostramos opciones que nadie más te va a ofrecer en un solo lugar.</p>
+    <p>En U·Capital tenemos acceso a prácticamente todos los desarrollos activos en Mérida. No trabajamos para un solo desarrollador — trabajamos para ti. Te mostramos opciones que nadie más te va a ofrecer en un solo lugar.</p>
   </div>
   <div class="pilares">
     <div class="pilar"><div class="pilar-num">80+</div><div class="pilar-label">Desarrollos disponibles</div></div>
     <div class="pilar"><div class="pilar-num">$0</div><div class="pilar-label">Costo para el comprador</div></div>
-    <div class="pilar"><div class="pilar-num">24h</div><div class="pilar-label">Respuesta garantizada</div></div>
+    <div class="pilar"><div class="pilar-num">✦</div><div class="pilar-label">Respuesta inmediata</div></div>
     <div class="pilar"><div class="pilar-num">100%</div><div class="pilar-label">Asesoría personalizada</div></div>
   </div>
 </section>
@@ -552,7 +551,7 @@
 <section class="contacto" id="contacto">
   <div class="contacto-intro">
     <h2>Encuentra tu<br /><em>propiedad ideal</em><br />en Mérida</h2>
-    <p>Dinos qué buscas y en menos de 24 horas te enviamos una selección personalizada de propiedades que se ajustan a tu presupuesto y necesidades. Sin compromisos.</p>
+    <p>Dinos qué buscas y un asesor te contactará a la brevedad con una selección personalizada de propiedades que se ajustan a tu presupuesto y necesidades. Sin compromisos.</p>
     <ul class="beneficios">
       <li>Asesoría completamente gratuita para el comprador</li>
       <li>Acceso a preventas exclusivas antes de que salgan al público</li>
@@ -562,7 +561,7 @@
   </div>
   <div class="form-wrapper">
     <div class="form-titulo">Solicita información</div>
-    <div class="form-sub">Respuesta en menos de 24 horas · Vía WhatsApp</div>
+    <div class="form-sub">Un asesor te contactará a la brevedad · Vía WhatsApp</div>
     <form id="leadForm" action="https://formspree.io/f/meedeabe" method="POST">
       <div class="form-group">
         <label>Nombre completo *</label>
@@ -604,7 +603,7 @@
 
 <!-- SOCIOS -->
 <section class="socios">
-  <div class="socios-label">Desarrollos en nuestro portafolio</div>
+  <div class="socios-label">Parte del portafolio que tenemos para ti</div>
   <div class="socios-lista">
     <span class="socio-chip">Estela Nativa</span>
     <span class="socio-chip">Aldoria</span>
@@ -632,20 +631,60 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">U<span>·</span>CAPITAL <span style="color:rgba(248,246,242,0.25);font-weight:300;font-size:0.65rem;letter-spacing:0.2em;">INMOBILIARIA</span></div>
-  <div class="footer-texto">© 2026 U·Capital Inmobiliaria · Mérida, Yucatán · ucapital.mx</div>
+  <img src="logo_ucapital.png" alt="U·Capital Inmobiliaria" style="height:52px;width:auto;" />
+  <div class="footer-texto">© 2026 U·Capital Inmobiliaria · Mérida, Yucatán · ucapital.mx<br><a href="#" onclick="document.getElementById('modalPrivacidad').style.display='block';document.body.style.overflow='hidden';return false;" style="color:rgba(201,169,110,0.6);font-size:0.68rem;text-decoration:none;letter-spacing:0.05em;">Aviso de Privacidad</a></div>
   <a href="https://wa.me/529999562850" class="footer-wa" target="_blank">
     <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     999 956 2850
   </a>
 </footer>
 
-<!-- WA FAB -->
+<!-- AVISO DE PRIVACIDAD MODAL -->
+<div id="modalPrivacidad" style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,0.85);overflow-y:auto;padding:40px 20px;" onclick="if(event.target===this)cerrarPrivacidad()">
+  <div style="max-width:680px;margin:0 auto;background:#1a1a1a;border:1px solid rgba(201,169,110,0.2);padding:48px 40px;position:relative;">
+    <button onclick="cerrarPrivacidad()" style="position:absolute;top:16px;right:20px;background:none;border:none;color:rgba(248,246,242,0.5);font-size:1.5rem;cursor:pointer;">✕</button>
+    <div style="font-family:'Jost',sans-serif;color:rgba(248,246,242,0.85);line-height:1.8;font-size:0.88rem;font-weight:300;">
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:#C9A96E;margin-bottom:8px;">Aviso de Privacidad</h2>
+      <p style="font-size:0.72rem;letter-spacing:0.1em;color:rgba(248,246,242,0.4);margin-bottom:32px;">U·Capital Inmobiliaria · Mérida, Yucatán</p>
+
+      <p style="margin-bottom:16px;"><strong style="color:#E8D5B0;">Responsable del tratamiento de datos personales</strong></p>
+      <p style="margin-bottom:24px;">Fernando José Rodríguez Castellanos, persona física con actividad empresarial que opera bajo el nombre comercial <strong>U·Capital Inmobiliaria</strong>, con domicilio en Mérida, Yucatán, México, es responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
+
+      <p style="margin-bottom:16px;"><strong style="color:#E8D5B0;">¿Qué datos personales recabamos?</strong></p>
+      <p style="margin-bottom:24px;">Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales: nombre completo, número de teléfono celular (WhatsApp), correo electrónico, presupuesto de inversión e intereses en materia inmobiliaria.</p>
+
+      <p style="margin-bottom:16px;"><strong style="color:#E8D5B0;">¿Para qué fines utilizaremos sus datos personales?</strong></p>
+      <p style="margin-bottom:8px;">Los datos personales que recabamos los utilizaremos para las siguientes finalidades:</p>
+      <ul style="margin-bottom:24px;padding-left:20px;">
+        <li>Brindarle asesoría inmobiliaria personalizada.</li>
+        <li>Contactarle vía WhatsApp o correo electrónico para presentarle opciones de propiedades.</li>
+        <li>Dar seguimiento a su proceso de búsqueda y adquisición de inmueble.</li>
+        <li>Enviarle información relevante sobre desarrollos inmobiliarios en Mérida, Yucatán.</li>
+      </ul>
+
+      <p style="margin-bottom:16px;"><strong style="color:#E8D5B0;">¿Con quién compartimos sus datos?</strong></p>
+      <p style="margin-bottom:24px;">Sus datos personales no serán transferidos a terceros sin su consentimiento, salvo a los desarrolladores inmobiliarios con los que U·Capital Inmobiliaria colabora, única y exclusivamente para facilitarle información sobre los proyectos de su interés.</p>
+
+      <p style="margin-bottom:16px;"><strong style="color:#E8D5B0;">Derechos ARCO</strong></p>
+      <p style="margin-bottom:24px;">Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales (derechos ARCO). Para ejercer estos derechos, envíe su solicitud al correo electrónico: <a href="mailto:contacto@ucapital.mx" style="color:#C9A96E;">contacto@ucapital.mx</a>, indicando su nombre completo y el derecho que desea ejercer. Daremos respuesta a su solicitud en un plazo máximo de 20 días hábiles.</p>
+
+      <p style="margin-bottom:16px;"><strong style="color:#E8D5B0;">Cambios al aviso de privacidad</strong></p>
+      <p style="margin-bottom:32px;">Nos reservamos el derecho de efectuar modificaciones o actualizaciones al presente aviso de privacidad. Cualquier cambio será publicado en el sitio web ucapital.mx.</p>
+
+      <p style="font-size:0.72rem;color:rgba(248,246,242,0.3);">Fecha de última actualización: Mayo 2026 · De conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP).</p>
+    </div>
+  </div>
+</div>
 <a href="https://wa.me/529999562850?text=Hola%2C%20me%20interesa%20información%20sobre%20propiedades%20en%20Mérida" class="wa-fab" target="_blank" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <script>
+  function cerrarPrivacidad() {
+    document.getElementById('modalPrivacidad').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
   // Lightbox
   const fotos = ['Laja_hero.jpg','Estela_Nativa.jpg','NAIA.jpg','Aldoria.jpg','CUMBRES.jpg'];
   let fotoActual = 0;
