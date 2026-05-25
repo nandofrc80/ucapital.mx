@@ -1661,6 +1661,51 @@ const TRANSLATIONS = {
         },
       ],
     },
+    terms: {
+      title:    "Términos y Condiciones de Uso",
+      updated:  "U·Capital Inmobiliaria · Mérida, Yucatán · Última actualización: Mayo 2026",
+      intro:    "Al acceder y utilizar el sitio ucapital.mx, usted acepta los presentes Términos y Condiciones de Uso. Le recomendamos leerlos detenidamente.",
+      close:    "Cerrar",
+      accept:   "Entendido",
+      sections: [
+        {
+          h: "1. Objeto",
+          p: "El sitio ucapital.mx es operado por Fernando José Rodríguez Castellanos bajo el nombre comercial U·Capital Inmobiliaria, con domicilio en Mérida, Yucatán. El sitio es informativo y conecta a personas interesadas en bienes inmuebles con desarrollos en Mérida y su zona metropolitana.",
+        },
+        {
+          h: "2. Uso permitido",
+          p: "El acceso al sitio es personal y no comercial. Queda prohibido reproducir, distribuir o utilizar con fines comerciales cualquier contenido del sitio sin autorización escrita previa.",
+        },
+        {
+          h: "3. Naturaleza del servicio",
+          p: "U·Capital actúa como asesor independiente. No es propietaria de los desarrollos que promueve ni realiza compraventas en nombre propio. La asesoría es gratuita para el comprador; los honorarios profesionales son cubiertos por el desarrollador correspondiente.",
+        },
+        {
+          h: "4. Información referencial",
+          p: "Precios, disponibilidad, planos e imágenes mostrados en el sitio son referenciales y pueden cambiar sin previo aviso. La información oficial y vinculante es responsabilidad de cada desarrollador.",
+        },
+        {
+          h: "5. Propiedad intelectual",
+          p: "El nombre, el logotipo y los contenidos publicados en ucapital.mx son propiedad de Fernando José Rodríguez Castellanos. Queda prohibida su reproducción total o parcial sin autorización expresa por escrito.",
+        },
+        {
+          h: "6. Limitación de responsabilidad",
+          p: "U·Capital no se responsabiliza por decisiones de compra o inversión tomadas con base en la información publicada en este sitio. Se recomienda al usuario verificar la información directamente con el desarrollador y consultar a sus propios asesores legales, financieros o fiscales antes de formalizar cualquier operación.",
+        },
+        {
+          h: "7. Modificaciones",
+          p: "U·Capital se reserva el derecho de modificar los presentes Términos y Condiciones en cualquier momento. Las modificaciones se publicarán en esta misma página y entrarán en vigor a partir de su publicación.",
+        },
+        {
+          h: "8. Ley aplicable y jurisdicción",
+          p: "Los presentes Términos se rigen por las leyes de los Estados Unidos Mexicanos. Cualquier controversia derivada de su interpretación o cumplimiento se someterá a los tribunales competentes de la ciudad de Mérida, Yucatán, renunciando expresamente a cualquier otro fuero que pudiera corresponder.",
+        },
+        {
+          h: "Contacto",
+          p: "Para cualquier duda relacionada con estos términos, puede escribirnos a contacto@ucapital.mx o llamar al 999 956 2850.",
+        },
+      ],
+    },
   },
 
   en: {
@@ -1835,6 +1880,51 @@ const TRANSLATIONS = {
         {
           h: "9. Consent",
           p: "By providing your personal data to U·Capital, you acknowledge that you have read, understood, and accepted the terms of this Privacy Notice.",
+        },
+      ],
+    },
+    terms: {
+      title:    "Terms and Conditions of Use",
+      updated:  "U·Capital Inmobiliaria · Mérida, Yucatán · Last updated: May 2026",
+      intro:    "By accessing and using the ucapital.mx website, you agree to the following Terms and Conditions of Use. We recommend reading them carefully.",
+      close:    "Close",
+      accept:   "Understood",
+      sections: [
+        {
+          h: "1. Purpose",
+          p: "The ucapital.mx website is operated by Fernando José Rodríguez Castellanos under the commercial name U·Capital Inmobiliaria, with offices in Mérida, Yucatán. The site is informational and connects people interested in real estate with developments in Mérida and its metropolitan area.",
+        },
+        {
+          h: "2. Permitted use",
+          p: "Access to the site is personal and non-commercial. Any reproduction, distribution, or commercial use of the site's content without prior written authorization is strictly prohibited.",
+        },
+        {
+          h: "3. Nature of the service",
+          p: "U·Capital acts as an independent advisor. It does not own the developments it promotes and does not buy or sell real estate on its own behalf. Advisory services are free for the buyer; professional fees are covered by the corresponding developer.",
+        },
+        {
+          h: "4. Reference information",
+          p: "Prices, availability, floor plans, and images shown on the site are for reference only and may change without notice. The official, binding information is the responsibility of each developer.",
+        },
+        {
+          h: "5. Intellectual property",
+          p: "The name, logo, and content published on ucapital.mx are the property of Fernando José Rodríguez Castellanos. Any partial or total reproduction without express written authorization is prohibited.",
+        },
+        {
+          h: "6. Limitation of liability",
+          p: "U·Capital is not responsible for purchase or investment decisions made based on information published on this site. Users are advised to verify information directly with the developer and to consult their own legal, financial, or tax advisors before formalizing any transaction.",
+        },
+        {
+          h: "7. Modifications",
+          p: "U·Capital reserves the right to modify these Terms and Conditions at any time. Changes will be published on this same page and will take effect upon publication.",
+        },
+        {
+          h: "8. Applicable law and jurisdiction",
+          p: "These Terms are governed by the laws of the United Mexican States. Any dispute arising from their interpretation or compliance shall be submitted to the competent courts of Mérida, Yucatán, with express waiver of any other jurisdiction that may apply.",
+        },
+        {
+          h: "Contact",
+          p: "For any questions related to these terms, you may write to contacto@ucapital.mx or call 999 956 2850.",
         },
       ],
     },
@@ -2430,7 +2520,7 @@ const WA_URL = "https://wa.me/529999562850?text=Hola%2C%20me%20interesa%20inform
 const LangContext = createContext({ lang: "es", t: window.TRANSLATIONS.es, setLang: () => {} });
 const useT = () => useContext(LangContext);
 
-const PrivacyContext = createContext({ open: () => {}, close: () => {} });
+const PrivacyContext = createContext({ open: () => {}, openTerms: () => {}, close: () => {} });
 const usePrivacy = () => useContext(PrivacyContext);
 
 function LangProvider({ children }) {
@@ -2478,9 +2568,7 @@ function LangToggle({ compact = false }) {
    PRIVACY MODAL
    ============================================================ */
 
-function PrivacyModal({ open, onClose }) {
-  const { t } = useT();
-  const p = t.privacy;
+function LegalModal({ open, onClose, content }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -2496,7 +2584,8 @@ function PrivacyModal({ open, onClose }) {
     };
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!open || !content) return null;
+  const p = content;
 
   const renderP = (para, i) => {
     if (Array.isArray(para)) {
@@ -2530,7 +2619,7 @@ function PrivacyModal({ open, onClose }) {
           </button>
         </header>
         <div className="priv__body">
-          <p className="priv__intro">{p.intro}</p>
+          {p.intro && <p className="priv__intro">{p.intro}</p>}
           {p.sections.map((s, i) => (
             <section key={i} className="priv__sect">
               <h3>{s.h}</h3>
@@ -3031,7 +3120,7 @@ function ContactForm() {
 
 function Footer() {
   const { t } = useT();
-  const { open: openPrivacy } = usePrivacy();
+  const { open: openPrivacy, openTerms } = usePrivacy();
   return (
     <footer className="footer">
       <div className="shell">
@@ -3063,7 +3152,7 @@ function Footer() {
             <h4>{t.footer.colLegal}</h4>
             <ul>
               <li><a href="#" onClick={(e) => { e.preventDefault(); openPrivacy(); }}>{t.footer.privacy}</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); openPrivacy(); }}>{t.footer.terms}</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); openTerms(); }}>{t.footer.terms}</a></li>
             </ul>
           </div>
         </div>
@@ -3162,10 +3251,11 @@ function Tweaks() {
 function App() {
   useReveal();
   useEffect(() => { applyTweaks(TWEAK_DEFAULTS); }, []);
-  const [privacyOpen, setPrivacyOpen] = useState(false);
+  const [legalKind, setLegalKind] = useState(null); // null | "privacy" | "terms"
   const privacyCtx = {
-    open: () => setPrivacyOpen(true),
-    close: () => setPrivacyOpen(false),
+    open:      () => setLegalKind("privacy"),
+    openTerms: () => setLegalKind("terms"),
+    close:     () => setLegalKind(null),
   };
   return (
     <LangProvider>
@@ -3181,10 +3271,17 @@ function App() {
         <Footer />
         <WhatsappFab />
         <Tweaks />
-        <PrivacyModal open={privacyOpen} onClose={privacyCtx.close} />
+        <LegalGate kind={legalKind} onClose={privacyCtx.close} />
       </PrivacyContext.Provider>
     </LangProvider>
   );
+}
+
+// Reads translations from context and routes to the right legal content.
+function LegalGate({ kind, onClose }) {
+  const { t } = useT();
+  const content = kind === "terms" ? t.terms : kind === "privacy" ? t.privacy : null;
+  return <LegalModal open={!!kind} onClose={onClose} content={content} />;
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
