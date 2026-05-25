@@ -10,7 +10,1465 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Hanken+Grotesk:wght@300;400;500;600&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Tenor+Sans&display=swap" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+/* U·Capital Inmobiliaria — landing page */
+
+:root {
+  --bg: #0a0a0a;
+  --bg-2: #0f0f0f;
+  --surface: #141414;
+  --surface-2: #1a1a1a;
+  --cream: #f4ede0;
+  --text: #f4ede0;
+  --text-dim: #8d877d;
+  --text-muted: #5a564f;
+  --accent: #c9a961;
+  --accent-dim: rgba(201, 169, 97, 0.4);
+  --accent-soft: rgba(201, 169, 97, 0.08);
+  --border: rgba(244, 237, 224, 0.08);
+  --border-strong: rgba(244, 237, 224, 0.18);
+
+  --serif: "Cormorant Garamond", "Cormorant", "EB Garamond", Georgia, serif;
+  --sans: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  --maxw: 1320px;
+  --gutter: clamp(20px, 4vw, 56px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+input, textarea, select { font: inherit; color: inherit; }
+
+::selection { background: var(--accent); color: #0a0a0a; }
+
+/* —————————————————————————————————————————— Typography */
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+}
+.eyebrow.no-rule::before { display: none; }
+
+.section-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.04;
+  color: var(--cream);
+}
+
+h1 .it, h2 .it, h3 .it { font-style: italic; font-weight: 300; color: var(--cream); }
+
+.shell {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* —————————————————————————————————————————— Nav */
+
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  padding: 22px 0;
+  transition: background 280ms ease, backdrop-filter 280ms ease, border-color 280ms ease, padding 280ms ease;
+  border-bottom: 1px solid transparent;
+}
+.nav.scrolled {
+  background: rgba(10, 10, 10, 0.78);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  border-bottom-color: var(--border);
+  padding: 14px 0;
+}
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav__mark {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  color: var(--cream);
+}
+.nav__mark .dot { color: var(--accent); padding: 0 2px; }
+.nav__sub {
+  font-size: 10px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-left: 14px;
+  margin-left: 4px;
+  border-left: 1px solid var(--border-strong);
+}
+.nav__links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+.nav__links a {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 400;
+  transition: color 180ms ease;
+  position: relative;
+  padding: 6px 0;
+}
+.nav__links a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 240ms ease;
+}
+.nav__links a:hover { color: var(--cream); }
+.nav__links a:hover::after { transform: scaleX(1); }
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Language toggle */
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.lang__btn {
+  padding: 4px 2px;
+  color: var(--text-dim);
+  transition: color 180ms ease;
+  cursor: pointer;
+  letter-spacing: inherit;
+  font-weight: inherit;
+  position: relative;
+}
+.lang__btn:hover { color: var(--cream); }
+.lang__btn.is-active {
+  color: var(--accent);
+}
+.lang__btn.is-active::after {
+  content: "";
+  position: absolute;
+  left: 2px; right: 2px;
+  bottom: -2px;
+  height: 1px;
+  background: var(--accent);
+}
+.lang__sep { color: var(--text-muted); opacity: 0.6; }
+
+.nav__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  transition: border-color 220ms ease, background 220ms ease, color 220ms ease;
+}
+.nav__cta:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.nav__cta .pulse {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 0 var(--accent-dim);
+  animation: pulse 2.4s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--accent-dim); }
+  70% { box-shadow: 0 0 0 8px rgba(201,169,97,0); }
+  100% { box-shadow: 0 0 0 0 rgba(201,169,97,0); }
+}
+
+/* —————————————————————————————————————————— Hero */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  background: var(--bg);
+}
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(0.15) contrast(1.02) brightness(0.7);
+}
+.hero__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.3) 35%, rgba(10,10,10,0.85) 75%, var(--bg) 100%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(10,10,10,0.9), transparent 70%);
+}
+.hero__shell {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: end;
+}
+.hero__title {
+  font-size: clamp(56px, 9.4vw, 148px);
+  font-weight: 300;
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+  color: var(--cream);
+  margin-top: 28px;
+  max-width: 13ch;
+}
+.hero__title .it { color: var(--cream); }
+.hero__sub {
+  margin-top: 36px;
+  max-width: 46ch;
+  font-size: 17px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  font-weight: 300;
+}
+.hero__actions {
+  margin-top: 44px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.hero__meta {
+  text-align: right;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 1.8;
+  border-left: 1px solid var(--border-strong);
+  padding-left: 24px;
+}
+.hero__meta strong {
+  display: block;
+  color: var(--cream);
+  font-weight: 400;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  margin-top: 6px;
+}
+.hero__scroll {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.hero__scroll .line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(180deg, var(--accent), transparent);
+  position: relative;
+  overflow: hidden;
+}
+.hero__scroll .line::after {
+  content: "";
+  position: absolute;
+  top: -20px; left: 0; right: 0;
+  height: 20px;
+  background: var(--cream);
+  animation: drop 2.6s ease-in-out infinite;
+}
+@keyframes drop {
+  0% { transform: translateY(0); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateY(72px); opacity: 0; }
+}
+
+/* —————————————————————————————————————————— Buttons */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 32px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: all 240ms ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.btn--primary {
+  background: var(--cream);
+  color: #0a0a0a;
+}
+.btn--primary:hover {
+  background: var(--accent);
+  color: #0a0a0a;
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--cream);
+  border-color: var(--border-strong);
+}
+.btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn .arrow {
+  display: inline-block;
+  transition: transform 240ms ease;
+}
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* —————————————————————————————————————————— Section base */
+
+section {
+  position: relative;
+  padding: clamp(80px, 11vw, 160px) 0;
+}
+.section-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 56px;
+  align-items: end;
+  margin-bottom: 72px;
+}
+.section-head__left { display: flex; flex-direction: column; gap: 20px; }
+.section-head h2 {
+  font-size: clamp(40px, 5.4vw, 78px);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  max-width: 18ch;
+}
+.section-head__lede {
+  max-width: 42ch;
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.65;
+  justify-self: end;
+}
+
+/* —————————————————————————————————————————— Metrics */
+
+.metrics {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: clamp(70px, 8vw, 110px) 0;
+}
+.metrics__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.metric {
+  padding: 8px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+.metric + .metric { border-left: 1px solid var(--border); }
+.metric:first-child { padding-left: 0; }
+.metric:last-child { padding-right: 0; }
+.metric__num {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(56px, 6vw, 84px);
+  line-height: 1;
+  color: var(--cream);
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.metric__num .unit {
+  font-size: 0.36em;
+  color: var(--accent);
+  font-style: italic;
+  letter-spacing: 0;
+}
+.metric__label {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+.metric__desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  max-width: 24ch;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+/* —————————————————————————————————————————— About */
+
+.about {
+  border-bottom: 1px solid var(--border);
+}
+.about__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: clamp(48px, 7vw, 110px);
+  align-items: start;
+}
+.about__head {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.about__head h2 {
+  font-size: clamp(36px, 4.4vw, 64px);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  max-width: 16ch;
+}
+.about__body {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-dim);
+  font-weight: 300;
+  max-width: 60ch;
+}
+.about__body p {
+  font-size: 17px;
+  line-height: 1.75;
+}
+.about__pull {
+  position: relative;
+  margin-top: 12px;
+  padding: 24px 0 24px 32px;
+  border-left: 1px solid var(--accent);
+}
+.about__pull p {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(22px, 2.1vw, 28px);
+  line-height: 1.35;
+  color: var(--cream);
+  letter-spacing: 0;
+}
+.about__quote-mark {
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  font-family: var(--serif);
+  font-size: 56px;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.7;
+}
+.about__pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.about__pillar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.about__pillar-num {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+.about__pillar-label {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream);
+  font-weight: 500;
+}
+.about__pillar-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  font-weight: 300;
+}
+
+@media (max-width: 1000px) {
+  .about__grid { grid-template-columns: 1fr; }
+  .about__head { position: static; }
+  .about__pillars { grid-template-columns: 1fr; gap: 18px; }
+}
+
+/* —————————————————————————————————————————— Portfolio */
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(24px, 3vw, 48px) clamp(24px, 3vw, 40px);
+}
+.port-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.port-card--a { grid-column: span 7; }
+.port-card--b { grid-column: span 5; margin-top: 60px; }
+.port-card--c { grid-column: span 5; }
+.port-card--d { grid-column: span 7; margin-top: -40px; }
+
+.port-card__img {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  aspect-ratio: 4 / 3;
+}
+.port-card--a .port-card__img,
+.port-card--d .port-card__img { aspect-ratio: 16 / 11; }
+.port-card__img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 800ms cubic-bezier(0.2, 0.7, 0.2, 1), filter 600ms ease;
+  filter: grayscale(0.1) brightness(0.92);
+}
+.port-card:hover .port-card__img img {
+  transform: scale(1.04);
+  filter: grayscale(0) brightness(1);
+}
+.port-card__img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(10,10,10,0.6) 100%);
+  pointer-events: none;
+}
+.port-card__index {
+  position: absolute;
+  top: 20px; left: 20px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--cream);
+  z-index: 2;
+  letter-spacing: 0.04em;
+  background: rgba(10,10,10,0.45);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+}
+.port-card__body {
+  padding: 24px 4px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+}
+.port-card__name {
+  font-family: var(--serif);
+  font-size: clamp(28px, 2.6vw, 38px);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+}
+.port-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  text-align: right;
+}
+.port-card__loc {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.port-card__view {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 240ms ease;
+}
+.port-card:hover .port-card__view { gap: 14px; }
+
+/* —————————————————————————————————————————— Inspiration gallery */
+
+.gallery {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+}
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 9vw;
+  gap: 12px;
+}
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+}
+.gallery__item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1), filter 500ms ease;
+  filter: grayscale(0.15) brightness(0.88);
+}
+.gallery__item:hover img {
+  transform: scale(1.06);
+  filter: grayscale(0) brightness(1);
+}
+.gallery__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  transition: border-color 240ms ease;
+  pointer-events: none;
+}
+.gallery__item:hover::after { border-color: var(--accent-dim); }
+
+/* Editorial layout — exactly 6 slots, designed for swappable images */
+.gallery__item--01 { grid-column: span 7; grid-row: span 4; }  /* large hero */
+.gallery__item--02 { grid-column: span 5; grid-row: span 2; }
+.gallery__item--03 { grid-column: span 5; grid-row: span 2; }
+.gallery__item--04 { grid-column: span 4; grid-row: span 3; }
+.gallery__item--05 { grid-column: span 4; grid-row: span 3; }
+.gallery__item--06 { grid-column: span 4; grid-row: span 3; }
+
+.gallery__caption {
+  position: absolute;
+  bottom: 18px;
+  left: 22px;
+  z-index: 2;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--cream);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 280ms ease, transform 280ms ease;
+}
+.gallery__item:hover .gallery__caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* —————————————————————————————————————————— Contact form */
+
+.contact {
+  background: var(--bg);
+  position: relative;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 80%; max-width: 600px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-dim), transparent);
+}
+.contact__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: clamp(48px, 7vw, 120px);
+  align-items: start;
+}
+.contact__intro h2 {
+  font-size: clamp(40px, 5vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin-top: 18px;
+}
+.contact__intro p {
+  margin-top: 28px;
+  max-width: 38ch;
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1.65;
+}
+.contact__sig {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+  max-width: 360px;
+}
+.contact__sig-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contact__sig-item .l {
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.contact__sig-item .v {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--cream);
+  letter-spacing: 0;
+}
+.contact__sig-item .v.it { font-style: italic; }
+
+.form {
+  background: linear-gradient(180deg, rgba(255,255,255,0.018) 0%, transparent 100%);
+  border: 1px solid var(--border);
+  padding: clamp(32px, 4vw, 56px);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.field { display: flex; flex-direction: column; gap: 10px; }
+.field label {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+.field label .req { color: var(--accent); margin-left: 4px; }
+.field input, .field select, .field textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--border-strong);
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--cream);
+  font-family: var(--sans);
+  outline: none;
+  transition: border-color 200ms ease;
+  border-radius: 0;
+  width: 100%;
+}
+.field input::placeholder, .field textarea::placeholder { color: var(--text-muted); font-weight: 300; }
+.field input:focus, .field select:focus, .field textarea:focus { border-bottom-color: var(--accent); }
+
+.field select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%23c9a961' stroke-width='1.2' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  padding-right: 20px;
+}
+.field select option { background: var(--surface); color: var(--cream); }
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.chip {
+  padding: 10px 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 200ms ease;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+.chip:hover { border-color: var(--accent-dim); color: var(--cream); }
+.chip.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.form__submit {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.form__hint {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 300;
+  max-width: 30ch;
+  line-height: 1.5;
+}
+.form__success {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-dim);
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.form__success .check {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+}
+.form__success h3 {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--cream);
+}
+.form__success p { color: var(--text-dim); max-width: 36ch; }
+
+/* —————————————————————————————————————————— Footer */
+
+.footer {
+  background: #050505;
+  border-top: 1px solid var(--border);
+  padding: 88px 0 36px;
+  position: relative;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--border);
+}
+.footer__brand img {
+  height: 56px;
+  width: auto;
+  margin-bottom: 24px;
+  filter: brightness(1.05);
+}
+.footer__brand p {
+  color: var(--text-dim);
+  font-size: 14px;
+  max-width: 32ch;
+  line-height: 1.7;
+}
+.footer__col h4 {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+.footer__col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.footer__col a, .footer__col li {
+  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 300;
+  transition: color 180ms ease;
+}
+.footer__col a:hover { color: var(--accent); }
+
+.footer__lang {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  display: inline-block;
+  width: auto;
+}
+
+.footer__phone {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-style: italic;
+  color: var(--cream);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.footer__legal {
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+.footer__legal a { color: var(--text-dim); }
+.footer__legal a:hover { color: var(--accent); }
+
+/* —————————————————————————————————————————— Catalog (chip portfolio) */
+
+.catalog {
+  border-top: 1px solid var(--border);
+  background: var(--bg-2);
+  position: relative;
+  overflow: hidden;
+}
+.catalog::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-soft), transparent 70%);
+  pointer-events: none;
+}
+.catalog__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+.catalog__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 22px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.015);
+  color: var(--cream);
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  transition: all 260ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+}
+.catalog__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.55;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+.catalog__name {
+  font-family: var(--sans);
+  font-weight: 400;
+}
+.catalog__chip:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--cream);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201, 169, 97, 0.08);
+}
+.catalog__chip:hover .catalog__dot {
+  opacity: 1;
+  transform: scale(1.4);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+.catalog__cta {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .catalog__chip { padding: 12px 18px; font-size: 13px; }
+}
+
+/* —————————————————————————————————————————— Gallery zoom icon */
+
+.gallery__item { cursor: zoom-in; }
+.gallery__item:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+.gallery__zoom {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(10,10,10,0.55);
+  border: 1px solid var(--border-strong);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: grid;
+  place-items: center;
+  color: var(--cream);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 240ms ease, transform 240ms ease, border-color 240ms ease;
+}
+.gallery__item:hover .gallery__zoom {
+  opacity: 1;
+  transform: translateY(0);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* —————————————————————————————————————————— Lightbox */
+
+.lb {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(5, 5, 5, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: grid;
+  place-items: center;
+  padding: clamp(48px, 6vw, 80px) clamp(48px, 8vw, 120px);
+  animation: lbFade 240ms ease-out;
+}
+@keyframes lbFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.lb__figure {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.lb__img {
+  max-width: 100%;
+  max-height: calc(100vh - 200px);
+  object-fit: contain;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  animation: lbImg 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  display: block;
+}
+@keyframes lbImg {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+.lb__cap {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 8px 0;
+}
+.lb__name {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--cream);
+  letter-spacing: 0.01em;
+}
+.lb__count {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  padding-left: 24px;
+  border-left: 1px solid var(--border-strong);
+}
+
+.lb__close,
+.lb__nav {
+  position: fixed;
+  z-index: 301;
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--cream);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 220ms ease;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.lb__close {
+  top: clamp(20px, 3vw, 36px);
+  right: clamp(20px, 3vw, 36px);
+  width: 44px;
+  height: 44px;
+}
+.lb__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+}
+.lb__nav--prev { left: clamp(16px, 3vw, 40px); }
+.lb__nav--next { right: clamp(16px, 3vw, 40px); }
+.lb__close:hover,
+.lb__nav:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+@media (max-width: 600px) {
+  .lb { padding: 60px 12px 80px; }
+  .lb__nav { width: 42px; height: 42px; }
+  .lb__close { width: 38px; height: 38px; }
+  .lb__cap { flex-direction: column; gap: 8px; }
+  .lb__count { padding-left: 0; border-left: 0; }
+}
+
+/* —————————————————————————————————————————— Floating WhatsApp */
+
+.wa-fab {
+  position: fixed;
+  right: clamp(20px, 3vw, 32px);
+  bottom: clamp(20px, 3vw, 32px);
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #0a0a0a;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 16px 40px rgba(37, 211, 102, 0.35), 0 0 0 1px rgba(255,255,255,0.08);
+  transition: transform 280ms cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 280ms ease;
+  text-decoration: none;
+}
+.wa-fab:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 22px 50px rgba(37, 211, 102, 0.45), 0 0 0 1px rgba(255,255,255,0.12);
+}
+.wa-fab__inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+}
+.wa-fab__icon { display: block; }
+.wa-fab__pulse {
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: #25D366;
+  opacity: 0.55;
+  z-index: 1;
+  animation: waPulse 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+@keyframes waPulse {
+  0%   { transform: scale(1);   opacity: 0.55; }
+  70%  { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+@media (max-width: 600px) {
+  .wa-fab { width: 54px; height: 54px; }
+}
+
+/* —————————————————————————————————————————— Privacy modal */
+
+.priv {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(5, 5, 5, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vw, 48px);
+  animation: privFade 220ms ease-out;
+}
+@keyframes privFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.priv__panel {
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  width: 100%;
+  max-width: 720px;
+  max-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  animation: privSlide 360ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  box-shadow: 0 40px 120px rgba(0,0,0,0.6);
+}
+@keyframes privSlide {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.priv__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 36px 44px 24px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(201,169,97,0.04), transparent);
+}
+.priv__head .eyebrow { margin-bottom: 12px; }
+.priv__head h2 {
+  font-family: var(--serif);
+  font-size: clamp(28px, 3.4vw, 40px);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+}
+.priv__updated {
+  display: block;
+  margin-top: 10px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-style: italic;
+  font-family: var(--serif);
+}
+.priv__close {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  display: grid;
+  place-items: center;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 200ms ease;
+  flex-shrink: 0;
+}
+.priv__close:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.priv__body {
+  overflow-y: auto;
+  padding: 32px 44px 16px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+.priv__body::-webkit-scrollbar { width: 8px; }
+.priv__body::-webkit-scrollbar-track { background: transparent; }
+.priv__body::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
+
+.priv__intro {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--cream);
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+.priv__sect {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.priv__sect:last-child { border-bottom: 0; }
+.priv__sect h3 {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.priv__sect p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.priv__sect p:last-child { margin-bottom: 0; }
+.priv__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.priv__list span { display: block; }
+
+.priv__foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 44px 36px;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.form__hint-link {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent-dim);
+  transition: border-color 180ms ease;
+  cursor: pointer;
+}
+.form__hint-link:hover { border-bottom-color: var(--accent); }
+
+@media (max-width: 600px) {
+  .priv__head { padding: 24px 24px 18px; }
+  .priv__body { padding: 22px 24px 8px; }
+  .priv__foot { padding: 18px 24px 24px; }
+}
+
+/* —————————————————————————————————————————— Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 900ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* —————————————————————————————————————————— Responsive */
+@media (max-width: 1000px) {
+  .nav__links, .nav__sub { display: none; }
+  .nav__right { gap: 14px; }
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__meta { text-align: left; border-left: 0; border-top: 1px solid var(--border-strong); padding-left: 0; padding-top: 20px; }
+  .section-head { grid-template-columns: 1fr; gap: 28px; }
+  .section-head__lede { justify-self: start; }
+  .metrics__grid { grid-template-columns: 1fr 1fr; }
+  .metric { padding: 32px 24px; }
+  .metric:nth-child(3), .metric:nth-child(1) { padding-left: 0; }
+  .metric:nth-child(2), .metric:nth-child(4) { padding-right: 0; }
+  .metric:nth-child(3), .metric:nth-child(4) { border-top: 1px solid var(--border); }
+  .metric:nth-child(3) { border-left: 0; }
+  .port-card--a, .port-card--b, .port-card--c, .port-card--d { grid-column: span 12; margin-top: 0; }
+  .gallery__grid { grid-template-columns: repeat(6, 1fr); grid-auto-rows: 22vw; }
+  .gallery__item--01 { grid-column: span 6; grid-row: span 2; }
+  .gallery__item--02, .gallery__item--03 { grid-column: span 6; grid-row: span 1; }
+  .gallery__item--04, .gallery__item--05, .gallery__item--06 { grid-column: span 3; grid-row: span 1; }
+  .contact__grid { grid-template-columns: 1fr; }
+  .form__row { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .metrics__grid { grid-template-columns: 1fr; }
+  .metric { padding: 28px 0 !important; border-left: 0 !important; border-top: 1px solid var(--border) !important; }
+  .metric:first-child { border-top: 0 !important; }
+  .footer__grid { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; align-items: flex-start; }
+}
+
+  </style>
 
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -19,8 +1477,1718 @@
 <body>
   <div id="root"></div>
 
-  <script src="i18n.js"></script>
-  <script type="text/babel" src="tweaks-panel.jsx"></script>
-  <script type="text/babel" src="app.jsx"></script>
+  <!-- Translations (i18n) -->
+  <script>
+/* U·Capital Inmobiliaria — translations
+   ============================================================
+   Edit copy here. Every visible string lives in both `es` and `en`.
+   When you change one, change the other so the site stays in sync.
+   ============================================================ */
+
+const TRANSLATIONS = {
+  es: {
+    nav: {
+      portfolio:   "Portafolio",
+      inspiration: "Inspiración",
+      about:       "Nosotros",
+      contact:     "Contacto",
+      cta:         "Asesoría gratuita",
+    },
+    hero: {
+      eyebrow:     "U·Capital — Mérida, Yucatán",
+      title1:      "El hogar",
+      title2:      "que",
+      titleEm:     "mereces",
+      title3:      "vivir.",
+      sub:         "Para familias e inversionistas que buscan más que una propiedad. Cientos de opciones en Mérida, una sola conversación, cero costo para el comprador.",
+      ctaPrimary:  "Iniciar conversación",
+      ctaSecondary:"Ver portafolio",
+      metaTop:     "Asesoría independiente",
+      metaBottom:  "Desde 2018",
+      scroll:      "Explorar",
+    },
+    metrics: [
+      { num: "200+", label: "Opciones seleccionadas", desc: "Cientos de propiedades verificadas en un solo lugar." },
+      { num: "$0",   label: "Para el comprador",      desc: "Asesoría completamente gratuita, sin comisiones ocultas." },
+      { num: "24h",  label: "Respuesta inmediata",    desc: "Respondemos cada solicitud el mismo día.", unit: "<" },
+      { num: "100%", label: "Personalizada",          desc: "Acompañamiento dedicado, de principio a fin." },
+    ],
+    about: {
+      eyebrow:     "— Nosotros",
+      title1:      "Acceso a la",
+      titleEm:     "oferta completa",
+      title2:      "del mercado, no solo al catálogo de un desarrollador.",
+      p1:          "U·Capital Inmobiliaria nace con una convicción simple: cada cliente merece una asesoría honesta y acceso a la oferta completa del mercado, no solo al catálogo de un desarrollador. Al no estar ligados a un solo proyecto, podemos comparar con objetividad y recomendar la opción que verdaderamente se alinea con tus objetivos.",
+      p2:          "Te acompañamos en cada paso del camino —búsqueda, visita, negociación y firma— poniendo a tu disposición la red, la experiencia y el conocimiento profundo del mercado yucateco. Desde el primer contacto hasta el cierre de la operación, trabajamos con información clara y completa: precios, esquemas de pago, opciones de financiamiento y tiempos de entrega.",
+      pull:        "Tu inversión es una de las decisiones más importantes que tomarás. Nuestro compromiso es asegurarnos de que la tomes con todos los datos sobre la mesa.",
+      pillars: [
+        { label: "Independencia",  desc: "Sin compromisos con un solo desarrollador." },
+        { label: "Acompañamiento", desc: "Búsqueda, visita, negociación y firma." },
+        { label: "Transparencia",  desc: "Información clara, completa y verificada." },
+      ],
+    },
+    portfolio: {
+      eyebrow:     "— 01 / Portafolio destacado",
+      title1:      "Desarrollos",
+      titleEm:     "cuidadosamente",
+      title2:      "seleccionados.",
+      lede:        "Una muestra de los proyectos en los que hemos acompañado a familias en el corredor norte de Mérida. Diseño, ubicación y plusvalía — evaluados antes de presentarlos.",
+      view:        "Solicitar info →",
+    },
+    gallery: {
+      eyebrow:     "— 02 / Inspiración",
+      title1:      "Espacios para",
+      titleEm:     "imaginar",
+      title2:      "tu próxima vida.",
+      lede:        "Una galería visual de los desarrollos que estamos siguiendo en Mérida y la zona norte. Cuéntanos qué te mueve y nosotros hacemos el resto.",
+      lightboxClose: "Cerrar",
+      lightboxPrev:  "Anterior",
+      lightboxNext:  "Siguiente",
+    },
+    chipPortfolio: {
+      eyebrow: "— 04 / Catálogo ampliado",
+      title1:  "Parte del",
+      titleEm: "portafolio",
+      title2:  "que tenemos para ti.",
+      lede:    "Una muestra de los desarrollos a los que tienes acceso a través de U·Capital. Si te interesa alguno —o no encuentras lo que buscas— escríbenos y te lo conseguimos.",
+      cta:     "Pregunta por cualquiera",
+    },
+    contact: {
+      eyebrow:     "— 03 / Contacto",
+      title1:      "Conversemos sobre el",
+      titleEm:     "hogar",
+      title2:      "que buscas.",
+      lede:        "Cuéntanos qué imaginas. Te respondemos a la brevedad con una selección de opciones que se ajusten a tu presupuesto, tiempos y estilo de vida — sin compromiso ni costo.",
+      sigPhone:    "Teléfono",
+      sigWa:       "WhatsApp",
+      sigOffice:   "Oficina",
+      officeValue: "Mérida, Yucatán",
+      labelName:       "Nombre",
+      labelWhatsapp:   "WhatsApp",
+      labelEmail:      "Correo",
+      labelBudget:     "Presupuesto",
+      labelType:       "Tipo de propiedad",
+      labelMessage:    "Cuéntanos un poco más",
+      phName:          "¿Cómo te llamas?",
+      phWa:            "999 000 0000",
+      phEmail:         "tu@correo.com",
+      phMessage:       "Ubicación preferida, tiempos, lo que sea relevante…",
+      budgets: [
+        "Menos de $2M",
+        "$2M – $4M",
+        "$4M – $7M",
+        "$7M – $12M",
+        "Más de $12M",
+      ],
+      types: [
+        "Departamento", "Casa", "Terreno", "Townhouses",
+      ],
+      labelDelivery:   "Entrega",
+      deliveries: ["Inmediata", "Preventa"],
+      labelPurpose:    "¿Para qué?",
+      purposes: ["Inversión", "Para vivir"],
+      submit:          "Enviar solicitud",
+      hint:            "Al enviar aceptas nuestro aviso de privacidad. Nunca compartimos tus datos.",
+      successTitle:    "Gracias",
+      successFallback: "estamos en contacto",
+      successBody:     "Recibimos tu solicitud. Te respondemos a la brevedad por WhatsApp con una primera selección.",
+      successAgain:    "Enviar otra solicitud",
+    },
+    footer: {
+      blurb:       "Acompañamos a familias e inversionistas a encontrar el hogar que merecen vivir o invertir en la ciudad de Mérida o en la costa yucateca.",
+      colExplore:  "Explorar",
+      colContact:  "Contacto",
+      colLegal:    "Legal",
+      linkPortfolio:   "Portafolio",
+      linkInspiration: "Inspiración",
+      linkContact:     "Contacto",
+      whatsapp:        "WhatsApp directo",
+      location:        "Mérida, Yucatán · MX",
+      privacy:         "Aviso de privacidad",
+      terms:           "Términos de uso",
+      rights:          "Todos los derechos reservados.",
+      made:            "Hecho con cuidado en Mérida, Yucatán.",
+    },
+    privacy: {
+      title:    "Aviso de Privacidad",
+      updated:  "Última actualización: mayo de 2026",
+      intro:    "De conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), su Reglamento y demás disposiciones aplicables, U·Capital Inmobiliaria pone a su disposición el presente Aviso de Privacidad.",
+      close:    "Cerrar",
+      accept:   "Entendido",
+      sections: [
+        {
+          h: "1. Responsable del tratamiento",
+          p: [
+            "Fernando José Rodríguez Castellanos, quien opera comercialmente bajo la marca “U·Capital Inmobiliaria” (en adelante “U·Capital”), con domicilio en la ciudad de Mérida, Yucatán, México, es el responsable del tratamiento de sus datos personales.",
+            "Para cualquier asunto relacionado con este aviso puede contactarnos al correo contacto@ucapital.mx, al teléfono 999 956 2850 o al WhatsApp wa.me/529999562850.",
+          ],
+        },
+        {
+          h: "2. Datos personales que recabamos",
+          p: "Recabamos únicamente los datos que usted nos proporciona de manera voluntaria a través de nuestros formularios o canales de contacto: nombre, número de WhatsApp, correo electrónico, rango de presupuesto, tipo de propiedad de interés, esquema de entrega y propósito (inversión o vivienda), así como cualquier comentario adicional que usted decida compartir.",
+        },
+        {
+          h: "3. Finalidades del tratamiento",
+          p: [
+            "Sus datos personales serán utilizados para las siguientes finalidades primarias, necesarias para la relación con usted:",
+            "• Atender su solicitud de información y darle seguimiento.\n• Presentarle opciones de propiedades acordes a sus criterios.\n• Coordinar visitas, llamadas y reuniones.\n• Acompañarle durante el proceso de negociación, firma y cierre.\n• Cumplir con obligaciones legales y fiscales aplicables.",
+            "De forma secundaria, y previa autorización, podremos enviarle información sobre nuevos desarrollos, oportunidades de inversión y comunicaciones de interés. Usted puede oponerse a estas finalidades secundarias en cualquier momento sin que ello afecte la atención de su solicitud principal.",
+          ],
+        },
+        {
+          h: "4. Transferencia de datos",
+          p: "U·Capital no comercializa ni vende sus datos personales. Podremos compartirlos únicamente con desarrolladores, notarios, instituciones financieras o asesores técnicos cuando sea estrictamente necesario para concretar la operación que usted nos solicitó, y bajo el compromiso de confidencialidad correspondiente. Cualquier otra transferencia requerirá su consentimiento expreso.",
+        },
+        {
+          h: "5. Derechos ARCO",
+          p: "Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales, así como a revocar el consentimiento otorgado. Para ejercer cualquiera de estos derechos puede enviar su solicitud al correo contacto@ucapital.mx o por WhatsApp a wa.me/529999562850 indicando su nombre completo y el derecho que desea ejercer. Daremos respuesta en un plazo no mayor a veinte días hábiles.",
+        },
+        {
+          h: "6. Medidas de seguridad",
+          p: "Sus datos se conservan en sistemas con medidas administrativas, técnicas y físicas razonables para proteger su confidencialidad, integridad y disponibilidad, y para prevenir su uso, pérdida, alteración o acceso no autorizado.",
+        },
+        {
+          h: "7. Uso de cookies y tecnologías similares",
+          p: "Este sitio puede utilizar cookies o tecnologías similares con fines analíticos y de mejora de experiencia. Usted puede deshabilitarlas desde la configuración de su navegador.",
+        },
+        {
+          h: "8. Cambios al aviso",
+          p: "Cualquier modificación a este Aviso de Privacidad será publicada en esta misma página, indicando la fecha de la última actualización. Le recomendamos revisarla periódicamente.",
+        },
+        {
+          h: "9. Consentimiento",
+          p: "Al proporcionar sus datos personales a U·Capital, usted manifiesta haber leído, entendido y aceptado los términos del presente Aviso de Privacidad.",
+        },
+      ],
+    },
+  },
+
+  en: {
+    nav: {
+      portfolio:   "Portfolio",
+      inspiration: "Inspiration",
+      about:       "About",
+      contact:     "Contact",
+      cta:         "Free consultation",
+    },
+    hero: {
+      eyebrow:     "U·Capital — Mérida, Yucatán",
+      title1:      "The home",
+      title2:      "you",
+      titleEm:     "deserve",
+      title3:      "to live in.",
+      sub:         "For families and investors looking for more than just a property. Hundreds of options in Mérida, one single conversation, zero cost to the buyer.",
+      ctaPrimary:  "Start a conversation",
+      ctaSecondary:"View portfolio",
+      metaTop:     "Independent advisory",
+      metaBottom:  "Since 2018",
+      scroll:      "Explore",
+    },
+    metrics: [
+      { num: "200+", label: "Curated options",     desc: "Hundreds of verified properties, all in one place." },
+      { num: "$0",   label: "For the buyer",        desc: "Completely free advisory — no hidden commissions." },
+      { num: "24h",  label: "Immediate response",   desc: "We reply to every inquiry the same day.", unit: "<" },
+      { num: "100%", label: "Personalized",         desc: "Dedicated guidance, from first call to closing." },
+    ],
+    about: {
+      eyebrow:     "— About",
+      title1:      "Access to the",
+      titleEm:     "full market",
+      title2:      "offering — not just one developer's catalog.",
+      p1:          "U·Capital Inmobiliaria was born from a simple conviction: every client deserves honest advice and access to the full market offering — not just one developer's catalog. Because we aren't tied to a single project, we can compare with objectivity and recommend the option that genuinely aligns with your goals.",
+      p2:          "We walk you through every step — search, visit, negotiation, and closing — putting our network, experience, and deep knowledge of the Yucatán market at your disposal. From the first conversation to the final signature, we work with clear, complete information: prices, payment schedules, financing options, and delivery timelines.",
+      pull:        "Your investment is one of the most important decisions you will make. Our commitment is to make sure you make it with every piece of information on the table.",
+      pillars: [
+        { label: "Independence", desc: "No allegiance to any single developer." },
+        { label: "Guidance",     desc: "Search, visits, negotiation, and signing." },
+        { label: "Transparency", desc: "Clear, complete, verified information." },
+      ],
+    },
+    portfolio: {
+      eyebrow:     "— 01 / Featured portfolio",
+      title1:      "Developments",
+      titleEm:     "carefully",
+      title2:      "selected.",
+      lede:        "A sample of the projects we've guided families through in Mérida's northern corridor. Design, location, and long-term value — vetted before we present them.",
+      view:        "Request info →",
+    },
+    gallery: {
+      eyebrow:     "— 02 / Inspiration",
+      title1:      "Spaces to",
+      titleEm:     "imagine",
+      title2:      "your next chapter.",
+      lede:        "A visual gallery of the developments we're following in Mérida and the northern zone. Tell us what moves you — we'll take care of the rest.",
+      lightboxClose: "Close",
+      lightboxPrev:  "Previous",
+      lightboxNext:  "Next",
+    },
+    chipPortfolio: {
+      eyebrow: "— 04 / Extended catalog",
+      title1:  "Part of the",
+      titleEm: "portfolio",
+      title2:  "we have for you.",
+      lede:    "A sample of the developments you have access to through U·Capital. Interested in one —or can't find what you're looking for? Just ask and we'll find it.",
+      cta:     "Ask about any of these",
+    },
+    contact: {
+      eyebrow:     "— 03 / Contact",
+      title1:      "Let's talk about the",
+      titleEm:     "home",
+      title2:      "you're looking for.",
+      lede:        "Tell us what you imagine. We'll get back to you shortly with a selection of options tailored to your budget, timing, and lifestyle — no obligation, no cost.",
+      sigPhone:    "Phone",
+      sigWa:       "WhatsApp",
+      sigOffice:   "Office",
+      officeValue: "Mérida, Yucatán",
+      labelName:       "Name",
+      labelWhatsapp:   "WhatsApp",
+      labelEmail:      "Email",
+      labelBudget:     "Budget",
+      labelType:       "Property type",
+      labelMessage:    "Tell us a bit more",
+      phName:          "What's your name?",
+      phWa:            "+52 999 000 0000",
+      phEmail:         "you@email.com",
+      phMessage:       "Preferred location, timing, anything relevant…",
+      budgets: [
+        "Under $2M MXN",
+        "$2M – $4M MXN",
+        "$4M – $7M MXN",
+        "$7M – $12M MXN",
+        "Over $12M MXN",
+      ],
+      types: [
+        "Apartment", "House", "Land", "Townhouse",
+      ],
+      labelDelivery:   "Delivery",
+      deliveries: ["Move-in ready", "Pre-sale"],
+      labelPurpose:    "Purpose",
+      purposes: ["Investment", "To live in"],
+      submit:          "Send request",
+      hint:            "By submitting you accept our privacy notice. We never share your data.",
+      successTitle:    "Thank you",
+      successFallback: "we'll be in touch",
+      successBody:     "We received your request. We'll reply shortly via WhatsApp with a first selection.",
+      successAgain:    "Send another request",
+    },
+    footer: {
+      blurb:       "We guide families and investors to find the home they deserve — to live in or invest in — in the city of Mérida and along the Yucatán coast.",
+      colExplore:  "Explore",
+      colContact:  "Contact",
+      colLegal:    "Legal",
+      linkPortfolio:   "Portfolio",
+      linkInspiration: "Inspiration",
+      linkContact:     "Contact",
+      whatsapp:        "WhatsApp directly",
+      location:        "Mérida, Yucatán · MX",
+      privacy:         "Privacy notice",
+      terms:           "Terms of use",
+      rights:          "All rights reserved.",
+      made:            "Made with care in Mérida, Yucatán.",
+    },
+    privacy: {
+      title:    "Privacy Notice",
+      updated:  "Last updated: May 2026",
+      intro:    "In compliance with Mexico's Federal Law on the Protection of Personal Data Held by Private Parties (LFPDPPP), its Regulations, and other applicable provisions, U·Capital Inmobiliaria provides the following Privacy Notice.",
+      close:    "Close",
+      accept:   "Understood",
+      sections: [
+        {
+          h: "1. Data controller",
+          p: [
+            "Fernando José Rodríguez Castellanos, who operates commercially under the brand “U·Capital Inmobiliaria” (“U·Capital”), with offices in Mérida, Yucatán, Mexico, is the party responsible for processing your personal data.",
+            "For any matter related to this notice you may contact us at contacto@ucapital.mx, by phone at 999 956 2850, or via WhatsApp at wa.me/529999562850.",
+          ],
+        },
+        {
+          h: "2. Personal data we collect",
+          p: "We collect only the data you voluntarily provide through our forms or contact channels: name, WhatsApp number, email address, budget range, type of property of interest, delivery preference, and purpose (investment or residence), along with any additional comments you choose to share.",
+        },
+        {
+          h: "3. Purposes of processing",
+          p: [
+            "Your personal data will be used for the following primary purposes, necessary for our relationship with you:",
+            "• Responding to your request and following up on it.\n• Presenting property options that match your criteria.\n• Coordinating visits, calls, and meetings.\n• Guiding you through negotiation, signing, and closing.\n• Complying with applicable legal and tax obligations.",
+            "As a secondary purpose, and with your prior authorization, we may send you information about new developments, investment opportunities, and other relevant communications. You may opt out of these secondary purposes at any time without affecting the handling of your primary request.",
+          ],
+        },
+        {
+          h: "4. Data sharing",
+          p: "U·Capital does not sell or commercialize your personal data. We may share it only with developers, notaries, financial institutions, or technical advisors when strictly necessary to complete the transaction you requested, and always under a corresponding confidentiality commitment. Any other transfer will require your express consent.",
+        },
+        {
+          h: "5. Your ARCO rights",
+          p: "You have the right to Access, Rectify, Cancel, or Object to the processing of your personal data, as well as to revoke any consent granted. To exercise any of these rights, you may send your request to contacto@ucapital.mx or via WhatsApp to wa.me/529999562850, stating your full name and the right you wish to exercise. We will respond within twenty business days.",
+        },
+        {
+          h: "6. Security measures",
+          p: "Your data is kept in systems with reasonable administrative, technical, and physical safeguards to protect its confidentiality, integrity, and availability, and to prevent unauthorized use, loss, alteration, or access.",
+        },
+        {
+          h: "7. Cookies and similar technologies",
+          p: "This site may use cookies or similar technologies for analytics and to improve your experience. You may disable them through your browser settings.",
+        },
+        {
+          h: "8. Changes to this notice",
+          p: "Any modification to this Privacy Notice will be published on this same page, indicating the date of the last update. We recommend reviewing it periodically.",
+        },
+        {
+          h: "9. Consent",
+          p: "By providing your personal data to U·Capital, you acknowledge that you have read, understood, and accepted the terms of this Privacy Notice.",
+        },
+      ],
+    },
+  },
+};
+
+window.TRANSLATIONS = TRANSLATIONS;
+
+  </script>
+
+  <!-- Tweaks panel (React component library) -->
+  <script type="text/babel" data-presets="react">
+
+// tweaks-panel.jsx
+// Reusable Tweaks shell + form-control helpers.
+//
+// Owns the host protocol (listens for __activate_edit_mode / __deactivate_edit_mode,
+// posts __edit_mode_available / __edit_mode_set_keys / __edit_mode_dismissed) so
+// individual prototypes don't re-roll it. Ships a consistent set of controls so you
+// don't hand-draw <input type="range">, segmented radios, steppers, etc.
+//
+// Usage (in an HTML file that loads React + Babel):
+//
+//   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+//     "primaryColor": "#D97757",
+//     "palette": ["#D97757", "#29261b", "#f6f4ef"],
+//     "fontSize": 16,
+//     "density": "regular",
+//     "dark": false
+//   }/*EDITMODE-END*/;
+//
+//   function App() {
+//     const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+//     return (
+//       <div style={{ fontSize: t.fontSize, color: t.primaryColor }}>
+//         Hello
+//         <TweaksPanel>
+//           <TweakSection label="Typography" />
+//           <TweakSlider label="Font size" value={t.fontSize} min={10} max={32} unit="px"
+//                        onChange={(v) => setTweak('fontSize', v)} />
+//           <TweakRadio  label="Density" value={t.density}
+//                        options={['compact', 'regular', 'comfy']}
+//                        onChange={(v) => setTweak('density', v)} />
+//           <TweakSection label="Theme" />
+//           <TweakColor  label="Primary" value={t.primaryColor}
+//                        options={['#D97757', '#2A6FDB', '#1F8A5B', '#7A5AE0']}
+//                        onChange={(v) => setTweak('primaryColor', v)} />
+//           <TweakColor  label="Palette" value={t.palette}
+//                        options={[['#D97757', '#29261b', '#f6f4ef'],
+//                                  ['#475569', '#0f172a', '#f1f5f9']]}
+//                        onChange={(v) => setTweak('palette', v)} />
+//           <TweakToggle label="Dark mode" value={t.dark}
+//                        onChange={(v) => setTweak('dark', v)} />
+//         </TweaksPanel>
+//       </div>
+//     );
+//   }
+//
+// ─────────────────────────────────────────────────────────────────────────────
+
+const __TWEAKS_STYLE = `
+  .twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;
+    max-height:calc(100vh - 32px);display:flex;flex-direction:column;
+    transform:scale(var(--dc-inv-zoom,1));transform-origin:bottom right;
+    background:rgba(250,249,247,.78);color:#29261b;
+    -webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);
+    border:.5px solid rgba(255,255,255,.6);border-radius:14px;
+    box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 12px 40px rgba(0,0,0,.18);
+    font:11.5px/1.4 ui-sans-serif,system-ui,-apple-system,sans-serif;overflow:hidden}
+  .twk-hd{display:flex;align-items:center;justify-content:space-between;
+    padding:10px 8px 10px 14px;cursor:move;user-select:none}
+  .twk-hd b{font-size:12px;font-weight:600;letter-spacing:.01em}
+  .twk-x{appearance:none;border:0;background:transparent;color:rgba(41,38,27,.55);
+    width:22px;height:22px;border-radius:6px;cursor:default;font-size:13px;line-height:1}
+  .twk-x:hover{background:rgba(0,0,0,.06);color:#29261b}
+  .twk-body{padding:2px 14px 14px;display:flex;flex-direction:column;gap:10px;
+    overflow-y:auto;overflow-x:hidden;min-height:0;
+    scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.15) transparent}
+  .twk-body::-webkit-scrollbar{width:8px}
+  .twk-body::-webkit-scrollbar-track{background:transparent;margin:2px}
+  .twk-body::-webkit-scrollbar-thumb{background:rgba(0,0,0,.15);border-radius:4px;
+    border:2px solid transparent;background-clip:content-box}
+  .twk-body::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.25);
+    border:2px solid transparent;background-clip:content-box}
+  .twk-row{display:flex;flex-direction:column;gap:5px}
+  .twk-row-h{flex-direction:row;align-items:center;justify-content:space-between;gap:10px}
+  .twk-lbl{display:flex;justify-content:space-between;align-items:baseline;
+    color:rgba(41,38,27,.72)}
+  .twk-lbl>span:first-child{font-weight:500}
+  .twk-val{color:rgba(41,38,27,.5);font-variant-numeric:tabular-nums}
+
+  .twk-sect{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:rgba(41,38,27,.45);padding:10px 0 0}
+  .twk-sect:first-child{padding-top:0}
+
+  .twk-field{appearance:none;box-sizing:border-box;width:100%;min-width:0;height:26px;padding:0 8px;
+    border:.5px solid rgba(0,0,0,.1);border-radius:7px;
+    background:rgba(255,255,255,.6);color:inherit;font:inherit;outline:none}
+  .twk-field:focus{border-color:rgba(0,0,0,.25);background:rgba(255,255,255,.85)}
+  select.twk-field{padding-right:22px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='rgba(0,0,0,.5)' d='M0 0h10L5 6z'/></svg>");
+    background-repeat:no-repeat;background-position:right 8px center}
+
+  .twk-slider{appearance:none;-webkit-appearance:none;width:100%;height:4px;margin:6px 0;
+    border-radius:999px;background:rgba(0,0,0,.12);outline:none}
+  .twk-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
+    width:14px;height:14px;border-radius:50%;background:#fff;
+    border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
+  .twk-slider::-moz-range-thumb{width:14px;height:14px;border-radius:50%;
+    background:#fff;border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
+
+  .twk-seg{position:relative;display:flex;padding:2px;border-radius:8px;
+    background:rgba(0,0,0,.06);user-select:none}
+  .twk-seg-thumb{position:absolute;top:2px;bottom:2px;border-radius:6px;
+    background:rgba(255,255,255,.9);box-shadow:0 1px 2px rgba(0,0,0,.12);
+    transition:left .15s cubic-bezier(.3,.7,.4,1),width .15s}
+  .twk-seg.dragging .twk-seg-thumb{transition:none}
+  .twk-seg button{appearance:none;position:relative;z-index:1;flex:1;border:0;
+    background:transparent;color:inherit;font:inherit;font-weight:500;min-height:22px;
+    border-radius:6px;cursor:default;padding:4px 6px;line-height:1.2;
+    overflow-wrap:anywhere}
+
+  .twk-toggle{position:relative;width:32px;height:18px;border:0;border-radius:999px;
+    background:rgba(0,0,0,.15);transition:background .15s;cursor:default;padding:0}
+  .twk-toggle[data-on="1"]{background:#34c759}
+  .twk-toggle i{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;
+    background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:transform .15s}
+  .twk-toggle[data-on="1"] i{transform:translateX(14px)}
+
+  .twk-num{display:flex;align-items:center;box-sizing:border-box;min-width:0;height:26px;padding:0 0 0 8px;
+    border:.5px solid rgba(0,0,0,.1);border-radius:7px;background:rgba(255,255,255,.6)}
+  .twk-num-lbl{font-weight:500;color:rgba(41,38,27,.6);cursor:ew-resize;
+    user-select:none;padding-right:8px}
+  .twk-num input{flex:1;min-width:0;height:100%;border:0;background:transparent;
+    font:inherit;font-variant-numeric:tabular-nums;text-align:right;padding:0 8px 0 0;
+    outline:none;color:inherit;-moz-appearance:textfield}
+  .twk-num input::-webkit-inner-spin-button,.twk-num input::-webkit-outer-spin-button{
+    -webkit-appearance:none;margin:0}
+  .twk-num-unit{padding-right:8px;color:rgba(41,38,27,.45)}
+
+  .twk-btn{appearance:none;height:26px;padding:0 12px;border:0;border-radius:7px;
+    background:rgba(0,0,0,.78);color:#fff;font:inherit;font-weight:500;cursor:default}
+  .twk-btn:hover{background:rgba(0,0,0,.88)}
+  .twk-btn.secondary{background:rgba(0,0,0,.06);color:inherit}
+  .twk-btn.secondary:hover{background:rgba(0,0,0,.1)}
+
+  .twk-swatch{appearance:none;-webkit-appearance:none;width:56px;height:22px;
+    border:.5px solid rgba(0,0,0,.1);border-radius:6px;padding:0;cursor:default;
+    background:transparent;flex-shrink:0}
+  .twk-swatch::-webkit-color-swatch-wrapper{padding:0}
+  .twk-swatch::-webkit-color-swatch{border:0;border-radius:5.5px}
+  .twk-swatch::-moz-color-swatch{border:0;border-radius:5.5px}
+
+  .twk-chips{display:flex;gap:6px}
+  .twk-chip{position:relative;appearance:none;flex:1;min-width:0;height:46px;
+    padding:0;border:0;border-radius:6px;overflow:hidden;cursor:default;
+    box-shadow:0 0 0 .5px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.06);
+    transition:transform .12s cubic-bezier(.3,.7,.4,1),box-shadow .12s}
+  .twk-chip:hover{transform:translateY(-1px);
+    box-shadow:0 0 0 .5px rgba(0,0,0,.18),0 4px 10px rgba(0,0,0,.12)}
+  .twk-chip[data-on="1"]{box-shadow:0 0 0 1.5px rgba(0,0,0,.85),
+    0 2px 6px rgba(0,0,0,.15)}
+  .twk-chip>span{position:absolute;top:0;bottom:0;right:0;width:34%;
+    display:flex;flex-direction:column;box-shadow:-1px 0 0 rgba(0,0,0,.1)}
+  .twk-chip>span>i{flex:1;box-shadow:0 -1px 0 rgba(0,0,0,.1)}
+  .twk-chip>span>i:first-child{box-shadow:none}
+  .twk-chip svg{position:absolute;top:6px;left:6px;width:13px;height:13px;
+    filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
+`;
+
+// ── useTweaks ───────────────────────────────────────────────────────────────
+// Single source of truth for tweak values. setTweak persists via the host
+// (__edit_mode_set_keys → host rewrites the EDITMODE block on disk).
+function useTweaks(defaults) {
+  const [values, setValues] = React.useState(defaults);
+  // Accepts either setTweak('key', value) or setTweak({ key: value, ... }) so a
+  // useState-style call doesn't write a "[object Object]" key into the persisted
+  // JSON block.
+  const setTweak = React.useCallback((keyOrEdits, val) => {
+    const edits = typeof keyOrEdits === 'object' && keyOrEdits !== null
+      ? keyOrEdits : { [keyOrEdits]: val };
+    setValues((prev) => ({ ...prev, ...edits }));
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits }, '*');
+    // Same-window signal so in-page listeners (deck-stage rail thumbnails)
+    // can react — the parent message only reaches the host, not peers.
+    window.dispatchEvent(new CustomEvent('tweakchange', { detail: edits }));
+  }, []);
+  return [values, setTweak];
+}
+
+// ── TweaksPanel ─────────────────────────────────────────────────────────────
+// Floating shell. Registers the protocol listener BEFORE announcing
+// availability — if the announce ran first, the host's activate could land
+// before our handler exists and the toolbar toggle would silently no-op.
+// The close button posts __edit_mode_dismissed so the host's toolbar toggle
+// flips off in lockstep; the host echoes __deactivate_edit_mode back which
+// is what actually hides the panel.
+function TweaksPanel({ title = 'Tweaks', children }) {
+  const [open, setOpen] = React.useState(false);
+  const dragRef = React.useRef(null);
+  const offsetRef = React.useRef({ x: 16, y: 16 });
+  const PAD = 16;
+
+  const clampToViewport = React.useCallback(() => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const w = panel.offsetWidth, h = panel.offsetHeight;
+    const maxRight = Math.max(PAD, window.innerWidth - w - PAD);
+    const maxBottom = Math.max(PAD, window.innerHeight - h - PAD);
+    offsetRef.current = {
+      x: Math.min(maxRight, Math.max(PAD, offsetRef.current.x)),
+      y: Math.min(maxBottom, Math.max(PAD, offsetRef.current.y)),
+    };
+    panel.style.right = offsetRef.current.x + 'px';
+    panel.style.bottom = offsetRef.current.y + 'px';
+  }, []);
+
+  React.useEffect(() => {
+    if (!open) return;
+    clampToViewport();
+    if (typeof ResizeObserver === 'undefined') {
+      window.addEventListener('resize', clampToViewport);
+      return () => window.removeEventListener('resize', clampToViewport);
+    }
+    const ro = new ResizeObserver(clampToViewport);
+    ro.observe(document.documentElement);
+    return () => ro.disconnect();
+  }, [open, clampToViewport]);
+
+  React.useEffect(() => {
+    const onMsg = (e) => {
+      const t = e?.data?.type;
+      if (t === '__activate_edit_mode') setOpen(true);
+      else if (t === '__deactivate_edit_mode') setOpen(false);
+    };
+    window.addEventListener('message', onMsg);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', onMsg);
+  }, []);
+
+  const dismiss = () => {
+    setOpen(false);
+    window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');
+  };
+
+  const onDragStart = (e) => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const r = panel.getBoundingClientRect();
+    const sx = e.clientX, sy = e.clientY;
+    const startRight = window.innerWidth - r.right;
+    const startBottom = window.innerHeight - r.bottom;
+    const move = (ev) => {
+      offsetRef.current = {
+        x: startRight - (ev.clientX - sx),
+        y: startBottom - (ev.clientY - sy),
+      };
+      clampToViewport();
+    };
+    const up = () => {
+      window.removeEventListener('mousemove', move);
+      window.removeEventListener('mouseup', up);
+    };
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', up);
+  };
+
+  if (!open) return null;
+  return (
+    <>
+      <style>{__TWEAKS_STYLE}</style>
+      <div ref={dragRef} className="twk-panel" data-omelette-chrome=""
+           style={{ right: offsetRef.current.x, bottom: offsetRef.current.y }}>
+        <div className="twk-hd" onMouseDown={onDragStart}>
+          <b>{title}</b>
+          <button className="twk-x" aria-label="Close tweaks"
+                  onMouseDown={(e) => e.stopPropagation()}
+                  onClick={dismiss}>✕</button>
+        </div>
+        <div className="twk-body">
+          {children}
+        </div>
+      </div>
+    </>
+  );
+}
+
+// ── Layout helpers ──────────────────────────────────────────────────────────
+
+function TweakSection({ label, children }) {
+  return (
+    <>
+      <div className="twk-sect">{label}</div>
+      {children}
+    </>
+  );
+}
+
+function TweakRow({ label, value, children, inline = false }) {
+  return (
+    <div className={inline ? 'twk-row twk-row-h' : 'twk-row'}>
+      <div className="twk-lbl">
+        <span>{label}</span>
+        {value != null && <span className="twk-val">{value}</span>}
+      </div>
+      {children}
+    </div>
+  );
+}
+
+// ── Controls ────────────────────────────────────────────────────────────────
+
+function TweakSlider({ label, value, min = 0, max = 100, step = 1, unit = '', onChange }) {
+  return (
+    <TweakRow label={label} value={`${value}${unit}`}>
+      <input type="range" className="twk-slider" min={min} max={max} step={step}
+             value={value} onChange={(e) => onChange(Number(e.target.value))} />
+    </TweakRow>
+  );
+}
+
+function TweakToggle({ label, value, onChange }) {
+  return (
+    <div className="twk-row twk-row-h">
+      <div className="twk-lbl"><span>{label}</span></div>
+      <button type="button" className="twk-toggle" data-on={value ? '1' : '0'}
+              role="switch" aria-checked={!!value}
+              onClick={() => onChange(!value)}><i /></button>
+    </div>
+  );
+}
+
+function TweakRadio({ label, value, options, onChange }) {
+  const trackRef = React.useRef(null);
+  const [dragging, setDragging] = React.useState(false);
+  // The active value is read by pointer-move handlers attached for the lifetime
+  // of a drag — ref it so a stale closure doesn't fire onChange for every move.
+  const valueRef = React.useRef(value);
+  valueRef.current = value;
+
+  // Segments wrap mid-word once per-segment width runs out. The track is
+  // ~248px (280 panel − 28 body pad − 4 seg pad), each button loses 12px
+  // to its own padding, and 11.5px system-ui averages ~6.3px/char — so 2
+  // options fit ~16 chars each, 3 fit ~10. Past that (or >3 options), fall
+  // back to a dropdown rather than wrap.
+  const labelLen = (o) => String(typeof o === 'object' ? o.label : o).length;
+  const maxLen = options.reduce((m, o) => Math.max(m, labelLen(o)), 0);
+  const fitsAsSegments = maxLen <= ({ 2: 16, 3: 10 }[options.length] ?? 0);
+  if (!fitsAsSegments) {
+    // <select> emits strings — map back to the original option value so the
+    // fallback stays type-preserving (numbers, booleans) like the segment path.
+    const resolve = (s) => {
+      const m = options.find((o) => String(typeof o === 'object' ? o.value : o) === s);
+      return m === undefined ? s : typeof m === 'object' ? m.value : m;
+    };
+    return <TweakSelect label={label} value={value} options={options}
+                        onChange={(s) => onChange(resolve(s))} />;
+  }
+  const opts = options.map((o) => (typeof o === 'object' ? o : { value: o, label: o }));
+  const idx = Math.max(0, opts.findIndex((o) => o.value === value));
+  const n = opts.length;
+
+  const segAt = (clientX) => {
+    const r = trackRef.current.getBoundingClientRect();
+    const inner = r.width - 4;
+    const i = Math.floor(((clientX - r.left - 2) / inner) * n);
+    return opts[Math.max(0, Math.min(n - 1, i))].value;
+  };
+
+  const onPointerDown = (e) => {
+    setDragging(true);
+    const v0 = segAt(e.clientX);
+    if (v0 !== valueRef.current) onChange(v0);
+    const move = (ev) => {
+      if (!trackRef.current) return;
+      const v = segAt(ev.clientX);
+      if (v !== valueRef.current) onChange(v);
+    };
+    const up = () => {
+      setDragging(false);
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+  };
+
+  return (
+    <TweakRow label={label}>
+      <div ref={trackRef} role="radiogroup" onPointerDown={onPointerDown}
+           className={dragging ? 'twk-seg dragging' : 'twk-seg'}>
+        <div className="twk-seg-thumb"
+             style={{ left: `calc(2px + ${idx} * (100% - 4px) / ${n})`,
+                      width: `calc((100% - 4px) / ${n})` }} />
+        {opts.map((o) => (
+          <button key={o.value} type="button" role="radio" aria-checked={o.value === value}>
+            {o.label}
+          </button>
+        ))}
+      </div>
+    </TweakRow>
+  );
+}
+
+function TweakSelect({ label, value, options, onChange }) {
+  return (
+    <TweakRow label={label}>
+      <select className="twk-field" value={value} onChange={(e) => onChange(e.target.value)}>
+        {options.map((o) => {
+          const v = typeof o === 'object' ? o.value : o;
+          const l = typeof o === 'object' ? o.label : o;
+          return <option key={v} value={v}>{l}</option>;
+        })}
+      </select>
+    </TweakRow>
+  );
+}
+
+function TweakText({ label, value, placeholder, onChange }) {
+  return (
+    <TweakRow label={label}>
+      <input className="twk-field" type="text" value={value} placeholder={placeholder}
+             onChange={(e) => onChange(e.target.value)} />
+    </TweakRow>
+  );
+}
+
+function TweakNumber({ label, value, min, max, step = 1, unit = '', onChange }) {
+  const clamp = (n) => {
+    if (min != null && n < min) return min;
+    if (max != null && n > max) return max;
+    return n;
+  };
+  const startRef = React.useRef({ x: 0, val: 0 });
+  const onScrubStart = (e) => {
+    e.preventDefault();
+    startRef.current = { x: e.clientX, val: value };
+    const decimals = (String(step).split('.')[1] || '').length;
+    const move = (ev) => {
+      const dx = ev.clientX - startRef.current.x;
+      const raw = startRef.current.val + dx * step;
+      const snapped = Math.round(raw / step) * step;
+      onChange(clamp(Number(snapped.toFixed(decimals))));
+    };
+    const up = () => {
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+  };
+  return (
+    <div className="twk-num">
+      <span className="twk-num-lbl" onPointerDown={onScrubStart}>{label}</span>
+      <input type="number" value={value} min={min} max={max} step={step}
+             onChange={(e) => onChange(clamp(Number(e.target.value)))} />
+      {unit && <span className="twk-num-unit">{unit}</span>}
+    </div>
+  );
+}
+
+// Relative-luminance contrast pick — checkmarks drawn over a swatch need to
+// read on both #111 and #fafafa without per-option configuration. Hex input
+// only (#rgb / #rrggbb); named or rgb()/hsl() colors fall through to "light".
+function __twkIsLight(hex) {
+  const h = String(hex).replace('#', '');
+  const x = h.length === 3 ? h.replace(/./g, (c) => c + c) : h.padEnd(6, '0');
+  const n = parseInt(x.slice(0, 6), 16);
+  if (Number.isNaN(n)) return true;
+  const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+  return r * 299 + g * 587 + b * 114 > 148000;
+}
+
+const __TwkCheck = ({ light }) => (
+  <svg viewBox="0 0 14 14" aria-hidden="true">
+    <path d="M3 7.2 5.8 10 11 4.2" fill="none" strokeWidth="2.2"
+          strokeLinecap="round" strokeLinejoin="round"
+          stroke={light ? 'rgba(0,0,0,.78)' : '#fff'} />
+  </svg>
+);
+
+// TweakColor — curated color/palette picker. Each option is either a single
+// hex string or an array of 1-5 hex strings; the card adapts — a lone color
+// renders solid, a palette renders colors[0] as the hero (left ~2/3) with the
+// rest stacked in a sharp column on the right. onChange emits the
+// option in the shape it was passed (string stays string, array stays array).
+// Without options it falls back to the native color input for back-compat.
+function TweakColor({ label, value, options, onChange }) {
+  if (!options || !options.length) {
+    return (
+      <div className="twk-row twk-row-h">
+        <div className="twk-lbl"><span>{label}</span></div>
+        <input type="color" className="twk-swatch" value={value}
+               onChange={(e) => onChange(e.target.value)} />
+      </div>
+    );
+  }
+  // Native <input type=color> emits lowercase hex per the HTML spec, so
+  // compare case-insensitively. String() guards JSON.stringify(undefined),
+  // which returns the primitive undefined (no .toLowerCase).
+  const key = (o) => String(JSON.stringify(o)).toLowerCase();
+  const cur = key(value);
+  return (
+    <TweakRow label={label}>
+      <div className="twk-chips" role="radiogroup">
+        {options.map((o, i) => {
+          const colors = Array.isArray(o) ? o : [o];
+          const [hero, ...rest] = colors;
+          const sup = rest.slice(0, 4);
+          const on = key(o) === cur;
+          return (
+            <button key={i} type="button" className="twk-chip" role="radio"
+                    aria-checked={on} data-on={on ? '1' : '0'}
+                    aria-label={colors.join(', ')} title={colors.join(' · ')}
+                    style={{ background: hero }}
+                    onClick={() => onChange(o)}>
+              {sup.length > 0 && (
+                <span>
+                  {sup.map((c, j) => <i key={j} style={{ background: c }} />)}
+                </span>
+              )}
+              {on && <__TwkCheck light={__twkIsLight(hero)} />}
+            </button>
+          );
+        })}
+      </div>
+    </TweakRow>
+  );
+}
+
+function TweakButton({ label, onClick, secondary = false }) {
+  return (
+    <button type="button" className={secondary ? 'twk-btn secondary' : 'twk-btn'}
+            onClick={onClick}>{label}</button>
+  );
+}
+
+Object.assign(window, {
+  useTweaks, TweaksPanel, TweakSection, TweakRow,
+  TweakSlider, TweakToggle, TweakRadio, TweakSelect,
+  TweakText, TweakNumber, TweakColor, TweakButton,
+});
+
+  </script>
+
+  <!-- Main app -->
+  <script type="text/babel" data-presets="react">
+/* U·Capital Inmobiliaria — landing page app */
+
+const { useState, useEffect, useRef, useContext, createContext } = React;
+
+/* ============================================================
+   LANGUAGE-NEUTRAL CONTENT
+   Swap any image URL below — copy lives in i18n.js
+   ============================================================ */
+
+const HERO_IMAGE = "https://ucapital.mx/Laja_hero.jpg";
+
+const PORTFOLIO = [
+  { name: "Estela Nativa",     location: "Conkal, Mérida", image: "https://ucapital.mx/Estela_Nativa.jpg" },
+  { name: "Aldoria",           location: "Conkal, Mérida", image: "https://ucapital.mx/Aldoria.jpg" },
+  { name: "NAIA",              location: "Conkal, Mérida", image: "https://ucapital.mx/NAIA.jpg" },
+  { name: "Cumbres Novonorte", location: "Conkal, Mérida", image: "https://ucapital.mx/CUMBRES.jpg" },
+];
+
+const GALLERY = [
+  { id: "01", url: "https://ucapital.mx/Laja_hero.jpg",     caption: "Laja Residencial" },
+  { id: "02", url: "https://ucapital.mx/Estela_Nativa.jpg", caption: "Estela Nativa" },
+  { id: "03", url: "https://ucapital.mx/NAIA.jpg",          caption: "NAIA" },
+  { id: "04", url: "https://ucapital.mx/Aldoria.jpg",       caption: "Aldoria" },
+  { id: "05", url: "https://ucapital.mx/CUMBRES.jpg",       caption: "Cumbres Novonorte" },
+  { id: "06", url: "https://ucapital.mx/veta.jpg",          caption: "Veta" },
+];
+
+const LOGO_WHITE = "https://ucapital.mx/ucapital_white.png";
+
+/* Catalog of developments shown in the chip section before the footer.
+   Add/remove names freely — they reflow automatically. */
+const CATALOG = [
+  "Estela Nativa", "Aldoria", "NAIA", "Cumbres Novonorte",
+  "Arista Residencial", "Gran Bosco", "KAUA by Laja", "UKUM",
+  "OLMOS", "Santa Loreto", "Livenza", "El Origen",
+  "Residencial Dzidzil-ha", "Campocielo", "Casona 333", "ANURA",
+  "PRANA", "ETRO", "VETA", "Pájaro en Piedra", "MACORA 86",
+];
+
+const WA_URL = "https://wa.me/529999562850?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20propiedades%20en%20M%C3%A9rida";
+
+/* ============================================================
+   LANGUAGE CONTEXT
+   ============================================================ */
+
+const LangContext = createContext({ lang: "es", t: window.TRANSLATIONS.es, setLang: () => {} });
+const useT = () => useContext(LangContext);
+
+const PrivacyContext = createContext({ open: () => {}, close: () => {} });
+const usePrivacy = () => useContext(PrivacyContext);
+
+function LangProvider({ children }) {
+  const [lang, setLangState] = useState(() => {
+    try {
+      const stored = localStorage.getItem("ucapital_lang");
+      if (stored === "es" || stored === "en") return stored;
+    } catch (e) {}
+    const navLang = (navigator.language || "es").toLowerCase();
+    return navLang.startsWith("en") ? "en" : "es";
+  });
+  const setLang = (l) => {
+    setLangState(l);
+    try { localStorage.setItem("ucapital_lang", l); } catch (e) {}
+  };
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+  const t = window.TRANSLATIONS[lang];
+  return (
+    <LangContext.Provider value={{ lang, t, setLang }}>
+      {children}
+    </LangContext.Provider>
+  );
+}
+
+function LangToggle({ compact = false }) {
+  const { lang, setLang } = useT();
+  return (
+    <div className={`lang ${compact ? "lang--compact" : ""}`} role="group" aria-label="Language">
+      <button type="button"
+        className={`lang__btn ${lang === "es" ? "is-active" : ""}`}
+        onClick={() => setLang("es")}
+        aria-pressed={lang === "es"}>ES</button>
+      <span className="lang__sep" aria-hidden="true">·</span>
+      <button type="button"
+        className={`lang__btn ${lang === "en" ? "is-active" : ""}`}
+        onClick={() => setLang("en")}
+        aria-pressed={lang === "en"}>EN</button>
+    </div>
+  );
+}
+
+/* ============================================================
+   PRIVACY MODAL
+   ============================================================ */
+
+function PrivacyModal({ open, onClose }) {
+  const { t } = useT();
+  const p = t.privacy;
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    document.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    setTimeout(() => { if (ref.current) ref.current.scrollTop = 0; }, 50);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [open, onClose]);
+
+  if (!open) return null;
+
+  const renderP = (para, i) => {
+    if (Array.isArray(para)) {
+      return para.map((s, j) => renderP(s, `${i}-${j}`));
+    }
+    if (para.includes("\n")) {
+      return (
+        <p key={i} className="priv__list">
+          {para.split("\n").map((line, k) => (
+            <span key={k}>{line}</span>
+          ))}
+        </p>
+      );
+    }
+    return <p key={i}>{para}</p>;
+  };
+
+  return (
+    <div className="priv" onClick={onClose} role="dialog" aria-modal="true" aria-labelledby="priv-title">
+      <div className="priv__panel" onClick={(e) => e.stopPropagation()} ref={ref}>
+        <header className="priv__head">
+          <div>
+            <span className="eyebrow no-rule">— Legal</span>
+            <h2 id="priv-title">{p.title}</h2>
+            <span className="priv__updated">{p.updated}</span>
+          </div>
+          <button className="priv__close" onClick={onClose} aria-label={p.close}>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+            </svg>
+          </button>
+        </header>
+        <div className="priv__body">
+          <p className="priv__intro">{p.intro}</p>
+          {p.sections.map((s, i) => (
+            <section key={i} className="priv__sect">
+              <h3>{s.h}</h3>
+              {Array.isArray(s.p) ? s.p.map((para, j) => renderP(para, j)) : renderP(s.p, 0)}
+            </section>
+          ))}
+        </div>
+        <footer className="priv__foot">
+          <button className="btn btn--primary" onClick={onClose}>
+            {p.accept} <span className="arrow">→</span>
+          </button>
+        </footer>
+      </div>
+    </div>
+  );
+}
+
+/* ============================================================
+   COMPONENTS
+   ============================================================ */
+
+function Nav() {
+  const { t } = useT();
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return (
+    <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
+      <div className="shell nav__inner">
+        <a href="#top" className="nav__brand">
+          <span className="nav__mark">U<span className="dot">·</span>Capital</span>
+          <span className="nav__sub">Inmobiliaria</span>
+        </a>
+        <ul className="nav__links">
+          <li><a href="#portafolio">{t.nav.portfolio}</a></li>
+          <li><a href="#inspiracion">{t.nav.inspiration}</a></li>
+          <li><a href="#nosotros">{t.nav.about}</a></li>
+          <li><a href="#contacto">{t.nav.contact}</a></li>
+        </ul>
+        <div className="nav__right">
+          <LangToggle />
+          <a href="#contacto" className="nav__cta">
+            <span className="pulse"></span>
+            {t.nav.cta}
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+function Hero() {
+  const { t } = useT();
+  return (
+    <section className="hero" id="top">
+      <div className="hero__bg" style={{ backgroundImage: `url("${HERO_IMAGE}")` }}></div>
+      <div className="shell hero__shell">
+        <div className="hero__grid">
+          <div>
+            <span className="eyebrow">{t.hero.eyebrow}</span>
+            <h1 className="hero__title">
+              {t.hero.title1}<br />
+              {t.hero.title2} <span className="it">{t.hero.titleEm}</span><br />
+              {t.hero.title3}
+            </h1>
+            <p className="hero__sub">{t.hero.sub}</p>
+            <div className="hero__actions">
+              <a href="#contacto" className="btn btn--primary">
+                {t.hero.ctaPrimary} <span className="arrow">→</span>
+              </a>
+              <a href="#portafolio" className="btn btn--ghost">
+                {t.hero.ctaSecondary}
+              </a>
+            </div>
+          </div>
+          <div className="hero__meta">
+            {t.hero.metaTop}<br />
+            <strong>{t.hero.metaBottom}</strong>
+          </div>
+        </div>
+      </div>
+      <div className="hero__scroll">
+        <span>{t.hero.scroll}</span>
+        <span className="line"></span>
+      </div>
+    </section>
+  );
+}
+
+function Metrics() {
+  const { t } = useT();
+  return (
+    <section className="metrics reveal">
+      <div className="shell">
+        <div className="metrics__grid">
+          {t.metrics.map((m, i) => (
+            <div className="metric" key={i}>
+              <div className="metric__num">
+                {m.unit && <span className="unit">{m.unit}</span>}
+                {m.num}
+              </div>
+              <div className="metric__label">{m.label}</div>
+              <div className="metric__desc">{m.desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function About() {
+  const { t } = useT();
+  return (
+    <section className="about reveal" id="nosotros">
+      <div className="shell">
+        <div className="about__grid">
+          <div className="about__head">
+            <span className="eyebrow">{t.about.eyebrow}</span>
+            <h2>
+              {t.about.title1} <span className="it">{t.about.titleEm}</span> {t.about.title2}
+            </h2>
+          </div>
+          <div className="about__body">
+            <p>{t.about.p1}</p>
+            <p>{t.about.p2}</p>
+            <div className="about__pull">
+              <span className="about__quote-mark">“</span>
+              <p>{t.about.pull}</p>
+            </div>
+            <div className="about__pillars">
+              {t.about.pillars.map((p, i) => (
+                <div className="about__pillar" key={i}>
+                  <span className="about__pillar-num">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="about__pillar-label">{p.label}</span>
+                  <span className="about__pillar-desc">{p.desc}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Portfolio() {
+  const { t } = useT();
+  const variants = ["a", "b", "c", "d"];
+  return (
+    <section className="portfolio reveal" id="portafolio">
+      <div className="shell">
+        <header className="section-head">
+          <div className="section-head__left">
+            <span className="eyebrow">{t.portfolio.eyebrow}</span>
+            <h2>{t.portfolio.title1} <span className="it">{t.portfolio.titleEm}</span> {t.portfolio.title2}</h2>
+          </div>
+          <p className="section-head__lede">{t.portfolio.lede}</p>
+        </header>
+        <div className="portfolio__grid">
+          {PORTFOLIO.map((p, i) => (
+            <a key={p.name} className={`port-card port-card--${variants[i]}`} href="#contacto">
+              <div className="port-card__img">
+                <span className="port-card__index">{String(i + 1).padStart(2, "0")}</span>
+                <img src={p.image} alt={p.name} loading="lazy" />
+              </div>
+              <div className="port-card__body">
+                <div>
+                  <div className="port-card__name">{p.name}</div>
+                </div>
+                <div className="port-card__meta">
+                  <span className="port-card__loc">{p.location}</span>
+                  <span className="port-card__view">{t.portfolio.view}</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Gallery() {
+  const { t } = useT();
+  const [lightboxIdx, setLightboxIdx] = useState(null);
+  const open = lightboxIdx !== null;
+  const close = () => setLightboxIdx(null);
+  const next = () => setLightboxIdx(i => (i + 1) % GALLERY.length);
+  const prev = () => setLightboxIdx(i => (i - 1 + GALLERY.length) % GALLERY.length);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e) => {
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowRight") next();
+      else if (e.key === "ArrowLeft") prev();
+    };
+    document.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [open]);
+
+  const current = open ? GALLERY[lightboxIdx] : null;
+
+  return (
+    <section className="gallery reveal" id="inspiracion">
+      <div className="shell">
+        <header className="section-head">
+          <div className="section-head__left">
+            <span className="eyebrow">{t.gallery.eyebrow}</span>
+            <h2>{t.gallery.title1} <span className="it">{t.gallery.titleEm}</span> {t.gallery.title2}</h2>
+          </div>
+          <p className="section-head__lede">{t.gallery.lede}</p>
+        </header>
+        <div className="gallery__grid">
+          {GALLERY.map((g, i) => (
+            <figure key={g.id} className={`gallery__item gallery__item--${g.id}`}
+              onClick={() => setLightboxIdx(i)}
+              role="button" tabIndex={0}
+              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setLightboxIdx(i); } }}
+              aria-label={g.caption}>
+              <img src={g.url} alt={g.caption} loading="lazy" />
+              <figcaption className="gallery__caption">{g.caption}</figcaption>
+              <span className="gallery__zoom" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <circle cx="6" cy="6" r="4.5" stroke="currentColor" strokeWidth="1.3"/>
+                  <path d="M4 6h4M6 4v4M9.6 9.6l3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/>
+                </svg>
+              </span>
+            </figure>
+          ))}
+        </div>
+      </div>
+      {open && (
+        <div className="lb" onClick={close} role="dialog" aria-modal="true">
+          <button className="lb__close" onClick={close} aria-label={t.gallery.lightboxClose}>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M3 3l12 12M15 3L3 15" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+            </svg>
+          </button>
+          <button className="lb__nav lb__nav--prev" onClick={(e) => { e.stopPropagation(); prev(); }} aria-label={t.gallery.lightboxPrev}>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M13 4l-7 7 7 7" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <button className="lb__nav lb__nav--next" onClick={(e) => { e.stopPropagation(); next(); }} aria-label={t.gallery.lightboxNext}>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M9 4l7 7-7 7" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <figure className="lb__figure" onClick={(e) => e.stopPropagation()}>
+            <img key={current.url} src={current.url} alt={current.caption} className="lb__img" />
+            <figcaption className="lb__cap">
+              <span className="lb__name">{current.caption}</span>
+              <span className="lb__count">{String(lightboxIdx + 1).padStart(2, "0")} / {String(GALLERY.length).padStart(2, "0")}</span>
+            </figcaption>
+          </figure>
+        </div>
+      )}
+    </section>
+  );
+}
+
+function CatalogChips() {
+  const { t } = useT();
+  return (
+    <section className="catalog reveal">
+      <div className="shell">
+        <header className="section-head">
+          <div className="section-head__left">
+            <span className="eyebrow">{t.chipPortfolio.eyebrow}</span>
+            <h2>{t.chipPortfolio.title1} <span className="it">{t.chipPortfolio.titleEm}</span> {t.chipPortfolio.title2}</h2>
+          </div>
+          <p className="section-head__lede">{t.chipPortfolio.lede}</p>
+        </header>
+        <div className="catalog__chips">
+          {CATALOG.map((name) => (
+            <a key={name} href="#contacto" className="catalog__chip">
+              <span className="catalog__dot" aria-hidden="true"></span>
+              <span className="catalog__name">{name}</span>
+            </a>
+          ))}
+        </div>
+        <div className="catalog__cta">
+          <a href="#contacto" className="btn btn--ghost">
+            {t.chipPortfolio.cta} <span className="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function WhatsappFab() {
+  return (
+    <a href={WA_URL} className="wa-fab" target="_blank" rel="noopener" aria-label="WhatsApp U·Capital">
+      <span className="wa-fab__pulse" aria-hidden="true"></span>
+      <span className="wa-fab__inner">
+        <svg className="wa-fab__icon" width="26" height="26" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+          <path d="M16.03 5.5c-5.78 0-10.48 4.7-10.48 10.48 0 1.85.48 3.65 1.4 5.24L5.5 26.5l5.43-1.42a10.4 10.4 0 0 0 5.1 1.31h.01c5.78 0 10.48-4.7 10.48-10.48 0-2.8-1.09-5.43-3.07-7.41a10.42 10.42 0 0 0-7.42-3z M16.03 24.6h-.01a8.7 8.7 0 0 1-4.43-1.21l-.32-.19-3.22.84.86-3.14-.21-.32a8.71 8.71 0 0 1-1.34-4.64c0-4.81 3.92-8.73 8.73-8.73a8.66 8.66 0 0 1 6.17 2.56 8.7 8.7 0 0 1 2.56 6.18c0 4.81-3.92 8.73-8.73 8.73z M20.81 18.27c-.26-.13-1.55-.76-1.79-.85-.24-.09-.41-.13-.59.13-.17.26-.67.85-.83 1.02-.15.17-.3.2-.57.07-.26-.13-1.11-.41-2.12-1.3-.78-.7-1.31-1.56-1.47-1.82-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.07-.13-.59-1.42-.81-1.94-.21-.51-.43-.44-.59-.45-.15-.01-.33-.01-.5-.01-.17 0-.46.07-.7.33-.24.26-.92.9-.92 2.19 0 1.29.94 2.54 1.07 2.71.13.17 1.86 2.83 4.5 3.97.63.27 1.12.43 1.5.55.63.2 1.2.17 1.66.1.5-.08 1.55-.63 1.77-1.25.22-.61.22-1.13.15-1.25-.07-.11-.24-.17-.5-.3z"/>
+        </svg>
+      </span>
+    </a>
+  );
+}
+
+function ContactForm() {
+  const { t, lang } = useT();
+  const { open: openPrivacy } = usePrivacy();
+  const [data, setData] = useState({
+    name: "", whatsapp: "", email: "", budget: "", propertyType: "", delivery: "", purpose: "", message: "",
+  });
+  const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  const update = (k) => (e) => setData({ ...data, [k]: e.target.value });
+  const setChip = (k, v) => setData({ ...data, [k]: v });
+
+  const submit = async (e) => {
+    e.preventDefault();
+    if (submitting) return;
+    const form = e.target;
+    setSubmitting(true);
+    try {
+      const fd = new FormData(form);
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: fd,
+        headers: { "Accept": "application/json" },
+      });
+      if (response.ok) {
+        setSent(true);
+      } else {
+        alert(lang === "en"
+          ? "There was an error sending your request. Please try again."
+          : "Hubo un error al enviar. Por favor intenta de nuevo.");
+      }
+    } catch (err) {
+      alert(lang === "en"
+        ? "There was an error sending your request. Please try again."
+        : "Hubo un error al enviar. Por favor intenta de nuevo.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const firstName = data.name.split(" ")[0];
+
+  return (
+    <section className="contact" id="contacto">
+      <div className="shell">
+        <div className="contact__grid">
+          <div className="contact__intro">
+            <span className="eyebrow">{t.contact.eyebrow}</span>
+            <h2>{t.contact.title1} <span className="it">{t.contact.titleEm}</span> {t.contact.title2}</h2>
+            <p>{t.contact.lede}</p>
+            <div className="contact__sig">
+              <div className="contact__sig-item">
+                <span className="l">{t.contact.sigPhone}</span>
+                <span className="v it">999 956 2850</span>
+              </div>
+              <div className="contact__sig-item">
+                <span className="l">{t.contact.sigWa}</span>
+                <a className="v it" href="https://wa.me/529999562850" target="_blank" rel="noopener">
+                  wa.me/529999562850
+                </a>
+              </div>
+              <div className="contact__sig-item">
+                <span className="l">{t.contact.sigOffice}</span>
+                <span className="v">{t.contact.officeValue}</span>
+              </div>
+            </div>
+          </div>
+
+          {sent ? (
+            <div className="form__success">
+              <span className="check" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M4 10.5l4 4 8-9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </span>
+              <h3>{t.contact.successTitle}, {firstName || t.contact.successFallback}.</h3>
+              <p>{t.contact.successBody}</p>
+              <button className="btn btn--ghost" style={{ marginTop: 8 }}
+                onClick={() => { setSent(false); setData({ name:"", whatsapp:"", email:"", budget:"", propertyType:"", delivery:"", purpose:"", message:"" }); }}>
+                {t.contact.successAgain}
+              </button>
+            </div>
+          ) : (
+          <form id="leadForm" className="form"
+            action="https://formspree.io/f/meedeabe"
+            method="POST"
+            onSubmit={submit}>
+            <input type="hidden" name="_subject" value={`Nueva solicitud U·Capital${data.name ? " — " + data.name : ""}`} />
+            <input type="hidden" name="_language" value={lang} />
+            <input type="hidden" name="presupuesto" value={data.budget} />
+            <input type="hidden" name="tipo_propiedad" value={data.propertyType} />
+            <input type="hidden" name="entrega" value={data.delivery} />
+            <input type="hidden" name="proposito" value={data.purpose} />
+            <div className="form__row">
+              <div className="field">
+                <label htmlFor="f-name">{t.contact.labelName} <span className="req">*</span></label>
+                <input id="f-name" name="nombre" type="text" required value={data.name} onChange={update("name")} placeholder={t.contact.phName} />
+              </div>
+              <div className="field">
+                <label htmlFor="f-wa">{t.contact.labelWhatsapp} <span className="req">*</span></label>
+                <input id="f-wa" name="whatsapp" type="tel" required value={data.whatsapp} onChange={update("whatsapp")} placeholder={t.contact.phWa} />
+              </div>
+            </div>
+            <div className="field">
+              <label htmlFor="f-email">{t.contact.labelEmail}</label>
+              <input id="f-email" name="email" type="email" value={data.email} onChange={update("email")} placeholder={t.contact.phEmail} />
+            </div>
+            <div className="field">
+              <label>{t.contact.labelBudget} <span className="req">*</span></label>
+              <div className="chips">
+                {t.contact.budgets.map(b => (
+                  <button type="button" key={b}
+                    className={`chip ${data.budget === b ? "is-active" : ""}`}
+                    onClick={() => setChip("budget", b)}>
+                    {b}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="field">
+              <label>{t.contact.labelType}</label>
+              <div className="chips">
+                {t.contact.types.map(ty => (
+                  <button type="button" key={ty}
+                    className={`chip ${data.propertyType === ty ? "is-active" : ""}`}
+                    onClick={() => setChip("propertyType", ty)}>
+                    {ty}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="form__row">
+              <div className="field">
+                <label>{t.contact.labelDelivery}</label>
+                <div className="chips">
+                  {t.contact.deliveries.map(d => (
+                    <button type="button" key={d}
+                      className={`chip ${data.delivery === d ? "is-active" : ""}`}
+                      onClick={() => setChip("delivery", d)}>
+                      {d}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="field">
+                <label>{t.contact.labelPurpose}</label>
+                <div className="chips">
+                  {t.contact.purposes.map(p => (
+                    <button type="button" key={p}
+                      className={`chip ${data.purpose === p ? "is-active" : ""}`}
+                      onClick={() => setChip("purpose", p)}>
+                      {p}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="field">
+              <label htmlFor="f-msg">{t.contact.labelMessage}</label>
+              <input id="f-msg" name="mensaje" type="text" value={data.message} onChange={update("message")} placeholder={t.contact.phMessage} />
+            </div>
+            <div className="form__submit">
+              <span className="form__hint">
+                {t.contact.hint.split(/(aviso de privacidad|privacy notice)/i).map((part, i) =>
+                  /^(aviso de privacidad|privacy notice)$/i.test(part)
+                    ? <a key={i} href="#" onClick={(e) => { e.preventDefault(); openPrivacy(); }} className="form__hint-link">{part}</a>
+                    : <React.Fragment key={i}>{part}</React.Fragment>
+                )}
+              </span>
+              <button type="submit" className="btn btn--primary" disabled={!data.name || !data.whatsapp || !data.budget || submitting}>
+                {submitting
+                  ? (lang === "en" ? "Sending…" : "Enviando…")
+                  : <>{t.contact.submit} <span className="arrow">→</span></>}
+              </button>
+            </div>
+          </form>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  const { t } = useT();
+  const { open: openPrivacy } = usePrivacy();
+  return (
+    <footer className="footer">
+      <div className="shell">
+        <div className="footer__grid">
+          <div className="footer__brand">
+            <img src={LOGO_WHITE} alt="U·Capital Inmobiliaria" />
+            <p>{t.footer.blurb}</p>
+            <div className="footer__lang">
+              <LangToggle />
+            </div>
+          </div>
+          <div className="footer__col">
+            <h4>{t.footer.colExplore}</h4>
+            <ul>
+              <li><a href="#portafolio">{t.footer.linkPortfolio}</a></li>
+              <li><a href="#inspiracion">{t.footer.linkInspiration}</a></li>
+              <li><a href="#contacto">{t.footer.linkContact}</a></li>
+            </ul>
+          </div>
+          <div className="footer__col">
+            <h4>{t.footer.colContact}</h4>
+            <ul>
+              <li><a href="tel:+529999562850" className="footer__phone">999 956 2850</a></li>
+              <li><a href="https://wa.me/529999562850" target="_blank" rel="noopener">{t.footer.whatsapp}</a></li>
+              <li>{t.footer.location}</li>
+            </ul>
+          </div>
+          <div className="footer__col">
+            <h4>{t.footer.colLegal}</h4>
+            <ul>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); openPrivacy(); }}>{t.footer.privacy}</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); openPrivacy(); }}>{t.footer.terms}</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer__bottom">
+          <span className="footer__legal">© {new Date().getFullYear()} U·Capital Inmobiliaria. {t.footer.rights}</span>
+          <span className="footer__legal">{t.footer.made}</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+/* ============================================================
+   Reveal-on-scroll
+   ============================================================ */
+function useReveal() {
+  useEffect(() => {
+    const els = document.querySelectorAll(".reveal");
+    if (!("IntersectionObserver" in window)) {
+      els.forEach(el => el.classList.add("in"));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add("in");
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(el => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+}
+
+/* ============================================================
+   Tweaks
+   ============================================================ */
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accent": "#c9a961",
+  "background": "#0a0a0a",
+  "headlineStyle": "elegant"
+}/*EDITMODE-END*/;
+
+function applyTweaks(t) {
+  const root = document.documentElement;
+  root.style.setProperty("--accent", t.accent);
+  const hex = t.accent.replace("#", "");
+  const r = parseInt(hex.slice(0,2), 16);
+  const g = parseInt(hex.slice(2,4), 16);
+  const b = parseInt(hex.slice(4,6), 16);
+  root.style.setProperty("--accent-dim", `rgba(${r}, ${g}, ${b}, 0.4)`);
+  root.style.setProperty("--accent-soft", `rgba(${r}, ${g}, ${b}, 0.08)`);
+  root.style.setProperty("--bg", t.background);
+  root.style.setProperty("--bg-2", t.background === "#0a0a0a" ? "#0f0f0f" : "#181410");
+
+  if (t.headlineStyle === "modern") {
+    root.style.setProperty("--serif", '"Tenor Sans", "Cormorant Garamond", serif');
+  } else if (t.headlineStyle === "editorial") {
+    root.style.setProperty("--serif", '"Bodoni Moda", "Cormorant Garamond", serif');
+  } else {
+    root.style.setProperty("--serif", '"Cormorant Garamond", "EB Garamond", Georgia, serif');
+  }
+}
+
+function Tweaks() {
+  const { lang } = useT();
+  const [tw, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  useEffect(() => { applyTweaks(tw); }, [tw]);
+  const L = lang === "en"
+    ? { color: "Color", accent: "Accent", bg: "Background", type: "Typography", head: "Headlines" }
+    : { color: "Color", accent: "Acento", bg: "Fondo", type: "Tipografía", head: "Titulares" };
+  return (
+    <TweaksPanel title="Tweaks">
+      <TweakSection label={L.color}>
+        <TweakColor label={L.accent} value={tw.accent} onChange={v => setTweak("accent", v)}
+          options={["#c9a961", "#b8965e", "#d4b878", "#e8dfd0", "#a87f3e"]} />
+        <TweakColor label={L.bg} value={tw.background} onChange={v => setTweak("background", v)}
+          options={["#0a0a0a", "#171310", "#0f0d0a", "#1a1612"]} />
+      </TweakSection>
+      <TweakSection label={L.type}>
+        <TweakRadio label={L.head} value={tw.headlineStyle} onChange={v => setTweak("headlineStyle", v)}
+          options={[
+            { value: "elegant", label: "Cormorant" },
+            { value: "editorial", label: "Bodoni" },
+            { value: "modern", label: "Tenor" },
+          ]} />
+      </TweakSection>
+    </TweaksPanel>
+  );
+}
+
+/* ============================================================
+   App
+   ============================================================ */
+function App() {
+  useReveal();
+  useEffect(() => { applyTweaks(TWEAK_DEFAULTS); }, []);
+  const [privacyOpen, setPrivacyOpen] = useState(false);
+  const privacyCtx = {
+    open: () => setPrivacyOpen(true),
+    close: () => setPrivacyOpen(false),
+  };
+  return (
+    <LangProvider>
+      <PrivacyContext.Provider value={privacyCtx}>
+        <Nav />
+        <Hero />
+        <Metrics />
+        <About />
+        <Portfolio />
+        <Gallery />
+        <ContactForm />
+        <CatalogChips />
+        <Footer />
+        <WhatsappFab />
+        <Tweaks />
+        <PrivacyModal open={privacyOpen} onClose={privacyCtx.close} />
+      </PrivacyContext.Provider>
+    </LangProvider>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
+  </script>
 </body>
 </html>
