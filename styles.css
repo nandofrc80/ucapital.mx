@@ -1190,7 +1190,13 @@ section {
   .footer__bottom { flex-direction: column; align-items: flex-start; }
 }
 
-/* —————————————————————————————————————————— Footer brand — ajuste móvil */
+/* —————————————————————————————————————————— Footer brand — logo grande y centrado */
+
+.footer__brand img {
+  height: 160px !important;
+  width: auto !important;
+  margin-bottom: 28px !important;
+}
 
 @media (max-width: 600px) {
   .footer__brand {
@@ -1200,8 +1206,8 @@ section {
     align-items: center;
   }
   .footer__brand img {
-    height: 96px;
-    margin-bottom: 28px;
+    height: 140px !important;
+    margin-bottom: 28px !important;
   }
   .footer__brand p {
     max-width: 36ch;
