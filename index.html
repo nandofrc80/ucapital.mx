@@ -2481,25 +2481,28 @@ const { useState, useEffect, useRef, useContext, createContext } = React;
    Swap any image URL below — copy lives in i18n.js
    ============================================================ */
 
-const HERO_IMAGE = "https://ucapital.mx/Laja_hero.jpg";
+const HERO_IMAGE = "Laja_hero.jpg";
 
 const PORTFOLIO = [
-  { name: "Estela Nativa",     location: "Conkal, Mérida", image: "https://ucapital.mx/Estela_Nativa.jpg" },
-  { name: "Aldoria",           location: "Conkal, Mérida", image: "https://ucapital.mx/Aldoria.jpg" },
-  { name: "NAIA",              location: "Conkal, Mérida", image: "https://ucapital.mx/NAIA.jpg" },
-  { name: "Cumbres Novonorte", location: "Conkal, Mérida", image: "https://ucapital.mx/CUMBRES.jpg" },
+  { name: "Estela Nativa",     location: "Conkal, Mérida", image: "foto1.jpg" },
+  { name: "Aldoria",           location: "Conkal, Mérida", image: "foto3.jpg" },
+  { name: "NAIA",              location: "Conkal, Mérida", image: "foto2.jpg" },
+  { name: "Cumbres Novonorte", location: "Conkal, Mérida", image: "foto4.jpg" },
 ];
 
 const GALLERY = [
-  { id: "01", url: "https://ucapital.mx/Laja_hero.jpg",     caption: "Laja Residencial" },
-  { id: "02", url: "https://ucapital.mx/Estela_Nativa.jpg", caption: "Estela Nativa" },
-  { id: "03", url: "https://ucapital.mx/NAIA.jpg",          caption: "NAIA" },
-  { id: "04", url: "https://ucapital.mx/Aldoria.jpg",       caption: "Aldoria" },
-  { id: "05", url: "https://ucapital.mx/CUMBRES.jpg",       caption: "Cumbres Novonorte" },
-  { id: "06", url: "https://ucapital.mx/veta.jpg",          caption: "Veta" },
+  { id: "01", url: "foto1.jpg", caption: "Estela Nativa" },
+  { id: "02", url: "foto2.jpg", caption: "NAIA" },
+  { id: "03", url: "foto3.jpg", caption: "Aldoria" },
+  { id: "04", url: "foto4.jpg", caption: "Cumbres Novonorte" },
+  { id: "05", url: "foto5.jpg", caption: "Veta" },
+  // Para agregar fotos: sube fotoN.jpg a GitHub y descomenta la línea correspondiente
+  // { id: "06", url: "foto6.jpg", caption: "Desarrollo 6" },
+  // { id: "07", url: "foto7.jpg", caption: "Desarrollo 7" },
+  // { id: "08", url: "foto8.jpg", caption: "Desarrollo 8" },
 ];
 
-const LOGO_WHITE = "https://ucapital.mx/ucapital_white.png";
+const LOGO_WHITE = "ucapital_white.png";
 
 /* Catalog of developments shown in the chip section before the footer.
    Add/remove names freely — they reflow automatically. */
