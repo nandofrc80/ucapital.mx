@@ -2481,25 +2481,22 @@ const { useState, useEffect, useRef, useContext, createContext } = React;
    Swap any image URL below — copy lives in i18n.js
    ============================================================ */
 
-const HERO_IMAGE = "Laja_hero.jpg";
+const HERO_IMAGE = "hero_main.jpg";
 
 const PORTFOLIO = [
-  { name: "Estela Nativa",     location: "Conkal, Mérida", image: "foto1.jpg" },
-  { name: "Aldoria",           location: "Conkal, Mérida", image: "foto3.jpg" },
-  { name: "NAIA",              location: "Conkal, Mérida", image: "foto2.jpg" },
-  { name: "Cumbres Novonorte", location: "Conkal, Mérida", image: "foto4.jpg" },
+  { name: "Estela Nativa",     location: "Conkal, Mérida", image: "Estela_Nativa.jpg" },
+  { name: "Aldoria",           location: "Conkal, Mérida", image: "Aldoria.jpg" },
+  { name: "NAIA",              location: "Conkal, Mérida", image: "NAIA.jpg" },
+  { name: "Cumbres Novonorte", location: "Conkal, Mérida", image: "CUMBRES.jpg" },
 ];
 
 const GALLERY = [
-  { id: "01", url: "foto1.jpg", caption: "Estela Nativa" },
-  { id: "02", url: "foto2.jpg", caption: "NAIA" },
-  { id: "03", url: "foto3.jpg", caption: "Aldoria" },
-  { id: "04", url: "foto4.jpg", caption: "Cumbres Novonorte" },
-  { id: "05", url: "foto5.jpg", caption: "Veta" },
-  // Para agregar fotos: sube fotoN.jpg a GitHub y descomenta la línea correspondiente
-  // { id: "06", url: "foto6.jpg", caption: "Desarrollo 6" },
-  // { id: "07", url: "foto7.jpg", caption: "Desarrollo 7" },
-  // { id: "08", url: "foto8.jpg", caption: "Desarrollo 8" },
+  { id: "01", url: "insp_01.jpg", caption: "" },
+  { id: "02", url: "insp_02.jpg", caption: "" },
+  { id: "03", url: "insp_03.jpg", caption: "" },
+  { id: "04", url: "insp_04.jpg", caption: "" },
+  { id: "05", url: "insp_05.jpg", caption: "" },
+  { id: "06", url: "insp_06.jpg", caption: "" },
 ];
 
 const LOGO_WHITE = "ucapital_white.png";
@@ -2852,9 +2849,8 @@ function Gallery() {
               onClick={() => setLightboxIdx(i)}
               role="button" tabIndex={0}
               onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setLightboxIdx(i); } }}
-              aria-label={g.caption}>
-              <img src={g.url} alt={g.caption} loading="lazy" />
-              <figcaption className="gallery__caption">{g.caption}</figcaption>
+              aria-label="Ver imagen">
+              <img src={g.url} alt="" loading="lazy" />
               <span className="gallery__zoom" aria-hidden="true">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <circle cx="6" cy="6" r="4.5" stroke="currentColor" strokeWidth="1.3"/>
@@ -2883,9 +2879,8 @@ function Gallery() {
             </svg>
           </button>
           <figure className="lb__figure" onClick={(e) => e.stopPropagation()}>
-            <img key={current.url} src={current.url} alt={current.caption} className="lb__img" />
+            <img key={current.url} src={current.url} alt="" className="lb__img" />
             <figcaption className="lb__cap">
-              <span className="lb__name">{current.caption}</span>
               <span className="lb__count">{String(lightboxIdx + 1).padStart(2, "0")} / {String(GALLERY.length).padStart(2, "0")}</span>
             </figcaption>
           </figure>
