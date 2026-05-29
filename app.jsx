@@ -7,7 +7,7 @@ const { useState, useEffect, useRef, useContext, createContext } = React;
    Swap any image URL below — copy lives in i18n.js
    ============================================================ */
 
-const HERO_IMAGE = "https://ucapital.mx/Laja_hero.jpg";
+const HERO_IMAGE = "https://ucapital.mx/hero_main.jpg";
 
 const PORTFOLIO = [
   { name: "Estela Nativa",     location: "Conkal, Mérida", image: "https://ucapital.mx/Estela_Nativa.jpg" },
@@ -17,12 +17,12 @@ const PORTFOLIO = [
 ];
 
 const GALLERY = [
-  { id: "01", url: "https://ucapital.mx/Laja_hero.jpg",     caption: "Laja Residencial" },
-  { id: "02", url: "https://ucapital.mx/Estela_Nativa.jpg", caption: "Estela Nativa" },
-  { id: "03", url: "https://ucapital.mx/NAIA.jpg",          caption: "NAIA" },
-  { id: "04", url: "https://ucapital.mx/Aldoria.jpg",       caption: "Aldoria" },
-  { id: "05", url: "https://ucapital.mx/CUMBRES.jpg",       caption: "Cumbres Novonorte" },
-  { id: "06", url: "https://ucapital.mx/veta.jpg",          caption: "Veta" },
+  { id: "01", url: "https://ucapital.mx/insp_01.jpg", caption: "" },
+  { id: "02", url: "https://ucapital.mx/insp_02.jpg", caption: "" },
+  { id: "03", url: "https://ucapital.mx/insp_03.jpg", caption: "" },
+  { id: "04", url: "https://ucapital.mx/insp_04.jpg", caption: "" },
+  { id: "05", url: "https://ucapital.mx/insp_05.jpg", caption: "" },
+  { id: "06", url: "https://ucapital.mx/insp_06.jpg", caption: "" },
 ];
 
 const LOGO_WHITE = "https://ucapital.mx/ucapital_white.png";
@@ -337,8 +337,7 @@ function Gallery() {
         <div className="gallery__grid">
           {GALLERY.map(g => (
             <figure key={g.id} className={`gallery__item gallery__item--${g.id}`}>
-              <img src={g.url} alt={g.caption} loading="lazy" />
-              <figcaption className="gallery__caption">{g.caption}</figcaption>
+              <img src={g.url} alt="" loading="lazy" />
             </figure>
           ))}
         </div>
