@@ -4,7 +4,7 @@ titulo: "Aviso de privacidad"
 permalink: /aviso-de-privacidad/
 alt: "/en/privacy/"
 ---
-<p class="legal__meta">Última actualización: mayo de 2026</p>
+<p class="legal__meta">Última actualización: noviembre de 2026</p>
 
 De conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), su Reglamento y demás disposiciones aplicables, U·Capital Inmobiliaria pone a su disposición el presente Aviso de Privacidad.
 
@@ -44,7 +44,7 @@ Sus datos se conservan en sistemas con medidas administrativas, técnicas y fís
 
 ## 7. Uso de cookies y tecnologías similares
 
-Este sitio puede utilizar cookies o tecnologías similares con fines analíticos y de mejora de experiencia. Usted puede deshabilitarlas desde la configuración de su navegador.
+Este sitio utiliza Google Analytics, un servicio de Google que emplea cookies para generar estadísticas anónimas sobre el uso del sitio (por ejemplo, páginas visitadas, tiempo de navegación, tipo de dispositivo y la ciudad o país aproximados de la visita). Esta información no nos permite identificarle personalmente y la usamos únicamente para mejorar el sitio y nuestros servicios. Usted puede deshabilitar las cookies desde la configuración de su navegador o instalar el complemento de inhabilitación de Google Analytics.
 
 ## 8. Cambios al aviso
 

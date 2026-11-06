@@ -2,6 +2,13 @@
 <!doctype html>
 <html lang="{{ T.html_lang }}">
 <head>
+  <!-- Google tag (Analytics) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WJ5QPDKS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- if page.ref %}{% assign _pp = site.propiedades | where: "slug", page.ref | first %}{% else %}{% assign _pp = page %}{% endif -%}
@@ -40,6 +47,6 @@
   </main>
   {% include pie.html %}
   {% include asistente.html %}
-  <script src="{{ '/assets/js/site.js' | relative_url }}?v=3" defer></script>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v=4" defer></script>
 </body>
 </html>

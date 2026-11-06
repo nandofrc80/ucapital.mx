@@ -2,6 +2,24 @@
 (function () {
   "use strict";
   var EN = (document.documentElement.lang || "").indexOf("en") === 0;
+
+  /* Medición en Google Analytics: clics a WhatsApp, formularios y asistente */
+  var medir = function (evento, datos) {
+    try { if (typeof window.gtag === "function") window.gtag("event", evento, datos || {}); } catch (e) {}
+  };
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="wa.me/"]');
+    if (!a) return;
+    var origen = a.hasAttribute("data-asis-lead") ? "asistente"
+      : a.closest(".modelo") ? "modelo"
+      : a.closest(".ficha__side, .ficha__movil") ? "ficha"
+      : a.classList.contains("wa-float") ? "boton_flotante"
+      : a.closest(".nav") ? "menu"
+      : a.closest(".footer") ? "pie"
+      : a.closest(".asis") ? "asistente_directo"
+      : "otro";
+    medir("generate_lead", { method: "whatsapp", origen: origen, idioma: EN ? "en" : "es" });
+  }, true);
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
@@ -128,6 +146,7 @@
         .then(function (r) {
           if (!r.ok) throw new Error("HTTP " + r.status);
           form.classList.add("is-sent");
+          medir("generate_lead", { method: "formulario", origen: form.classList.contains("form--compacto") ? "ficha" : "contacto", idioma: EN ? "en" : "es" });
           if (ok) { ok.hidden = false; ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
         })
         .catch(function () { if (err) err.hidden = false; })
@@ -170,7 +189,7 @@
     function inicio() {
       paso = -1; resp = {};
       body.innerHTML = '<p class="asis__msg">' + esc(TX.hola) + '</p><button type="button" class="btn btn--navy btn--block" data-a="start">' + esc(TX.empezar) + '</button>';
-      $("[data-a=start]", body).addEventListener("click", function () { pregunta(0); });
+      $("[data-a=start]", body).addEventListener("click", function () { medir("asistente_inicio"); pregunta(0); });
     }
     function pregunta(i) {
       paso = i; var q = TX.q[i];
@@ -206,6 +225,7 @@
       });
       hits.sort(function (a, b) { return a.min - b.min; });
       hits = hits.slice(0, 4);
+      medir("asistente_resultados", { resultados: hits.length, presupuesto: resp.pres || "", recamaras: resp.rec || "" });
       var h = '<p class="asis__msg">' + esc(hits.length ? TX.res_si : TX.res_no) + '</p>';
       if (hits.length) {
         h += '<ul class="asis__res">';

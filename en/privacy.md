@@ -5,7 +5,7 @@ titulo: "Privacy notice"
 permalink: /en/privacy/
 alt: "/aviso-de-privacidad/"
 ---
-<p class="legal__meta">Last updated: May 2026 · This is a courtesy translation; the <a href="/aviso-de-privacidad/">Spanish version</a> is the legally binding one.</p>
+<p class="legal__meta">Last updated: November 2026 · This is a courtesy translation; the <a href="/aviso-de-privacidad/">Spanish version</a> is the legally binding one.</p>
 
 In compliance with Mexico's Federal Law on the Protection of Personal Data Held by Private Parties (LFPDPPP), its Regulations and other applicable provisions, U·Capital Inmobiliaria provides the following Privacy Notice.
 
@@ -45,7 +45,7 @@ Your data is kept in systems with reasonable administrative, technical and physi
 
 ## 7. Cookies and similar technologies
 
-This site may use cookies or similar technologies for analytics and to improve your experience. You can disable them in your browser settings.
+This site uses Google Analytics, a Google service that uses cookies to generate anonymous statistics about how the site is used (for example, pages visited, time on site, device type and the approximate city or country of the visit). This information does not allow us to identify you personally, and we use it only to improve the site and our services. You can disable cookies in your browser settings or install the Google Analytics opt-out browser add-on.
 
 ## 8. Changes to this notice
 
