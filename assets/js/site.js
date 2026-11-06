@@ -135,6 +135,101 @@
     });
   });
 
+  /* Asistente guiado: preguntas → desarrollos que coinciden → WhatsApp con resumen */
+  var asis = $("[data-asis]");
+  if (asis) (function () {
+    var TX = {}, D = { props: [] };
+    try { TX = JSON.parse($("[data-asis-txt]", asis).textContent); D = JSON.parse($("[data-asis-datos]", asis).textContent); } catch (e) { return; }
+    var panel = $("[data-asis-panel]", asis), body = $("[data-asis-body]", asis), toggle = $("[data-asis-toggle]", asis);
+    var teaser = $("[data-asis-teaser]", asis);
+    $("[data-asis-directo-txt]", asis).textContent = TX.directo;
+    toggle.setAttribute("aria-label", TX.abrir);
+    $(".asis__teaser-txt", asis).textContent = TX.teaser;
+    var resp = {}, paso = -1;
+    var store = { get: function (k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } },
+                  set: function (k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} } };
+    var esc = function (t) { var d = document.createElement("div"); d.textContent = t; return d.innerHTML; };
+    var fmt = function (n) { return "$" + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); };
+    var etiqueta = function (q, v) { for (var i = 0; i < q.o.length; i++) if (q.o[i][0] === v) return q.o[i][1]; return v; };
+
+    var abrir = function () {
+      panel.hidden = false; toggle.setAttribute("aria-expanded", "true"); asis.classList.add("is-open");
+      if (teaser) teaser.hidden = true; store.set("asis-visto", "1");
+      if (paso === -1) inicio();
+    };
+    var cerrar = function () { panel.hidden = true; toggle.setAttribute("aria-expanded", "false"); asis.classList.remove("is-open"); };
+    toggle.addEventListener("click", function () { panel.hidden ? abrir() : cerrar(); });
+    $$("[data-asis-open]", asis).forEach(function (b) { b.addEventListener("click", abrir); });
+    $("[data-asis-close]", asis).addEventListener("click", cerrar);
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !panel.hidden) cerrar(); });
+    if (teaser) {
+      $("[data-asis-teaser-x]", asis).addEventListener("click", function () { teaser.hidden = true; store.set("asis-visto", "1"); });
+      if (!store.get("asis-visto")) setTimeout(function () { if (panel.hidden) teaser.hidden = false; }, 9000);
+    }
+
+    function inicio() {
+      paso = -1; resp = {};
+      body.innerHTML = '<p class="asis__msg">' + esc(TX.hola) + '</p><button type="button" class="btn btn--navy btn--block" data-a="start">' + esc(TX.empezar) + '</button>';
+      $("[data-a=start]", body).addEventListener("click", function () { pregunta(0); });
+    }
+    function pregunta(i) {
+      paso = i; var q = TX.q[i];
+      var h = '<p class="asis__paso">' + (i + 1) + ' / ' + TX.q.length + '</p><p class="asis__msg">' + esc(q.t) + '</p><div class="asis__ops">';
+      q.o.forEach(function (o) { h += '<button type="button" class="chip-btn" data-v="' + esc(o[0]) + '">' + esc(o[1]) + '</button>'; });
+      h += '</div><button type="button" class="asis__link" data-a="back">← ' + esc(TX.atras) + '</button>';
+      body.innerHTML = h;
+      $$("[data-v]", body).forEach(function (b) {
+        b.addEventListener("click", function () {
+          resp[q.k] = b.getAttribute("data-v");
+          if (i + 1 < TX.q.length) pregunta(i + 1); else resultados();
+        });
+      });
+      $("[data-a=back]", body).addEventListener("click", function () { i > 0 ? pregunta(i - 1) : inicio(); });
+      var first = $("[data-v]", body); if (first) first.focus();
+    }
+    function resultados() {
+      paso = TX.q.length;
+      var pr = (resp.pres || "0-0").split("-"), lo = +pr[0] || 0, hi = +pr[1] || 0, rec = +resp.rec || 0;
+      var hits = [];
+      D.props.forEach(function (p) {
+        var ms = p.m.filter(function (m) {
+          if (!(m.p > 0)) return false;
+          if (hi && m.p > hi * 1.03) return false;
+          if (lo && m.p < lo * 0.9) return false;
+          if (rec && Math.max(m.rm, m.r) < rec) return false;
+          return true;
+        });
+        if (ms.length) {
+          var min = Math.min.apply(null, ms.map(function (m) { return m.p; }));
+          hits.push({ p: p, ms: ms, min: min });
+        }
+      });
+      hits.sort(function (a, b) { return a.min - b.min; });
+      hits = hits.slice(0, 4);
+      var h = '<p class="asis__msg">' + esc(hits.length ? TX.res_si : TX.res_no) + '</p>';
+      if (hits.length) {
+        h += '<ul class="asis__res">';
+        hits.forEach(function (x) {
+          var nombres = x.ms.map(function (m) { return m.n; }).filter(Boolean).join(", ");
+          h += '<li><a href="' + esc(x.p.u) + '"><img src="' + esc(x.p.img) + '" alt="" loading="lazy"><span><strong>' + esc(x.p.n) + '</strong><small>' + esc(TX.desde) + ' ' + fmt(x.min) + ' MXN · ' + esc(x.p.zona) + '</small>' + (nombres ? '<small>' + esc(TX.modelos) + ': ' + esc(nombres) + '</small>' : '') + '</span></a></li>';
+        });
+        h += '</ul>';
+      }
+      var q = TX.q, lineas = [TX.wa_ini,
+        TX.wa_busco + ": " + etiqueta(q[0], resp.para),
+        TX.wa_pres + ": " + etiqueta(q[1], resp.pres),
+        TX.wa_rec + ": " + etiqueta(q[2], resp.rec),
+        TX.wa_cuando + ": " + etiqueta(q[3], resp.cuando)];
+      if (hits.length) lineas.push(TX.wa_interes + ": " + hits.map(function (x) { return x.p.n; }).join(", "));
+      lineas.push(TX.wa_fin);
+      var url = "https://wa.me/" + D.wa + "?text=" + encodeURIComponent(lineas.join("\n"));
+      h += '<a class="btn btn--wa btn--block" href="' + url + '" target="_blank" rel="noopener" data-asis-lead>' + esc(TX.cta) + '</a>';
+      h += '<p class="asis__nota">' + esc(TX.nota) + '</p><button type="button" class="asis__link" data-a="again">↺ ' + esc(TX.reiniciar) + '</button>';
+      body.innerHTML = h;
+      $("[data-a=again]", body).addEventListener("click", function () { pregunta(0); });
+    }
+  })();
+
   /* Aparición suave al hacer scroll */
   if ("IntersectionObserver" in window) {
     var els = $$(".section__head, .card, .modelo, .steps li, .about__media img, .about__text, .mosaic img, .contacto__form");
