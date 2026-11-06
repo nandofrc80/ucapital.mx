@@ -610,7 +610,7 @@ p { margin: 0 0 1em; }
 .nota-aviso strong { color: var(--navy); }
 .nota__texto { font-size: 1.06rem; line-height: 1.75; color: var(--ink); }
 .nota__texto > p:first-child { font-size: 1.16rem; }
-.nota__texto .grafica + p { font-size: .85rem; color: var(--ink-soft); margin-top: -12px; }
+.nota__texto .grafica-fuente { font-size: .85rem; color: var(--ink-soft); margin-top: -12px; }
 .nota__texto h2 { font-size: clamp(1.6rem, 2.6vw, 2.05rem); margin: 44px 0 14px; }
 .nota__texto h3 { font-size: 1.4rem; margin: 0 0 10px; }
 .nota__texto ul { padding-left: 20px; display: grid; gap: 10px; }

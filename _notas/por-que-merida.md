@@ -45,6 +45,7 @@ La percepción también acompaña. En la Encuesta Nacional de Seguridad Pública
 </figure>
 
 Fuentes de la gráfica: septiembre de 2025 y 2026,[^lupa] marzo y junio de 2026.[^diario-ensu][^universal-ensu]
+{: .grafica-fuente}
 
 Para ser justos con la comparación: en esa misma encuesta de septiembre, la ciudad de Querétaro registró 26.8% de percepción de inseguridad, por debajo de Mérida.[^qro-ensu] Las dos ciudades están entre las mejor evaluadas del país; donde Yucatán se separa con claridad es en la tasa de homicidios.
 
