@@ -3,7 +3,7 @@ nombre: "Cumbres Novonorte"
 publicado: true
 destacado: true
 datos_de_ejemplo: false
-orden: 3
+orden: 4
 tipo: "Casa"
 estatus: "Preventa"
 zona: "Conkal"

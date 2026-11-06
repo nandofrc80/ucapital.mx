@@ -3,7 +3,7 @@ nombre: "NAIA"
 publicado: true
 destacado: true
 datos_de_ejemplo: true
-orden: 3
+orden: 10
 tipo: "Casa"
 estatus: "Preventa"
 zona: "Conkal"
