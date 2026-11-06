@@ -16,7 +16,7 @@ apartado: "Aparta con $10,000 MXN."
 enganche: "10% del valor total al firmar la promesa de compraventa, 7 días después del apartado."
 financiamiento: "El saldo se cubre con recursos propios, crédito bancario o Infonavit Total. Te asesoramos sin costo con las opciones y requisitos."
 precios_actualizados: "5 de noviembre de 2026"
-promocion: "Casas de entrega inmediata (Carey, Quetzal y Quetzal Plus): bono de descuento de $100,000 en Carey y de $50,000 en Quetzal y Quetzal Plus. Incluyen clósets abiertos en recámaras, fijos de cristal templado en baños y puertas en clósets de blancos.\nModelo Ibis en preventa: incluye clósets abiertos en recámaras, fijos de cristal templado en baños y puertas en clósets de blancos.\nSujeto a disponibilidad."
+promocion: "Casas de entrega inmediata (Carey, Quetzal y Quetzal Plus): bono de descuento de $100,000 en Carey y de $50,000 en Quetzal y Quetzal Plus. Incluyen clósets abiertos en recámaras, fijos de cristal templado en baños y puertas en clósets de blancos.\nModelo Ibis en preventa: incluye clósets abiertos en recámaras, fijos de cristal templado en baños y puertas en clósets de blancos.\nVigente hasta el 30 de noviembre de 2026. Sujeto a disponibilidad."
 portada: /fotos/estela-nativa/portada.jpg
 fotos:
   - /fotos/estela-nativa/portada.jpg
@@ -95,7 +95,7 @@ modelos:
       - /fotos/estela-nativa/ibis-1.jpg
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
-  "promocion": "Move-in-ready homes (Carey, Quetzal and Quetzal Plus): $100,000 MXN discount bonus on Carey and $50,000 MXN on Quetzal and Quetzal Plus. They include open closets in the bedrooms, tempered-glass panels in the bathrooms and doors on the linen closets.\nIbis model (pre-sale): includes open closets in the bedrooms, tempered-glass panels in the bathrooms and doors on the linen closets.\nSubject to availability."
+  "promocion": "Move-in-ready homes (Carey, Quetzal and Quetzal Plus): $100,000 MXN discount bonus on Carey and $50,000 MXN on Quetzal and Quetzal Plus. They include open closets in the bedrooms, tempered-glass panels in the bathrooms and doors on the linen closets.\nIbis model (pre-sale): includes open closets in the bedrooms, tempered-glass panels in the bathrooms and doors on the linen closets.\nValid through November 30, 2026. Subject to availability."
   "entrega": "Immediate to October 2027"
   "apartado": "Reserve with $10,000 MXN."
   "enganche": "10% of the total price when signing the purchase agreement, 7 days after the reservation."
