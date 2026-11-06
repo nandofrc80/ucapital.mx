@@ -62,8 +62,7 @@ modelos:
     banos: 2.5
     construccion: 119
     construccion_max: 235
-    terreno: 248
-    terreno_desde: true
+    terreno: 253
     estacionamientos: 2
     precio: 3210000
     descripcion: "Sala, comedor y cocina con barra de granito, medio baño de visitas, terraza, área de lavado y espacio para bodega en planta baja; en planta alta, recámara con clóset vestidor y baño, y recámara secundaria con baño."
@@ -114,6 +113,6 @@ modelos:
 ---
 Una privada pensada para vivir en armonía al norte de Mérida. Su casa club y tres parques, conectados por senderos, suman más de 15 amenidades para el día a día: hacer ejercicio, pasear a tu mascota, organizar una parrillada o simplemente disfrutar del entorno natural.
 
-Puedes elegir entre cuatro modelos de casa, de una o dos plantas y de 2 a 4 recámaras, en terrenos desde 248 m². Todas se entregan con carpintería en gavetas inferiores de cocina y vanity en los baños, y puedes personalizarlas con adicionales como piscina, terraza techada, cochera techada o recámaras extra.
+Puedes elegir entre cuatro modelos de casa, de una o dos plantas y de 2 a 4 recámaras, en terrenos de 253 m² (11 × 23 m). Todas se entregan con carpintería en gavetas inferiores de cocina y vanity en los baños, y puedes personalizarlas con adicionales como piscina, terraza techada, cochera techada o recámaras extra.
 
 Hay casas con escrituración inmediata y otras en preventa con entrega escalonada por etapa. Te ayudamos a comparar modelos, lotes disponibles y esquemas de pago.
