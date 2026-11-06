@@ -1,25 +1,28 @@
 {%- assign p = include.p -%}
+{%- include stats.html p=p -%}
 {%- assign n_fotos = p.fotos | size -%}
-<article class="card" data-tipo="{{ p.tipo }}" data-zona="{{ p.zona }}" data-estatus="{{ p.estatus }}" data-precio="{{ p.precio | default: 0 }}" data-recamaras="{{ p.recamaras | plus: 0 }}">
+{%- assign n_modelos = p.modelos | size -%}
+<article class="card" data-tipo="{{ p.tipo }}" data-zona="{{ p.zona }}" data-estatus="{{ p.estatus }}" data-precio="{{ st_precio }}" data-recamaras="{{ st_rec_max }}">
   <a class="card__link" href="{{ p.url | relative_url }}" aria-label="Ver {{ p.nombre }}">
     <div class="card__media">
       <img src="{{ p.portada | default: p.fotos.first | relative_url }}" alt="{{ p.nombre }} — {{ p.tipo }} en {{ p.zona }}" loading="lazy" decoding="async">
       <div class="card__badges">
         {%- if p.estatus %}<span class="badge">{{ p.estatus }}</span>{% endif -%}
+        {%- if p.promocion and p.promocion != "" %}<span class="badge badge--promo">Promoción</span>{% endif -%}
         {%- if p.datos_de_ejemplo %}<span class="badge badge--aviso">Datos de ejemplo</span>{% endif -%}
       </div>
-      {%- if n_fotos > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ n_fotos }}</span>{% endif %}
+      {%- if n_modelos > 0 %}<span class="card__count">{{ n_modelos }} modelos</span>{% elsif n_fotos > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ n_fotos }}</span>{% endif %}
     </div>
     <div class="card__body">
       <p class="card__tipo">{{ p.tipo }}</p>
       <h3 class="card__title">{{ p.nombre }}</h3>
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
-      <p class="precio">{% include precio.html p=p %}</p>
+      <p class="precio">{% include precio.html p=p monto=st_precio %}</p>
       <ul class="specs">
-        {%- if p.recamaras and p.recamaras != "" %}<li title="Recámaras">{% include icono.html n="cama" %}<span>{{ p.recamaras }}</span><small>Recámaras</small></li>{% endif -%}
-        {%- if p.banos and p.banos != "" %}<li title="Baños">{% include icono.html n="regadera" %}<span>{{ p.banos }}</span><small>Baños</small></li>{% endif -%}
-        {%- if p.construccion and p.construccion > 0 %}<li title="Metros de construcción">{% include icono.html n="construccion" %}<span>{{ p.construccion }} m²</span><small>Construcción</small></li>{% endif -%}
-        {%- if p.terreno and p.terreno > 0 %}<li title="Metros de terreno">{% include icono.html n="terreno" %}<span>{{ p.terreno }} m²</span><small>Terreno</small></li>{% endif -%}
+        {%- if st_rec and st_rec != "" %}<li title="Recámaras">{% include icono.html n="cama" %}<span>{{ st_rec }}</span><small>Recámaras</small></li>{% endif -%}
+        {%- if st_ban and st_ban != "" %}<li title="Baños">{% include icono.html n="regadera" %}<span>{{ st_ban }}</span><small>Baños</small></li>{% endif -%}
+        {%- if st_con != "" %}<li title="Metros de construcción">{% include icono.html n="construccion" %}<span>{{ st_con | remove: " m²" }}</span><small>m² constr.</small></li>{% endif -%}
+        {%- if st_ter != "" %}<li title="Metros de terreno">{% include icono.html n="terreno" %}<span>{{ st_ter | remove: " m²" }}</span><small>m² terreno</small></li>{% endif -%}
       </ul>
     </div>
   </a>

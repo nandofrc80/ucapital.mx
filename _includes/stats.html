@@ -1,0 +1,29 @@
+{%- comment -%}
+  Calcula para una propiedad: precio "desde", rangos de recámaras, baños, construcción y terreno.
+  Si la propiedad tiene modelos, los calcula a partir de ellos; si no, usa los campos generales.
+  Resultado en variables: st_precio, st_rec, st_ban, st_con, st_ter, st_rec_max
+{%- endcomment -%}
+{%- assign _p = include.p -%}
+{%- assign st_precio = _p.precio | default: 0 -%}
+{%- assign st_rec = _p.recamaras -%}
+{%- assign st_ban = _p.banos -%}
+{%- assign st_con = "" -%}{%- if _p.construccion and _p.construccion > 0 %}{% capture st_con %}{{ _p.construccion }} m²{% endcapture %}{% endif -%}
+{%- assign st_ter = "" -%}{%- if _p.terreno and _p.terreno > 0 %}{% capture st_ter %}{{ _p.terreno }} m²{% endcapture %}{% endif -%}
+{%- assign st_rec_max = _p.recamaras | plus: 0 -%}
+{%- if _p.modelos and _p.modelos.size > 0 -%}
+  {%- assign _con_precio = _p.modelos | where_exp: "m", "m.precio > 0" | map: "precio" | sort -%}
+  {%- if _con_precio.size > 0 %}{% assign st_precio = _con_precio.first %}{% endif -%}
+  {%- assign _r = _p.modelos | map: "recamaras" | sort -%}
+  {%- assign _rmax = _p.modelos | map: "recamaras_max" | compact | sort -%}
+  {%- assign _rtop = _r.last -%}{%- if _rmax.size > 0 and _rmax.last > _rtop %}{% assign _rtop = _rmax.last %}{% endif -%}
+  {%- if _r.first == _rtop %}{% assign st_rec = _r.first %}{% else %}{% capture st_rec %}{{ _r.first }}–{{ _rtop }}{% endcapture %}{% endif -%}
+  {%- assign st_rec_max = _rtop -%}
+  {%- assign _b = _p.modelos | map: "banos" | sort -%}
+  {%- if _b.first == _b.last %}{% assign st_ban = _b.first %}{% else %}{% capture st_ban %}{{ _b.first }}–{{ _b.last }}{% endcapture %}{% endif -%}
+  {%- assign _c = _p.modelos | map: "construccion" | sort -%}
+  {%- assign _cm = _p.modelos | map: "construccion_max" | compact | sort -%}
+  {%- assign _ctop = _c.last -%}{%- if _cm.size > 0 and _cm.last > _ctop %}{% assign _ctop = _cm.last %}{% endif -%}
+  {%- if _c.first == _ctop %}{% capture st_con %}{{ _c.first }} m²{% endcapture %}{% else %}{% capture st_con %}{{ _c.first }}–{{ _ctop }} m²{% endcapture %}{% endif -%}
+  {%- assign _t = _p.modelos | map: "terreno" | sort -%}
+  {%- if _t.first == _t.last %}{% capture st_ter %}{{ _t.first }} m²{% endcapture %}{% else %}{% capture st_ter %}{{ _t.first }}–{{ _t.last }} m²{% endcapture %}{% endif -%}
+{%- endif -%}

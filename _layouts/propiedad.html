@@ -3,26 +3,30 @@ layout: default
 body_class: pagina-propiedad
 ---
 {%- assign p = page -%}
+{%- include stats.html p=p -%}
 {%- assign fotos = p.fotos -%}
 {%- if fotos == nil or fotos.size == 0 %}{% assign fotos = "" | split: "" | push: p.portada %}{% endif -%}
 {%- assign n_fotos = fotos | size -%}
+{%- assign n_modelos = p.modelos | size -%}
 {%- capture wa_texto %}Hola, me interesa {{ p.nombre }} ({{ p.tipo }} en {{ p.zona }}) que vi en ucapital.mx. ¿Me comparten información?{% endcapture -%}
+{%- capture wa_url %}https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode | replace: "+", "%20" }}{% endcapture -%}
 
 <section class="ficha-top">
   <div class="shell">
     <nav class="migas" aria-label="Ruta"><a href="{{ '/' | relative_url }}">Inicio</a><span>/</span><a href="{{ '/propiedades/' | relative_url }}">Propiedades</a><span>/</span><span aria-current="page">{{ p.nombre }}</span></nav>
 
-    <div class="galeria galeria--{% if n_fotos >= 5 %}5{% elsif n_fotos >= 3 %}3{% else %}1{% endif %}" data-galeria>
+    <div class="galeria galeria--{% if n_fotos >= 5 %}5{% elsif n_fotos >= 3 %}3{% else %}1{% endif %}">
       {%- for f in fotos limit: 5 %}
-      <button type="button" class="galeria__item" data-lightbox-open="{{ forloop.index0 }}" aria-label="Ver foto {{ forloop.index }} de {{ n_fotos }}">
+      <button type="button" class="galeria__item" data-lightbox-open="general" data-index="{{ forloop.index0 }}" aria-label="Ver foto {{ forloop.index }} de {{ n_fotos }}">
         <img src="{{ f | relative_url }}" alt="{{ p.nombre }} — foto {{ forloop.index }}" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
       </button>
       {%- endfor %}
       <div class="card__badges galeria__badges">
         {%- if p.estatus %}<span class="badge">{{ p.estatus }}</span>{% endif -%}
+        {%- if p.promocion and p.promocion != "" %}<span class="badge badge--promo">Promoción</span>{% endif -%}
         {%- if p.datos_de_ejemplo %}<span class="badge badge--aviso">Datos de ejemplo</span>{% endif -%}
       </div>
-      {%- if n_fotos > 1 %}<button type="button" class="galeria__todas" data-lightbox-open="0">{% include icono.html n="fotos" %}Ver {{ n_fotos }} fotos</button>{% endif %}
+      {%- if n_fotos > 1 %}<button type="button" class="galeria__todas" data-lightbox-open="general" data-index="0">{% include icono.html n="fotos" %}Ver {{ n_fotos }} fotos</button>{% endif %}
     </div>
   </div>
 </section>
@@ -30,22 +34,29 @@ body_class: pagina-propiedad
 <section class="section section--tight">
   <div class="shell ficha">
     <div class="ficha__main">
-      <p class="card__tipo">{{ p.tipo }}{% if p.estatus %} · {{ p.estatus }}{% endif %}</p>
+      <p class="card__tipo">{{ p.tipo }}{% if p.estatus %} · {{ p.estatus }}{% endif %}{% if n_modelos > 0 %} · {{ n_modelos }} modelos{% endif %}</p>
       <h1 class="ficha__title">{{ p.nombre }}</h1>
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
       <div class="ficha__movil">
-        <p class="precio precio--big">{% include precio.html p=p %}</p>
-        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
+        <p class="precio precio--big">{% include precio.html p=p monto=st_precio %}</p>
+        <a class="btn btn--wa btn--block" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
       </div>
 
       <ul class="specs specs--big">
-        {%- if p.recamaras and p.recamaras != "" %}<li>{% include icono.html n="cama" %}<span>{{ p.recamaras }}</span><small>Recámaras</small></li>{% endif -%}
-        {%- if p.banos and p.banos != "" %}<li>{% include icono.html n="regadera" %}<span>{{ p.banos }}</span><small>Baños</small></li>{% endif -%}
-        {%- if p.construccion and p.construccion > 0 %}<li>{% include icono.html n="construccion" %}<span>{{ p.construccion }} m²</span><small>Construcción</small></li>{% endif -%}
-        {%- if p.terreno and p.terreno > 0 %}<li>{% include icono.html n="terreno" %}<span>{{ p.terreno }} m²</span><small>Terreno</small></li>{% endif -%}
+        {%- if st_rec and st_rec != "" %}<li>{% include icono.html n="cama" %}<span>{{ st_rec }}</span><small>Recámaras</small></li>{% endif -%}
+        {%- if st_ban and st_ban != "" %}<li>{% include icono.html n="regadera" %}<span>{{ st_ban }}</span><small>Baños</small></li>{% endif -%}
+        {%- if st_con != "" %}<li>{% include icono.html n="construccion" %}<span>{{ st_con }}</span><small>Construcción</small></li>{% endif -%}
+        {%- if st_ter != "" %}<li>{% include icono.html n="terreno" %}<span>{{ st_ter }}</span><small>Terreno</small></li>{% endif -%}
         {%- if p.estacionamientos and p.estacionamientos > 0 %}<li>{% include icono.html n="auto" %}<span>{{ p.estacionamientos }}</span><small>Estacionamientos</small></li>{% endif -%}
         {%- if p.entrega and p.entrega != "" %}<li>{% include icono.html n="calendario" %}<span>{{ p.entrega }}</span><small>Entrega</small></li>{% endif -%}
       </ul>
+
+      {%- if p.promocion and p.promocion != "" %}
+      <div class="promo">
+        <span class="promo__tag">Promoción vigente</span>
+        <p>{{ p.promocion }}</p>
+      </div>
+      {%- endif %}
 
       <div class="ficha__desc">
         <h2>Descripción</h2>
@@ -58,14 +69,12 @@ body_class: pagina-propiedad
         <ul>{% for a in p.amenidades %}<li>{% include icono.html n="check" %}{{ a }}</li>{% endfor %}</ul>
       </div>
       {%- endif %}
-
-      <p class="ficha__nota">Precios, disponibilidad e imágenes son referenciales y pueden cambiar sin previo aviso. Te confirmamos la información vigente al momento de tu solicitud.</p>
     </div>
 
     <aside class="ficha__side">
       <div class="side-card">
-        <p class="precio precio--big">{% include precio.html p=p %}</p>
-        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
+        <p class="precio precio--big">{% include precio.html p=p monto=st_precio %}</p>
+        <a class="btn btn--wa btn--block" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
         <p class="side-card__o">o déjanos tus datos</p>
         {% include formulario.html compacto=true propiedad=p.nombre %}
         <p class="side-card__nota">{% include icono.html n="check" %}Asesoría gratuita para el comprador</p>
@@ -73,6 +82,65 @@ body_class: pagina-propiedad
     </aside>
   </div>
 </section>
+
+{%- if n_modelos > 0 %}
+<section class="section section--sand section--modelos" id="modelos">
+  <div class="shell">
+    <header class="section__head">
+      <div>
+        <p class="eyebrow">Modelos</p>
+        <h2>Elige la casa <em>que va contigo.</em></h2>
+      </div>
+      {%- if p.precios_actualizados %}<div class="section__head-side"><p class="actualizado">{% include icono.html n="calendario" %}Precios actualizados al {{ p.precios_actualizados }}</p></div>{% endif %}
+    </header>
+    <div class="modelos">
+      {%- for m in p.modelos %}
+      {%- assign m_fotos = m.fotos | default: "" -%}
+      {%- assign m_slug = m.nombre | slugify -%}
+      {%- capture m_wa %}Hola, me interesa el modelo {{ m.nombre }} de {{ p.nombre }} que vi en ucapital.mx. ¿Me comparten disponibilidad y precio?{% endcapture -%}
+      <article class="modelo" id="modelo-{{ m_slug }}">
+        <button type="button" class="modelo__media" {% if m.fotos.size > 0 %}data-lightbox-open="{{ m_slug }}" data-index="0" aria-label="Ver fotos del modelo {{ m.nombre }}"{% else %}disabled{% endif %}>
+          {%- if m.fotos.size > 0 %}<img src="{{ m.fotos.first | relative_url }}" alt="Modelo {{ m.nombre }} — {{ p.nombre }}" loading="lazy">{% endif %}
+          {%- if m.fotos.size > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ m.fotos.size }}</span>{% endif %}
+        </button>
+        <div class="modelo__body">
+          <p class="card__tipo">Modelo{% if m.niveles %} · {{ m.niveles }}{% endif %}</p>
+          <h3 class="modelo__title">{{ m.nombre }}</h3>
+          <p class="precio">{% include precio.html p=p monto=m.precio desde=true %}</p>
+          <ul class="specs specs--modelo">
+            <li>{% include icono.html n="cama" %}<span>{{ m.recamaras }}{% if m.recamaras_max and m.recamaras_max > m.recamaras %}<em>–{{ m.recamaras_max }}</em>{% endif %}</span><small>Recámaras</small></li>
+            <li>{% include icono.html n="regadera" %}<span>{{ m.banos }}</span><small>Baños</small></li>
+            <li>{% include icono.html n="construccion" %}<span>{{ m.construccion }}{% if m.construccion_max and m.construccion_max > m.construccion %}<em>–{{ m.construccion_max }}</em>{% endif %}</span><small>m² constr.</small></li>
+            <li>{% include icono.html n="terreno" %}<span>{{ m.terreno }}</span><small>m² terreno{% if m.terreno_desde %} (desde){% endif %}</small></li>
+            {%- if m.estacionamientos and m.estacionamientos > 0 %}<li>{% include icono.html n="auto" %}<span>{{ m.estacionamientos }}</span><small>Autos</small></li>{% endif %}
+          </ul>
+          {%- if m.descripcion %}<p class="modelo__desc">{{ m.descripcion }}</p>{% endif %}
+          {%- if m.adicionales %}<p class="modelo__extra"><strong>Adicionales opcionales:</strong> {{ m.adicionales }}</p>{% endif %}
+          <a class="btn btn--outline btn--sm modelo__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ m_wa | strip | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Me interesa el modelo {{ m.nombre }}</a>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+    <p class="modelos__nota">Los rangos de recámaras y m² de construcción incluyen los adicionales opcionales. Precio "desde" del lote más económico disponible de cada modelo, sin adicionales. Precios y disponibilidad sujetos a cambio sin previo aviso.</p>
+  </div>
+</section>
+{%- endif %}
+
+{%- if p.apartado or p.enganche or p.financiamiento %}
+<section class="section section--tight">
+  <div class="shell">
+    <header class="section__head"><div><p class="eyebrow">Cómo comprar</p><h2>Esquema de <em>compra</em></h2></div></header>
+    <div class="compra">
+      {%- if p.apartado %}<div><span class="compra__n">01</span><h3>Apartado</h3><p>{{ p.apartado }}</p></div>{% endif -%}
+      {%- if p.enganche %}<div><span class="compra__n">02</span><h3>Enganche</h3><p>{{ p.enganche }}</p></div>{% endif -%}
+      {%- if p.financiamiento %}<div><span class="compra__n">03</span><h3>Financiamiento</h3><p>{{ p.financiamiento }}</p></div>{% endif -%}
+    </div>
+    <p class="ficha__nota">Precios, disponibilidad e imágenes son referenciales y pueden cambiar sin previo aviso. Te confirmamos la información vigente al momento de tu solicitud.</p>
+  </div>
+</section>
+{%- else %}
+<div class="shell"><p class="ficha__nota">Precios, disponibilidad e imágenes son referenciales y pueden cambiar sin previo aviso. Te confirmamos la información vigente al momento de tu solicitud.</p></div>
+{%- endif %}
 
 {%- assign otras = site.propiedades | where_exp: "o", "o.publicado != false" | where_exp: "o", "o.url != page.url" | sort: "orden" -%}
 {%- if otras.size > 0 %}
@@ -96,5 +164,5 @@ body_class: pagina-propiedad
   <button type="button" class="lightbox__prev" data-lightbox-prev aria-label="Anterior">{% include icono.html n="flecha-izq" %}</button>
   <figure><img src="" alt="" data-lightbox-img><figcaption data-lightbox-count></figcaption></figure>
   <button type="button" class="lightbox__next" data-lightbox-next aria-label="Siguiente">{% include icono.html n="flecha" %}</button>
-  <script type="application/json" data-lightbox-fotos>[{% for f in fotos %}"{{ f | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]</script>
+  <script type="application/json" data-lightbox-fotos>{"general":[{% for f in fotos %}"{{ f | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]{% for m in p.modelos %}{% if m.fotos.size > 0 %},"{{ m.nombre | slugify }}":[{% for f in m.fotos %}"{{ f | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}{% endfor %}}</script>
 </div>

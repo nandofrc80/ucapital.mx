@@ -71,21 +71,28 @@
     aplicar();
   }
 
-  /* Galería con visor */
+  /* Galería con visor (una galería general y una por modelo) */
   var lb = $("[data-lightbox]");
   if (lb) {
-    var fotos = [];
-    try { fotos = JSON.parse($("[data-lightbox-fotos]", lb).textContent); } catch (e) {}
-    var img = $("[data-lightbox-img]", lb), count = $("[data-lightbox-count]", lb), i = 0, last = null;
+    var grupos = {};
+    try { grupos = JSON.parse($("[data-lightbox-fotos]", lb).textContent); } catch (e) {}
+    if (Array.isArray(grupos)) grupos = { general: grupos };
+    var fotos = [], img = $("[data-lightbox-img]", lb), count = $("[data-lightbox-count]", lb), i = 0, last = null;
     var show = function (k) {
       if (!fotos.length) return;
       i = (k + fotos.length) % fotos.length;
       img.src = fotos[i];
       count.textContent = (i + 1) + " / " + fotos.length;
     };
-    var open = function (k) { last = document.activeElement; show(k); lb.hidden = false; document.body.style.overflow = "hidden"; $("[data-lightbox-close]", lb).focus(); };
+    var open = function (grupo, k) {
+      fotos = grupos[grupo] || grupos.general || [];
+      if (!fotos.length) return;
+      last = document.activeElement; show(k); lb.hidden = false; document.body.style.overflow = "hidden"; $("[data-lightbox-close]", lb).focus();
+    };
     var close = function () { lb.hidden = true; document.body.style.overflow = ""; if (last) last.focus(); };
-    $$("[data-lightbox-open]").forEach(function (b) { b.addEventListener("click", function () { open(parseInt(b.dataset.lightboxOpen, 10) || 0); }); });
+    $$("[data-lightbox-open]").forEach(function (b) {
+      b.addEventListener("click", function () { open(b.dataset.lightboxOpen || "general", parseInt(b.dataset.index, 10) || 0); });
+    });
     $("[data-lightbox-close]", lb).addEventListener("click", close);
     $("[data-lightbox-prev]", lb).addEventListener("click", function () { show(i - 1); });
     $("[data-lightbox-next]", lb).addEventListener("click", function () { show(i + 1); });
@@ -129,7 +136,7 @@
 
   /* Aparición suave al hacer scroll */
   if ("IntersectionObserver" in window) {
-    var els = $$(".section__head, .card, .steps li, .about__media img, .about__text, .mosaic img, .contacto__form");
+    var els = $$(".section__head, .card, .modelo, .steps li, .about__media img, .about__text, .mosaic img, .contacto__form");
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); } });
     }, { rootMargin: "0px 0px -8% 0px" });

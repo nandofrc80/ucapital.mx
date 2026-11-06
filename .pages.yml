@@ -66,7 +66,7 @@ content:
       - name: precio
         label: Precio (MXN, solo números)
         type: number
-        description: "Ej. 3450000. Déjalo en 0 para mostrar 'Precio a consultar'."
+        description: "Ej. 3450000. Si la propiedad tiene modelos, déjalo en 0: el 'Desde' se calcula solo con el modelo más económico."
       - name: precio_desde
         label: Mostrar "Desde" antes del precio
         type: boolean
@@ -93,6 +93,23 @@ content:
         label: Fecha de entrega
         type: string
         description: "Ej. Diciembre 2027 o Inmediata."
+      - name: precios_actualizados
+        label: Precios actualizados al
+        type: string
+        description: "Ej. 5 de noviembre de 2026"
+      - name: promocion
+        label: Promoción vigente
+        type: text
+        description: "Déjalo vacío si no hay promoción. Aparece en un recuadro dorado."
+      - name: apartado
+        label: Apartado
+        type: string
+      - name: enganche
+        label: Enganche
+        type: string
+      - name: financiamiento
+        label: Financiamiento
+        type: string
       - name: resumen
         label: Resumen (una línea)
         type: string
@@ -114,6 +131,56 @@ content:
         type: string
         list: true
         description: "Una por renglón: Alberca, Casa club, Gimnasio…"
+      - name: modelos
+        label: Modelos
+        type: object
+        list: true
+        description: "Un renglón por modelo de casa. El precio 'desde' de la tarjeta se calcula con el modelo más económico."
+        fields:
+          - name: nombre
+            label: Nombre del modelo
+            type: string
+            required: true
+          - name: niveles
+            label: Niveles
+            type: string
+            description: "Ej. 1 planta, 2 plantas, 1 planta (ampliable)"
+          - name: precio
+            label: Precio desde (MXN)
+            type: number
+          - name: recamaras
+            label: Recámaras (base)
+            type: number
+          - name: recamaras_max
+            label: Recámaras máximo (con adicionales)
+            type: number
+          - name: banos
+            label: Baños
+            type: number
+          - name: construccion
+            label: m² de construcción (base)
+            type: number
+          - name: construccion_max
+            label: m² de construcción máximo (con adicionales)
+            type: number
+          - name: terreno
+            label: m² de terreno
+            type: number
+          - name: estacionamientos
+            label: Autos en cochera
+            type: number
+          - name: descripcion
+            label: Descripción corta
+            type: text
+          - name: adicionales
+            label: Adicionales opcionales
+            type: text
+          - name: fotos
+            label: Fotos del modelo
+            type: image
+            options:
+              multiple:
+                max: 20
       - name: body
         label: Descripción
         type: text
