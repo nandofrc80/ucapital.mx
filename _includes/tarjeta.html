@@ -16,10 +16,10 @@
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
       <p class="precio">{% include precio.html p=p %}</p>
       <ul class="specs">
-        {%- if p.recamaras and p.recamaras != "" %}<li title="Recámaras">{% include icono.html n="cama" %}<span>{{ p.recamaras }}</span><small>Rec.</small></li>{% endif -%}
+        {%- if p.recamaras and p.recamaras != "" %}<li title="Recámaras">{% include icono.html n="cama" %}<span>{{ p.recamaras }}</span><small>Recámaras</small></li>{% endif -%}
         {%- if p.banos and p.banos != "" %}<li title="Baños">{% include icono.html n="regadera" %}<span>{{ p.banos }}</span><small>Baños</small></li>{% endif -%}
-        {%- if p.construccion and p.construccion > 0 %}<li title="Metros de construcción">{% include icono.html n="construccion" %}<span>{{ p.construccion }}</span><small>m² const.</small></li>{% endif -%}
-        {%- if p.terreno and p.terreno > 0 %}<li title="Metros de terreno">{% include icono.html n="terreno" %}<span>{{ p.terreno }}</span><small>m² terreno</small></li>{% endif -%}
+        {%- if p.construccion and p.construccion > 0 %}<li title="Metros de construcción">{% include icono.html n="construccion" %}<span>{{ p.construccion }} m²</span><small>Construcción</small></li>{% endif -%}
+        {%- if p.terreno and p.terreno > 0 %}<li title="Metros de terreno">{% include icono.html n="terreno" %}<span>{{ p.terreno }} m²</span><small>Terreno</small></li>{% endif -%}
       </ul>
     </div>
   </a>
