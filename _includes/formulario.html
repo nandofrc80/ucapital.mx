@@ -13,7 +13,7 @@
   <fieldset class="field">
     <legend>Presupuesto <em>*</em></legend>
     <div class="chips">
-      {%- assign _ops = "Menos de $2M|$2M – $4M|$4M – $7M|$7M – $12M|Más de $12M" | split: "|" -%}
+      {%- assign _ops = "$2M – $4M|$4M – $7M|$7M – $12M|Más de $12M" | split: "|" -%}
       {%- for b in _ops %}
       <label class="chip"><input type="radio" name="presupuesto" value="{{ b }}" required><span>{{ b }}</span></label>
       {%- endfor %}
