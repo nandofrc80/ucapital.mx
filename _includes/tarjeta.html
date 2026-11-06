@@ -18,7 +18,7 @@
       <h3 class="card__title">{{ tp.nombre }}</h3>
       <p class="card__loc">{% include icono.html n="pin" %}{{ tp.zona }}{% if tp.ciudad %}, {{ tp.ciudad }}{% endif %}</p>
       <p class="precio">{% include precio.html p=tp monto=st_precio %}</p>
-      <ul class="specs">
+      <ul class="specs{% if tp.modelos and tp.modelos.size > 0 %} specs--rangos{% endif %}">
         {%- if st_rec and st_rec != "" %}<li title="Recámaras">{% include icono.html n="cama" %}<span>{{ st_rec }}</span><small>Recámaras</small></li>{% endif -%}
         {%- if st_ban and st_ban != "" %}<li title="Baños">{% include icono.html n="regadera" %}<span>{{ st_ban }}</span><small>Baños</small></li>{% endif -%}
         {%- if st_con != "" %}<li title="Metros de construcción">{% include icono.html n="construccion" %}<span>{{ st_con | remove: " m²" }}</span><small>m² constr.</small></li>{% endif -%}
