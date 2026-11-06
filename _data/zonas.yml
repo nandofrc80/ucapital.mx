@@ -1,6 +1,7 @@
 # Zonas del norte de Mérida. Cada zona tiene texto en español (es) y en inglés (en).
 # "coincide" = valores del campo "zona" de las propiedades que se muestran en la página de la zona.
 - slug: cholul-conkal
+  nota: cholul-y-conkal
   orden: 1
   coincide: [Conkal, Cholul]
   portada: /fotos/cumbres-novonorte/portada.jpg
@@ -62,6 +63,7 @@
       - ["Data México — Conkal Institute of Technology", "https://www.economia.gob.mx/datamexico/en/profile/institution/instituto-tecnologico-de-conkal"]
 
 - slug: temozon-norte
+  nota: temozon-norte
   orden: 2
   coincide: [Temozón Norte, Temozón]
   portada: ""
@@ -111,6 +113,7 @@
       - ["Official Cabo Norte master plan brochure (Spanish)", "https://assets.easybroker.com/property_files/3984971/265565/FRONDEZA-Folleto.pdf"]
 
 - slug: zona-country
+  nota: temozon-norte
   orden: 3
   coincide: [Zona Country, Country, Chablekal, Komchén, Xcanatún]
   portada: ""
@@ -154,6 +157,7 @@
       - ["Top 100 Golf Courses — Yucatán Country Club (El Jaguar)", "https://www.top100golfcourses.com/golf-course/yucatan"]
 
 - slug: dzitya
+  nota: dzitya
   orden: 4
   coincide: [Dzityá, Dzitya, Real Montejo]
   portada: ""

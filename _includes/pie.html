@@ -14,7 +14,7 @@
       <h4>{{ T.pie_explorar }}</h4>
       <ul>
         <li><a href="{{ B | append: '/propiedades/' | relative_url }}">{{ T.nav_propiedades }}</a></li>
-        <li><a href="{{ B | append: '/zonas/' | relative_url }}">{{ T.nav_zonas }}</a></li>
+        {% if L == "es" %}<li><a href="{{ '/guia/' | relative_url }}">{{ T.nav_zonas }}</a></li>{% endif %}
         <li><a href="{{ B | append: '/#nosotros' | relative_url }}">{{ T.nav_nosotros }}</a></li>
         <li><a href="{{ B | append: '/#como-trabajamos' | relative_url }}">{{ T.nav_como }}</a></li>
         <li><a href="{{ B | append: '/#contacto' | relative_url }}">{{ T.nav_contacto }}</a></li>

@@ -6,7 +6,7 @@
     </a>
     <nav class="nav__links" aria-label="Principal">
       <a href="{{ B | append: '/propiedades/' | relative_url }}">{{ T.nav_propiedades }}</a>
-      <a href="{{ B | append: '/zonas/' | relative_url }}">{{ T.nav_zonas }}</a>
+      {% if L == "es" %}<a href="{{ '/guia/' | relative_url }}">{{ T.nav_zonas }}</a>{% endif %}
       <a href="{{ B | append: '/#nosotros' | relative_url }}">{{ T.nav_nosotros }}</a>
       <a href="{{ B | append: '/#como-trabajamos' | relative_url }}">{{ T.nav_como }}</a>
       <a href="{{ B | append: '/#contacto' | relative_url }}">{{ T.nav_contacto }}</a>
@@ -17,7 +17,7 @@
   </div>
   <div class="nav__mobile" data-nav-mobile hidden>
     <a href="{{ B | append: '/propiedades/' | relative_url }}">{{ T.nav_propiedades }}</a>
-      <a href="{{ B | append: '/zonas/' | relative_url }}">{{ T.nav_zonas }}</a>
+      {% if L == "es" %}<a href="{{ '/guia/' | relative_url }}">{{ T.nav_zonas }}</a>{% endif %}
     <a href="{{ B | append: '/#nosotros' | relative_url }}">{{ T.nav_nosotros }}</a>
     <a href="{{ B | append: '/#como-trabajamos' | relative_url }}">{{ T.nav_como }}</a>
     <a href="{{ B | append: '/#contacto' | relative_url }}">{{ T.nav_contacto }}</a>
