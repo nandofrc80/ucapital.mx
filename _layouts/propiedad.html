@@ -66,7 +66,7 @@ body_class: pagina-propiedad
       {%- if p.promocion and p.promocion != "" %}
       <div class="promo">
         <span class="promo__tag">{{ T.promocion_vigente }}</span>
-        <p>{{ p_promo }}</p>
+        <p>{{ p_promo | newline_to_br }}</p>
       </div>
       {%- endif %}
 
