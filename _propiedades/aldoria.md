@@ -16,7 +16,7 @@ precios_actualizados: "5 de noviembre de 2026"
 promocion: "Descuento especial en todas las etapas. Pregúntanos por el monto vigente para el modelo que te interesa."
 apartado: "Aparta con $10,000 MXN (7 días; 3 días en casas con escrituración inmediata)."
 enganche: "10% del valor total al firmar la promesa de compraventa (15% si contratas algún adicional)."
-financiamiento: "Hay planes de financiamiento con crédito hipotecario (no aplica ISSFAM). Te asesoramos sin costo con las opciones y requisitos."
+financiamiento: "Se aceptan créditos bancarios (Citibanamex, BBVA, Banorte, Santander, Scotiabank, HSBC, Banregio, Inbursa, Mifel, HIR Casa, Banjercito y Pemex; no aplica ISSFAM), Infonavit Total, Cofinavit y Fovissste para Todos, además de recursos propios. Te asesoramos sin costo con los requisitos de cada uno."
 portada: /fotos/aldoria/portada.jpg
 fotos:
   - /fotos/aldoria/portada.jpg
@@ -117,7 +117,7 @@ modelos:
   "promocion": "Special discount across all phases. Ask us about the current amount for the model you're interested in."
   "apartado": "Reserve with $10,000 MXN (7 days; 3 days for homes with immediate deed transfer)."
   "enganche": "10% of the total price when signing the purchase agreement (15% if you add any optional extras)."
-  "financiamiento": "Mortgage financing plans are available (ISSFAM credit not accepted). We'll walk you through the options and requirements at no cost."
+  "financiamiento": "Bank mortgages are accepted (Citibanamex, BBVA, Banorte, Santander, Scotiabank, HSBC, Banregio, Inbursa, Mifel, HIR Casa, Banjercito and Pemex; ISSFAM not accepted), as well as Infonavit Total, Cofinavit, Fovissste para Todos and your own funds. We'll walk you through the requirements of each option at no cost."
   "amenidades":
   - "Clubhouse with air-conditioned event room"
   - "20 × 8.5 m swimming pool with kids' pool"

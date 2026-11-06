@@ -10,7 +10,7 @@ zona: "Conkal"
 ciudad: "Mérida, Yucatán"
 precio: 0
 precio_desde: true
-entrega: "Octubre 2026 a julio 2027"
+entrega: "Diciembre 2026 a julio 2027"
 resumen: "Casas en la privada Sierra Madre, dentro de una comunidad planeada de 35 hectáreas en Conkal con gran parque central. Ocho modelos de 1 y 2 plantas."
 precios_actualizados: "noviembre de 2026"
 portada: /fotos/cumbres-novonorte/portada.jpg
@@ -143,7 +143,7 @@ modelos:
       - /fotos/cumbres-novonorte/hito-1.jpg
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
-  "entrega": "October 2026 to July 2027"
+  "entrega": "December 2026 to July 2027"
   "resumen": "Homes in the Sierra Madre gated community, within a 35-hectare master-planned community in Conkal with a large central park. Eight one- and two-story models."
   "amenidades":
   - "Large central park"
@@ -172,10 +172,10 @@ modelos:
 
     Sierra Madre is the newest of these neighborhoods. Each one has a security booth with controlled access, its own park and lounge club. All homes include parking for two cars and pre-installations for air conditioning, TV, phone and internet.
 
-    There are eight models to choose from, one or two stories, with 2 and 3 bedrooms, with deliveries scheduled between October 2026 and July 2027.
+    There are eight models to choose from, one or two stories, with 2 and 3 bedrooms, with deliveries scheduled between December 2026 and July 2027.
 ---
 La primera comunidad planeada de Conkal: 35 hectáreas bardeadas con pórtico de acceso, donde más del 64% del terreno son áreas verdes y comunes. Al centro está el gran parque central, rodeado de nueve privadas residenciales con avenidas de baja velocidad, andadores y ciclovías.
 
 Sierra Madre es la privada más reciente. Cada privada tiene caseta de vigilancia con control de acceso, su propio parque y lounge club. Todas las casas incluyen cochera para dos autos y preparaciones para aire acondicionado, TV, telefonía e internet.
 
-Hay ocho modelos para elegir, de una y dos plantas, de 2 y 3 recámaras, con entregas programadas entre octubre de 2026 y julio de 2027.
+Hay ocho modelos para elegir, de una y dos plantas, de 2 y 3 recámaras, con entregas programadas entre diciembre de 2026 y julio de 2027.

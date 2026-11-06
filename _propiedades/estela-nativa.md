@@ -12,6 +12,9 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a octubre 2027"
 resumen: "Casas de 2 y 3 recámaras en un gran complejo residencial con áreas verdes, cancha de pádel y pet park, a 8 km del periférico de Mérida."
+apartado: "Aparta con $10,000 MXN."
+enganche: "10% del valor total al firmar la promesa de compraventa, 7 días después del apartado."
+financiamiento: "El saldo se cubre con recursos propios, crédito bancario o Infonavit Total. Te asesoramos sin costo con las opciones y requisitos."
 precios_actualizados: "5 de noviembre de 2026"
 portada: /fotos/estela-nativa/portada.jpg
 fotos:
@@ -92,6 +95,9 @@ modelos:
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "Immediate to October 2027"
+  "apartado": "Reserve with $10,000 MXN."
+  "enganche": "10% of the total price when signing the purchase agreement, 7 days after the reservation."
+  "financiamiento": "The balance can be paid with your own funds, a bank mortgage or Infonavit Total. We'll walk you through the options and requirements at no cost."
   "resumen": "2- and 3-bedroom homes in a large residential community with green spaces, a padel court and a pet park, 8 km from Mérida's ring road."
   "amenidades":
   - "Controlled access"
