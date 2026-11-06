@@ -91,7 +91,7 @@ body_class: pagina-propiedad
         <p class="eyebrow">Modelos</p>
         <h2>Elige la casa <em>que va contigo.</em></h2>
       </div>
-      {%- if p.precios_actualizados %}<div class="section__head-side"><p class="actualizado">{% include icono.html n="calendario" %}Precios actualizados al {{ p.precios_actualizados }}</p></div>{% endif %}
+      {%- if p.precios_actualizados %}<div class="section__head-side"><p class="actualizado">{% include icono.html n="calendario" %}Precios actualizados: {{ p.precios_actualizados }}</p></div>{% endif %}
     </header>
     <div class="modelos">
       {%- for m in p.modelos %}
@@ -111,7 +111,7 @@ body_class: pagina-propiedad
             <li>{% include icono.html n="cama" %}<span>{{ m.recamaras }}{% if m.recamaras_max and m.recamaras_max > m.recamaras %}<em>–{{ m.recamaras_max }}</em>{% endif %}</span><small>Recámaras</small></li>
             <li>{% include icono.html n="regadera" %}<span>{{ m.banos }}</span><small>Baños</small></li>
             <li>{% include icono.html n="construccion" %}<span>{{ m.construccion }}{% if m.construccion_max and m.construccion_max > m.construccion %}<em>–{{ m.construccion_max }}</em>{% endif %}</span><small>m² constr.</small></li>
-            <li>{% include icono.html n="terreno" %}<span>{{ m.terreno }}</span><small>m² terreno{% if m.terreno_desde %} (desde){% endif %}</small></li>
+            <li>{% include icono.html n="terreno" %}<span>{{ m.terreno }}</span><small>{% if m.terreno_desde %}m² terr. mín.{% else %}m² terreno{% endif %}</small></li>
             {%- if m.estacionamientos and m.estacionamientos > 0 %}<li>{% include icono.html n="auto" %}<span>{{ m.estacionamientos }}</span><small>Autos</small></li>{% endif %}
           </ul>
           {%- if m.descripcion %}<p class="modelo__desc">{{ m.descripcion }}</p>{% endif %}
