@@ -42,7 +42,7 @@ modelos:
     estacionamientos: 2
     precio: 2300000
     descripcion: "Todo en una planta: dos recámaras, sala, comedor, cocina con meseta de granito, baño con meseta de mármol, jardín frontal, pasillo de servicio y área de lavado."
-  - nombre: "Abi"
+  - nombre: "Abi 2"
     niveles: "2 plantas"
     recamaras: 2
     banos: 2.5
