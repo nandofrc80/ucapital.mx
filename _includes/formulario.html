@@ -41,7 +41,7 @@
     </fieldset>
   </div>
   {%- endunless %}
-  <label class="field"><span>{% if compacto %}{{ T.f_mensaje }}{% else %}{{ T.f_mas }}{% endif %}</span><textarea name="mensaje" rows="3" placeholder="{% if include.propiedad %}{{ T.f_ph_prop | replace: '{nombre}', include.propiedad }}{% else %}{{ T.f_ph }}{% endif %}"></textarea></label>
+  <label class="field"><span>{% if compacto %}{{ T.f_mensaje }}{% else %}{{ T.f_mas }}{% endif %}</span><textarea name="mensaje" rows="3" placeholder="{% if include.propiedad %}{{ T.f_ph_prop | replace: '__nombre__', include.propiedad }}{% else %}{{ T.f_ph }}{% endif %}"></textarea></label>
   <div class="form__submit">
     <button type="submit" class="btn btn--navy btn--block" data-submit>{{ T.f_enviar }} {% include icono.html n="flecha" %}</button>
     <p class="form__hint">{{ T.f_hint }}</p>

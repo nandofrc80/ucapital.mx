@@ -18,7 +18,7 @@ body_class: pagina-propiedad
 {%- if fotos == nil or fotos.size == 0 %}{% assign fotos = "" | split: "" | push: p.portada %}{% endif -%}
 {%- assign n_fotos = fotos | size -%}
 {%- assign n_modelos = p.modelos | size -%}
-{%- assign wa_texto = T.wa_propiedad | replace: "{nombre}", p.nombre | replace: "{tipo}", p_tipo | replace: "{zona}", p.zona -%}
+{%- assign wa_texto = T.wa_propiedad | replace: "__nombre__", p.nombre | replace: "__tipo__", p_tipo | replace: "__zona__", p.zona -%}
 {%- capture wa_url %}https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode | replace: "+", "%20" }}{% endcapture -%}
 
 <section class="ficha-top">
@@ -28,7 +28,7 @@ body_class: pagina-propiedad
     {%- if n_fotos >= 5 %}{% assign g_n = 5 %}{% elsif n_fotos >= 3 %}{% assign g_n = 3 %}{% else %}{% assign g_n = 1 %}{% endif %}
     <div class="galeria galeria--{{ g_n }}">
       {%- for f in fotos limit: g_n %}
-      <button type="button" class="galeria__item" data-lightbox-open="general" data-index="{{ forloop.index0 }}" aria-label="{{ T.ver_foto | replace: '{i}', forloop.index | replace: '{n}', n_fotos }}">
+      <button type="button" class="galeria__item" data-lightbox-open="general" data-index="{{ forloop.index0 }}" aria-label="{{ T.ver_foto | replace: '__i__', forloop.index | replace: '__n__', n_fotos }}">
         <img src="{{ f | relative_url }}" alt="{{ p.nombre }} — {{ T.foto }} {{ forloop.index }}" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
       </button>
       {%- endfor %}
@@ -37,7 +37,7 @@ body_class: pagina-propiedad
         {%- if p.promocion and p.promocion != "" %}<span class="badge badge--promo">{{ T.promocion }}</span>{% endif -%}
         {%- if p.datos_de_ejemplo %}<span class="badge badge--aviso">{{ T.datos_ejemplo }}</span>{% endif -%}
       </div>
-      {%- if n_fotos > 1 %}<button type="button" class="galeria__todas" data-lightbox-open="general" data-index="0">{% include icono.html n="fotos" %}{{ T.ver_fotos | replace: "{n}", n_fotos }}</button>{% endif %}
+      {%- if n_fotos > 1 %}<button type="button" class="galeria__todas" data-lightbox-open="general" data-index="0">{% include icono.html n="fotos" %}{{ T.ver_fotos | replace: "__n__", n_fotos }}</button>{% endif %}
     </div>
   </div>
 </section>
@@ -108,7 +108,7 @@ body_class: pagina-propiedad
       {%- for m in p.modelos %}
       {%- assign m_fotos = m.fotos | default: "" -%}
       {%- assign m_slug = m.nombre | slugify -%}
-      {%- assign m_wa = T.wa_modelo | replace: "{modelo}", m.nombre | replace: "{nombre}", p.nombre -%}
+      {%- assign m_wa = T.wa_modelo | replace: "__modelo__", m.nombre | replace: "__nombre__", p.nombre -%}
       {%- if X.modelos %}{% assign mx = X.modelos[forloop.index0] %}{% else %}{% assign mx = nil %}{% endif -%}
       {%- assign m_niv = T.niveles[m.niveles] | default: m.niveles -%}
       {%- assign m_desc = mx.descripcion | default: m.descripcion -%}
