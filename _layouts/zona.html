@@ -10,7 +10,7 @@ body_class: pagina-zona
 {%- for o in publicadas -%}{%- if zd.coincide contains o.zona -%}{%- assign en_zona = en_zona | push: o -%}{%- endif -%}{%- endfor -%}
 {%- assign z_wa = T.z_wa | replace: "__zona__", Z.nombre -%}
 
-<section class="zona-hero" style="--zona-img: url('{{ zd.portada | relative_url }}')">
+<section class="zona-hero{% if zd.portada == "" %} zona-hero--sin{% endif %}"{% if zd.portada != "" %} style="--zona-img: url('{{ zd.portada | relative_url }}')"{% endif %}>
   <div class="shell">
     <nav class="migas migas--claro" aria-label="Ruta"><a href="{{ B | append: '/' | relative_url }}">{{ T.inicio }}</a><span>/</span><a href="{{ B | append: '/zonas/' | relative_url }}">{{ T.nav_zonas }}</a><span>/</span><span aria-current="page">{{ Z.nombre }}</span></nav>
     <p class="eyebrow eyebrow--light">{{ T.z_eyebrow }}</p>
@@ -49,7 +49,7 @@ body_class: pagina-zona
     <aside class="zona__side">
       <div class="side-card">
         <p class="side-card__titulo">{{ Z.nombre }}</p>
-        <p class="side-card__n">{{ en_zona.size }} {% if en_zona.size == 1 %}{{ T.z_n_des1 }}{% else %}{{ T.z_n_des }}{% endif %}</p>
+        {%- if en_zona.size > 0 %}<p class="side-card__n"><a href="#desarrollos">{{ en_zona.size }} {% if en_zona.size == 1 %}{{ T.z_n_des1 }}{% else %}{{ T.z_n_des }}{% endif %}</a></p>{% else %}<p class="side-card__n">{{ Z.lema }}</p>{% endif %}
         <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ z_wa | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.z_cta | replace: "__zona__", Z.nombre }}</a>
         <p class="side-card__nota">{% include icono.html n="check" %}{{ T.asesoria_gratis_comprador }}</p>
       </div>
