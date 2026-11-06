@@ -29,12 +29,7 @@ body_class: pagina-catalogo
       <label><span>Status</span><select name="estatus"><option value="">All</option>{% for e in estatuses %}<option value="{{ e }}">{{ T.estatuses[e] | default: e }}</option>{% endfor %}</select></label>
       <label><span>Budget (MXN)</span>
         <select name="max">
-          <option value="">Any</option>
-          <option value="3000000">Up to $3M</option>
-          <option value="4000000">Up to $4M</option>
-          <option value="7000000">Up to $7M</option>
-          <option value="12000000">Up to $12M</option>
-        </select>
+          <option value="">Any</option><option value="2500000">Up to $2.5M</option><option value="3000000">Up to $3M</option><option value="3500000">Up to $3.5M</option><option value="4000000">Up to $4M</option><option value="5000000">Up to $5M</option></select>
       </label>
       <label><span>Bedrooms</span>
         <select name="rec"><option value="">Any</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option></select>
