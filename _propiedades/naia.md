@@ -60,8 +60,8 @@ modelos:
     terreno: 228
     estacionamientos: 2
     precio: 3890000
-    descripcion: "Modelo nuevo de una sola planta: cochera techada para 2 autos, sala, comedor, cocina con isla, estudio, área de lavado, 3 recámaras (la principal con vestidor), 3½ baños, terraza y alberca privada. Mismo equipamiento que el resto de las residencias."
-    adicionales: "Preventa con entrega 8 meses después de la firma de la promesa de compra-venta. Son solo 8 casas, ubicadas a pie de calle frente al acceso de la privada (4 de cada lado de la pluma), por lo que cada una incluye portón vehicular y portón peatonal propios. Imágenes de referencia. Aires acondicionados opcionales: $40,000 MXN ya instalados."
+    descripcion: "Modelo nuevo de una sola planta: cochera techada para 2 autos, sala, comedor, cocina con isla, estudio, área de lavado, 3 recámaras (la principal con vestidor), 3½ baños, terraza y alberca privada. Mismo equipamiento que el resto de las residencias. Son solo 8 casas, ubicadas a pie de calle frente al acceso de la privada (4 de cada lado de la pluma), por lo que cada una incluye portón vehicular y portón peatonal propios. Preventa con entrega 8 meses después de la firma de la promesa de compra-venta. Imágenes de referencia."
+    adicionales: "Aires acondicionados opcionales: $40,000 MXN ya instalados."
     fotos:
       - /fotos/naia/nah-yah-1.jpg
       - /fotos/naia/nah-yah-2.jpg
@@ -78,8 +78,8 @@ modelos:
     terreno: 233.6
     estacionamientos: 2
     precio: 4005000
-    descripcion: "Planta baja con cochera techada para 2 autos, sala y comedor a doble altura, cocina integral, baño completo, área de lavado, terraza, jardín y alberca privada de 4 × 2.2 m. En planta alta, recámara principal con vestidor, 2 recámaras secundarias, sala de estar, balcón y 2 baños completos."
-    adicionales: "Los lotes 40 y 41 de este modelo tienen precio de $4,095,000 MXN. Aires acondicionados opcionales: $40,000 MXN ya instalados."
+    descripcion: "Planta baja con cochera techada para 2 autos, sala y comedor a doble altura, cocina integral, baño completo, área de lavado, terraza, jardín y alberca privada de 4 × 2.2 m. En planta alta, recámara principal con vestidor, 2 recámaras secundarias, sala de estar, balcón y 2 baños completos. Los lotes 40 y 41 de este modelo tienen precio de $4,095,000 MXN."
+    adicionales: "Aires acondicionados opcionales: $40,000 MXN ya instalados."
     fotos:
       - /fotos/naia/zaci-1.jpg
       - /fotos/naia/zaci-2.jpg
