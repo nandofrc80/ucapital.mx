@@ -26,6 +26,7 @@ body_class: pagina-nota
 
   <div class="shell nota__wrap">
     <div class="nota__body">
+      <a class="nota-volver" href="{{ '/guia/' | relative_url }}" data-volver>{% include icono.html n="flecha-izq" %}<span>Regresar</span></a>
       <aside class="nota-aviso" role="note">
         <strong>Nota informativa.</strong> Recopilamos datos publicados por fuentes públicas (medios, dependencias de gobierno y portales especializados). Cada dato lleva un número que remite a su fuente al final. U·Capital no genera ni garantiza estas cifras, y esta nota no es asesoría financiera ni una promesa de plusvalía. Lo que se marca como <em>rumor</em> no está confirmado.
       </aside>
@@ -38,6 +39,8 @@ body_class: pagina-nota
         <h2>Deslinde de responsabilidad</h2>
         <p>El contenido de esta nota es resultado de una investigación de información pública disponible a la fecha de la edición indicada. Cada dato incluye la referencia a su fuente; su exactitud es responsabilidad de quien lo publicó originalmente y puede cambiar sin previo aviso. Los apartados marcados como <em>rumor</em> recogen versiones no confirmadas por las empresas o autoridades involucradas y se incluyen solo con fines informativos. Las cifras de precios, rentas y rendimientos son referencias de mercado, no avalúos ni garantías. U·Capital Inmobiliaria no se hace responsable de decisiones tomadas con base exclusivamente en esta información; te recomendamos verificarla y asesorarte antes de comprar o invertir. Actualizamos esta guía una vez al mes.</p>
       </div>
+
+      <a class="nota-volver nota-volver--fin" href="{{ '/guia/' | relative_url }}">{% include icono.html n="flecha-izq" %}<span>Ver todas las notas de la guía</span></a>
 
       {%- if page.relacionadas %}
       <nav class="nota-sigue" aria-label="Sigue leyendo">
@@ -73,3 +76,7 @@ body_class: pagina-nota
   </div>
 </section>
 {%- endif %}
+<script>
+(function(){var b=document.querySelector('[data-volver]');if(!b)return;
+try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){b.addEventListener('click',function(e){e.preventDefault();history.back();});}}catch(e){}})();
+</script>

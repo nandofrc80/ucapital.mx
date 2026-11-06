@@ -3,9 +3,9 @@ orden: 1
 titulo: "¿Por qué Mérida? Los datos detrás de la ciudad que todos están considerando"
 titulo_corto: "¿Por qué Mérida? Los datos para decidir"
 categoria: "Vivir en Mérida"
-descripcion: "Si estás comparando Mérida con Querétaro u otra ciudad, aquí están las cifras públicas sobre seguridad, crecimiento, empleo, inversión, universidades y plusvalía, cada una con su fuente."
+descripcion: "Si estás evaluando a qué ciudad mudarte, aquí están las cifras públicas sobre seguridad, crecimiento, empleo, inversión, universidades y plusvalía, y lo que no cabe en una tabla: playa, cenotes, zonas mayas y cocina. Cada dato con su fuente."
 edicion: "noviembre 2026"
-lectura: 8
+lectura: 9
 cifras:
   - ["2", "homicidios por cada 100 mil habitantes en Yucatán en 2025, la tasa más baja del país"]
   - ["34%", "de los adultos en Mérida se siente inseguro, contra 58.1% del promedio nacional"]
@@ -13,7 +13,7 @@ cifras:
 relacionadas: [temozon-norte, cholul-y-conkal, dzitya, donde-conviene-rentar, rumores-noviembre-2026]
 ---
 
-Cada semana platicamos con familias que están decidiendo dónde vivir: ¿Mérida, Querétaro, Monterrey, la costa? La respuesta depende de cada quien, pero la decisión es mejor con datos. Aquí juntamos lo que dicen las fuentes públicas más recientes, sin adornos, y también lo que conviene tener en cuenta.
+Cada semana platicamos con familias que están decidiendo dónde vivir: ¿qué ciudad, qué estado, qué zona? La respuesta depende de cada quien, pero la decisión es mejor con datos. Aquí juntamos lo que dicen las fuentes públicas más recientes, sin adornos, y también lo que conviene tener en cuenta.
 
 <div class="cifras">
   <div><strong>2</strong><span>homicidios por cada 100 mil habitantes en Yucatán (2025), la tasa más baja de México</span></div>
@@ -24,12 +24,11 @@ Cada semana platicamos con familias que están decidiendo dónde vivir: ¿Mérid
 
 ## 1. Seguridad: el dato que más pesa
 
-Según los resultados preliminares del INEGI, Yucatán registró 42 presuntos homicidios en 2025, una tasa de 2 por cada 100 mil habitantes: la más baja de las 32 entidades, frente a un promedio nacional de 21.4.[^homicidios] En la misma medición, Querétaro tuvo una tasa de 7.[^forbes]
+Según los resultados preliminares del INEGI, Yucatán registró 42 presuntos homicidios en 2025, una tasa de 2 por cada 100 mil habitantes: la más baja de las 32 entidades, frente a un promedio nacional de 21.4.[^homicidios]
 
 <figure class="grafica" aria-label="Homicidios por cada 100 mil habitantes en 2025">
   <figcaption>Homicidios por cada 100 mil habitantes, 2025 (INEGI, preliminar)</figcaption>
   <div class="grafica__fila"><span>Yucatán</span><div class="grafica__barra grafica__barra--oro" style="--v:2;--max:22"><b>2</b></div></div>
-  <div class="grafica__fila"><span>Querétaro</span><div class="grafica__barra" style="--v:7;--max:22"><b>7</b></div></div>
   <div class="grafica__fila"><span>Promedio nacional</span><div class="grafica__barra grafica__barra--gris" style="--v:21.4;--max:22"><b>21.4</b></div></div>
 </figure>
 
@@ -46,8 +45,6 @@ La percepción también acompaña. En la Encuesta Nacional de Seguridad Pública
 
 Fuentes de la gráfica: septiembre de 2025 y 2026,[^lupa] marzo y junio de 2026.[^diario-ensu][^universal-ensu]
 {: .grafica-fuente}
-
-Para ser justos con la comparación: en esa misma encuesta de septiembre, la ciudad de Querétaro registró 26.8% de percepción de inseguridad, por debajo de Mérida.[^qro-ensu] Las dos ciudades están entre las mejor evaluadas del país; donde Yucatán se separa con claridad es en la tasa de homicidios.
 
 A nivel internacional, el índice colaborativo de Numbeo 2026 coloca a Mérida en el lugar 28 de las ciudades más seguras del mundo y la segunda de América, solo detrás de la ciudad de Quebec.[^numbeo] Es un índice basado en encuestas de residentes y visitantes, no en estadísticas oficiales, pero ayuda a ubicar a Mérida en el mapa.
 
@@ -67,7 +64,7 @@ Estas son algunas de las inversiones que han elegido Mérida y sus alrededores:
 - **Heineken, Kanasín.** Anunció su octava planta en México, con más de 300 empleos directos y 2,500 indirectos.[^heineken]
 - **Puerto de Progreso y Tren Maya de carga.** El gobierno federal presentó en septiembre de 2026 una inversión de 12,500 millones de pesos para modernizar el puerto y 36,614 millones para la primera etapa del Tren Maya de carga.[^puerto]
 
-¿Y los centros de datos? Hoy son una conversación incipiente: Yucatán concentra cerca del 1% de los centros de datos del país, frente al 72% de Querétaro,[^datacenters] y el principal reto es asegurar suficiente energía y gas.[^energia] Con dos nuevas centrales de ciclo combinado avanzando en la península,[^puerto] es un tema que vale la pena seguir.
+¿Y los centros de datos? Hoy son una conversación incipiente: Yucatán concentra cerca del 1% de los centros de datos del país,[^datacenters] y el principal reto es asegurar suficiente energía y gas.[^energia] Con dos nuevas centrales de ciclo combinado avanzando en la península,[^puerto] es un tema que vale la pena seguir.
 
 ## 4. Universidades y talento
 
@@ -87,6 +84,18 @@ Aun así, el punto de entrada sigue siendo menor que en otras capitales. Con dat
   <div class="grafica__fila"><span>Ciudad de México</span><div class="grafica__barra" style="--v:57921;--max:60000"><b>$57,921</b></div></div>
 </figure>
 
+## 6. Más allá de los datos: la vida en Yucatán
+
+Los números ayudan a decidir, pero muchas familias se mudan por algo que no cabe en una tabla: lo que pueden vivir un fin de semana cualquiera y que no existe donde viven hoy.
+
+{% include galeria-yucatan.html %}
+
+- **La playa, al lado.** El puerto de Progreso está a unos 36 km al norte de Mérida,[^progreso] así que la costa es plan de domingo, no de vacaciones.
+- **Flamencos en libertad.** La Reserva de la Biosfera Ría Lagartos alberga cerca del 80% de las parejas que anidan de flamenco rosa del Caribe,[^lagartos] y la Ría Celestún, a unos 95 km de Mérida, es otro de sus santuarios.[^celestun]
+- **Dos Patrimonios de la Humanidad a una o dos horas.** Chichén Itzá, inscrita por la UNESCO en 1988, está a unos 120 km de Mérida;[^chichen] Uxmal, inscrita en 1996, a unos 80 km.[^uxmal]
+- **Miles de cenotes.** Se estima que en el estado hay entre 7 mil y 8 mil; la Secretaría de Desarrollo Sustentable tiene registrados 3,050.[^cenotes]
+- **Una cocina que el mundo ya está mirando.** Yucatán entró por primera vez a la Guía Michelin México 2026 con 14 propuestas, entre ellas tres restaurantes con una estrella,[^michelin] y en 2025 fue nombrado Capital Iberoamericana de la Gastronomía Precolombina.[^gastronomia]
+
 ## Lo que también conviene saber
 
 No todo es color de rosa, y preferimos que lo sepas desde el principio:
@@ -97,15 +106,13 @@ No todo es color de rosa, y preferimos que lo sepas desde el principio:
 
 ## En resumen
 
-Mérida combina la tasa de homicidios más baja del país, una de las percepciones de seguridad más favorables, población que sigue llegando, inversión productiva de empresas grandes y precios por metro cuadrado todavía por debajo de otras capitales. Si ya te decidiste por Mérida, la siguiente pregunta es **en qué zona**. Empieza por [Temozón Norte]({{ '/guia/temozon-norte/' | relative_url }}), [Cholul y Conkal]({{ '/guia/cholul-y-conkal/' | relative_url }}) o [Dzityá]({{ '/guia/dzitya/' | relative_url }}).
+Mérida combina la tasa de homicidios más baja del país, la playa, la cultura maya y su cocina a la vuelta de la esquina, una de las percepciones de seguridad más favorables, población que sigue llegando, inversión productiva de empresas grandes y precios por metro cuadrado todavía por debajo de otras capitales. Si ya te decidiste por Mérida, la siguiente pregunta es **en qué zona**. Empieza por [Temozón Norte]({{ '/guia/temozon-norte/' | relative_url }}), [Cholul y Conkal]({{ '/guia/cholul-y-conkal/' | relative_url }}) o [Dzityá]({{ '/guia/dzitya/' | relative_url }}).
 
 [^homicidios]: Por Esto!, "Yucatán mantiene la tasa más baja de homicidios en México", 4 de agosto de 2026, con datos preliminares del INEGI. <https://www.poresto.com/yucatan/sucesos/2026/8/4/yucatan-mantiene-la-tasa-mas-baja-de-homicidios-en-mexico-registra-dos-casos-por-cada-100-mil-habitantes.html>
-[^forbes]: Forbes México, "La tasa de homicidios en México cayó a 21.4 por cada 100,000 habitantes en 2025", con datos del INEGI. <https://forbes.com.mx/?p=1421856>
 [^ensu-sep26]: La Jornada Maya, "Mérida mantiene en 34 por ciento la percepción de inseguridad de sus habitantes: Inegi", 26 de octubre de 2026. <https://www.lajornadamaya.mx/yucatan/270050/merida-mantiene-en-34-por-ciento-la-percepcion-de-inseguridad-de-sus-habitantes-inegi>
 [^lupa]: Yucatán Bajo la Lupa, "Ciudadanos se sienten seguros en Mérida", 27 de octubre de 2026 (ENSU sept. 2025 y sept. 2026). <https://yucatanbajolalupa.com.mx/articulos/ciudadanos-se-sienten-seguros-en-merida>
 [^diario-ensu]: Diario de Yucatán, "Mérida pierde lugares entre las ciudades más seguras de México: Inegi", 25 de julio de 2026 (ENSU marzo y junio de 2026). <https://www.yucatan.com.mx/merida/2026/07/25/merida-pierde-lugares-entre-las-ciudades-mas-seguras-de-mexico-inegi.html>
 [^universal-ensu]: El Universal, "Mérida se mantiene entre las ciudades más seguras y con calidad de vida del país, según encuesta de Inegi" (promedio nacional de marzo y junio de 2026). <https://www.eluniversal.com.mx/estados/merida-se-mantiene-entre-las-ciudades-mas-seguras-y-con-calidad-de-vida-del-pais-segun-encuesta-de-inegi-poco-mas-del-38-percibe-inseguridad/>
-[^qro-ensu]: Líder Empresarial, "Percepción de inseguridad en Querétaro cae a 26.8%: INEGI", 23 de octubre de 2026. <https://www.liderempresarial.com/percepcion-de-inseguridad-en-queretaro-cae-a-26-8-inegi/>
 [^numbeo]: Mappr, "30 Safest Cities in the World in 2026", con datos del índice de seguridad de Numbeo 2026. <https://www.mappr.co/safest-cities-in-the-world/>
 [^metropoli]: Diario de Yucatán, "En 25 años, la zona metropolitana de Mérida creció 88.9% en población", 29 de septiembre de 2026, con datos del INEGI. <https://www.yucatan.com.mx/merida/2026/09/29/asi-cambiaron-las-metropolis-de-yucatan-hay-1-6-millones-de-yucatecos-metropolitanos.html>
 [^foraneos]: Por Esto!, "¿Cuántos foráneos hay en Mérida?", con datos del INEGI. <https://www.poresto.com/yucatan/2023/6/28/cuantos-foraneos-hay-en-merida-yucatan.html>
@@ -126,3 +133,11 @@ Mérida combina la tasa de homicidios más baja del país, una de las percepcion
 [^gpg]: Global Property Guide, "Mexico's Residential Property Market Analysis 2026" (precios pedidos por m², enero de 2026). <https://www.globalpropertyguide.com/latin-america/mexico/price-history>
 [^imss]: Por Esto!, "Yucatán pierde 2 mil 262 empleos formales en cinco meses", 12 de julio de 2026. <https://www.poresto.com/yucatan/2026/7/12/yucatan-pierde-2-mil-262-empleos-formales-en-cinco-meses-y-se-coloca-entre-las-tres-entidades-con-peor-desempeno-laboral-del-pais.html>
 [^presion]: Diario de Yucatán, "Mérida, refugio de foráneos que huyen de violencia criminal", 6 de abril de 2026. <https://www.yucatan.com.mx/merida/2026/04/06/merida-refugio-de-foraneos-que-huyen-de-violencia-criminal.html>
+[^progreso]: Administración del Sistema Portuario Nacional Progreso, resumen del estudio de mercado de la ampliación del puerto. <https://puertosyucatan.com/ampli/4.%20RESUMEN%20ESTUDIO%20DE%20MERCADO.pdf>
+[^lagartos]: Por Esto!, "Miles de flamencos visten de rosa el litoral oriente de Yucatán", 9 de marzo de 2026. <https://www.poresto.com/yucatan/2026/3/9/miles-de-flamencos-visten-de-rosa-el-litoral-oriente-de-yucatan-principal-santuario-para-su-reproduccion.html>
+[^celestun]: Milenio, "Ría Celestún, la joya natural de Yucatán que se caracteriza por albergar al flamenco rosado". <https://www.milenio.com/estados/ria-celestun-destaca-destino-natural-yucatan>
+[^chichen]: México Desconocido, "Chichén Itzá, Patrimonio Cultural de la Humanidad". <https://www.mexicodesconocido.com.mx/chichen-itza-patrimonio-cultural-de-la-humanidad.html>
+[^uxmal]: México Desconocido, "Uxmal y la ruta Puuc, Patrimonio Cultural de la Humanidad". <https://www.mexicodesconocido.com.mx/uxmal-y-la-ruta-puuc-patrimonio-cultural-de-la-humanidad.html>
+[^cenotes]: Por Esto!, "Contaminación pone en riesgo la calidad del agua de los cenotes de Yucatán", 24 de agosto de 2026. <https://www.poresto.com/yucatan/2026/8/24/ontaminacion-pone-en-riesgo-la-calidad-del-agua-de-los-cenotes-de-yucatan.html>
+[^michelin]: Vocero, "Yucatán entra a la Guía Michelin México 2026 con 14 propuestas gastronómicas". <https://www.vocero.com.mx/?p=416544>
+[^gastronomia]: Diario de Yucatán, "Celebrarán a la cocina tradicional yucateca", 26 de noviembre de 2025. <https://www.yucatan.com.mx/merida/2025/11/26/celebraran-a-la-cocina-tradicional-yucateca.html>
