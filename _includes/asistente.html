@@ -80,7 +80,7 @@
     <div class="asis__body" data-asis-body aria-live="polite"></div>
     <footer class="asis__foot"><a href="https://wa.me/{{ site.whatsapp }}?text={{ T.wa_general | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener" data-asis-directo>{% include icono.html n="whatsapp" %}<span data-asis-directo-txt></span></a></footer>
   </section>
-  <button type="button" class="wa-float" data-asis-toggle aria-expanded="false">{% include icono.html n="whatsapp" %}</button>
+  <button type="button" class="wa-float" data-asis-toggle aria-expanded="false"><span class="asis__i-abrir">{% include icono.html n="whatsapp" %}</span><span class="asis__i-cerrar">{% include icono.html n="cerrar" %}</span></button>
   <script type="application/json" data-asis-txt>{{ _txt }}</script>
   <script type="application/json" data-asis-datos>{"wa":"{{ site.whatsapp }}","props":[
     {%- for o in _pub -%}

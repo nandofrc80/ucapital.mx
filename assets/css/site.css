@@ -552,6 +552,9 @@ p { margin: 0 0 1em; }
 .asis__foot .ico { color: var(--wa); width: 18px; height: 18px; }
 .asis.is-open .wa-float { background: var(--navy); box-shadow: var(--shadow); }
 .wa-float { border: 0; cursor: pointer; }
+.wa-float > span { display: grid; place-items: center; }
+.asis__i-cerrar, .asis.is-open .asis__i-abrir { display: none !important; }
+.asis.is-open .asis__i-cerrar { display: grid !important; }
 .asis__teaser { position: fixed; right: 22px; bottom: 94px; z-index: 60; display: flex; align-items: center; background: var(--white); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); padding: 4px 4px 4px 0; animation: asisIn .35s ease; }
 .asis__teaser[hidden] { display: none; }
 .asis__teaser-txt { border: 0; background: none; font: inherit; font-size: .9rem; color: var(--navy); padding: 10px 6px 10px 16px; cursor: pointer; font-weight: 500; }
