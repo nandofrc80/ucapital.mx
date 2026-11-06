@@ -1,44 +1,43 @@
-# Fotos de la sección "La vida en Yucatán". Una foto solo se muestra si "foto" tiene ruta.
-# "credito" y "licencia" son obligatorios cuando la foto es de un tercero (p. ej. Wikimedia Commons).
+# Fotos de la sección "La vida en Yucatán" (Wikimedia Commons, licencias libres; se debe dar crédito).
 - clave: playa
-  foto: ""
-  pie: "La costa yucateca, a unos minutos de Mérida"
-  credito: ""
-  licencia: ""
-  enlace: ""
+  foto: /fotos/yucatan/playa.jpg
+  pie: "La playa de Progreso, a unos 36 km de Mérida"
+  credito: "Marysol*"
+  licencia: "CC BY-SA 2.0"
+  enlace: "https://commons.wikimedia.org/wiki/File:Progreso_Yucatan_Beach_2014_02.jpg"
 - clave: flamencos
-  foto: ""
-  pie: "Flamencos rosas en las reservas de la costa"
-  credito: ""
-  licencia: ""
-  enlace: ""
+  foto: /fotos/yucatan/flamencos.jpg
+  pie: "Flamencos en vuelo en Celestún"
+  credito: "TSolange"
+  licencia: "CC BY-SA 4.0"
+  enlace: "https://commons.wikimedia.org/wiki/File:Flamingos,_Celest%C3%BAn_2026_03.jpg"
 - clave: chichen
-  foto: ""
+  foto: /fotos/yucatan/chichen.jpg
   pie: "Chichén Itzá, Patrimonio de la Humanidad"
-  credito: ""
-  licencia: ""
-  enlace: ""
+  credito: "Daniel Schwen"
+  licencia: "CC BY-SA 4.0"
+  enlace: "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg"
 - clave: uxmal
-  foto: ""
-  pie: "Uxmal y la ruta Puuc"
-  credito: ""
-  licencia: ""
-  enlace: ""
+  foto: /fotos/yucatan/uxmal.jpg
+  pie: "La Pirámide del Adivino, en Uxmal"
+  credito: "Gary Todd"
+  licencia: "CC0 (dominio público)"
+  enlace: "https://commons.wikimedia.org/wiki/File:Uxmal_Pyramid_of_the_Magician_(16301919929).jpg"
 - clave: cenote
-  foto: ""
-  pie: "Uno de los miles de cenotes del estado"
-  credito: ""
-  licencia: ""
-  enlace: ""
+  foto: /fotos/yucatan/cenote.jpg
+  pie: "El cenote Ik Kil"
+  credito: "Dmadeo"
+  licencia: "CC BY-SA 3.0"
+  enlace: "https://commons.wikimedia.org/wiki/File:Cenote-ik-kil.png"
 - clave: merida
-  foto: ""
-  pie: "El Centro Histórico y el Paseo de Montejo"
-  credito: ""
-  licencia: ""
-  enlace: ""
+  foto: /fotos/yucatan/merida.jpg
+  pie: "Una noche en el Paseo de Montejo"
+  credito: "Sharon Hahn Darlin"
+  licencia: "CC BY 2.0"
+  enlace: "https://commons.wikimedia.org/wiki/File:Paseo_de_Montejo,_Merida,_Yucatan,_Mexico_13_Abril_2021.jpg"
 - clave: cocina
-  foto: ""
-  pie: "La cocina yucateca"
-  credito: ""
-  licencia: ""
-  enlace: ""
+  foto: /fotos/yucatan/cocina.jpg
+  pie: "Cochinita pibil en hoja de plátano"
+  credito: "Petrvs III"
+  licencia: "CC BY-SA 4.0"
+  enlace: "https://commons.wikimedia.org/wiki/File:Cochinita_Pibil_Casera,_M%C3%A9xico.jpg"
