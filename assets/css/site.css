@@ -707,3 +707,6 @@ p { margin: 0 0 1em; }
 .modelo__disp > span:first-of-type { display: inline-flex; align-items: center; gap: 6px; }
 .modelo__disp svg { width: 16px; height: 16px; color: var(--gold-dark); }
 .modelo__n { padding: 3px 10px; border-radius: 999px; background: var(--gold-soft); color: var(--gold-dark); font-weight: 600; font-size: .8rem; }
+.nota__texto .vida-foto figcaption a { color: rgba(255,255,255,.85); text-decoration: underline; }
+.vida-foto img[src*="flamencos"] { object-position: center 45%; }
+@media (max-width: 640px) { .vida-galeria { grid-auto-rows: 170px; } .vida-foto figcaption { font-size: .8rem; padding: 22px 10px 8px; } .vida-foto figcaption small { font-size: .62rem; } }
