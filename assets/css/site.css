@@ -189,7 +189,6 @@ p { margin: 0 0 1em; }
 .badge--aviso { background: #FFF4D6; color: #7A5A12; }
 .card__count { position: absolute; top: 14px; right: 14px; display: inline-flex; align-items: center; gap: 5px; background: rgba(15,26,46,.65); color: #fff; font-size: .78rem; padding: 5px 10px; border-radius: 999px; backdrop-filter: blur(6px); }
 .card__body { padding: 22px 22px 20px; display: flex; flex-direction: column; flex: 1; container-type: inline-size; }
-@container (max-width: 330px) { .specs { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 14px; } }
 .card__tipo { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; margin: 0 0 6px; }
 .card__title { font-size: 1.75rem; margin-bottom: 6px; }
 .card__loc { display: flex; align-items: center; gap: 6px; font-size: .88rem; color: var(--ink-soft); margin: 0 0 14px; }
@@ -204,6 +203,9 @@ p { margin: 0 0 1em; }
 .specs li .ico { width: 21px; height: 21px; color: var(--gold-dark); }
 .specs li span { font-weight: 600; white-space: nowrap; }
 .specs li small { grid-column: 1 / -1; font-size: .72rem; color: var(--ink-soft); white-space: nowrap; margin-top: 3px; }
+
+/* Tarjetas angostas: datos en 2 x 2 */
+@container (max-width: 330px) { .card .specs { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 14px; } }
 
 /* Carrusel */
 .carousel { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 2 * 28px) / 3); gap: 28px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 6px 2px 24px; scrollbar-width: none; }
