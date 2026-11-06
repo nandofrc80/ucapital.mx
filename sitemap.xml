@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- assign pares = "/|/en/;/propiedades/|/en/propiedades/;/aviso-de-privacidad/|/en/privacy/;/terminos/|/en/terms/" | split: ";" -%}
+{%- assign props = site.propiedades | where_exp: "o", "o.publicado != false" -%}
+{%- for o in props -%}{%- capture par -%}{{ o.url }}|/en{{ o.url }}{%- endcapture -%}{%- assign pares = pares | push: par -%}{%- endfor -%}
+{%- for par in pares -%}
+{%- assign u = par | split: "|" -%}
+{%- for x in u %}
+  <url>
+    <loc>{{ x | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="{{ u[0] | absolute_url }}"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ u[1] | absolute_url }}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ u[0] | absolute_url }}"/>
+  </url>
+{%- endfor -%}
+{%- endfor %}
+</urlset>
