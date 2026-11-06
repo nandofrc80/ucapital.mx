@@ -367,7 +367,8 @@ p { margin: 0 0 1em; }
 .modelo__title { font-size: 2.1rem; margin-bottom: 8px; }
 .specs--modelo { grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0 0 18px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .specs--modelo li span em { font-style: normal; font-weight: 500; color: var(--ink-soft); }
-@container (max-width: 420px) { .specs--modelo { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 14px; } }
+@container (max-width: 520px) { .specs--modelo { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 14px; } }
+@container (max-width: 380px) { .specs--modelo { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .modelo__desc { color: var(--ink-soft); font-size: .95rem; margin-bottom: 10px; }
 .modelo__extra { font-size: .88rem; color: var(--ink-soft); margin-bottom: 20px; }
 .modelo__extra strong { color: var(--navy); font-weight: 600; }
