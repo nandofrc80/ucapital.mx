@@ -576,7 +576,7 @@ p { margin: 0 0 1em; }
 .zona-hero--sin { background: radial-gradient(120% 140% at 85% 10%, rgba(184,153,104,.35), transparent 55%), linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%); }
 .zona__side .btn, .vacio--zona .btn { white-space: normal; text-align: center; line-height: 1.3; height: auto; min-height: 48px; padding-top: 12px; padding-bottom: 12px; }
 .zona-card__media--sin { display: grid; place-items: center; background: radial-gradient(120% 140% at 85% 10%, rgba(184,153,104,.35), transparent 55%), linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%); }
-.zona-card__media--sin img { width: 54px; height: auto; object-fit: contain; opacity: .9; }
+.zona-card__media.zona-card__media--sin img { width: 54px; height: auto; object-fit: contain; opacity: .9; }
 .zona { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 56px; align-items: start; }
 .zona__resumen { font-size: 1.15rem; color: var(--ink); line-height: 1.6; margin: 0 0 36px; }
 .zona__h { font-size: 1.8rem; margin: 40px 0 16px; }
