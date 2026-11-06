@@ -16,7 +16,7 @@ precios_actualizados: "5 de noviembre de 2026"
 promocion: "Descuento especial en todas las etapas. Pregúntanos por el monto vigente para el modelo que te interesa."
 apartado: "Aparta con $10,000 MXN (7 días; 3 días en casas con escrituración inmediata)."
 enganche: "10% del valor total al firmar la promesa de compraventa (15% si contratas algún adicional)."
-financiamiento: "Crédito hipotecario bancario. Te asesoramos sin costo con las opciones y requisitos."
+financiamiento: "Hay planes de financiamiento con crédito hipotecario (no aplica ISSFAM). Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/aldoria/portada.jpg
 fotos:
   - /fotos/aldoria/portada.jpg
