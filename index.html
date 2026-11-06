@@ -1,7 +1,9 @@
 ---
 layout: default
 body_class: pagina-inicio
+alt: "/en/"
 ---
+{%- include lang.html -%}
 {%- assign publicadas = site.propiedades | where_exp: "p", "p.publicado != false" | sort: "orden" -%}
 {%- assign destacadas = publicadas | where_exp: "p", "p.destacado == true" -%}
 {%- if destacadas.size == 0 %}{% assign destacadas = publicadas %}{% endif -%}

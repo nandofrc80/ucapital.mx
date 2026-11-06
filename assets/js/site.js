@@ -1,6 +1,7 @@
 /* U·Capital Inmobiliaria — interacciones del sitio (sin dependencias) */
 (function () {
   "use strict";
+  var EN = (document.documentElement.lang || "").indexOf("en") === 0;
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
@@ -59,7 +60,7 @@
         c.hidden = !ok;
         if (ok) n++;
       });
-      if (out) out.textContent = n === 1 ? "1 propiedad" : n + " propiedades";
+      if (out) out.textContent = EN ? (n === 1 ? "1 property" : n + " properties") : (n === 1 ? "1 propiedad" : n + " propiedades");
       if (vacio) vacio.hidden = n > 0;
       var q = new URLSearchParams();
       ["tipo", "zona", "estatus", "max", "rec"].forEach(function (k) { if (f[k].value) q.set(k, f[k].value); });
@@ -122,7 +123,7 @@
       var subj = $("[data-subject]", form);
       if (subj && nombre && subj.value.indexOf(nombre) === -1) subj.value = subj.value + " · " + nombre;
       if (err) err.hidden = true;
-      if (btn) { btn.disabled = true; btn.dataset.label = btn.innerHTML; btn.textContent = "Enviando…"; }
+      if (btn) { btn.disabled = true; btn.dataset.label = btn.innerHTML; btn.textContent = EN ? "Sending…" : "Enviando…"; }
       fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })
         .then(function (r) {
           if (!r.ok) throw new Error("HTTP " + r.status);

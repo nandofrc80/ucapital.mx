@@ -104,6 +104,39 @@ modelos:
       - /fotos/naia/ikkil-4.jpg
       - /fotos/naia/ikkil-5.jpg
       - /fotos/naia/ikkil-6.jpg
+# ---- Traducción al inglés (páginas /en/) ----
+"en":
+  "entrega": "Nah-Yah: 8 months after signing the purchase agreement"
+  "resumen": "2- and 3-bedroom homes with a private pool in a 59-home gated community with a clubhouse, covered pool, padel court and pet park, in Conkal."
+  "amenidades":
+  - "Controlled access"
+  - "Clubhouse with multi-purpose room"
+  - "Swimming pool"
+  - "Covered terrace"
+  - "Padel court"
+  - "Social garden"
+  - "Reading area"
+  - "Kids' area"
+  - "Pet park"
+  - "Visitor parking"
+  - "Commercial area"
+  "modelos":
+  - "descripcion": "Single-story home: covered carport for 2 cars, living room, dining room, fitted kitchen, laundry area, 2 bedrooms (the main one with walk-in closet), 2½ bathrooms, terrace, garden and a 4.45 × 2.20 m private pool. Only one home of this model is left, ready for immediate delivery."
+    "adicionales": "Optional air conditioning: $40,000 MXN, installed."
+  - "descripcion": "New single-story model: covered carport for 2 cars, living room, dining room, kitchen with island, study, laundry area, 3 bedrooms (the main one with walk-in closet), 3½ bathrooms, terrace and private pool. Same features as the rest of the homes. There are only 8 homes, located at street level in front of the community entrance (4 on each side of the gate), so each one includes its own vehicle gate and pedestrian gate. Pre-sale with delivery 8 months after signing the purchase agreement. Images for reference only."
+    "adicionales": "Optional air conditioning: $40,000 MXN, installed."
+  - "descripcion": "Ground floor with covered carport for 2 cars, double-height living and dining room, fitted kitchen, full bathroom, laundry area, terrace, garden and a 4 × 2.2 m private pool. Upstairs, main bedroom with walk-in closet, 2 secondary bedrooms, family room, balcony and 2 full bathrooms. Lots 40 and 41 of this model are priced at $4,095,000 MXN."
+    "adicionales": "Optional air conditioning: $40,000 MXN, installed."
+  - "descripcion": "Ground floor with covered carport for 2 cars, double-height living and dining room, kitchen with island, secondary bedroom with closet, full bathroom, laundry area, terrace, garden and a 4 × 2.2 m private pool. Upstairs, main bedroom with walk-in closet, secondary bedroom with closet and 2 full bathrooms; the model also includes a study."
+    "adicionales": "Optional air conditioning: $40,000 MXN, installed."
+  "descripcion": |-
+    A gated community of 59 homes that combines contemporary, functional architecture with natural elements and local materials, such as chukum finishes and limestone. The homes open onto gardens and terraces to make the most of natural light and ventilation, and all of them include a private pool.
+
+    The common areas are designed for socializing and relaxing: clubhouse, covered pool, padel court, social garden, kids' area and pet park, with controlled access.
+
+    All homes are delivered with a fitted kitchen with cooktop and range hood, granite countertops, walk-in closet and closets, a water cistern with pressure system, water tank, septic biodigester and stationary gas tank.
+
+    Schedule a visit and get to know the project with us.
 ---
 Una privada de 59 residencias que combina arquitectura contemporánea y funcional con elementos naturales y materiales de la región, como los acabados tipo chukum y la piedra caliza. Las casas se abren hacia jardines y terrazas para aprovechar la luz y la ventilación natural, y todas incluyen alberca privada.
 

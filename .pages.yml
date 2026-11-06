@@ -166,6 +166,9 @@ content:
           - name: terreno
             label: m² de terreno
             type: number
+          - name: terreno_desde
+            label: El terreno es "desde" (varía por lote)
+            type: boolean
           - name: estacionamientos
             label: Autos en cochera
             type: number
@@ -181,6 +184,29 @@ content:
             options:
               multiple:
                 max: 20
+      - name: en
+        label: Traducción al inglés (versión /en del sitio)
+        description: "Opcional. Si un campo queda vacío, la página en inglés muestra el texto en español."
+        type: object
+        fields:
+          - { name: resumen, label: Resumen (inglés), type: text }
+          - { name: entrega, label: Entrega (inglés), type: string }
+          - { name: promocion, label: Promoción (inglés), type: text }
+          - { name: apartado, label: Apartado (inglés), type: text }
+          - { name: enganche, label: Enganche (inglés), type: text }
+          - { name: financiamiento, label: Financiamiento (inglés), type: text }
+          - name: amenidades
+            label: Amenidades (inglés)
+            type: string
+            list: true
+          - name: modelos
+            label: Modelos (inglés, en el mismo orden que arriba)
+            type: object
+            list: true
+            fields:
+              - { name: descripcion, label: Descripción (inglés), type: text }
+              - { name: adicionales, label: Adicionales (inglés), type: text }
+          - { name: descripcion, label: Descripción de la página (inglés), type: text }
       - name: body
         label: Descripción
         type: text

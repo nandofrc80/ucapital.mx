@@ -1,16 +1,24 @@
+{%- include lang.html -%}
 <!doctype html>
-<html lang="es-MX">
+<html lang="{{ T.html_lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- if page.titulo %}{% assign _t = page.titulo | append: " · U·Capital Inmobiliaria" %}{% elsif page.nombre %}{% assign _t = page.nombre | append: " · " | append: page.tipo | append: " en " | append: page.zona | append: " · U·Capital" %}{% else %}{% assign _t = "U·Capital Inmobiliaria — El hogar que mereces vivir en Mérida" %}{% endif %}
-  {%- assign _d = page.resumen | default: page.descripcion | default: site.description -%}
-  {%- assign _img = page.portada | default: "/assets/img/og-ucapital.jpg" -%}
+  {%- if page.ref %}{% assign _pp = site.propiedades | where: "slug", page.ref | first %}{% else %}{% assign _pp = page %}{% endif -%}
+  {%- if page.titulo %}{% if L == "en" %}{% assign _t = page.titulo | append: " · U·Capital Real Estate" %}{% else %}{% assign _t = page.titulo | append: " · U·Capital Inmobiliaria" %}{% endif %}{% elsif _pp.nombre %}{% assign _tipo = T.tipos[_pp.tipo] | default: _pp.tipo %}{% assign _t = _pp.nombre | append: " · " | append: _tipo | append: " " | append: T.en_zona | append: " " | append: _pp.zona | append: " · U·Capital" %}{% else %}{% assign _t = T.titulo_sitio %}{% endif %}
+  {%- if L == "en" %}{% assign _d = page.descripcion | default: _pp.en.resumen | default: site.description_en %}{% else %}{% assign _d = page.resumen | default: page.descripcion | default: site.description %}{% endif -%}
+  {%- assign _img = _pp.portada | default: "/assets/img/og-ucapital.jpg" -%}
   <title>{{ _t }}</title>
   <meta name="description" content="{{ _d | strip_html | strip_newlines | escape }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- if L == "en" %}{% assign _es = ALT %}{% assign _en = page.url %}{% else %}{% assign _es = page.url %}{% assign _en = ALT %}{% endif %}
+  {%- unless page.url contains "404" %}
+  <link rel="alternate" hreflang="es-MX" href="{{ _es | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ _en | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ _es | absolute_url }}">
+  {%- endunless %}
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_MX">
+  <meta property="og:locale" content="{{ T.og_locale }}">
   <meta property="og:site_name" content="U·Capital Inmobiliaria">
   <meta property="og:title" content="{{ _t | escape }}">
   <meta property="og:description" content="{{ _d | strip_html | strip_newlines | escape }}">
@@ -23,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=3">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=4">
 </head>
 <body class="{{ page.body_class }}">
   {% include encabezado.html %}
@@ -31,7 +39,7 @@
     {{ content }}
   </main>
   {% include pie.html %}
-  <a class="wa-float" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, me interesa información sobre propiedades en Mérida' | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">{% include icono.html n="whatsapp" %}</a>
-  <script src="{{ '/assets/js/site.js' | relative_url }}?v=1" defer></script>
+  <a class="wa-float" href="https://wa.me/{{ site.whatsapp }}?text={{ T.wa_general | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener" aria-label="{{ T.nav_wa }}">{% include icono.html n="whatsapp" %}</a>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v=2" defer></script>
 </body>
 </html>

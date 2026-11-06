@@ -1,0 +1,9 @@
+{%- comment -%} Traduce un texto con meses en español ("noviembre de 2026") al inglés en páginas /en. {%- endcomment -%}
+{%- assign _f = include.t | append: "" -%}
+{%- if L == "en" -%}
+{%- assign _f = _f | replace: " de ", " " -%}
+{%- assign _ms = T.meses | split: "|" -%}
+{%- for _m in _ms -%}{%- assign _kv = _m | split: ":" -%}{%- assign _cap = _kv[0] | capitalize -%}{%- assign _f = _f | replace: _kv[0], _kv[1] | replace: _cap, _kv[1] -%}{%- endfor -%}
+{%- assign _f = _f | replace: "Inmediata", "Immediate" | replace: "inmediata", "immediate" | replace: " a ", " to " -%}
+{%- endif -%}
+{{- _f -}}

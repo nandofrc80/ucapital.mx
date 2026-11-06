@@ -2,6 +2,7 @@
 layout: legal
 titulo: "Aviso de privacidad"
 permalink: /aviso-de-privacidad/
+alt: "/en/privacy/"
 ---
 <p class="legal__meta">Última actualización: mayo de 2026</p>
 

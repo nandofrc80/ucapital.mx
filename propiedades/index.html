@@ -3,7 +3,9 @@ layout: default
 titulo: Propiedades en venta en Mérida
 descripcion: "Casas, departamentos, townhouses y terrenos en venta en Mérida y la costa yucateca. Asesoría gratuita para el comprador."
 body_class: pagina-catalogo
+alt: "/en/propiedades/"
 ---
+{%- include lang.html -%}
 {%- assign publicadas = site.propiedades | where_exp: "p", "p.publicado != false" | sort: "orden" -%}
 {%- assign tipos = publicadas | map: "tipo" | uniq | sort -%}
 {%- assign zonas = publicadas | map: "zona" | uniq | sort -%}

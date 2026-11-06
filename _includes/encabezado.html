@@ -1,22 +1,25 @@
+{%- include lang.html -%}
 <header class="nav" data-nav>
   <div class="shell nav__inner">
-    <a href="{{ '/' | relative_url }}" class="nav__brand" aria-label="U·Capital Inmobiliaria — Inicio">
+    <a href="{{ B | append: '/' | relative_url }}" class="nav__brand" aria-label="U·Capital Inmobiliaria — {{ T.inicio }}">
       <img src="{{ '/assets/img/logo-horizontal-navy.png' | relative_url }}" alt="U·Capital Inmobiliaria" width="242" height="80">
     </a>
     <nav class="nav__links" aria-label="Principal">
-      <a href="{{ '/propiedades/' | relative_url }}">Propiedades</a>
-      <a href="{{ '/#nosotros' | relative_url }}">Nosotros</a>
-      <a href="{{ '/#como-trabajamos' | relative_url }}">Cómo trabajamos</a>
-      <a href="{{ '/#contacto' | relative_url }}">Contacto</a>
+      <a href="{{ B | append: '/propiedades/' | relative_url }}">{{ T.nav_propiedades }}</a>
+      <a href="{{ B | append: '/#nosotros' | relative_url }}">{{ T.nav_nosotros }}</a>
+      <a href="{{ B | append: '/#como-trabajamos' | relative_url }}">{{ T.nav_como }}</a>
+      <a href="{{ B | append: '/#contacto' | relative_url }}">{{ T.nav_contacto }}</a>
     </nav>
-    <a class="btn btn--navy btn--sm nav__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, me gustaría recibir asesoría para encontrar una propiedad en Mérida' | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Asesoría gratuita</a>
-    <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>{% include icono.html n="menu" %}</button>
+    <a class="nav__lang" href="{{ ALT | relative_url }}" hreflang="{% if L == 'en' %}es{% else %}en{% endif %}" lang="{% if L == 'en' %}es{% else %}en{% endif %}" aria-label="{{ T.idioma_otro_label }}">{{ T.idioma_otro }}</a>
+    <a class="btn btn--navy btn--sm nav__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ T.wa_asesoria | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.nav_cta }}</a>
+    <button class="nav__toggle" type="button" aria-label="{{ T.abrir_menu }}" aria-expanded="false" data-nav-toggle>{% include icono.html n="menu" %}</button>
   </div>
   <div class="nav__mobile" data-nav-mobile hidden>
-    <a href="{{ '/propiedades/' | relative_url }}">Propiedades</a>
-    <a href="{{ '/#nosotros' | relative_url }}">Nosotros</a>
-    <a href="{{ '/#como-trabajamos' | relative_url }}">Cómo trabajamos</a>
-    <a href="{{ '/#contacto' | relative_url }}">Contacto</a>
-    <a class="btn btn--navy" href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Escríbenos por WhatsApp</a>
+    <a href="{{ B | append: '/propiedades/' | relative_url }}">{{ T.nav_propiedades }}</a>
+    <a href="{{ B | append: '/#nosotros' | relative_url }}">{{ T.nav_nosotros }}</a>
+    <a href="{{ B | append: '/#como-trabajamos' | relative_url }}">{{ T.nav_como }}</a>
+    <a href="{{ B | append: '/#contacto' | relative_url }}">{{ T.nav_contacto }}</a>
+    <a href="{{ ALT | relative_url }}" lang="{% if L == 'en' %}es{% else %}en{% endif %}">{% if L == 'en' %}Español{% else %}English{% endif %}</a>
+    <a class="btn btn--navy" href="https://wa.me/{{ site.whatsapp }}?text={{ T.wa_general | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.nav_wa }}</a>
   </div>
 </header>

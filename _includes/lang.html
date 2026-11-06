@@ -1,0 +1,6 @@
+{%- comment -%} Fija el idioma de la página: L (es/en), T (textos) y B (prefijo de URL: "" o "/en"). {%- endcomment -%}
+{%- assign L = page.lang | default: "es" -%}
+{%- assign T = site.data.t[L] -%}
+{%- assign B = T.base -%}
+{%- if page.alt -%}{%- assign ALT = page.alt -%}{%- elsif L == "en" -%}{%- assign ALT = page.url | remove_first: "/en" -%}{%- else -%}{%- assign ALT = "/en" | append: page.url -%}{%- endif -%}
+{%- if ALT == "" %}{% assign ALT = "/" %}{% endif -%}

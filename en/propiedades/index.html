@@ -1,0 +1,56 @@
+---
+layout: default
+lang: en
+permalink: /en/propiedades/
+alt: "/propiedades/"
+titulo: Homes for sale in Mérida, Mexico
+descripcion: "Houses, apartments, townhouses and land for sale in Mérida and on the Yucatán coast. Free advice for buyers."
+body_class: pagina-catalogo
+---
+{%- include lang.html -%}
+{%- assign publicadas = site.propiedades | where_exp: "p", "p.publicado != false" | sort: "orden" -%}
+{%- assign tipos = publicadas | map: "tipo" | uniq | sort -%}
+{%- assign zonas = publicadas | map: "zona" | uniq | sort -%}
+{%- assign estatuses = publicadas | map: "estatus" | uniq | sort -%}
+
+<section class="page-head">
+  <div class="shell">
+    <p class="eyebrow">Properties</p>
+    <h1>Find your <em>next home</em> in Mérida.</h1>
+    <p>A selection of developments we know inside and out. If you don't see what you're looking for, message us: we have access to more than 100 projects. All prices are in Mexican pesos (MXN).</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell">
+    <form class="filtros" data-filtros>
+      <label><span>Type</span><select name="tipo"><option value="">All</option>{% for t in tipos %}<option value="{{ t }}">{{ T.tipos[t] | default: t }}</option>{% endfor %}</select></label>
+      <label><span>Area</span><select name="zona"><option value="">All</option>{% for z in zonas %}<option>{{ z }}</option>{% endfor %}</select></label>
+      <label><span>Status</span><select name="estatus"><option value="">All</option>{% for e in estatuses %}<option value="{{ e }}">{{ T.estatuses[e] | default: e }}</option>{% endfor %}</select></label>
+      <label><span>Budget (MXN)</span>
+        <select name="max">
+          <option value="">Any</option>
+          <option value="3000000">Up to $3M</option>
+          <option value="4000000">Up to $4M</option>
+          <option value="7000000">Up to $7M</option>
+          <option value="12000000">Up to $12M</option>
+        </select>
+      </label>
+      <label><span>Bedrooms</span>
+        <select name="rec"><option value="">Any</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option></select>
+      </label>
+      <button type="reset" class="btn btn--ghost btn--sm" data-filtros-reset>Clear</button>
+    </form>
+    <p class="resultados" data-resultados aria-live="polite">{{ publicadas.size }} properties</p>
+    <div class="grid" data-grid>
+      {%- for p in publicadas %}
+      {% include tarjeta.html p=p %}
+      {%- endfor %}
+    </div>
+    <div class="vacio" data-vacio hidden>
+      <h3>No properties match those filters.</h3>
+      <p>Tell us what you're looking for and we'll send you options that aren't listed here.</p>
+      <a class="btn btn--navy" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hi, I am looking for a property in Mérida' | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Message us</a>
+    </div>
+  </div>
+</section>

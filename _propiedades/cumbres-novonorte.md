@@ -19,6 +19,8 @@ fotos:
   - /fotos/cumbres-novonorte/elbrus-1.jpg
   - /fotos/cumbres-novonorte/guna-1.jpg
   - /fotos/cumbres-novonorte/balbi-3.jpg
+  - /fotos/cumbres-novonorte/kita-1.jpg
+  - /fotos/cumbres-novonorte/cervino-1.jpg
 amenidades:
   - Gran parque central
   - Área de pérgolas
@@ -139,6 +141,38 @@ modelos:
     descripcion: "Tres recámaras en una sola planta, con jardines interiores, sala, comedor, cocina con meseta de granito, área de servicios, alacena y jardín frontal. Los lotes disponibles incluyen metros excedentes de terreno."
     fotos:
       - /fotos/cumbres-novonorte/hito-1.jpg
+# ---- Traducción al inglés (páginas /en/) ----
+"en":
+  "entrega": "October 2026 to July 2027"
+  "resumen": "Homes in the Sierra Madre gated community, within a 35-hectare master-planned community in Conkal with a large central park. Eight one- and two-story models."
+  "amenidades":
+  - "Large central park"
+  - "Pergola area"
+  - "Playgrounds"
+  - "Sports courts"
+  - "Pet park"
+  - "Outdoor gym"
+  - "Yoga park"
+  - "Skate park"
+  - "Jogging track"
+  - "Trails and bike paths"
+  - "Security booth with controlled access"
+  - "Park and lounge club within the community"
+  "modelos":
+  - "descripcion": "All on one floor: two bedrooms, living room, dining room, kitchen with granite countertop, bathroom with marble countertop, front garden, service walkway and laundry area."
+  - "descripcion": "Living room, dining room and kitchen with granite countertop, front garden, service patio, terrace area, storage room and pantry. Two bedrooms upstairs."
+  - "descripcion": "Double-height living and dining room, kitchen with granite countertop, service walkway, laundry area and front garden. Two bedrooms."
+  - "descripcion": "Three bedrooms, living room, dining room, kitchen with granite countertop, covered terrace, utility area, front garden, storage room and pantry."
+  - "descripcion": "Three bedrooms: one on the ground floor and two upstairs. Living-dining room, kitchen with granite countertop, terrace, service patio and pantry."
+  - "descripcion": "Three bedrooms; the main bedroom has its own bathroom and walk-in closet. Living-dining room, kitchen with granite countertop, service walkway, front garden, storage room and pantry."
+  - "descripcion": "Three bedrooms; the main bedroom has a walk-in closet. Living and dining room, kitchen with granite countertop, laundry area, service walkway and front garden."
+  - "descripcion": "Three bedrooms on a single floor, with interior gardens, living room, dining room, kitchen with granite countertop, utility area, pantry and front garden. Available lots include extra land."
+  "descripcion": |-
+    Conkal's first master-planned community: 35 walled hectares with an entrance portico, where more than 64% of the land is green and common areas. At its heart is a large central park, surrounded by nine gated residential neighborhoods with low-speed avenues, walkways and bike paths.
+
+    Sierra Madre is the newest of these neighborhoods. Each one has a security booth with controlled access, its own park and lounge club. All homes include parking for two cars and pre-installations for air conditioning, TV, phone and internet.
+
+    There are eight models to choose from, one or two stories, with 2 and 3 bedrooms, with deliveries scheduled between October 2026 and July 2027.
 ---
 La primera comunidad planeada de Conkal: 35 hectáreas bardeadas con pórtico de acceso, donde más del 64% del terreno son áreas verdes y comunes. Al centro está el gran parque central, rodeado de nueve privadas residenciales con avenidas de baja velocidad, andadores y ciclovías.
 

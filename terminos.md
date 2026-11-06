@@ -2,6 +2,7 @@
 layout: legal
 titulo: "Términos y condiciones de uso"
 permalink: /terminos/
+alt: "/en/terms/"
 ---
 <p class="legal__meta">U·Capital Inmobiliaria · Mérida, Yucatán · Última actualización: Mayo 2026</p>
 

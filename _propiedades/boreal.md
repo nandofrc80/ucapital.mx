@@ -58,6 +58,25 @@ modelos:
       - /fotos/boreal/aurora-plus-4.jpg
       - /fotos/boreal/aurora-plus-5.jpg
       - /fotos/boreal/aurora-plus-6.jpg
+# ---- Traducción al inglés (páginas /en/) ----
+"en":
+  "entrega": "September 2027 to November 2028"
+  "resumen": "2- and 3-bedroom pre-sale homes in Conkal, within the same large residential community as Estela Nativa. From $2,150,000 MXN."
+  "amenidades":
+  - "Swimming pool"
+  - "Pet park"
+  - "Playground"
+  - "Basketball court"
+  "modelos":
+  - "descripcion": "Living room, dining room, kitchen with lower cabinets, half bath, laundry room and terrace on the ground floor. Upstairs, main bedroom with closet and full bathroom, second bedroom with closet and another full bathroom. Images for reference only."
+  - "descripcion": "The 3-bedroom version of the Aurora: living room, dining room, kitchen with lower cabinets, half bath, laundry room and terrace on the ground floor; main bedroom with closet and full bathroom, plus two more bedrooms with closets and a full bathroom upstairs."
+    "adicionales": "Homes with a pool are also available from $2,480,000 MXN."
+  "descripcion": |-
+    Boreal is a gated community within the same large residential development as Estela Nativa: a neighborhood designed to grow in harmony, with nature and social spaces for the whole family. It's in Conkal, close to schools, universities, hospitals, shopping centers and services in northern Mérida.
+
+    It offers two two-story models with 2 and 3 bedrooms, on 8 × 20 m lots, with parking for two cars. Homes are delivered with lower kitchen cabinets and bathroom vanities.
+
+    It's in pre-sale, with deliveries scheduled between September 2027 and November 2028. We'll help you choose the lot and payment plan that suit you best.
 ---
 Boreal es una privada dentro del mismo gran complejo residencial que Estela Nativa: una comunidad pensada para crecer en armonía, con naturaleza y espacios de convivencia para toda la familia. Está en Conkal, cerca de escuelas, universidades, hospitales, plazas y servicios del norte de Mérida.
 

@@ -110,6 +110,44 @@ modelos:
       - /fotos/aldoria/cinna-2.jpg
       - /fotos/aldoria/cinna-3.jpg
       - /fotos/aldoria/cinna-4.jpg
+# ---- Traducción al inglés (páginas /en/) ----
+"en":
+  "entrega": "Immediate to April 2027"
+  "resumen": "Homes in a gated community with a clubhouse and three parks with more than 15 amenities. Four models with 2 to 4 bedrooms in northern Mérida."
+  "promocion": "Special discount across all phases. Ask us about the current amount for the model you're interested in."
+  "apartado": "Reserve with $10,000 MXN (7 days; 3 days for homes with immediate deed transfer)."
+  "enganche": "10% of the total price when signing the purchase agreement (15% if you add any optional extras)."
+  "financiamiento": "Mortgage financing plans are available (ISSFAM credit not accepted). We'll walk you through the options and requirements at no cost."
+  "amenidades":
+  - "Clubhouse with air-conditioned event room"
+  - "20 × 8.5 m swimming pool with kids' pool"
+  - "Covered terrace with grill area"
+  - "Air-conditioned gym"
+  - "Outdoor gym"
+  - "Padel courts"
+  - "Multi-purpose court"
+  - "Splash pad"
+  - "Pet park"
+  - "Glamping area"
+  - "Kids' soccer field"
+  - "Playground"
+  - "Zen garden"
+  - "Trails connecting 3 parks"
+  "modelos":
+  - "descripcion": "Everything on the ground floor: main bedroom with walk-in closet and full bathroom, second bedroom with bathroom, living-dining room, kitchen with island, interior garden, covered laundry area and terrace."
+    "adicionales": "Covered carport, covered terrace, pool and up to 2 bedrooms on an upper floor."
+  - "descripcion": "Living room, dining room and kitchen with granite bar, guest half bath, terrace, laundry area and storage space on the ground floor; upstairs, a bedroom with walk-in closet and bathroom and a second bedroom with bathroom."
+    "adicionales": "Covered carport, covered terrace, pool, upstairs main bedroom, and a ground-floor bedroom with walk-in closet and bathroom."
+  - "descripcion": "Three bedrooms on a single floor, each with a full bathroom; the main bedroom has a walk-in closet. Living room, dining room, kitchen with island and granite bar, and an interior garden."
+    "adicionales": "Covered carport, covered terrace and pool."
+  - "descripcion": "Ground-floor bedroom with bathroom, living-dining room, kitchen with granite bar, guest half bath and terrace. Upstairs, main bedroom with walk-in closet, bathroom and balcony, plus a second bedroom with bathroom."
+    "adicionales": "Covered carport, covered terrace, pool and a fourth bedroom with full bathroom."
+  "descripcion": |-
+    A gated community designed for living in harmony in northern Mérida. Its clubhouse and three parks, connected by trails, offer more than 15 amenities for everyday life: working out, walking your pet, hosting a barbecue or simply enjoying the natural surroundings.
+
+    You can choose from four home models, one or two stories and 2 to 4 bedrooms, on 253 m² lots (11 × 23 m). All are delivered with lower kitchen cabinets and bathroom vanities, and you can customize them with extras such as a pool, covered terrace, covered carport or additional bedrooms.
+
+    Some homes are available with immediate deed transfer, and others are in pre-sale with phased delivery. We'll help you compare models, available lots and payment plans.
 ---
 Una privada pensada para vivir en armonía al norte de Mérida. Su casa club y tres parques, conectados por senderos, suman más de 15 amenidades para el día a día: hacer ejercicio, pasear a tu mascota, organizar una parrillada o simplemente disfrutar del entorno natural.
 

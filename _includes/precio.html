@@ -5,6 +5,6 @@
 {%- assign _s = _m | round | append: "" -%}
 {%- assign _len = _s.size -%}
 {%- capture _fmt -%}{%- assign _chars = _s | split: "" -%}{%- for _c in _chars -%}{%- assign _rem = _len | minus: forloop.index0 | modulo: 3 -%}{%- if forloop.index0 > 0 and _rem == 0 -%},{%- endif -%}{{ _c }}{%- endfor -%}{%- endcapture -%}
-{%- if _p.precio_desde or include.desde -%}<span class="precio__desde">Desde</span> {% endif -%}<span class="precio__monto">${{ _fmt }}</span> <span class="precio__mon">MXN</span>
-{%- else -%}<span class="precio__monto precio__monto--consultar">Precio a consultar</span>
+{%- if _p.precio_desde or include.desde -%}<span class="precio__desde">{{ T.desde }}</span> {% endif -%}<span class="precio__monto">${{ _fmt }}</span> <span class="precio__mon">MXN</span>
+{%- else -%}<span class="precio__monto precio__monto--consultar">{{ T.precio_consultar }}</span>
 {%- endif -%}

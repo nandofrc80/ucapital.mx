@@ -110,6 +110,8 @@ p { margin: 0 0 1em; }
 .nav__links a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .25s; }
 .nav__links a:hover { color: var(--navy); }
 .nav__links a:hover::after { transform: scaleX(1); }
+.nav__lang { display: inline-grid; place-items: center; min-width: 40px; height: 34px; padding: 0 10px; border: 1px solid var(--line); border-radius: 999px; font-size: .74rem; font-weight: 600; letter-spacing: .12em; color: var(--navy); transition: .2s; margin-left: -12px; }
+.nav__lang:hover { border-color: var(--gold); color: var(--gold-dark); }
 .nav__toggle { display: none; margin-left: auto; width: 44px; height: 44px; border: 1px solid var(--line); background: var(--white); border-radius: 12px; color: var(--navy); place-items: center; }
 .nav__toggle .ico { width: 22px; height: 22px; }
 .nav__mobile { display: none; }
@@ -452,7 +454,8 @@ p { margin: 0 0 1em; }
 @media (max-width: 860px) {
   :root { --nav-h: 66px; }
   .nav__links, .nav__cta { display: none; }
-  .nav__toggle { display: inline-grid; }
+  .nav__toggle { display: inline-grid; margin-left: 10px; }
+  .nav__lang { margin-left: auto; height: 40px; }
   .nav__brand img { height: 38px; }
   .nav__mobile { display: grid; gap: 4px; padding: 10px 20px 22px; border-top: 1px solid var(--line); background: var(--ivory); }
   .nav__mobile a:not(.btn) { padding: 12px 4px; font-size: 1.05rem; color: var(--navy); border-bottom: 1px solid var(--line); }
