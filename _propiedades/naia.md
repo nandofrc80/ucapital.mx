@@ -43,7 +43,7 @@ modelos:
     terreno: 208.7
     estacionamientos: 2
     precio: 3490000
-    descripcion: "Casa de una sola planta: cochera techada para 2 autos, sala, comedor, cocina integral, área de lavado, 2 recámaras (la principal con vestidor), 2½ baños, terraza, jardín y alberca privada de 4.45 × 2.20 m."
+    descripcion: "Casa de una sola planta: cochera techada para 2 autos, sala, comedor, cocina integral, área de lavado, 2 recámaras (la principal con vestidor), 2½ baños, terraza, jardín y alberca privada de 4.45 × 2.20 m. Queda una sola casa disponible de este modelo, con entrega inmediata."
     adicionales: "Aires acondicionados opcionales: $40,000 MXN ya instalados."
     fotos:
       - /fotos/naia/suytun-1.jpg

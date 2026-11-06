@@ -33,7 +33,13 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 2150000
-    descripcion: "Sala, comedor, cocina con gavetas inferiores, medio baño, cuarto de lavado y terraza en planta baja. En planta alta, recámara principal con clóset y baño completo, segunda recámara con clóset y un baño completo más."
+    descripcion: "Sala, comedor, cocina con gavetas inferiores, medio baño, cuarto de lavado y terraza en planta baja. En planta alta, recámara principal con clóset y baño completo, segunda recámara con clóset y un baño completo más. Imágenes de referencia."
+    fotos:
+      - /fotos/boreal/aurora-1.jpg
+      - /fotos/boreal/aurora-2.jpg
+      - /fotos/boreal/aurora-3.jpg
+      - /fotos/boreal/aurora-4.jpg
+      - /fotos/boreal/aurora-5.jpg
   - nombre: "Aurora Plus"
     niveles: "2 plantas"
     recamaras: 3
