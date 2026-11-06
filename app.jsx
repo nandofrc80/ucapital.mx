@@ -353,13 +353,48 @@ function ContactForm() {
     name: "", whatsapp: "", email: "", budget: "", propertyType: "", delivery: "", purpose: "", message: "",
   });
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
+  const { lang } = useT();
 
   const update = (k) => (e) => setData({ ...data, [k]: e.target.value });
   const setChip = (k, v) => setData({ ...data, [k]: v });
 
-  const submit = (e) => {
+  // Envía la solicitud a contacto@ucapital.mx vía FormSubmit (formsubmit.co)
+  const submit = async (e) => {
     e.preventDefault();
-    setSent(true);
+    if (sending) return;
+    setSending(true);
+    setError(false);
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/contacto@ucapital.mx", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          _subject: `Nuevo lead ucapital.mx — ${data.name}`,
+          _template: "table",
+          _captcha: "false",
+          ...(data.email ? { _replyto: data.email } : {}),
+          "Nombre": data.name,
+          "WhatsApp": data.whatsapp,
+          "Correo": data.email || "—",
+          "Presupuesto": data.budget,
+          "Tipo de propiedad": data.propertyType || "—",
+          "Entrega": data.delivery || "—",
+          "Propósito": data.purpose || "—",
+          "Mensaje": data.message || "—",
+          "Idioma del sitio": lang === "en" ? "Inglés" : "Español",
+          _honey: "",
+        }),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || String(json.success) === "false") throw new Error(json.message || "Error");
+      setSent(true);
+    } catch (err) {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   };
 
   const firstName = data.name.split(" ")[0];
@@ -482,10 +517,18 @@ function ContactForm() {
                     : <React.Fragment key={i}>{part}</React.Fragment>
                 )}
               </span>
-              <button type="submit" className="btn btn--primary" disabled={!data.name || !data.whatsapp || !data.budget}>
-                {t.contact.submit} <span className="arrow">→</span>
+              <button type="submit" className="btn btn--primary" disabled={sending || !data.name || !data.whatsapp || !data.budget}>
+                {sending ? (lang === "en" ? "Sending…" : "Enviando…") : t.contact.submit} <span className="arrow">→</span>
               </button>
             </div>
+            {error && (
+              <p className="form__hint" role="alert" style={{ marginTop: 12, color: "#B89968" }}>
+                {lang === "en"
+                  ? "We couldn't send your request. Please try again or message us on WhatsApp: 999 956 2850."
+                  : "No pudimos enviar tu solicitud. Intenta de nuevo o escríbenos por WhatsApp: 999 956 2850."}{" "}
+                <a href={`https://wa.me/529999562850?text=${encodeURIComponent((lang === "en" ? "Hi, I'm " : "Hola, soy ") + data.name)}`} target="_blank" rel="noopener" className="form__hint-link">WhatsApp →</a>
+              </p>
+            )}
           </form>
           )}
         </div>
