@@ -1,0 +1,56 @@
+# Comprime automáticamente las fotos que subes desde el panel (máx. 1800 px, calidad 80).
+name: Comprimir fotos
+on:
+  push:
+    branches: [main]
+    paths: ["fotos/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: comprimir-fotos
+  cancel-in-progress: false
+jobs:
+  comprimir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Reducir fotos pesadas
+        run: |
+          python - <<'PY'
+          import os
+          from PIL import Image, ImageOps
+          cambios = 0
+          for raiz, _, archivos in os.walk("fotos"):
+              for n in archivos:
+                  ruta = os.path.join(raiz, n)
+                  ext = n.lower().rsplit(".", 1)[-1]
+                  if ext not in ("jpg", "jpeg", "png", "webp"):
+                      continue
+                  if os.path.getsize(ruta) <= 450 * 1024:
+                      continue
+                  im = ImageOps.exif_transpose(Image.open(ruta))
+                  im.thumbnail((1800, 1800), Image.LANCZOS)
+                  if ext in ("jpg", "jpeg"):
+                      im.convert("RGB").save(ruta, "JPEG", quality=80, optimize=True, progressive=True)
+                  elif ext == "webp":
+                      im.save(ruta, "WEBP", quality=80)
+                  else:
+                      im.save(ruta, "PNG", optimize=True)
+                  cambios += 1
+                  print("Comprimida:", ruta, os.path.getsize(ruta) // 1024, "KB")
+          print("Fotos comprimidas:", cambios)
+          PY
+      - name: Guardar cambios
+        run: |
+          if [ -n "$(git status --porcelain fotos)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add fotos
+            git commit -m "Comprimir fotos subidas desde el panel"
+            git push
+          fi

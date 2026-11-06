@@ -1,0 +1,22 @@
+# Genera una vista previa del sitio en ramas distintas a main (no publica nada).
+name: Vista previa
+on:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sitio
+          path: _site
+          retention-days: 7

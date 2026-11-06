@@ -1,0 +1,51 @@
+{%- assign compacto = include.compacto -%}
+<form class="form{% if compacto %} form--compacto{% endif %}" action="{{ site.formspree }}" method="POST" data-form>
+  <input type="hidden" name="_subject" value="Nuevo lead ucapital.mx{% if include.propiedad %} — {{ include.propiedad }}{% endif %}" data-subject>
+  {%- if include.propiedad %}<input type="hidden" name="propiedad" value="{{ include.propiedad }}">{% endif %}
+  <input type="hidden" name="pagina" value="{{ page.url | absolute_url }}">
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+  <div class="form__row">
+    <label class="field"><span>Nombre <em>*</em></span><input name="nombre" type="text" required autocomplete="name" placeholder="¿Cómo te llamas?"></label>
+    <label class="field"><span>WhatsApp <em>*</em></span><input name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="999 000 0000"></label>
+  </div>
+  <label class="field"><span>Correo</span><input name="email" type="email" autocomplete="email" placeholder="tu@correo.com"></label>
+  {%- unless compacto %}
+  <fieldset class="field">
+    <legend>Presupuesto <em>*</em></legend>
+    <div class="chips">
+      {%- for b in "Menos de $2M|$2M – $4M|$4M – $7M|$7M – $12M|Más de $12M" | split: "|" %}
+      <label class="chip"><input type="radio" name="presupuesto" value="{{ b }}" required><span>{{ b }}</span></label>
+      {%- endfor %}
+    </div>
+  </fieldset>
+  <div class="form__row">
+    <fieldset class="field">
+      <legend>Tipo de propiedad</legend>
+      <div class="chips">
+        {%- for b in "Casa|Departamento|Townhouse|Terreno" | split: "|" %}
+        <label class="chip"><input type="radio" name="tipo_propiedad" value="{{ b }}"><span>{{ b }}</span></label>
+        {%- endfor %}
+      </div>
+    </fieldset>
+    <fieldset class="field">
+      <legend>¿Para qué?</legend>
+      <div class="chips">
+        {%- for b in "Para vivir|Inversión" | split: "|" %}
+        <label class="chip"><input type="radio" name="proposito" value="{{ b }}"><span>{{ b }}</span></label>
+        {%- endfor %}
+      </div>
+    </fieldset>
+  </div>
+  {%- endunless %}
+  <label class="field"><span>{% if compacto %}Mensaje{% else %}Cuéntanos un poco más{% endif %}</span><textarea name="mensaje" rows="{% if compacto %}3{% else %}3{% endif %}" placeholder="{% if include.propiedad %}Me interesa {{ include.propiedad }}. ¿Me comparten disponibilidad y precios?{% else %}Zona preferida, tiempos, lo que sea relevante…{% endif %}"></textarea></label>
+  <div class="form__submit">
+    <button type="submit" class="btn btn--navy btn--block" data-submit>Enviar solicitud {% include icono.html n="flecha" %}</button>
+    <p class="form__hint">Al enviar aceptas nuestro <a href="{{ '/aviso-de-privacidad/' | relative_url }}">aviso de privacidad</a>. Nunca compartimos tus datos.</p>
+  </div>
+  <div class="form__ok" data-ok hidden>
+    <span class="form__ok-ico">{% include icono.html n="check" %}</span>
+    <h3>¡Gracias! Recibimos tu solicitud.</h3>
+    <p>Te respondemos a la brevedad por WhatsApp con una primera selección de opciones.</p>
+  </div>
+  <p class="form__error" data-error hidden>No pudimos enviar tu solicitud. Intenta de nuevo o <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">escríbenos por WhatsApp</a>.</p>
+</form>

@@ -1,0 +1,120 @@
+# Panel de administración de ucapital.mx (Pages CMS — https://app.pagescms.org)
+media:
+  input: fotos
+  output: /fotos
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: propiedades
+    label: Propiedades
+    type: collection
+    path: _propiedades
+    format: yaml-frontmatter
+    filename: "{fields.nombre}.md"
+    view:
+      fields: [nombre, tipo, zona, precio, publicado, destacado]
+      primary: nombre
+      sort: [orden, nombre]
+      default:
+        sort: orden
+        order: asc
+    fields:
+      - name: nombre
+        label: Nombre del desarrollo
+        type: string
+        required: true
+        description: "Ej. Estela Nativa. Se usa también para la dirección de la página (no lo cambies después de publicar)."
+      - name: publicado
+        label: Publicada en el sitio
+        type: boolean
+        default: true
+        description: "Desactívalo para ocultarla sin borrarla."
+      - name: destacado
+        label: Mostrar en "Propiedades destacadas" (portada)
+        type: boolean
+        default: false
+      - name: datos_de_ejemplo
+        label: Mostrar etiqueta "Datos de ejemplo"
+        type: boolean
+        default: false
+        description: "Solo para pruebas. Desactívalo cuando los datos sean reales."
+      - name: orden
+        label: Orden
+        type: number
+        default: 10
+        description: "Número menor = aparece primero."
+      - name: tipo
+        label: Tipo de propiedad
+        type: select
+        required: true
+        options:
+          values: [Casa, Departamento, Townhouse, Villa, Terreno, Local comercial]
+      - name: estatus
+        label: Estatus
+        type: select
+        options:
+          values: [Preventa, Entrega inmediata, Últimas unidades, Vendida]
+      - name: zona
+        label: Zona / localidad
+        type: string
+        required: true
+        description: "Ej. Conkal, Cholul, Temozón Norte, Santa Gertrudis Copó, Chicxulub."
+      - name: ciudad
+        label: Ciudad
+        type: string
+        default: "Mérida, Yucatán"
+      - name: precio
+        label: Precio (MXN, solo números)
+        type: number
+        description: "Ej. 3450000. Déjalo en 0 para mostrar 'Precio a consultar'."
+      - name: precio_desde
+        label: Mostrar "Desde" antes del precio
+        type: boolean
+        default: true
+      - name: recamaras
+        label: Recámaras
+        type: string
+        description: "Ej. 3 o 2-3. Déjalo vacío si no aplica (terrenos)."
+      - name: banos
+        label: Baños
+        type: string
+        description: "Ej. 2.5"
+      - name: construccion
+        label: m² de construcción
+        type: number
+        description: "0 si no aplica."
+      - name: terreno
+        label: m² de terreno
+        type: number
+      - name: estacionamientos
+        label: Estacionamientos
+        type: number
+      - name: entrega
+        label: Fecha de entrega
+        type: string
+        description: "Ej. Diciembre 2027 o Inmediata."
+      - name: resumen
+        label: Resumen (una línea)
+        type: string
+        description: "Se usa en Google y al compartir el enlace por WhatsApp."
+      - name: portada
+        label: Foto de portada
+        type: image
+        required: true
+        description: "La foto principal de la tarjeta. Horizontal de preferencia."
+      - name: fotos
+        label: Galería de fotos
+        type: image
+        options:
+          multiple:
+            max: 30
+        description: "Incluye también la portada. El orden aquí es el orden de la galería."
+      - name: amenidades
+        label: Amenidades
+        type: string
+        list: true
+        description: "Una por renglón: Alberca, Casa club, Gimnasio…"
+      - name: body
+        label: Descripción
+        type: text
+        description: "Texto de la página de la propiedad. Separa párrafos con una línea en blanco. No pongas teléfonos ni datos del desarrollador."

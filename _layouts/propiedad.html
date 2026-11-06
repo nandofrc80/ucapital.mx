@@ -1,0 +1,96 @@
+---
+layout: default
+body_class: pagina-propiedad
+---
+{%- assign p = page -%}
+{%- assign fotos = p.fotos -%}
+{%- if fotos == nil or fotos.size == 0 %}{% assign fotos = "" | split: "" | push: p.portada %}{% endif -%}
+{%- assign n_fotos = fotos | size -%}
+{%- capture wa_texto %}Hola, me interesa {{ p.nombre }} ({{ p.tipo }} en {{ p.zona }}) que vi en ucapital.mx. ¿Me comparten información?{% endcapture -%}
+
+<section class="ficha-top">
+  <div class="shell">
+    <nav class="migas" aria-label="Ruta"><a href="{{ '/' | relative_url }}">Inicio</a><span>/</span><a href="{{ '/propiedades/' | relative_url }}">Propiedades</a><span>/</span><span aria-current="page">{{ p.nombre }}</span></nav>
+
+    <div class="galeria galeria--{% if n_fotos >= 5 %}5{% elsif n_fotos >= 3 %}3{% else %}1{% endif %}" data-galeria>
+      {%- for f in fotos limit: 5 %}
+      <button type="button" class="galeria__item" data-lightbox-open="{{ forloop.index0 }}" aria-label="Ver foto {{ forloop.index }} de {{ n_fotos }}">
+        <img src="{{ f | relative_url }}" alt="{{ p.nombre }} — foto {{ forloop.index }}" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+      </button>
+      {%- endfor %}
+      <div class="card__badges galeria__badges">
+        {%- if p.estatus %}<span class="badge">{{ p.estatus }}</span>{% endif -%}
+        {%- if p.datos_de_ejemplo %}<span class="badge badge--aviso">Datos de ejemplo</span>{% endif -%}
+      </div>
+      {%- if n_fotos > 1 %}<button type="button" class="galeria__todas" data-lightbox-open="0">{% include icono.html n="fotos" %}Ver {{ n_fotos }} fotos</button>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell ficha">
+    <div class="ficha__main">
+      <p class="card__tipo">{{ p.tipo }}{% if p.estatus %} · {{ p.estatus }}{% endif %}</p>
+      <h1 class="ficha__title">{{ p.nombre }}</h1>
+      <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
+
+      <ul class="specs specs--big">
+        {%- if p.recamaras and p.recamaras != "" %}<li>{% include icono.html n="cama" %}<span>{{ p.recamaras }}</span><small>Recámaras</small></li>{% endif -%}
+        {%- if p.banos and p.banos != "" %}<li>{% include icono.html n="regadera" %}<span>{{ p.banos }}</span><small>Baños</small></li>{% endif -%}
+        {%- if p.construccion and p.construccion > 0 %}<li>{% include icono.html n="construccion" %}<span>{{ p.construccion }} m²</span><small>Construcción</small></li>{% endif -%}
+        {%- if p.terreno and p.terreno > 0 %}<li>{% include icono.html n="terreno" %}<span>{{ p.terreno }} m²</span><small>Terreno</small></li>{% endif -%}
+        {%- if p.estacionamientos and p.estacionamientos > 0 %}<li>{% include icono.html n="auto" %}<span>{{ p.estacionamientos }}</span><small>Estacionamientos</small></li>{% endif -%}
+        {%- if p.entrega and p.entrega != "" %}<li>{% include icono.html n="calendario" %}<span>{{ p.entrega }}</span><small>Entrega</small></li>{% endif -%}
+      </ul>
+
+      <div class="ficha__desc">
+        <h2>Descripción</h2>
+        {{ content }}
+      </div>
+
+      {%- if p.amenidades and p.amenidades.size > 0 %}
+      <div class="ficha__amen">
+        <h2>Amenidades</h2>
+        <ul>{% for a in p.amenidades %}<li>{% include icono.html n="check" %}{{ a }}</li>{% endfor %}</ul>
+      </div>
+      {%- endif %}
+
+      <p class="ficha__nota">Precios, disponibilidad e imágenes son referenciales y pueden cambiar sin previo aviso. Te confirmamos la información vigente al momento de tu solicitud.</p>
+    </div>
+
+    <aside class="ficha__side">
+      <div class="side-card">
+        <p class="precio precio--big">{% include precio.html p=p %}</p>
+        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
+        <p class="side-card__o">o déjanos tus datos</p>
+        {% include formulario.html compacto=true propiedad=p.nombre %}
+        <p class="side-card__nota">{% include icono.html n="check" %}Asesoría gratuita para el comprador</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{%- assign otras = site.propiedades | where_exp: "o", "o.publicado != false" | where_exp: "o", "o.url != page.url" | sort: "orden" -%}
+{%- if otras.size > 0 %}
+<section class="section section--sand">
+  <div class="shell">
+    <header class="section__head">
+      <div><p class="eyebrow">También te puede interesar</p><h2>Más <em>propiedades</em></h2></div>
+      <div class="section__head-side"><a class="btn btn--outline btn--sm" href="{{ '/propiedades/' | relative_url }}">Ver todas {% include icono.html n="flecha" %}</a></div>
+    </header>
+    <div class="grid grid--3">
+      {%- for o in otras limit: 3 %}
+      {% include tarjeta.html p=o %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}
+
+<div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Galería de {{ p.nombre }}">
+  <button type="button" class="lightbox__close" data-lightbox-close aria-label="Cerrar">{% include icono.html n="cerrar" %}</button>
+  <button type="button" class="lightbox__prev" data-lightbox-prev aria-label="Anterior">{% include icono.html n="flecha-izq" %}</button>
+  <figure><img src="" alt="" data-lightbox-img><figcaption data-lightbox-count></figcaption></figure>
+  <button type="button" class="lightbox__next" data-lightbox-next aria-label="Siguiente">{% include icono.html n="flecha" %}</button>
+  <script type="application/json" data-lightbox-fotos>[{% for f in fotos %}"{{ f | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]</script>
+</div>

@@ -1,0 +1,26 @@
+{%- assign p = include.p -%}
+{%- assign n_fotos = p.fotos | size -%}
+<article class="card" data-tipo="{{ p.tipo }}" data-zona="{{ p.zona }}" data-estatus="{{ p.estatus }}" data-precio="{{ p.precio | default: 0 }}" data-recamaras="{{ p.recamaras | plus: 0 }}">
+  <a class="card__link" href="{{ p.url | relative_url }}" aria-label="Ver {{ p.nombre }}">
+    <div class="card__media">
+      <img src="{{ p.portada | default: p.fotos.first | relative_url }}" alt="{{ p.nombre }} — {{ p.tipo }} en {{ p.zona }}" loading="lazy" decoding="async">
+      <div class="card__badges">
+        {%- if p.estatus %}<span class="badge">{{ p.estatus }}</span>{% endif -%}
+        {%- if p.datos_de_ejemplo %}<span class="badge badge--aviso">Datos de ejemplo</span>{% endif -%}
+      </div>
+      {%- if n_fotos > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ n_fotos }}</span>{% endif %}
+    </div>
+    <div class="card__body">
+      <p class="card__tipo">{{ p.tipo }}</p>
+      <h3 class="card__title">{{ p.nombre }}</h3>
+      <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
+      <p class="precio">{% include precio.html p=p %}</p>
+      <ul class="specs">
+        {%- if p.recamaras and p.recamaras != "" %}<li title="Recámaras">{% include icono.html n="cama" %}<span>{{ p.recamaras }}</span><small>Rec.</small></li>{% endif -%}
+        {%- if p.banos and p.banos != "" %}<li title="Baños">{% include icono.html n="regadera" %}<span>{{ p.banos }}</span><small>Baños</small></li>{% endif -%}
+        {%- if p.construccion and p.construccion > 0 %}<li title="Metros de construcción">{% include icono.html n="construccion" %}<span>{{ p.construccion }}</span><small>m² const.</small></li>{% endif -%}
+        {%- if p.terreno and p.terreno > 0 %}<li title="Metros de terreno">{% include icono.html n="terreno" %}<span>{{ p.terreno }}</span><small>m² terreno</small></li>{% endif -%}
+      </ul>
+    </div>
+  </a>
+</article>

@@ -1,0 +1,52 @@
+---
+layout: default
+titulo: Propiedades en venta en Mérida
+descripcion: "Casas, departamentos, townhouses y terrenos en venta en Mérida y la costa yucateca. Asesoría gratuita para el comprador."
+body_class: pagina-catalogo
+---
+{%- assign publicadas = site.propiedades | where_exp: "p", "p.publicado != false" | sort: "orden" -%}
+{%- assign tipos = publicadas | map: "tipo" | uniq | sort -%}
+{%- assign zonas = publicadas | map: "zona" | uniq | sort -%}
+{%- assign estatuses = publicadas | map: "estatus" | uniq | sort -%}
+
+<section class="page-head">
+  <div class="shell">
+    <p class="eyebrow">Propiedades</p>
+    <h1>Encuentra tu <em>próximo hogar</em> en Mérida.</h1>
+    <p>Una selección de desarrollos que conocemos a fondo. Si no ves lo que buscas, escríbenos: tenemos acceso a más de 100 proyectos.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell">
+    <form class="filtros" data-filtros>
+      <label><span>Tipo</span><select name="tipo"><option value="">Todos</option>{% for t in tipos %}<option>{{ t }}</option>{% endfor %}</select></label>
+      <label><span>Zona</span><select name="zona"><option value="">Todas</option>{% for z in zonas %}<option>{{ z }}</option>{% endfor %}</select></label>
+      <label><span>Estatus</span><select name="estatus"><option value="">Todos</option>{% for e in estatuses %}<option>{{ e }}</option>{% endfor %}</select></label>
+      <label><span>Presupuesto</span>
+        <select name="max">
+          <option value="">Cualquiera</option>
+          <option value="2000000">Hasta $2M</option>
+          <option value="4000000">Hasta $4M</option>
+          <option value="7000000">Hasta $7M</option>
+          <option value="12000000">Hasta $12M</option>
+        </select>
+      </label>
+      <label><span>Recámaras</span>
+        <select name="rec"><option value="">Cualquiera</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option></select>
+      </label>
+      <button type="reset" class="btn btn--ghost btn--sm" data-filtros-reset>Limpiar</button>
+    </form>
+    <p class="resultados" data-resultados aria-live="polite">{{ publicadas.size }} propiedades</p>
+    <div class="grid" data-grid>
+      {%- for p in publicadas %}
+      {% include tarjeta.html p=p %}
+      {%- endfor %}
+    </div>
+    <div class="vacio" data-vacio hidden>
+      <h3>No encontramos propiedades con esos filtros.</h3>
+      <p>Cuéntanos qué buscas y te mandamos opciones que no están publicadas.</p>
+      <a class="btn btn--navy" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, busco una propiedad en Mérida' | url_encode }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Escríbenos</a>
+    </div>
+  </div>
+</section>

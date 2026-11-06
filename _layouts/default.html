@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if page.titulo %}{% assign _t = page.titulo | append: " · U·Capital Inmobiliaria" %}{% elsif page.nombre %}{% assign _t = page.nombre | append: " · " | append: page.tipo | append: " en " | append: page.zona | append: " · U·Capital" %}{% else %}{% assign _t = "U·Capital Inmobiliaria — El hogar que mereces vivir en Mérida" %}{% endif %}
+  {%- assign _d = page.resumen | default: page.descripcion | default: site.description -%}
+  {%- assign _img = page.portada | default: "/assets/img/og-ucapital.jpg" -%}
+  <title>{{ _t }}</title>
+  <meta name="description" content="{{ _d | strip_html | strip_newlines | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="U·Capital Inmobiliaria">
+  <meta property="og:title" content="{{ _t | escape }}">
+  <meta property="og:description" content="{{ _d | strip_html | strip_newlines | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ _img | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FAF8F4">
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=1">
+</head>
+<body class="{{ page.body_class }}">
+  {% include encabezado.html %}
+  <main id="contenido">
+    {{ content }}
+  </main>
+  {% include pie.html %}
+  <a class="wa-float" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, me interesa información sobre propiedades en Mérida' | url_encode }}" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">{% include icono.html n="whatsapp" %}</a>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v=1" defer></script>
+</body>
+</html>

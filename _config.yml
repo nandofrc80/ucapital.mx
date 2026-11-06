@@ -1,0 +1,32 @@
+# U·Capital Inmobiliaria — configuración del sitio (Jekyll / GitHub Pages)
+title: "U·Capital Inmobiliaria"
+description: "Asesoría inmobiliaria en Mérida, Yucatán. Comparamos la oferta completa del mercado para que encuentres el hogar que mereces vivir o tu mejor inversión. Asesoría gratuita para el comprador."
+url: "https://ucapital.mx"
+lang: es-MX
+
+# Datos de contacto (se usan en todo el sitio)
+whatsapp: "529999562850"
+telefono: "999 956 2850"
+email: "contacto@ucapital.mx"
+formspree: "https://formspree.io/f/meedeabe"
+
+# Propiedades: cada archivo en _propiedades/ genera su página en /propiedades/<nombre>/
+collections:
+  propiedades:
+    output: true
+    permalink: /propiedades/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: propiedades
+    values:
+      layout: propiedad
+
+markdown: kramdown
+exclude:
+  - README.md
+  - LEEME.md
+  - app.jsx
+  - tweaks-panel.jsx
+  - i18n.js

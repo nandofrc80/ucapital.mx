@@ -1,0 +1,37 @@
+<footer class="footer">
+  <div class="shell footer__grid">
+    <div class="footer__brand">
+      <img src="{{ '/assets/img/logo-blanco.png' | relative_url }}" alt="U·Capital Inmobiliaria" width="150" height="175" loading="lazy">
+      <p>Acompañamos a familias e inversionistas a encontrar el hogar que merecen vivir o invertir en la ciudad de Mérida o en la costa yucateca.</p>
+    </div>
+    <div>
+      <h4>Explorar</h4>
+      <ul>
+        <li><a href="{{ '/propiedades/' | relative_url }}">Propiedades</a></li>
+        <li><a href="{{ '/#nosotros' | relative_url }}">Nosotros</a></li>
+        <li><a href="{{ '/#como-trabajamos' | relative_url }}">Cómo trabajamos</a></li>
+        <li><a href="{{ '/#contacto' | relative_url }}">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+52{{ site.telefono | remove: ' ' }}">{% include icono.html n="telefono" %}{{ site.telefono }}</a></li>
+        <li><a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}WhatsApp directo</a></li>
+        <li><a href="mailto:{{ site.email }}">{% include icono.html n="correo" %}{{ site.email }}</a></li>
+        <li><span>{% include icono.html n="pin" %}Mérida, Yucatán · MX</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="{{ '/aviso-de-privacidad/' | relative_url }}">Aviso de privacidad</a></li>
+        <li><a href="{{ '/terminos/' | relative_url }}">Términos de uso</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell footer__bottom">
+    <span>© {{ site.time | date: "%Y" }} U·Capital Inmobiliaria. Todos los derechos reservados.</span>
+    <span>Precios, disponibilidad e imágenes son referenciales y pueden cambiar sin previo aviso.</span>
+  </div>
+</footer>
