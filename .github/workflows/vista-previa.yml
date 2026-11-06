@@ -1,11 +1,11 @@
-# Genera una vista previa del sitio en ramas distintas a main (no publica nada).
+# Genera una vista previa del sitio en ramas distintas a main y la guarda en la rama "vista-previa-build" (no publica nada).
 name: Vista previa
 on:
   push:
-    branches-ignore: [main]
+    branches-ignore: [main, vista-previa-build]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   construir:
     runs-on: ubuntu-latest
@@ -15,8 +15,13 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - uses: actions/upload-artifact@v4
-        with:
-          name: sitio
-          path: _site
-          retention-days: 7
+      - name: Guardar el sitio generado en la rama vista-previa-build
+        run: |
+          sudo chown -R "$(id -u)" _site
+          cd _site
+          git init -q -b vista-previa-build
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Vista previa de ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" vista-previa-build
