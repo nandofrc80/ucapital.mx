@@ -13,7 +13,12 @@ precio_desde: true
 entrega: "Inmediata a abril 2027"
 resumen: "Casas en privada con casa club y tres parques con más de 15 amenidades. Cuatro modelos de 2 a 4 recámaras al norte de Mérida."
 precios_actualizados: "5 de noviembre de 2026"
-promocion: "Aires acondicionados de regalo en las recámaras (no incluye instalación). Vigente hasta el 30 de noviembre de 2026.\nAdemás, descuento especial en todas las etapas: pregúntanos por el monto vigente para el modelo que te interesa."
+promociones:
+  - texto: "Aires acondicionados de regalo en las recámaras (no incluye instalación)."
+    en: "Air conditioners included in the bedrooms (installation not included)."
+    hasta: "2026-11-30"
+  - texto: "Descuento especial en todas las etapas: pregúntanos por el monto vigente para el modelo que te interesa."
+    en: "Special discount across all phases: ask us about the current amount for the model you're interested in."
 apartado: "Aparta con $10,000 MXN (7 días; 3 días en casas con escrituración inmediata)."
 enganche: "10% del valor total al firmar la promesa de compraventa (15% si contratas algún adicional)."
 financiamiento: "Se aceptan créditos bancarios (Citibanamex, BBVA, Banorte, Santander, Scotiabank, HSBC, Banregio, Inbursa, Mifel, HIR Casa, Banjercito y Pemex; no aplica ISSFAM), Infonavit Total, Cofinavit y Fovissste para Todos, además de recursos propios. Te asesoramos sin costo con los requisitos de cada uno."
@@ -114,7 +119,6 @@ modelos:
 "en":
   "entrega": "Immediate to April 2027"
   "resumen": "Homes in a gated community with a clubhouse and three parks with more than 15 amenities. Four models with 2 to 4 bedrooms in northern Mérida."
-  "promocion": "Air conditioners included in the bedrooms (installation not included). Valid through November 30, 2026.\nPlus a special discount across all phases: ask us about the current amount for the model you're interested in."
   "apartado": "Reserve with $10,000 MXN (7 days; 3 days for homes with immediate deed transfer)."
   "enganche": "10% of the total price when signing the purchase agreement (15% if you add any optional extras)."
   "financiamiento": "Bank mortgages are accepted (Citibanamex, BBVA, Banorte, Santander, Scotiabank, HSBC, Banregio, Inbursa, Mifel, HIR Casa, Banjercito and Pemex; ISSFAM not accepted), as well as Infonavit Total, Cofinavit, Fovissste para Todos and your own funds. We'll walk you through the requirements of each option at no cost."

@@ -1,0 +1,11 @@
+{%- comment -%} Calcula las promociones vigentes de include.p. Deja PR_LIST (lista de {texto,en,hasta}) y PR_HASTA (fecha si todas vencen, "" si alguna es permanente). {%- endcomment -%}
+{%- assign _hoy = site.time | date: "%Y-%m-%d" -%}
+{%- assign PR_LIST = "" | split: "" -%}{%- assign PR_HASTA = "" -%}{%- assign _perm = false -%}
+{%- for pr in include.p.promociones -%}
+  {%- assign _h = pr.hasta | default: "" | append: "" -%}
+  {%- if _h == "" or _h >= _hoy -%}
+    {%- assign PR_LIST = PR_LIST | push: pr -%}
+    {%- if _h == "" %}{% assign _perm = true %}{% elsif _h > PR_HASTA %}{% assign PR_HASTA = _h %}{% endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if _perm %}{% assign PR_HASTA = "" %}{% endif -%}

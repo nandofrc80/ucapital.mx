@@ -8,7 +8,7 @@ body_class: pagina-propiedad
 {%- assign p_tipo = T.tipos[p.tipo] | default: p.tipo -%}
 {%- assign p_est = T.estatuses[p.estatus] | default: p.estatus -%}
 {%- assign p_entrega = X.entrega | default: p.entrega -%}
-{%- assign p_promo = X.promocion | default: p.promocion -%}
+{%- include promos.html p=p -%}
 {%- assign p_amen = X.amenidades | default: p.amenidades -%}
 {%- assign p_apartado = X.apartado | default: p.apartado -%}
 {%- assign p_enganche = X.enganche | default: p.enganche -%}
@@ -34,7 +34,7 @@ body_class: pagina-propiedad
       {%- endfor %}
       <div class="card__badges galeria__badges">
         {%- if p.estatus %}<span class="badge">{{ p_est }}</span>{% endif -%}
-        {%- if p.promocion and p.promocion != "" %}<span class="badge badge--promo">{{ T.promocion }}</span>{% endif -%}
+        {%- if PR_LIST.size > 0 %}<span class="badge badge--promo"{% if PR_HASTA != "" %} data-hasta="{{ PR_HASTA }}"{% endif %}>{{ T.promocion }}</span>{% endif -%}
         {%- if p.datos_de_ejemplo %}<span class="badge badge--aviso">{{ T.datos_ejemplo }}</span>{% endif -%}
       </div>
       {%- if n_fotos > 1 %}<button type="button" class="galeria__todas" data-lightbox-open="general" data-index="0">{% include icono.html n="fotos" %}{{ T.ver_fotos | replace: "__n__", n_fotos }}</button>{% endif %}
@@ -63,10 +63,12 @@ body_class: pagina-propiedad
         {%- if p_entrega and p_entrega != "" %}<li>{% include icono.html n="calendario" %}<span>{% include fecha.html t=p_entrega %}</span><small>{{ T.entrega }}</small></li>{% endif -%}
       </ul>
 
-      {%- if p.promocion and p.promocion != "" %}
-      <div class="promo">
+      {%- if PR_LIST.size > 0 %}
+      <div class="promo"{% if PR_HASTA != "" %} data-hasta="{{ PR_HASTA }}"{% endif %}>
         <span class="promo__tag">{{ T.promocion_vigente }}</span>
-        <p>{{ p_promo | newline_to_br }}</p>
+        {%- for pr in PR_LIST %}{% if L == "en" and pr.en %}{% assign _t = pr.en %}{% else %}{% assign _t = pr.texto %}{% endif %}
+        <p{% if pr.hasta %} data-hasta="{{ pr.hasta }}"{% endif %}>{{ _t | newline_to_br }}{% if pr.hasta %} <span class="promo__vig">{% if L == "en" %}Valid through {{ pr.hasta | date: "%B %-d, %Y" }}{% else %}Vigente hasta el {{ pr.hasta | date: "%-d" }} de {% assign _m = pr.hasta | date: "%-m" | minus: 1 %}{{ "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," | slice: _m }} de {{ pr.hasta | date: "%Y" }}{% endif %}.</span>{% endif %}</p>
+        {%- endfor %}
       </div>
       {%- endif %}
 

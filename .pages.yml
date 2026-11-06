@@ -97,10 +97,15 @@ content:
         label: Precios actualizados al
         type: string
         description: "Ej. 5 de noviembre de 2026"
-      - name: promocion
-        label: Promoción vigente
-        type: text
-        description: "Déjalo vacío si no hay promoción. Aparece en un recuadro dorado."
+      - name: promociones
+        label: Promociones
+        type: object
+        list: true
+        description: "Cada promoción con su fecha de vencimiento: al día siguiente desaparece sola de la página. Sin fecha = permanente."
+        fields:
+          - { name: texto, label: Texto (español), type: text }
+          - { name: en, label: Texto (inglés), type: text }
+          - { name: hasta, label: "Vigente hasta (AAAA-MM-DD)", type: string }
       - name: apartado
         label: Apartado
         type: string
@@ -191,7 +196,6 @@ content:
         fields:
           - { name: resumen, label: Resumen (inglés), type: text }
           - { name: entrega, label: Entrega (inglés), type: string }
-          - { name: promocion, label: Promoción (inglés), type: text }
           - { name: apartado, label: Apartado (inglés), type: text }
           - { name: enganche, label: Enganche (inglés), type: text }
           - { name: financiamiento, label: Financiamiento (inglés), type: text }

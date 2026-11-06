@@ -259,3 +259,12 @@
     els.forEach(function (el) { el.classList.add("reveal"); io.observe(el); });
   }
 })();
+
+/* Promociones con fecha de vencimiento: se ocultan solas al día siguiente */
+(function () {
+  var d = new Date(), hoy = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  document.querySelectorAll("[data-hasta]").forEach(function (el) { if (el.getAttribute("data-hasta") < hoy) el.hidden = true; });
+  document.querySelectorAll(".promo").forEach(function (box) {
+    if (!box.querySelector("p:not([hidden])")) box.hidden = true;
+  });
+})();
