@@ -164,5 +164,5 @@ body_class: pagina-propiedad
   <button type="button" class="lightbox__prev" data-lightbox-prev aria-label="Anterior">{% include icono.html n="flecha-izq" %}</button>
   <figure><img src="" alt="" data-lightbox-img><figcaption data-lightbox-count></figcaption></figure>
   <button type="button" class="lightbox__next" data-lightbox-next aria-label="Siguiente">{% include icono.html n="flecha" %}</button>
-  <script type="application/json" data-lightbox-fotos>{"general":[{% for f in fotos %}"{{ f | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]{% for m in p.modelos %}{% if m.fotos.size > 0 %},"{{ m.nombre | slugify }}":[{% for f in m.fotos %}"{{ f | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}{% endfor %}}</script>
+  <script type="application/json" data-lightbox-fotos>{"general":[{% for f in fotos %}"{{ f | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]{% for m in page.modelos %}{% if m.fotos.size > 0 %},"{{ m.nombre | slugify }}":[{% for f in m.fotos %}"{{ f | relative_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]{% endif %}{% endfor %}}</script>
 </div>

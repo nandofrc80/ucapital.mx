@@ -1,23 +1,23 @@
-{%- assign p = include.p -%}
-{%- include stats.html p=p -%}
-{%- assign n_fotos = p.fotos | size -%}
-{%- assign n_modelos = p.modelos | size -%}
-<article class="card" data-tipo="{{ p.tipo }}" data-zona="{{ p.zona }}" data-estatus="{{ p.estatus }}" data-precio="{{ st_precio }}" data-recamaras="{{ st_rec_max }}">
-  <a class="card__link" href="{{ p.url | relative_url }}" aria-label="Ver {{ p.nombre }}">
+{%- assign tp = include.p -%}
+{%- include stats.html p=tp -%}
+{%- assign n_fotos = tp.fotos | size -%}
+{%- assign n_modelos = tp.modelos | size -%}
+<article class="card" data-tipo="{{ tp.tipo }}" data-zona="{{ tp.zona }}" data-estatus="{{ tp.estatus }}" data-precio="{{ st_precio }}" data-recamaras="{{ st_rec_max }}">
+  <a class="card__link" href="{{ tp.url | relative_url }}" aria-label="Ver {{ tp.nombre }}">
     <div class="card__media">
-      <img src="{{ p.portada | default: p.fotos.first | relative_url }}" alt="{{ p.nombre }} — {{ p.tipo }} en {{ p.zona }}" loading="lazy" decoding="async">
+      <img src="{{ tp.portada | default: tp.fotos.first | relative_url }}" alt="{{ tp.nombre }} — {{ tp.tipo }} en {{ tp.zona }}" loading="lazy" decoding="async">
       <div class="card__badges">
-        {%- if p.estatus %}<span class="badge">{{ p.estatus }}</span>{% endif -%}
-        {%- if p.promocion and p.promocion != "" %}<span class="badge badge--promo">Promoción</span>{% endif -%}
-        {%- if p.datos_de_ejemplo %}<span class="badge badge--aviso">Datos de ejemplo</span>{% endif -%}
+        {%- if tp.estatus %}<span class="badge">{{ tp.estatus }}</span>{% endif -%}
+        {%- if tp.promocion and tp.promocion != "" %}<span class="badge badge--promo">Promoción</span>{% endif -%}
+        {%- if tp.datos_de_ejemplo %}<span class="badge badge--aviso">Datos de ejemplo</span>{% endif -%}
       </div>
       {%- if n_modelos > 0 %}<span class="card__count">{{ n_modelos }} modelos</span>{% elsif n_fotos > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ n_fotos }}</span>{% endif %}
     </div>
     <div class="card__body">
-      <p class="card__tipo">{{ p.tipo }}</p>
-      <h3 class="card__title">{{ p.nombre }}</h3>
-      <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
-      <p class="precio">{% include precio.html p=p monto=st_precio %}</p>
+      <p class="card__tipo">{{ tp.tipo }}</p>
+      <h3 class="card__title">{{ tp.nombre }}</h3>
+      <p class="card__loc">{% include icono.html n="pin" %}{{ tp.zona }}{% if tp.ciudad %}, {{ tp.ciudad }}{% endif %}</p>
+      <p class="precio">{% include precio.html p=tp monto=st_precio %}</p>
       <ul class="specs">
         {%- if st_rec and st_rec != "" %}<li title="Recámaras">{% include icono.html n="cama" %}<span>{{ st_rec }}</span><small>Recámaras</small></li>{% endif -%}
         {%- if st_ban and st_ban != "" %}<li title="Baños">{% include icono.html n="regadera" %}<span>{{ st_ban }}</span><small>Baños</small></li>{% endif -%}
