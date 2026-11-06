@@ -1,0 +1,93 @@
+---
+layout: default
+body_class: pagina-zona
+---
+{%- include lang.html -%}
+{%- assign zd = site.data.zonas | where: "slug", page.zona | first -%}
+{%- assign Z = zd[L] -%}
+{%- assign publicadas = site.propiedades | where_exp: "o", "o.publicado != false" | sort: "orden" -%}
+{%- assign en_zona = "" | split: "" -%}
+{%- for o in publicadas -%}{%- if zd.coincide contains o.zona -%}{%- assign en_zona = en_zona | push: o -%}{%- endif -%}{%- endfor -%}
+{%- assign z_wa = T.z_wa | replace: "__zona__", Z.nombre -%}
+
+<section class="zona-hero" style="--zona-img: url('{{ zd.portada | relative_url }}')">
+  <div class="shell">
+    <nav class="migas migas--claro" aria-label="Ruta"><a href="{{ B | append: '/' | relative_url }}">{{ T.inicio }}</a><span>/</span><a href="{{ B | append: '/zonas/' | relative_url }}">{{ T.nav_zonas }}</a><span>/</span><span aria-current="page">{{ Z.nombre }}</span></nav>
+    <p class="eyebrow eyebrow--light">{{ T.z_eyebrow }}</p>
+    <h1>{{ Z.nombre }}</h1>
+    <p class="zona-hero__lema">{{ Z.lema }}</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell zona">
+    <div class="zona__main">
+      <p class="zona__resumen">{{ Z.resumen }}</p>
+
+      <h2 class="zona__h">{{ T.z_en_pocas }}</h2>
+      <dl class="zona__datos">
+        {%- for d in Z.datos %}<div><dt>{{ d[0] }}</dt><dd>{{ d[1] }}</dd></div>{% endfor %}
+      </dl>
+
+      <h2 class="zona__h">{{ T.z_cerca }}</h2>
+      <ul class="zona__cerca">
+        {%- for c in Z.cerca %}<li><strong>{{ c[0] }}</strong><span>{{ c[1] }}</span></li>{% endfor %}
+      </ul>
+
+      <h2 class="zona__h">{{ T.z_viene }}</h2>
+      <p class="zona__sub">{{ T.z_viene_sub }}</p>
+      <ol class="zona__viene">
+        {%- for v in Z.viene %}<li><h3>{{ v[0] }}</h3><p>{{ v[1] }}</p></li>{% endfor %}
+      </ol>
+
+      <div class="zona__dos">
+        <div class="zona__box zona__box--gold"><h2>{{ T.z_plusvalia }}</h2><p>{{ Z.plusvalia }}</p></div>
+        <div class="zona__box"><h2>{{ T.z_considerar }}</h2><p>{{ Z.considerar }}</p></div>
+      </div>
+    </div>
+
+    <aside class="zona__side">
+      <div class="side-card">
+        <p class="side-card__titulo">{{ Z.nombre }}</p>
+        <p class="side-card__n">{{ en_zona.size }} {% if en_zona.size == 1 %}{{ T.z_n_des1 }}{% else %}{{ T.z_n_des }}{% endif %}</p>
+        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ z_wa | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.z_cta | replace: "__zona__", Z.nombre }}</a>
+        <p class="side-card__nota">{% include icono.html n="check" %}{{ T.asesoria_gratis_comprador }}</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--sand" id="desarrollos">
+  <div class="shell">
+    <header class="section__head"><div><p class="eyebrow">{{ Z.nombre }}</p><h2>{{ T.z_desarrollos }}</h2></div></header>
+    {%- if en_zona.size > 0 %}
+    <div class="grid grid--3">
+      {%- for o in en_zona %}
+      {% include tarjeta.html p=o %}
+      {%- endfor %}
+    </div>
+    {%- else %}
+    <div class="vacio vacio--zona">
+      <p>{{ T.z_sin_desarrollos }}</p>
+      <a class="btn btn--navy" href="https://wa.me/{{ site.whatsapp }}?text={{ z_wa | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.z_cta | replace: "__zona__", Z.nombre }}</a>
+    </div>
+    {%- endif %}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell">
+    <div class="zona__fuentes">
+      <h2>{{ T.z_fuentes }}</h2>
+      <p>{{ T.z_nota }} {{ T.z_actualizado }}.</p>
+      <ul>{% for f in Z.fuentes %}<li><a href="{{ f[1] }}" target="_blank" rel="noopener nofollow">{{ f[0] }}</a></li>{% endfor %}</ul>
+    </div>
+    <div class="zona__otras">
+      <h2>{{ T.z_otras }}</h2>
+      <div class="zona__chips">
+        {%- assign zs = site.data.zonas | sort: "orden" -%}
+        {%- for z in zs %}{% unless z.slug == zd.slug %}<a href="{{ B | append: '/zonas/' | append: z.slug | append: '/' | relative_url }}">{{ z[L].nombre }} {% include icono.html n="flecha" %}</a>{% endunless %}{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

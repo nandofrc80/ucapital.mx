@@ -5,6 +5,8 @@ permalink: /sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {%- assign pares = "/|/en/;/propiedades/|/en/propiedades/;/aviso-de-privacidad/|/en/privacy/;/terminos/|/en/terms/" | split: ";" -%}
+{%- capture zz -%}/zonas/|/en/zonas/{% for z in site.data.zonas %};/zonas/{{ z.slug }}/|/en/zonas/{{ z.slug }}/{% endfor %}{%- endcapture -%}
+{%- assign zl = zz | split: ";" -%}{%- for x in zl -%}{%- assign pares = pares | push: x -%}{%- endfor -%}
 {%- assign props = site.propiedades | where_exp: "o", "o.publicado != false" -%}
 {%- for o in props -%}{%- capture par -%}{{ o.url }}|/en{{ o.url }}{%- endcapture -%}{%- assign pares = pares | push: par -%}{%- endfor -%}
 {%- for par in pares -%}

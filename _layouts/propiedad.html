@@ -48,6 +48,7 @@ body_class: pagina-propiedad
       <p class="card__tipo">{{ p_tipo }}{% if p.estatus %} · {{ p_est }}{% endif %}{% if n_modelos > 0 %} · {{ n_modelos }} {{ T.modelos }}{% endif %}</p>
       <h1 class="ficha__title">{{ p.nombre }}</h1>
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
+      {%- for z in site.data.zonas %}{% if z.coincide contains p.zona %}<a class="ficha__zona" href="{{ B | append: '/zonas/' | append: z.slug | append: '/' | relative_url }}">{% if L == "en" %}About the area: {% else %}Conoce la zona: {% endif %}{{ z[L].nombre }} {% include icono.html n="flecha" %}</a>{% break %}{% endif %}{% endfor %}
       <div class="ficha__movil">
         <p class="precio precio--big">{% include precio.html p=p monto=st_precio %}</p>
         <a class="btn btn--wa btn--block" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.pregunta_wa }}</a>

@@ -1,0 +1,203 @@
+# Zonas del norte de Mérida. Cada zona tiene texto en español (es) y en inglés (en).
+# "coincide" = valores del campo "zona" de las propiedades que se muestran en la página de la zona.
+- slug: cholul-conkal
+  orden: 1
+  coincide: [Conkal, Cholul]
+  portada: /fotos/cumbres-novonorte/portada.jpg
+  es:
+    nombre: "Cholul y Conkal"
+    lema: "El corredor nororiente: más espacio, privadas con amenidades y precios de entrada más accesibles."
+    resumen: "Cholul es una comisaría de Mérida pegada al Periférico, junto a Altabrisa. Conkal es un municipio vecino, a unos 16 km al noreste del centro. Juntos forman uno de los corredores de vivienda nueva con más movimiento de la ciudad."
+    datos:
+      - ["Ubicación", "Nororiente de Mérida, desde el Periférico hasta Conkal"]
+      - ["Población de Conkal (cabecera)", "13,944 habitantes (Censo INEGI 2020)"]
+      - ["Perfil", "Familias que buscan casa nueva con amenidades e inversionistas"]
+    cerca:
+      - ["Comercio", "Plazas Altabrisa y Uptown, a minutos de Cholul por el Periférico."]
+      - ["Educación", "Universidad Modelo en Cholul e Instituto Tecnológico de Conkal (agronomía y biología)."]
+      - ["Salud", "Hospitales privados de la zona de Altabrisa, del otro lado del Periférico."]
+      - ["Conectividad", "Periférico Norte, carretera a Conkal–Motul y salida a la costa por la carretera a Chicxulub."]
+    viene:
+      - ["Plaza Comercial Cholul", "Plaza de dos pisos y 36 locales junto a la Universidad Modelo, a unos 650 m del Periférico. En trámite de autorización ambiental desde diciembre de 2025."]
+      - ["Nuevo complejo comercial frente al Periférico", "Casi una hectárea en el tramo del Periférico entre las avenidas Yucatán y República de Corea, rumbo a Altabrisa (anunciado en febrero de 2026)."]
+      - ["Calles nuevas y repavimentadas", "El Ayuntamiento de Mérida reporta 34 calles intervenidas en Cholul (enero de 2026); en Conkal, el Gobierno del Estado repavimenta 11 calles del centro (octubre de 2026)."]
+      - ["Distribuidor vial de Conkal", "Obra federal de la SICT con inversión estimada de 130 millones de pesos; la meta es iniciarla en 2026, sujeta a que se asignen los recursos."]
+    plusvalia: "La ciudad crece hacia el norte y el nororiente, y en este corredor se siguen autorizando privadas, departamentos y plazas comerciales. Cuando llegan comercio y vialidades a una zona que ya tiene vivienda, normalmente la plusvalía se acelera. Hoy todavía se consiguen casas nuevas desde unos 2 millones de pesos, menos que en Temozón Norte."
+    considerar: "Es una zona aún en consolidación: algunas calles y servicios siguen en obra y para la mayoría de los trayectos se necesita auto. Conviene revisar los tiempos de entrega de cada privada y el acceso desde la carretera."
+    fuentes:
+      - ["Diario de Yucatán — Plaza Comercial Cholul", "https://www.yucatan.com.mx/merida/2025/12/18/otra-plaza-comercial-en-merida-tendra-dos-pisos-y-estara-en-una-comisaria.html"]
+      - ["Diario de Yucatán — Complejo comercial frente al Periférico Norte", "https://www.yucatan.com.mx/merida/2026/02/03/nuevo-complejo-comercial-frente-al-periferico-norte-de-merida.html"]
+      - ["Diario de Yucatán — Nuevo desarrollo de 31 lotes en Cholul", "https://www.yucatan.com.mx/merida/2026/04/21/otro-desarrollo-habitacional-al-norte-de-merida-31-lotes-en-cholul.html"]
+      - ["24 Horas Yucatán — 34 calles mejoradas en Cholul", "https://24horasyucatan.mx/2026/01/20/ayuntamiento-merida-mejora-34-calles-cholul/"]
+      - ["Notired Mérida — Repavimentación de calles en Conkal", "https://notiredmerida.com/2026/10/14/la-calle-16-de-conkal-se-arregla-por-primera-vez/"]
+      - ["El Heraldo de Yucatán — Distribuidor vial de Conkal", "https://yucatan.heraldodemexico.com.mx/nacional/2025/9/18/distribuidor-vial-de-conkal-esto-se-sabe-sobre-el-inicio-de-su-construccion-en-yucatan-2243.html"]
+      - ["Data México — Instituto Tecnológico de Conkal", "https://www.economia.gob.mx/datamexico/en/profile/institution/instituto-tecnologico-de-conkal"]
+  en:
+    nombre: "Cholul & Conkal"
+    lema: "The northeast corridor: more space, gated communities with amenities and more accessible entry prices."
+    resumen: "Cholul is a district of Mérida right next to the ring road (Periférico), by Altabrisa. Conkal is a neighboring municipality about 16 km northeast of downtown. Together they form one of the busiest new-home corridors in the city."
+    datos:
+      - ["Location", "Northeast Mérida, from the ring road out to Conkal"]
+      - ["Conkal town population", "13,944 residents (INEGI 2020 Census)"]
+      - ["Who buys here", "Families looking for a new home with amenities, and investors"]
+    cerca:
+      - ["Shopping", "Altabrisa and Uptown malls, minutes from Cholul via the ring road."]
+      - ["Education", "Universidad Modelo in Cholul and the Conkal Institute of Technology (agronomy and biology)."]
+      - ["Healthcare", "Private hospitals in the Altabrisa area, just across the ring road."]
+      - ["Getting around", "Northern ring road, the Conkal–Motul highway and the road to the coast via Chicxulub."]
+    viene:
+      - ["Plaza Comercial Cholul", "Two-story shopping center with 36 units next to Universidad Modelo, about 650 m from the ring road. Environmental permit in process since December 2025."]
+      - ["New retail complex on the ring road", "Almost one hectare on the stretch of the ring road between Yucatán and República de Corea avenues, toward Altabrisa (announced February 2026)."]
+      - ["New and repaved streets", "The City of Mérida reports 34 streets improved in Cholul (January 2026); in Conkal, the State Government is repaving 11 downtown streets (October 2026)."]
+      - ["Conkal highway interchange", "Federal project with an estimated budget of 130 million pesos; the goal is to begin in 2026, subject to funding."]
+    plusvalia: "The city is growing north and northeast, and new gated communities, apartments and shopping centers keep being approved in this corridor. When retail and roads arrive in an area that already has housing, appreciation usually speeds up. New homes can still be found from around 2 million pesos — less than in Temozón Norte."
+    considerar: "This area is still consolidating: some streets and services are under construction, and most trips require a car. It's worth checking each community's delivery dates and access from the highway."
+    fuentes:
+      - ["Diario de Yucatán — Plaza Comercial Cholul (Spanish)", "https://www.yucatan.com.mx/merida/2025/12/18/otra-plaza-comercial-en-merida-tendra-dos-pisos-y-estara-en-una-comisaria.html"]
+      - ["Diario de Yucatán — Retail complex on the northern ring road (Spanish)", "https://www.yucatan.com.mx/merida/2026/02/03/nuevo-complejo-comercial-frente-al-periferico-norte-de-merida.html"]
+      - ["Diario de Yucatán — New 31-lot development in Cholul (Spanish)", "https://www.yucatan.com.mx/merida/2026/04/21/otro-desarrollo-habitacional-al-norte-de-merida-31-lotes-en-cholul.html"]
+      - ["24 Horas Yucatán — 34 streets improved in Cholul (Spanish)", "https://24horasyucatan.mx/2026/01/20/ayuntamiento-merida-mejora-34-calles-cholul/"]
+      - ["Notired Mérida — Street repaving in Conkal (Spanish)", "https://notiredmerida.com/2026/10/14/la-calle-16-de-conkal-se-arregla-por-primera-vez/"]
+      - ["El Heraldo de Yucatán — Conkal interchange (Spanish)", "https://yucatan.heraldodemexico.com.mx/nacional/2025/9/18/distribuidor-vial-de-conkal-esto-se-sabe-sobre-el-inicio-de-su-construccion-en-yucatan-2243.html"]
+      - ["Data México — Conkal Institute of Technology", "https://www.economia.gob.mx/datamexico/en/profile/institution/instituto-tecnologico-de-conkal"]
+
+- slug: temozon-norte
+  orden: 2
+  coincide: [Temozón Norte, Temozón]
+  portada: /assets/img/insp-03.jpg
+  es:
+    nombre: "Temozón Norte"
+    lema: "La zona más consolidada del norte: plazas, hospitales y colegios a unos minutos."
+    resumen: "Temozón Norte está justo al norte del Periférico, entre la salida a Progreso y Santa Gertrudis Copó. Es la zona que marcó la pauta del crecimiento del norte de Mérida y hoy concentra buena parte de la oferta comercial y de servicios de primer nivel."
+    datos:
+      - ["Ubicación", "Norte de Mérida, al pie del Periférico Norte"]
+      - ["Referente", "Cabo Norte, comunidad planeada de más de 125 hectáreas"]
+      - ["Perfil", "Familias que priorizan servicios y cercanía; inversión en renta"]
+    cerca:
+      - ["Comercio", "La Isla Mérida Cabo Norte, City Center y The Harbor, todos en el corredor norte."]
+      - ["Salud", "Hospital Faro del Mayab, cerca de Cabo Norte y La Isla."]
+      - ["Educación", "Colegio Teresiano en Cabo Norte; universidades privadas del norte a pocos minutos."]
+      - ["Deporte y recreación", "Sports World y los 5 km de recorridos verdes y lagos de Cabo Norte."]
+    viene:
+      - ["Paso vehicular de City Center", "El Gobierno del Estado entregó en marzo de 2026 la modernización vial de la zona de City Center, con más de 88 millones de pesos, nuevos semáforos y cruces peatonales."]
+      - ["Más oferta comercial y médica", "Siguen llegando locales, torres médicas y desarrollos de usos mixtos sobre la avenida Temozón y el Periférico."]
+    plusvalia: "Temozón Norte ya pasó la etapa de consolidación: tiene servicios, vialidades y comercio terminados. Por eso sus precios son de los más altos del norte, pero también es de las zonas con demanda más estable para vivir y para rentar."
+    considerar: "El precio por metro cuadrado es alto y hay poco terreno disponible, así que la oferta nueva suele ser de departamentos, townhouses o privadas pequeñas. En horas pico, el tránsito sobre el Periférico y la avenida Temozón es intenso."
+    fuentes:
+      - ["Desde el Balcón — Entrega de obras viales en City Center (marzo 2026)", "https://www.desdeelbalcon.com/balcon/modernizan-movilidad-en-el-norte-de-merida/"]
+      - ["Diario de Yucatán — Inicio de la modernización del Periférico en City Center", "https://www.yucatan.com.mx/merida/2025/08/01/joaquin-diaz-mena-da-inicio-a-obras-de-modernizacion-vial-en-el-periferico-de-merida.html"]
+      - ["Folleto oficial del Master Plan de Cabo Norte", "https://assets.easybroker.com/property_files/3984971/265565/FRONDEZA-Folleto.pdf"]
+  en:
+    nombre: "Temozón Norte"
+    lema: "The most established area in the north: malls, hospitals and schools just minutes away."
+    resumen: "Temozón Norte sits just north of the ring road, between the highway to Progreso and Santa Gertrudis Copó. It set the pace for northern Mérida's growth and today concentrates much of the city's top-tier shopping and services."
+    datos:
+      - ["Location", "North Mérida, right off the northern ring road"]
+      - ["Landmark", "Cabo Norte, a master-planned community of more than 125 hectares"]
+      - ["Who buys here", "Families who prioritize services and convenience; rental investors"]
+    cerca:
+      - ["Shopping", "La Isla Mérida Cabo Norte, City Center and The Harbor, all along the northern corridor."]
+      - ["Healthcare", "Faro del Mayab Hospital, near Cabo Norte and La Isla."]
+      - ["Education", "Colegio Teresiano in Cabo Norte; private universities in the north just minutes away."]
+      - ["Sports & leisure", "Sports World and Cabo Norte's 5 km of green trails and lakes."]
+    viene:
+      - ["City Center interchange", "In March 2026 the State Government delivered the road upgrades around City Center — over 88 million pesos, new traffic lights and pedestrian crossings."]
+      - ["More retail and medical space", "Shops, medical towers and mixed-use projects keep arriving along Temozón avenue and the ring road."]
+    plusvalia: "Temozón Norte is past its consolidation stage: services, roads and retail are already in place. That's why its prices are among the highest in the north, but it's also one of the areas with the most stable demand for living and renting."
+    considerar: "Price per square meter is high and land is scarce, so new supply tends to be apartments, townhouses or small gated communities. Rush-hour traffic on the ring road and Temozón avenue is heavy."
+    fuentes:
+      - ["Desde el Balcón — City Center road works delivered, March 2026 (Spanish)", "https://www.desdeelbalcon.com/balcon/modernizan-movilidad-en-el-norte-de-merida/"]
+      - ["Diario de Yucatán — Start of the ring road upgrade at City Center (Spanish)", "https://www.yucatan.com.mx/merida/2025/08/01/joaquin-diaz-mena-da-inicio-a-obras-de-modernizacion-vial-en-el-periferico-de-merida.html"]
+      - ["Official Cabo Norte master plan brochure (Spanish)", "https://assets.easybroker.com/property_files/3984971/265565/FRONDEZA-Folleto.pdf"]
+
+- slug: zona-country
+  orden: 3
+  coincide: [Zona Country, Country, Chablekal, Komchén, Xcanatún]
+  portada: /assets/img/insp-01.jpg
+  es:
+    nombre: "Zona Country"
+    lema: "Golf, naturaleza y privadas de alto nivel sobre la carretera a Progreso."
+    resumen: "Se le llama Zona Country al conjunto de desarrollos residenciales que rodean al Yucatán Country Club, sobre la carretera Mérida–Progreso, al norte del Periférico, entre comisarías como Xcanatún, Chablekal y Komchén. Combina vida tranquila con salida rápida a la playa."
+    datos:
+      - ["Ubicación", "Carretera Mérida–Progreso, al norte del Periférico"]
+      - ["Referente", "Yucatán Country Club: unas 330 hectáreas con campo de golf Jack Nicklaus"]
+      - ["Perfil", "Familias que buscan terreno amplio, naturaleza y exclusividad; casa para jubilarse"]
+    cerca:
+      - ["Educación", "Universidad Anáhuac Mayab y Colegio Madison, frente al Yucatán Country Club."]
+      - ["Golf y club", "Campo El Jaguar de 18 hoyos diseñado por Jack Nicklaus y casa club con restaurantes, albercas y canchas."]
+      - ["Playa", "Progreso y la costa yucateca, a unos 25 minutos por la carretera."]
+      - ["Comercio", "The Harbor, La Isla y Galerías Mérida, de regreso hacia el Periférico."]
+    viene:
+      - ["Nuevas privadas alrededor del Country", "Alrededor del Yucatán Country Club se siguen lanzando privadas de lotes residenciales y departamentos que toman al club como referente."]
+    plusvalia: "La presencia del Yucatán Country Club, de universidades y colegios reconocidos y la salida directa a Progreso hacen de esta una de las zonas más buscadas por compradores de alto nivel, nacionales y extranjeros. Al estar más alejada, todavía hay terreno disponible para nuevos proyectos."
+    considerar: "La vida diaria depende del auto y algunos servicios cotidianos quedan a 15 o 20 minutos. Las cuotas de mantenimiento en privadas de este nivel suelen ser más altas que en otras zonas."
+    fuentes:
+      - ["Top 100 Golf Courses — Yucatán Country Club (El Jaguar)", "https://www.top100golfcourses.com/golf-course/yucatan"]
+  en:
+    nombre: "Zona Country"
+    lema: "Golf, nature and upscale gated communities along the highway to Progreso."
+    resumen: "\"Zona Country\" is what locals call the cluster of residential developments around the Yucatán Country Club, on the Mérida–Progreso highway north of the ring road, near the villages of Xcanatún, Chablekal and Komchén. It combines a quiet lifestyle with quick access to the beach."
+    datos:
+      - ["Location", "Mérida–Progreso highway, north of the ring road"]
+      - ["Landmark", "Yucatán Country Club: about 330 hectares (820 acres) with a Jack Nicklaus golf course"]
+      - ["Who buys here", "Families seeking larger lots, nature and exclusivity; retirees"]
+    cerca:
+      - ["Education", "Universidad Anáhuac Mayab and Madison school, across from the Yucatán Country Club."]
+      - ["Golf & club", "El Jaguar, an 18-hole Jack Nicklaus Signature course, and a clubhouse with restaurants, pools and courts."]
+      - ["Beach", "Progreso and the Yucatán coast, about 25 minutes up the highway."]
+      - ["Shopping", "The Harbor, La Isla and Galerías Mérida, back toward the ring road."]
+    viene:
+      - ["New communities around the club", "New residential lot and apartment developments keep launching around the Yucatán Country Club, using it as their anchor."]
+    plusvalia: "The Yucatán Country Club, well-known universities and schools, and direct access to Progreso make this one of the most sought-after areas for upscale buyers, both Mexican and foreign. Being further out, there is still land available for new projects."
+    considerar: "Daily life depends on a car and some everyday services are 15–20 minutes away. Maintenance fees in gated communities at this level are usually higher than elsewhere."
+    fuentes:
+      - ["Top 100 Golf Courses — Yucatán Country Club (El Jaguar)", "https://www.top100golfcourses.com/golf-course/yucatan"]
+
+- slug: dzitya
+  orden: 4
+  coincide: [Dzityá, Dzitya, Real Montejo]
+  portada: /assets/img/insp-06.jpg
+  es:
+    nombre: "Dzityá y Real Montejo"
+    lema: "Tradición artesanal y vivienda nueva en el norponiente, a minutos del Periférico."
+    resumen: "Dzityá es una comisaría de Mérida al norponiente de la ciudad, a unos 10 km del centro, famosa por sus talleres de tallado en piedra y madera. A su alrededor creció Real Montejo, una zona residencial junto al Periférico Norte con privadas, casas a pie de calle y departamentos."
+    datos:
+      - ["Ubicación", "Norponiente de Mérida, junto al Periférico Norte"]
+      - ["Identidad", "Más de 25 años de la Feria Artesanal Tunich"]
+      - ["Perfil", "Primeras viviendas, familias jóvenes e inversión en renta"]
+    cerca:
+      - ["Educación", "Universidad Tecmilenio y UVM Campus Mérida, cerca de Real Montejo."]
+      - ["Salud", "CRIT Teletón Yucatán, también en el entorno de Real Montejo."]
+      - ["Comercio", "The Harbor, Galerías Mérida y la avenida Prolongación Montejo, a pocos minutos por el Periférico."]
+      - ["Cultura", "Talleres artesanales de piedra, madera, bordado y joyería; recorridos turísticos impulsados por el Ayuntamiento."]
+    viene:
+      - ["Turismo comunitario en Dzityá", "En 2026 el Ayuntamiento de Mérida presentó un recorrido por los talleres artesanales y entregó equipamiento a artesanos y cocineras de la comisaría."]
+      - ["Más vivienda vertical y horizontal", "En Real Montejo siguen saliendo privadas de lotes, casas en preventa y edificios de departamentos."]
+    plusvalia: "Real Montejo ofrece algo poco común: cercanía real al Periférico Norte y a la zona de plazas, con precios más moderados que Temozón o la Zona Country. La combinación de universidades, servicios y vivienda nueva la hace atractiva para vivir y para rentar."
+    considerar: "La zona mezcla fraccionamientos nuevos con el pueblo tradicional y sus talleres; conviene conocer bien la ubicación exacta de cada desarrollo y sus accesos."
+    fuentes:
+      - ["Diario de Yucatán — Turismo artesanal en Dzityá (julio 2026)", "https://www.yucatan.com.mx/merida/2026/07/29/turismo-artesanal-nuevo-proyecto-permite-recorrer-talleres-de-dzitya.html"]
+      - ["24 Horas Yucatán — Dzityá preserva el legado artesanal", "https://24horasyucatan.mx/2026/07/23/dzitya-legado-artesanal-yucatan/"]
+      - ["Novedades Yucatán — Tallado de cantera en Dzityá", "https://sipse.com/novedades-yucatan/dzitya-artesanias-tallado-cantera-piedra-madera-oficio-145352.html"]
+  en:
+    nombre: "Dzityá & Real Montejo"
+    lema: "Artisan tradition and new homes in the northwest, minutes from the ring road."
+    resumen: "Dzityá is a district of Mérida in the northwest, about 10 km from downtown, famous for its stone and wood carving workshops. Around it grew Real Montejo, a residential area next to the northern ring road with gated communities, street-front homes and apartments."
+    datos:
+      - ["Location", "Northwest Mérida, next to the northern ring road"]
+      - ["Identity", "Home of the Tunich Artisan Fair for more than 25 years"]
+      - ["Who buys here", "First-time buyers, young families and rental investors"]
+    cerca:
+      - ["Education", "Universidad Tecmilenio and UVM Mérida campus, near Real Montejo."]
+      - ["Healthcare", "CRIT Teletón Yucatán, also in the Real Montejo area."]
+      - ["Shopping", "The Harbor, Galerías Mérida and Prolongación Montejo avenue, a few minutes away via the ring road."]
+      - ["Culture", "Stone, wood, embroidery and jewelry workshops; tours promoted by the City of Mérida."]
+    viene:
+      - ["Community tourism in Dzityá", "In 2026 the City of Mérida launched a tour of the artisan workshops and gave equipment to local artisans and cooks."]
+      - ["More homes and apartments", "New lot communities, pre-sale homes and apartment buildings keep launching in Real Montejo."]
+    plusvalia: "Real Montejo offers something uncommon: real proximity to the northern ring road and the shopping area, with more moderate prices than Temozón or Zona Country. Universities, services and new housing make it attractive both to live in and to rent out."
+    considerar: "The area mixes new neighborhoods with the traditional village and its workshops; it's worth getting to know the exact location and access of each development."
+    fuentes:
+      - ["Diario de Yucatán — Artisan tourism in Dzityá, July 2026 (Spanish)", "https://www.yucatan.com.mx/merida/2026/07/29/turismo-artesanal-nuevo-proyecto-permite-recorrer-talleres-de-dzitya.html"]
+      - ["24 Horas Yucatán — Dzityá's artisan legacy (Spanish)", "https://24horasyucatan.mx/2026/07/23/dzitya-legado-artesanal-yucatan/"]
+      - ["Novedades Yucatán — Stone carving in Dzityá (Spanish)", "https://sipse.com/novedades-yucatan/dzitya-artesanias-tallado-cantera-piedra-madera-oficio-145352.html"]
