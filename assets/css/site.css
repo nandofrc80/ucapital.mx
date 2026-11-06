@@ -188,7 +188,8 @@ p { margin: 0 0 1em; }
 .badge { background: rgba(255,255,255,.94); color: var(--navy); font-size: .72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 6px 11px; border-radius: 999px; box-shadow: var(--shadow-sm); }
 .badge--aviso { background: #FFF4D6; color: #7A5A12; }
 .card__count { position: absolute; top: 14px; right: 14px; display: inline-flex; align-items: center; gap: 5px; background: rgba(15,26,46,.65); color: #fff; font-size: .78rem; padding: 5px 10px; border-radius: 999px; backdrop-filter: blur(6px); }
-.card__body { padding: 22px 22px 20px; display: flex; flex-direction: column; flex: 1; }
+.card__body { padding: 22px 22px 20px; display: flex; flex-direction: column; flex: 1; container-type: inline-size; }
+@container (max-width: 330px) { .specs { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 14px; } }
 .card__tipo { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; margin: 0 0 6px; }
 .card__title { font-size: 1.75rem; margin-bottom: 6px; }
 .card__loc { display: flex; align-items: center; gap: 6px; font-size: .88rem; color: var(--ink-soft); margin: 0 0 14px; }
@@ -335,6 +336,7 @@ p { margin: 0 0 1em; }
 .ficha__amen .ico { color: var(--gold-dark); }
 .ficha__nota { font-size: .82rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 18px; }
 .ficha__side { position: sticky; top: calc(var(--nav-h) + 20px); }
+.ficha__movil { display: none; }
 .side-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow); }
 .precio--big .precio__monto { font-size: 2.2rem; }
 .side-card__o { text-align: center; font-size: .82rem; color: var(--ink-soft); margin: 18px 0 14px; display: flex; align-items: center; gap: 12px; }
@@ -435,6 +437,10 @@ p { margin: 0 0 1em; }
 
   .ficha { grid-template-columns: 1fr; }
   .ficha__side { position: static; }
+  .ficha__movil { display: grid; gap: 14px; margin-top: 18px; }
+  .ficha__movil .precio { margin: 0; }
+  .side-card > .precio, .side-card > .btn--wa { display: none; }
+  .side-card__o { margin-top: 0; }
   .galeria--3, .galeria--5 { grid-template-columns: 1fr; grid-template-rows: none; height: auto; }
   .galeria--3 .galeria__item:not(:first-child), .galeria--5 .galeria__item:not(:first-child) { display: none; }
   .galeria__item:first-child, .galeria--1 { height: 300px; }

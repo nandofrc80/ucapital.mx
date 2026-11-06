@@ -33,6 +33,10 @@ body_class: pagina-propiedad
       <p class="card__tipo">{{ p.tipo }}{% if p.estatus %} · {{ p.estatus }}{% endif %}</p>
       <h1 class="ficha__title">{{ p.nombre }}</h1>
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
+      <div class="ficha__movil">
+        <p class="precio precio--big">{% include precio.html p=p %}</p>
+        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
+      </div>
 
       <ul class="specs specs--big">
         {%- if p.recamaras and p.recamaras != "" %}<li>{% include icono.html n="cama" %}<span>{{ p.recamaras }}</span><small>Recámaras</small></li>{% endif -%}
