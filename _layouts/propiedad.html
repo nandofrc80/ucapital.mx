@@ -100,7 +100,7 @@ body_class: pagina-propiedad
       {%- capture m_wa %}Hola, me interesa el modelo {{ m.nombre }} de {{ p.nombre }} que vi en ucapital.mx. ¿Me comparten disponibilidad y precio?{% endcapture -%}
       <article class="modelo" id="modelo-{{ m_slug }}">
         <button type="button" class="modelo__media" {% if m.fotos.size > 0 %}data-lightbox-open="{{ m_slug }}" data-index="0" aria-label="Ver fotos del modelo {{ m.nombre }}"{% else %}disabled{% endif %}>
-          {%- if m.fotos.size > 0 %}<img src="{{ m.fotos.first | relative_url }}" alt="Modelo {{ m.nombre }} — {{ p.nombre }}" loading="lazy">{% endif %}
+          {%- if m.fotos.size > 0 %}<img src="{{ m.fotos.first | relative_url }}" alt="Modelo {{ m.nombre }} — {{ p.nombre }}" loading="lazy">{% else %}<span class="modelo__placeholder"><img src="{{ '/assets/img/simbolo-navy.png' | relative_url }}" alt="" width="40" height="62"><span>Pide fotos de este modelo por WhatsApp</span></span>{% endif %}
           {%- if m.fotos.size > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ m.fotos.size }}</span>{% endif %}
         </button>
         <div class="modelo__body">
