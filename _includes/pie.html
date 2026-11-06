@@ -3,6 +3,11 @@
     <div class="footer__brand">
       <img src="{{ '/assets/img/logo-blanco.png' | relative_url }}" alt="U·Capital Inmobiliaria" width="150" height="175" loading="lazy">
       <p>Acompañamos a familias e inversionistas a encontrar el hogar que merecen vivir o invertir en la ciudad de Mérida o en la costa yucateca.</p>
+      <div class="footer__redes">
+        {%- if site.redes.facebook != "" %}<a href="{{ site.redes.facebook }}" target="_blank" rel="noopener" aria-label="U·Capital en Facebook">{% include icono.html n="facebook" %}</a>{% endif %}
+        {%- if site.redes.instagram != "" %}<a href="{{ site.redes.instagram }}" target="_blank" rel="noopener" aria-label="U·Capital en Instagram">{% include icono.html n="instagram" %}</a>{% endif %}
+        <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener" aria-label="U·Capital en WhatsApp">{% include icono.html n="whatsapp" %}</a>
+      </div>
     </div>
     <div>
       <h4>Explorar</h4>

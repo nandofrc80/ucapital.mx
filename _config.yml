@@ -8,6 +8,9 @@ lang: es-MX
 whatsapp: "529999562850"
 telefono: "999 956 2850"
 email: "contacto@ucapital.mx"
+redes:
+  facebook: "https://www.facebook.com/profile.php?id=61561095380449"
+  instagram: ""
 formspree: "https://formspree.io/f/meedeabe"
 
 # Propiedades: cada archivo en _propiedades/ genera su página en /propiedades/<nombre>/

@@ -409,6 +409,10 @@ p { margin: 0 0 1em; }
 .footer__grid { display: grid; grid-template-columns: 1.5fr 1fr 1.3fr 1fr; gap: 48px; padding-bottom: 50px; border-bottom: 1px solid rgba(255,255,255,.1); }
 .footer__brand img { width: 120px; height: auto; margin-bottom: 22px; }
 .footer__brand p { font-size: .92rem; max-width: 320px; }
+.footer__redes { display: flex; gap: 12px; margin-top: 22px; }
+.footer__redes a { width: 42px; height: 42px; border-radius: 50%; border: 1px solid rgba(255,255,255,.22); display: grid; place-items: center; color: var(--gold); transition: .2s; }
+.footer__redes a:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+.footer__redes .ico { width: 19px; height: 19px; color: inherit; }
 .footer h4 { font-family: var(--body); font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin: 0 0 18px; font-weight: 600; }
 .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 11px; font-size: .92rem; }
 .footer li a, .footer li span { display: inline-flex; align-items: center; gap: 9px; transition: color .2s; }
