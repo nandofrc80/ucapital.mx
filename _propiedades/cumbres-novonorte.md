@@ -12,7 +12,7 @@ precio: 0
 precio_desde: true
 entrega: "Octubre 2026 a julio 2027"
 resumen: "Casas en la privada Sierra Madre, dentro de una comunidad planeada de 35 hectáreas en Conkal con gran parque central. Ocho modelos de 1 y 2 plantas."
-precios_actualizados: "octubre de 2026"
+precios_actualizados: "noviembre de 2026"
 portada: /fotos/cumbres-novonorte/portada.jpg
 fotos:
   - /fotos/cumbres-novonorte/portada.jpg
@@ -42,6 +42,14 @@ modelos:
     estacionamientos: 2
     precio: 2300000
     descripcion: "Todo en una planta: dos recámaras, sala, comedor, cocina con meseta de granito, baño con meseta de mármol, jardín frontal, pasillo de servicio y área de lavado."
+    fotos:
+      - /fotos/cumbres-novonorte/kita-1.jpg
+      - /fotos/cumbres-novonorte/kita-2.jpg
+      - /fotos/cumbres-novonorte/kita-3.jpg
+      - /fotos/cumbres-novonorte/kita-4.jpg
+      - /fotos/cumbres-novonorte/kita-5.jpg
+      - /fotos/cumbres-novonorte/kita-6.jpg
+      - /fotos/cumbres-novonorte/kita-7.jpg
   - nombre: "Abi 2"
     niveles: "2 plantas"
     recamaras: 2
