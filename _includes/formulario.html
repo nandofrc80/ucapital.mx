@@ -13,7 +13,8 @@
   <fieldset class="field">
     <legend>Presupuesto <em>*</em></legend>
     <div class="chips">
-      {%- for b in "Menos de $2M|$2M – $4M|$4M – $7M|$7M – $12M|Más de $12M" | split: "|" %}
+      {%- assign _ops = "Menos de $2M|$2M – $4M|$4M – $7M|$7M – $12M|Más de $12M" | split: "|" -%}
+      {%- for b in _ops %}
       <label class="chip"><input type="radio" name="presupuesto" value="{{ b }}" required><span>{{ b }}</span></label>
       {%- endfor %}
     </div>
@@ -22,7 +23,8 @@
     <fieldset class="field">
       <legend>Tipo de propiedad</legend>
       <div class="chips">
-        {%- for b in "Casa|Departamento|Townhouse|Terreno" | split: "|" %}
+        {%- assign _ops = "Casa|Departamento|Townhouse|Terreno" | split: "|" -%}
+        {%- for b in _ops %}
         <label class="chip"><input type="radio" name="tipo_propiedad" value="{{ b }}"><span>{{ b }}</span></label>
         {%- endfor %}
       </div>
@@ -30,7 +32,8 @@
     <fieldset class="field">
       <legend>¿Para qué?</legend>
       <div class="chips">
-        {%- for b in "Para vivir|Inversión" | split: "|" %}
+        {%- assign _ops = "Para vivir|Inversión" | split: "|" -%}
+        {%- for b in _ops %}
         <label class="chip"><input type="radio" name="proposito" value="{{ b }}"><span>{{ b }}</span></label>
         {%- endfor %}
       </div>
