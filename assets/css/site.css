@@ -596,26 +596,27 @@ p { margin: 0 0 1em; }
 .guia-nota { margin: 26px 0 0; font-size: .85rem; color: var(--ink-soft); }
 
 .nota-hero { color: #fff; padding: 52px 0 58px; background: radial-gradient(120% 140% at 85% 10%, rgba(184,153,104,.35), transparent 55%), linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%); }
-.nota-hero__inner { max-width: 900px; }
+.nota-hero__inner > * { max-width: 900px; }
 .nota-hero h1 { color: #fff; font-size: clamp(2rem, 4.2vw, 3.2rem); margin: 8px 0 14px; }
 .nota-hero__bajada { font-size: 1.12rem; color: rgba(255,255,255,.85); max-width: 720px; margin: 0 0 14px; }
 .nota-hero__meta { font-size: .85rem; color: var(--gold); margin: 0; letter-spacing: .02em; }
 .nota__wrap { display: grid; grid-template-columns: minmax(0, 720px) 300px; gap: 64px; justify-content: space-between; padding-top: 44px; padding-bottom: 72px; }
 .nota__side { position: sticky; top: calc(var(--nav-h) + 20px); align-self: start; }
 .nota-cta { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow); }
-.nota-cta__titulo { font-family: var(--display); font-size: 1.55rem; color: var(--navy); margin: 0 0 8px; line-height: 1.15; }
+.nota-cta p.nota-cta__titulo { font-family: var(--display); font-size: 1.55rem; color: var(--navy); margin: 0 0 8px; line-height: 1.15; }
 .nota-cta p { color: var(--ink-soft); font-size: .93rem; margin: 0 0 16px; }
 .nota-cta .btn { white-space: normal; text-align: center; line-height: 1.3; height: auto; min-height: 48px; padding-top: 12px; padding-bottom: 12px; }
 .nota-aviso { font-size: .88rem; color: var(--ink-soft); background: var(--sand); border-left: 3px solid var(--gold); border-radius: 0 var(--radius) var(--radius) 0; padding: 14px 18px; margin: 0 0 30px; line-height: 1.55; }
 .nota-aviso strong { color: var(--navy); }
 .nota__texto { font-size: 1.06rem; line-height: 1.75; color: var(--ink); }
 .nota__texto > p:first-child { font-size: 1.16rem; }
+.nota__texto .grafica + p { font-size: .85rem; color: var(--ink-soft); margin-top: -12px; }
 .nota__texto h2 { font-size: clamp(1.6rem, 2.6vw, 2.05rem); margin: 44px 0 14px; }
 .nota__texto h3 { font-size: 1.4rem; margin: 0 0 10px; }
 .nota__texto ul { padding-left: 20px; display: grid; gap: 10px; }
 .nota__texto a:not(.footnote):not(.reversefootnote) { color: var(--gold-dark); text-decoration: underline; text-underline-offset: 3px; }
-.nota__texto sup { line-height: 0; }
-.nota__texto a.footnote { display: inline-block; min-width: 1.35em; padding: 0 .3em; margin-left: 2px; font-size: .68rem; font-weight: 600; line-height: 1.5; text-align: center; color: var(--gold-dark); background: var(--gold-soft); border-radius: 999px; text-decoration: none; vertical-align: super; }
+.nota__texto sup { line-height: 0; font-size: 1em; vertical-align: super; }
+.nota__texto a.footnote { display: inline-block; min-width: 1.35em; padding: 0 .3em; margin-left: 2px; font-size: .68rem; font-weight: 600; line-height: 1.5; text-align: center; color: var(--gold-dark); background: var(--gold-soft); border-radius: 999px; text-decoration: none; vertical-align: baseline; position: relative; top: .35em; }
 .nota__texto a.footnote:hover { background: var(--gold); color: #fff; }
 .nota__texto a.footnote::before { content: "["; } .nota__texto a.footnote::after { content: "]"; }
 .footnotes { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: .85rem; line-height: 1.55; color: var(--ink-soft); }
