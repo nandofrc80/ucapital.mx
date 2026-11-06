@@ -31,7 +31,7 @@
     {{ content }}
   </main>
   {% include pie.html %}
-  <a class="wa-float" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, me interesa información sobre propiedades en Mérida' | url_encode }}" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">{% include icono.html n="whatsapp" %}</a>
+  <a class="wa-float" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, me interesa información sobre propiedades en Mérida' | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">{% include icono.html n="whatsapp" %}</a>
   <script src="{{ '/assets/js/site.js' | relative_url }}?v=1" defer></script>
 </body>
 </html>

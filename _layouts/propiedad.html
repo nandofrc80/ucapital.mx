@@ -35,7 +35,7 @@ body_class: pagina-propiedad
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
       <div class="ficha__movil">
         <p class="precio precio--big">{% include precio.html p=p %}</p>
-        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
+        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
       </div>
 
       <ul class="specs specs--big">
@@ -65,7 +65,7 @@ body_class: pagina-propiedad
     <aside class="ficha__side">
       <div class="side-card">
         <p class="precio precio--big">{% include precio.html p=p %}</p>
-        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
+        <a class="btn btn--wa btn--block" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por WhatsApp</a>
         <p class="side-card__o">o déjanos tus datos</p>
         {% include formulario.html compacto=true propiedad=p.nombre %}
         <p class="side-card__nota">{% include icono.html n="check" %}Asesoría gratuita para el comprador</p>

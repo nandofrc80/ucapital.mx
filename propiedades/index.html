@@ -46,7 +46,7 @@ body_class: pagina-catalogo
     <div class="vacio" data-vacio hidden>
       <h3>No encontramos propiedades con esos filtros.</h3>
       <p>Cuéntanos qué buscas y te mandamos opciones que no están publicadas.</p>
-      <a class="btn btn--navy" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, busco una propiedad en Mérida' | url_encode }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Escríbenos</a>
+      <a class="btn btn--navy" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, busco una propiedad en Mérida' | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Escríbenos</a>
     </div>
   </div>
 </section>

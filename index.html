@@ -138,7 +138,7 @@ body_class: pagina-inicio
       <p class="eyebrow eyebrow--light">Catálogo ampliado</p>
       <h2>¿No ves lo que <em>buscas?</em></h2>
       <p>Tenemos acceso a más de 100 desarrollos en Mérida y la costa. Estos son algunos de ellos; pregúntanos por cualquiera.</p>
-      <a class="btn btn--gold" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, quiero información de un desarrollo' | url_encode }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por cualquiera</a>
+      <a class="btn btn--gold" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, quiero información de un desarrollo' | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Pregunta por cualquiera</a>
     </div>
     <ul class="catalogo__chips">
       {%- assign nombres = "Estela Nativa|Aldoria|NAIA|Cumbres Novonorte|Arista Residencial|Gran Bosco|KAUA by Laja|UKUM|OLMOS|Santa Loreto|Livenza|El Origen|Residencial Dzidzil-ha|Campocielo|Casona 333|ANURA|PRANA|ETRO|VETA|Pájaro en Piedra|MACORA 86" | split: "|" -%}

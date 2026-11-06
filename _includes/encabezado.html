@@ -9,7 +9,7 @@
       <a href="{{ '/#como-trabajamos' | relative_url }}">Cómo trabajamos</a>
       <a href="{{ '/#contacto' | relative_url }}">Contacto</a>
     </nav>
-    <a class="btn btn--navy btn--sm nav__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, me gustaría recibir asesoría para encontrar una propiedad en Mérida' | url_encode }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Asesoría gratuita</a>
+    <a class="btn btn--navy btn--sm nav__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hola, me gustaría recibir asesoría para encontrar una propiedad en Mérida' | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Asesoría gratuita</a>
     <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-nav-toggle>{% include icono.html n="menu" %}</button>
   </div>
   <div class="nav__mobile" data-nav-mobile hidden>
