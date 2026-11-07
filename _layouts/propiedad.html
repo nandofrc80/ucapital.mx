@@ -128,8 +128,10 @@ body_class: pagina-propiedad
           <ul class="specs specs--modelo">
             <li>{% include icono.html n="cama" %}<span>{{ m.recamaras }}{% if m.recamaras_max and m.recamaras_max > m.recamaras %}<em>–{{ m.recamaras_max }}</em>{% endif %}</span><small>{{ T.recamaras }}</small></li>
             <li>{% include icono.html n="regadera" %}<span>{{ m.banos }}</span><small>{{ T.banos }}</small></li>
-            <li>{% include icono.html n="construccion" %}<span>{{ m.construccion }}{% if m.construccion_max and m.construccion_max > m.construccion %}<em>–{{ m.construccion_max }}</em>{% endif %}</span><small>{{ T.m2_constr }}</small></li>
-            <li>{% include icono.html n="terreno" %}<span>{{ m.terreno }}</span><small>{% if m.terreno_desde %}{{ T.m2_terr_min }}{% else %}{{ T.m2_terreno }}{% endif %}</small></li>
+            {%- if m.construccion %}
+            <li>{% include icono.html n="construccion" %}<span>{{ m.construccion }}{% if m.construccion_max and m.construccion_max > m.construccion %}<em>–{{ m.construccion_max }}</em>{% endif %}</span><small>{{ T.m2_constr }}</small></li>{% endif %}
+            {%- if m.terreno %}
+            <li>{% include icono.html n="terreno" %}<span>{{ m.terreno }}</span><small>{% if m.terreno_desde %}{{ T.m2_terr_min }}{% else %}{{ T.m2_terreno }}{% endif %}</small></li>{% endif %}
             {%- if m.estacionamientos and m.estacionamientos > 0 %}<li>{% include icono.html n="auto" %}<span>{{ m.estacionamientos }}</span><small>{{ T.autos }}</small></li>{% endif %}
           </ul>
           {%- assign m_ent = mx.entrega | default: m.entrega -%}

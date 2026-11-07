@@ -60,6 +60,8 @@ modelos:
   - nombre: "Altozano (preventa)"
     niveles: "2 plantas"
     recamaras: 2
+    recamaras_max: 3
+    construccion: 130
     banos: 2.5
     estacionamientos: 2
     precio: 3200000

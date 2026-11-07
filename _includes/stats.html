@@ -20,10 +20,10 @@
   {%- assign st_rec_max = _rtop -%}
   {%- assign _b = _p.modelos | map: "banos" | sort -%}
   {%- if _b.first == _b.last %}{% assign st_ban = _b.first %}{% else %}{% capture st_ban %}{{ _b.first }}–{{ _b.last }}{% endcapture %}{% endif -%}
-  {%- assign _c = _p.modelos | map: "construccion" | sort -%}
+  {%- assign _c = _p.modelos | map: "construccion" | compact | sort -%}
   {%- assign _cm = _p.modelos | map: "construccion_max" | compact | sort -%}
   {%- assign _ctop = _c.last -%}{%- if _cm.size > 0 and _cm.last > _ctop %}{% assign _ctop = _cm.last %}{% endif -%}
-  {%- if _c.first == _ctop %}{% capture st_con %}{{ _c.first }} m²{% endcapture %}{% else %}{% capture st_con %}{{ _c.first }}–{{ _ctop }} m²{% endcapture %}{% endif -%}
-  {%- assign _t = _p.modelos | map: "terreno" | sort -%}
-  {%- if _t.first == _t.last %}{% capture st_ter %}{{ _t.first }} m²{% endcapture %}{% else %}{% capture st_ter %}{{ _t.first }}–{{ _t.last }} m²{% endcapture %}{% endif -%}
+  {%- if _c.size == 0 %}{% assign st_con = "" %}{% elsif _c.first == _ctop %}{% capture st_con %}{{ _c.first }} m²{% endcapture %}{% else %}{% capture st_con %}{{ _c.first }}–{{ _ctop }} m²{% endcapture %}{% endif -%}
+  {%- assign _t = _p.modelos | map: "terreno" | compact | sort -%}
+  {%- if _t.size == 0 %}{% assign st_ter = "" %}{% elsif _t.first == _t.last %}{% capture st_ter %}{{ _t.first }} m²{% endcapture %}{% else %}{% capture st_ter %}{{ _t.first }}–{{ _t.last }} m²{% endcapture %}{% endif -%}
 {%- endif -%}
