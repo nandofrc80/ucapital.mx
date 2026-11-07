@@ -12,6 +12,10 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a septiembre 2028"
 resumen: "Privada residencial sobre la carretera a Chicxulub con más de 10,000 m² de amenidades y casas de 2 a 4 recámaras, todas con alberca y cocina integral. Hay modelos de una y dos plantas, con entrega inmediata y en preventa."
+promociones:
+  - texto: "¡Noviembre es el Buen Fin en Gran Bosco! Promoción exclusiva para casas de la 1ª etapa: 1 año gratis de cuotas de mantenimiento y 2 minisplits inverter de 12,000 BTU. Pregúntanos qué casas aplican."
+    en: "November is Buen Fin at Gran Bosco! Exclusive offer for phase 1 homes: 1 year of free maintenance fees and 2 inverter mini-split air conditioners (12,000 BTU). Ask us which homes qualify."
+    hasta: "2026-11-30"
 apartado: "Aparta con $10,000 MXN."
 enganche: "10% del valor de la casa."
 financiamiento: "Crédito bancario, recursos propios, Infonavit Total, Cofinavit o Fovissste para Todos. Te asesoramos sin costo con las opciones y requisitos."

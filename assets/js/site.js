@@ -268,3 +268,17 @@
     if (!box.querySelector("p:not([hidden])")) box.hidden = true;
   });
 })();
+
+/* Tema claro / oscuro */
+(function () {
+  var b = document.querySelector('[data-tema]'); if (!b) return;
+  var root = document.documentElement, meta = document.querySelector('meta[name="theme-color"]');
+  function pinta() { var osc = root.getAttribute('data-theme') === 'dark'; b.setAttribute('aria-pressed', osc ? 'true' : 'false'); if (meta) meta.setAttribute('content', osc ? '#0C1424' : '#FAF8F4'); }
+  b.addEventListener('click', function () {
+    var osc = root.getAttribute('data-theme') === 'dark';
+    if (osc) root.removeAttribute('data-theme'); else root.setAttribute('data-theme', 'dark');
+    try { localStorage.setItem('tema', osc ? 'claro' : 'oscuro'); } catch (e) {}
+    pinta();
+  });
+  pinta();
+})();
