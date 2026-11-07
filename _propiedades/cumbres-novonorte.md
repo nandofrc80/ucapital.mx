@@ -12,6 +12,11 @@ precio: 0
 precio_desde: true
 entrega: "Diciembre 2026 a julio 2027"
 resumen: "Casas en la privada Sierra Madre, dentro de una comunidad planeada de 35 hectáreas en Conkal con gran parque central. Ocho modelos de 1 y 2 plantas."
+promociones:
+  - texto: "Este mes de noviembre te regalamos gavetas bajas en cocina y 2 aires acondicionados (no incluye instalación). Válido en la privada Sierra Madre; consulta términos y condiciones."
+    en: "This November we include lower kitchen cabinets and 2 air conditioners (installation not included). Valid in the Sierra Madre community; terms and conditions apply."
+    hasta: "2026-11-30"
+    imagen: /fotos/cumbres-novonorte/promo-2026-11.jpg
 precios_actualizados: "noviembre de 2026"
 portada: /fotos/cumbres-novonorte/portada.jpg
 fotos:

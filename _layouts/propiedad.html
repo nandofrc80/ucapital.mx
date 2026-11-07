@@ -68,6 +68,8 @@ body_class: pagina-propiedad
         <span class="promo__tag">{{ T.promocion_vigente }}</span>
         {%- for pr in PR_LIST %}{% if L == "en" and pr.en %}{% assign _t = pr.en %}{% else %}{% assign _t = pr.texto %}{% endif %}
         <p{% if pr.hasta %} data-hasta="{{ pr.hasta }}"{% endif %}>{{ _t | newline_to_br }}{% if pr.hasta %} <span class="promo__vig">{% if L == "en" %}Valid through {{ pr.hasta | date: "%B %-d, %Y" }}{% else %}Vigente hasta el {{ pr.hasta | date: "%-d" }} de {% assign _m = pr.hasta | date: "%-m" | minus: 1 %}{{ "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," | slice: _m }} de {{ pr.hasta | date: "%Y" }}{% endif %}.</span>{% endif %}</p>
+        {%- if pr.imagen %}
+        <a class="promo__img" href="{{ pr.imagen | relative_url }}" target="_blank" rel="noopener"{% if pr.hasta %} data-hasta="{{ pr.hasta }}"{% endif %}><img src="{{ pr.imagen | relative_url }}" alt="{% if L == "en" %}Promotion{% else %}Promoción{% endif %} — {{ p.nombre }}" loading="lazy"></a>{% endif %}
         {%- endfor %}
       </div>
       {%- endif %}

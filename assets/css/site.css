@@ -714,3 +714,6 @@ p { margin: 0 0 1em; }
 .promo [hidden], .badge--promo[hidden], .promo[hidden] { display: none !important; }
 .promo p + p { margin-top: 8px; }
 .promo__vig { font-weight: 600; }
+
+.promo__img { display: block; margin-top: 14px; max-width: 520px; }
+.promo__img img { display: block; width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(15,26,46,.12); }
