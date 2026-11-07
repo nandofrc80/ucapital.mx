@@ -61,7 +61,10 @@ modelos:
     entrega: "Diciembre 2027 a septiembre 2028"
     disponibles: 11
     descripcion: "Casa de una planta: media cochera techada para 2 autos, sala, comedor, cocina al frente, recámara con espacio para clóset y baño completo, segunda recámara con espacio para clóset y baño completo, área de lavado techada y alberca."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/a-104-1.jpg"
+      - "/fotos/gran-bosco/a-104-2.jpg"
+      - "/fotos/gran-bosco/a-104-3.jpg"
   - nombre: "A-126"
     niveles: "2 plantas"
     recamaras: 2
@@ -74,7 +77,9 @@ modelos:
     entrega: "Inmediata"
     disponibles: 2
     descripcion: "Planta baja: cochera semitechada para 2 autos, sala, comedor, medio baño de visitas, cocina, terraza descubierta, área de lavado techada y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y recámara secundaria con área de clóset y baño completo."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/a-126-1.jpg"
+      - "/fotos/gran-bosco/a-126-2.jpg"
   - nombre: "A-139"
     niveles: "2 plantas"
     recamaras: 2
@@ -87,7 +92,9 @@ modelos:
     entrega: "Inmediata"
     disponibles: 5
     descripcion: "Planta baja: cochera semitechada para 2 autos, sala, comedor, medio baño de visitas, cocina, terraza techada, área de lavado techada y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y recámara secundaria con área de clóset y baño completo."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/a-139-1.jpg"
+      - "/fotos/gran-bosco/a-139-2.jpg"
   - nombre: "E-142"
     niveles: "2 plantas"
     recamaras: 2
@@ -100,7 +107,10 @@ modelos:
     entrega: "Inmediata a julio 2027"
     disponibles: 4
     descripcion: "Planta baja: cochera semitechada para 2 autos, sala, comedor, medio baño de visitas, cocina, terraza descubierta, cuarto de lavado, bodega y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, recámara secundaria con área de clóset y baño completo compartido. Frente de 11 m."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/e-142-1.jpg"
+      - "/fotos/gran-bosco/e-142-2.jpg"
+      - "/fotos/gran-bosco/e-142-3.jpg"
   - nombre: "C-146"
     niveles: "2 plantas"
     recamaras: 2
@@ -113,7 +123,10 @@ modelos:
     entrega: "Inmediata (1 casa) y de octubre 2027 a agosto 2028"
     disponibles: 7
     descripcion: "Planta baja: cochera techada para 2 autos, sala, comedor, cocina, medio baño de visitas, terraza descubierta, área de lavado techada y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y recámara secundaria con área de clóset y baño completo."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/c-146-1.jpg"
+      - "/fotos/gran-bosco/c-146-2.jpg"
+      - "/fotos/gran-bosco/c-146-3.jpg"
   - nombre: "B-147"
     niveles: "2 plantas"
     recamaras: 2
@@ -126,7 +139,10 @@ modelos:
     entrega: "Marzo 2028"
     disponibles: 3
     descripcion: "Planta baja: cochera techada para 2 autos, sala, comedor, cocina, recámara secundaria con área de clóset, baño completo compartido, terraza descubierta, área de lavado techada y alberca. Planta alta: recámara principal con clóset vestidor y baño completo."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/b-147-1.jpg"
+      - "/fotos/gran-bosco/b-147-2.jpg"
+      - "/fotos/gran-bosco/b-147-3.jpg"
   - nombre: "D-149"
     niveles: "1 planta"
     recamaras: 3
@@ -139,7 +155,10 @@ modelos:
     entrega: "Enero a agosto 2028"
     disponibles: 4
     descripcion: "Casa de una planta con frente de 10 m: cochera semitechada para 2 autos, sala, comedor, cocina, área de lavado techada, alberca, recámara principal con clóset vestidor y baño completo, recámara secundaria con área de clóset y baño completo, y una tercera recámara con área de clóset y baño completo compartido."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/d-149-1.jpg"
+      - "/fotos/gran-bosco/d-149-2.jpg"
+      - "/fotos/gran-bosco/d-149-3.jpg"
   - nombre: "B-167"
     niveles: "2 plantas"
     recamaras: 3
@@ -152,7 +171,9 @@ modelos:
     entrega: "Agosto 2027 a julio 2028"
     disponibles: 7
     descripcion: "Planta baja: cochera techada para 2 autos, sala, comedor, cocina, recámara secundaria con área de clóset, baño completo compartido, terraza descubierta, área de lavado techada y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y otra recámara con área de clóset y baño completo."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/b-167-1.jpg"
+      - "/fotos/gran-bosco/b-167-2.jpg"
   - nombre: "C-166"
     niveles: "2 plantas"
     recamaras: 3
@@ -165,7 +186,10 @@ modelos:
     entrega: "Julio 2027 a marzo 2028"
     disponibles: 6
     descripcion: "Planta baja: cochera techada para 2 autos, sala, comedor, cocina, medio baño de visitas, terraza descubierta, área de lavado techada y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y 2 recámaras secundarias con área de clóset y baño completo cada una."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/c-166-1.jpg"
+      - "/fotos/gran-bosco/c-166-2.jpg"
+      - "/fotos/gran-bosco/c-166-3.jpg"
   - nombre: "B-191"
     niveles: "2 plantas"
     recamaras: 4
@@ -178,7 +202,10 @@ modelos:
     entrega: "Agosto 2027 a febrero 2028"
     disponibles: 7
     descripcion: "Planta baja: cochera techada para 2 autos, sala, comedor, cocina, recámara con área de clóset, baño completo compartido, terraza descubierta, área de lavado techada y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y 2 recámaras secundarias con área de clóset y baño completo cada una."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/b-191-1.jpg"
+      - "/fotos/gran-bosco/b-191-2.jpg"
+      - "/fotos/gran-bosco/b-191-3.jpg"
   - nombre: "G-190"
     niveles: "2 plantas"
     recamaras: 3
@@ -191,7 +218,9 @@ modelos:
     entrega: "Febrero a junio 2028"
     disponibles: 2
     descripcion: "Frente de 11 m. Planta baja: cochera semitechada para 2 autos, sala a altura y media, comedor, medio baño de visitas, cocina, terraza techada, área de lavado techada, recámara con área de clóset y baño completo, y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y recámara secundaria con área de clóset y baño completo."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/g-190-1.jpg"
+      - "/fotos/gran-bosco/g-190-2.jpg"
   - nombre: "E-203"
     niveles: "2 plantas"
     recamaras: 3
@@ -204,7 +233,9 @@ modelos:
     entrega: "Enero a mayo 2027"
     disponibles: 2
     descripcion: "Frente de 11 m. Planta baja: cochera semitechada para 2 autos, sala, comedor, medio baño de visitas, cocina, terraza techada, cuarto de lavado, bodega, recámara con área de clóset y baño completo, y alberca. Planta alta: área de TV, recámara principal con clóset vestidor y baño completo, y recámara secundaria con área de clóset y baño completo."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/e-203-1.jpg"
+      - "/fotos/gran-bosco/e-203-2.jpg"
   - nombre: "E-188"
     niveles: "2 plantas"
     recamaras: 4
@@ -217,7 +248,9 @@ modelos:
     entrega: "Agosto 2027 a julio 2028"
     disponibles: 3
     descripcion: "Frente de 11 m. Planta baja: cochera semitechada para 2 autos, sala, comedor, medio baño de visitas, cocina, terraza descubierta, cuarto de lavado, bodega, recámara con área de clóset y baño completo, y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, una recámara con área de clóset y baño completo, y otra recámara con área de clóset y baño completo compartido."
-    fotos: []
+    fotos:
+      - "/fotos/gran-bosco/e-188-1.jpg"
+      - "/fotos/gran-bosco/e-188-2.jpg"
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "Move-in ready to September 2028"
