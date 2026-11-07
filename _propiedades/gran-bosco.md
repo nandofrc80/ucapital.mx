@@ -14,7 +14,7 @@ entrega: "Inmediata a septiembre 2028"
 resumen: "Privada residencial sobre la carretera a Chicxulub con más de 10,000 m² de amenidades y casas de 2 a 4 recámaras, todas con alberca y cocina integral. Hay modelos de una y dos plantas, con entrega inmediata y en preventa."
 apartado: "Aparta con $10,000 MXN."
 enganche: "10% del valor de la casa."
-financiamiento: "Crédito bancario, recursos propios, Infonavit Total, Cofinavit o Fovissste. Te asesoramos sin costo con las opciones y requisitos."
+financiamiento: "Crédito bancario, recursos propios, Infonavit Total, Cofinavit o Fovissste para Todos. Te asesoramos sin costo con las opciones y requisitos."
 precios_actualizados: "noviembre de 2026"
 portada: /fotos/gran-bosco/acceso.jpg
 fotos:
@@ -256,7 +256,7 @@ modelos:
   "entrega": "Move-in ready to September 2028"
   "apartado": "Reserve with $10,000 MXN."
   "enganche": "10% of the home's price."
-  "financiamiento": "Bank mortgage, your own funds, Infonavit Total, Cofinavit or Fovissste. We'll walk you through the options and requirements at no cost."
+  "financiamiento": "Bank mortgage, your own funds, Infonavit Total, Cofinavit or Fovissste para Todos. We'll walk you through the options and requirements at no cost."
   "resumen": "Gated residential community on the road to Chicxulub with more than 10,000 m² of amenities and 2- to 4-bedroom homes, all with a pool and fitted kitchen. One- and two-story models, move-in ready and pre-sale."
   "amenidades":
   - "Security booth"
