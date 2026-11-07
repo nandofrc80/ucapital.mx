@@ -136,7 +136,7 @@ body_class: pagina-propiedad
           {%- if m_ent or m.disponibles %}<p class="modelo__disp">{% if m_ent %}{% include icono.html n="calendario" %}<span><strong>{{ T.entrega }}:</strong> {% include fecha.html t=m_ent %}</span>{% endif %}{% if m.disponibles %}<span class="modelo__n">{{ m.disponibles }} {% if m.disponibles == 1 %}{{ T.casa_disponible }}{% else %}{{ T.casas_disponibles }}{% endif %}</span>{% endif %}</p>{% endif %}
           {%- if m_desc %}<p class="modelo__desc">{{ m_desc }}</p>{% endif %}
           {%- if m_adic %}<p class="modelo__extra"><strong>{{ T.adicionales }}:</strong> {{ m_adic }}</p>{% endif %}
-          <a class="btn btn--outline btn--sm modelo__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ m_wa | strip | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.me_interesa_modelo }} {% if L == "en" %}{{ m.nombre }}{% else %}el modelo {{ m.nombre }}{% endif %}</a>
+          <a class="btn btn--outline btn--sm modelo__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ m_wa | strip | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.me_interesa_modelo }} {{ m.nombre }}</a>
         </div>
       </article>
       {%- endfor %}
