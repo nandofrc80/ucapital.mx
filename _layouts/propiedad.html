@@ -29,7 +29,7 @@ body_class: pagina-propiedad
     <div class="galeria galeria--{{ g_n }}">
       {%- for f in fotos limit: g_n %}
       <button type="button" class="galeria__item" data-lightbox-open="general" data-index="{{ forloop.index0 }}" aria-label="{{ T.ver_foto | replace: '__i__', forloop.index | replace: '__n__', n_fotos }}">
-        <img src="{{ f | relative_url }}" alt="{{ p.nombre }} — {{ T.foto }} {{ forloop.index }}" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+        {% if forloop.first %}<picture><source media="(min-width: 900px)" srcset="{{ f | relative_url }}">{% endif %}<img src="{{ f | prepend: "@" | replace_first: "@/fotos/", "/fotos/min/" | remove_first: "@" | relative_url }}" onerror="this.onerror=null;this.src='{{ f | relative_url }}'" alt="{{ p.nombre }} — {{ T.foto }} {{ forloop.index }}" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>{% if forloop.first %}</picture>{% endif %}
       </button>
       {%- endfor %}
       <div class="card__badges galeria__badges">
@@ -120,7 +120,7 @@ body_class: pagina-propiedad
       {%- assign m_adic = mx.adicionales | default: m.adicionales -%}
       <article class="modelo" id="modelo-{{ m_slug }}">
         <button type="button" class="modelo__media" {% if m.fotos.size > 0 %}data-lightbox-open="{{ m_slug }}" data-index="0" aria-label="{{ T.ver_fotos_modelo }} {{ m.nombre }}"{% else %}disabled{% endif %}>
-          {%- if m.fotos.size > 0 %}<img src="{{ m.fotos.first | relative_url }}" alt="{{ T.modelo }} {{ m.nombre }} — {{ p.nombre }}" loading="lazy">{% else %}<span class="modelo__placeholder"><img src="{{ '/assets/img/simbolo-navy.png' | relative_url }}" alt="" width="40" height="62"><span>{{ T.pide_fotos }}</span></span>{% endif %}
+          {%- if m.fotos.size > 0 %}<img src="{{ m.fotos.first | prepend: "@" | replace_first: "@/fotos/", "/fotos/min/" | remove_first: "@" | relative_url }}" onerror="this.onerror=null;this.src='{{ m.fotos.first | relative_url }}'" alt="{{ T.modelo }} {{ m.nombre }} — {{ p.nombre }}" loading="lazy">{% else %}<span class="modelo__placeholder"><img src="{{ '/assets/img/simbolo-navy.png' | relative_url }}" alt="" width="40" height="62"><span>{{ T.pide_fotos }}</span></span>{% endif %}
           {%- if m.fotos.size > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ m.fotos.size }}</span>{% endif %}
         </button>
         <div class="modelo__body">

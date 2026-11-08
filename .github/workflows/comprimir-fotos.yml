@@ -1,4 +1,5 @@
-# Comprime automáticamente las fotos que subes desde el panel (máx. 1800 px, calidad 80).
+# Comprime automáticamente las fotos que subes desde el panel (máx. 1800 px, calidad 80)
+# y crea su versión ligera en fotos/min (máx. 800 px) para el catálogo y las galerías.
 name: Comprimir fotos
 on:
   push:
@@ -25,7 +26,8 @@ jobs:
           import os
           from PIL import Image, ImageOps
           cambios = 0
-          for raiz, _, archivos in os.walk("fotos"):
+          for raiz, dirs, archivos in os.walk("fotos"):
+              dirs[:] = [d for d in dirs if os.path.join(raiz, d) != os.path.join("fotos", "min")]
               for n in archivos:
                   ruta = os.path.join(raiz, n)
                   ext = n.lower().rsplit(".", 1)[-1]
@@ -45,6 +47,8 @@ jobs:
                   print("Comprimida:", ruta, os.path.getsize(ruta) // 1024, "KB")
           print("Fotos comprimidas:", cambios)
           PY
+      - name: Crear versiones ligeras (fotos/min) para catálogo y galerías
+        run: python .github/scripts/miniaturas.py
       - name: Guardar cambios
         run: |
           if [ -n "$(git status --porcelain fotos)" ]; then

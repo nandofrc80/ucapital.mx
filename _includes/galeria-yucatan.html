@@ -3,7 +3,7 @@
 <div class="vida-galeria vida-galeria--{{ fy.size }}">
   {%- for f in fy %}
   <figure class="vida-foto">
-    <img src="{{ f.foto | relative_url }}" alt="{{ f.pie }}" loading="lazy">
+    <img src="{{ f.foto | prepend: "@" | replace_first: "@/fotos/", "/fotos/min/" | remove_first: "@" | relative_url }}" onerror="this.onerror=null;this.src='{{ f.foto | relative_url }}'" alt="{{ f.pie }}" loading="lazy">
     <figcaption><span>{{ f.pie }}</span>{% if f.credito != "" %}<small>Foto: {% if f.enlace != "" %}<a href="{{ f.enlace }}" target="_blank" rel="noopener nofollow">{{ f.credito }}</a>{% else %}{{ f.credito }}{% endif %}{% if f.licencia != "" %} · {{ f.licencia }}{% endif %}</small>{% endif %}</figcaption>
   </figure>
   {%- endfor %}

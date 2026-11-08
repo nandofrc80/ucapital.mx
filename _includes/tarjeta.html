@@ -7,7 +7,7 @@
 <article class="card" data-tipo="{{ tp.tipo }}" data-zona="{{ tp.zona }}" data-estatus="{{ tp.estatus }}" data-precio="{{ st_precio }}" data-recamaras="{{ st_rec_max }}">
   <a class="card__link" href="{{ B | append: tp.url | relative_url }}" aria-label="{{ T.ver }} {{ tp.nombre }}">
     <div class="card__media">
-      <img src="{{ tp.portada | default: tp.fotos.first | relative_url }}" alt="{{ tp.nombre }} — {{ tp_tipo }} {{ T.en_zona }} {{ tp.zona }}" loading="lazy" decoding="async">
+      {%- assign tp_img = tp.portada | default: tp.fotos.first -%}<img src="{{ tp_img | prepend: "@" | replace_first: "@/fotos/", "/fotos/min/" | remove_first: "@" | relative_url }}" onerror="this.onerror=null;this.src='{{ tp_img | relative_url }}'" alt="{{ tp.nombre }} — {{ tp_tipo }} {{ T.en_zona }} {{ tp.zona }}" loading="lazy" decoding="async">
       <div class="card__badges">
         {%- if tp.estatus %}<span class="badge">{{ tp_est }}</span>{% endif -%}
         {%- include promos.html p=tp -%}
