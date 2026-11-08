@@ -53,7 +53,7 @@ amenidades:
   - Área de picnic
   - Áreas verdes
 modelos:
-  - nombre: "A-104"
+  - nombre: "A-9-104"
     niveles: "1 planta"
     recamaras: 2
     banos: 2
@@ -69,7 +69,7 @@ modelos:
       - "/fotos/gran-bosco/a-104-1.jpg"
       - "/fotos/gran-bosco/a-104-2.jpg"
       - "/fotos/gran-bosco/a-104-3.jpg"
-  - nombre: "A-126"
+  - nombre: "A-9-126"
     niveles: "2 plantas"
     recamaras: 2
     banos: 2.5
@@ -84,7 +84,7 @@ modelos:
     fotos:
       - "/fotos/gran-bosco/a-126-1.jpg"
       - "/fotos/gran-bosco/a-126-2.jpg"
-  - nombre: "A-139"
+  - nombre: "A-9-139"
     niveles: "2 plantas"
     recamaras: 2
     banos: 2.5
@@ -99,7 +99,7 @@ modelos:
     fotos:
       - "/fotos/gran-bosco/a-139-1.jpg"
       - "/fotos/gran-bosco/a-139-2.jpg"
-  - nombre: "E-142"
+  - nombre: "E-11-142"
     niveles: "2 plantas"
     recamaras: 2
     banos: 2.5
@@ -115,7 +115,7 @@ modelos:
       - "/fotos/gran-bosco/e-142-1.jpg"
       - "/fotos/gran-bosco/e-142-2.jpg"
       - "/fotos/gran-bosco/e-142-3.jpg"
-  - nombre: "C-146"
+  - nombre: "C-9-146"
     niveles: "2 plantas"
     recamaras: 2
     banos: 2.5
@@ -131,7 +131,7 @@ modelos:
       - "/fotos/gran-bosco/c-146-1.jpg"
       - "/fotos/gran-bosco/c-146-2.jpg"
       - "/fotos/gran-bosco/c-146-3.jpg"
-  - nombre: "B-147"
+  - nombre: "B-9-147"
     niveles: "2 plantas"
     recamaras: 2
     banos: 2
@@ -147,7 +147,7 @@ modelos:
       - "/fotos/gran-bosco/b-147-1.jpg"
       - "/fotos/gran-bosco/b-147-2.jpg"
       - "/fotos/gran-bosco/b-147-3.jpg"
-  - nombre: "D-149"
+  - nombre: "D-10-149"
     niveles: "1 planta"
     recamaras: 3
     banos: 3
@@ -163,7 +163,7 @@ modelos:
       - "/fotos/gran-bosco/d-149-1.jpg"
       - "/fotos/gran-bosco/d-149-2.jpg"
       - "/fotos/gran-bosco/d-149-3.jpg"
-  - nombre: "B-167"
+  - nombre: "B-9-167"
     niveles: "2 plantas"
     recamaras: 3
     banos: 3
@@ -178,7 +178,7 @@ modelos:
     fotos:
       - "/fotos/gran-bosco/b-167-1.jpg"
       - "/fotos/gran-bosco/b-167-2.jpg"
-  - nombre: "C-166"
+  - nombre: "C-9-166"
     niveles: "2 plantas"
     recamaras: 3
     banos: 3.5
@@ -194,7 +194,7 @@ modelos:
       - "/fotos/gran-bosco/c-166-1.jpg"
       - "/fotos/gran-bosco/c-166-2.jpg"
       - "/fotos/gran-bosco/c-166-3.jpg"
-  - nombre: "B-191"
+  - nombre: "B-9-191"
     niveles: "2 plantas"
     recamaras: 4
     banos: 4
@@ -210,7 +210,7 @@ modelos:
       - "/fotos/gran-bosco/b-191-1.jpg"
       - "/fotos/gran-bosco/b-191-2.jpg"
       - "/fotos/gran-bosco/b-191-3.jpg"
-  - nombre: "G-190"
+  - nombre: "G-11-190"
     niveles: "2 plantas"
     recamaras: 3
     banos: 3.5
@@ -225,7 +225,7 @@ modelos:
     fotos:
       - "/fotos/gran-bosco/g-190-1.jpg"
       - "/fotos/gran-bosco/g-190-2.jpg"
-  - nombre: "E-203"
+  - nombre: "E-11-203"
     niveles: "2 plantas"
     recamaras: 3
     banos: 3.5
@@ -240,7 +240,7 @@ modelos:
     fotos:
       - "/fotos/gran-bosco/e-203-1.jpg"
       - "/fotos/gran-bosco/e-203-2.jpg"
-  - nombre: "E-188"
+  - nombre: "E-11-188"
     niveles: "2 plantas"
     recamaras: 4
     banos: 4.5
