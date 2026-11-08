@@ -12,6 +12,10 @@ precio: 0
 precio_desde: true
 entrega: "Nah-Yah: 8 meses tras la firma de la promesa de compra-venta"
 resumen: "Residencias de 2 y 3 recámaras con alberca privada en una privada de 59 casas con casa club, alberca techada, cancha de pádel y pet park, en Conkal."
+promociones:
+  - texto: "¡Estrena hogar este noviembre en NAIA! Al comprar tu casa recibe aires acondicionados, canceles, boilers y jardín incluidos, para disfrutar desde el primer día de un espacio pensado para tu comodidad. Aplican términos y condiciones."
+    en: "Move in this November at NAIA! Buy your home and get air conditioning, shower enclosures, water heaters and landscaped garden included, so you can enjoy a space designed for your comfort from day one. Terms and conditions apply."
+    hasta: "2026-11-30"
 precios_actualizados: "noviembre de 2026"
 portada: /fotos/naia/portada.jpg
 fotos:
