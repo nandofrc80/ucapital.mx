@@ -766,3 +766,18 @@ p { margin: 0 0 1em; }
 [data-theme="dark"] input::placeholder, [data-theme="dark"] textarea::placeholder { color: #7D8696; }
 [data-theme="dark"] .nav { background: rgba(12, 20, 36, .88); }
 [data-theme="dark"] .guia-card--rumor, [data-theme="dark"] .rumor { background: #1E2638; }
+
+/* ---------- Nuestros asesores ---------- */
+.asesores { list-style: none; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.asesores--1 { grid-template-columns: minmax(0, 380px); justify-content: center; }
+.asesores--2 { grid-template-columns: repeat(2, minmax(0, 380px)); justify-content: center; }
+.asesor { text-align: center; display: flex; flex-direction: column; align-items: center; padding: 8px 12px; }
+.asesor__foto { width: 200px; height: 260px; border-radius: 50%; overflow: hidden; background: var(--sand); box-shadow: var(--shadow); outline: 1px solid var(--gold); outline-offset: 6px; margin-bottom: 26px; }
+.asesor__foto img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; display: block; }
+.asesor__nombre { font-size: 1.35rem; line-height: 1.25; margin: 0 0 6px; }
+.asesor__cargo { margin: 0; color: var(--gold-dark); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; }
+.asesor__frase { margin: 18px 0 0; font-family: var(--display); font-style: italic; font-size: 1.2rem; line-height: 1.4; color: var(--ink-soft); max-width: 320px; }
+.asesor__cert { margin-top: 16px; display: inline-flex; align-items: center; gap: 6px; font-size: .85rem; font-weight: 500; color: var(--navy); border-bottom: 1px solid var(--gold); padding-bottom: 2px; text-decoration: none; }
+.asesor__cert .ico { width: 15px; height: 15px; color: var(--gold); }
+[data-theme="dark"] .asesor__cert { color: var(--gold); }
+@media (max-width: 860px) { .asesores, .asesores--2 { grid-template-columns: minmax(0, 380px); justify-content: center; gap: 48px; } .asesor__foto { width: 170px; height: 220px; } }

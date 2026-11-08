@@ -2,7 +2,7 @@
 media:
   input: fotos
   output: /fotos
-  extensions: [jpg, jpeg, png, webp]
+  extensions: [jpg, jpeg, png, webp, pdf]
 
 content:
   - name: propiedades
@@ -215,3 +215,32 @@ content:
         label: Descripción
         type: text
         description: "Texto de la página de la propiedad. Separa párrafos con una línea en blanco. No pongas teléfonos ni datos del desarrollador."
+
+  - name: asesores
+    label: Asesores
+    type: file
+    path: _data/asesores.yml
+    format: yaml
+    fields:
+      - name: asesores
+        label: Asesores
+        description: "Aparecen en la sección «Nuestros asesores» de la página de inicio. Un asesor solo se muestra si está publicado y tiene foto."
+        type: object
+        list: true
+        fields:
+          - { name: nombre, label: Nombre completo, type: string, required: true }
+          - { name: titulo, label: "Título profesional (ej. L.C.P., Lic., Arq.)", type: string }
+          - { name: cargo, label: "Cargo (ej. Asesor certificado)", type: string }
+          - { name: cargo_en, label: Cargo (inglés), type: string }
+          - { name: frase, label: Frase personal, type: text }
+          - { name: frase_en, label: Frase personal (inglés), type: text }
+          - name: foto
+            label: Foto
+            type: image
+            description: "Vertical, de frente y con fondo limpio. Se recorta en óvalo."
+          - name: certificado
+            label: Certificación (PDF)
+            type: file
+            description: "Opcional. Antes de subirlo, tapa datos personales como CURP, domicilio o firma."
+          - { name: publicado, label: Publicado, type: boolean, default: true }
+          - { name: orden, label: "Orden (número menor = aparece primero)", type: number, default: 10 }

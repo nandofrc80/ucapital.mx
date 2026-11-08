@@ -1,0 +1,13 @@
+# Asesores de U·Capital (sección "Nuestros asesores" en la página de inicio).
+# Se edita desde el panel: Asesores. Un asesor solo aparece si está publicado y tiene foto.
+asesores:
+  - nombre: "Fernando José Rodríguez Castellanos"
+    titulo: "L.C.P."
+    cargo: "Asesor certificado"
+    cargo_en: "Certified advisor"
+    frase: ""
+    frase_en: ""
+    foto: ""
+    certificado: ""
+    publicado: true
+    orden: 1

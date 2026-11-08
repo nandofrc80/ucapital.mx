@@ -1,0 +1,27 @@
+{%- comment -%} Sección "Nuestros asesores". Datos en _data/asesores.yml (se editan desde el panel). Solo muestra asesores publicados y con foto. {%- endcomment -%}
+{%- assign _as = site.data.asesores.asesores | where_exp: "a", "a.publicado != false" | where_exp: "a", "a.foto != nil" | where_exp: "a", "a.foto != ''" | sort: "orden" -%}
+{%- if _as.size > 0 %}
+<section class="section" id="asesores">
+  <div class="shell">
+    <header class="section__head section__head--center">
+      <div>
+        <p class="eyebrow">{% if L == "en" %}Our advisors{% else %}Nuestros asesores{% endif %}</p>
+        <h2>{% if L == "en" %}The people who <em>guide you</em>.{% else %}Las personas que te <em>acompañan</em>.{% endif %}</h2>
+      </div>
+    </header>
+    <ul class="asesores asesores--{{ _as.size }}">
+      {%- for a in _as %}
+      {%- capture a_nombre %}{% if a.titulo and a.titulo != "" %}{{ a.titulo }} {% endif %}{{ a.nombre }}{% endcapture -%}
+      {%- if L == "en" %}{% assign a_cargo = a.cargo_en | default: a.cargo %}{% assign a_frase = a.frase_en | default: a.frase %}{% else %}{% assign a_cargo = a.cargo %}{% assign a_frase = a.frase %}{% endif %}
+      <li class="asesor">
+        <div class="asesor__foto"><img src="{{ a.foto | prepend: "@" | replace_first: "@/fotos/", "/fotos/min/" | remove_first: "@" | relative_url }}" onerror="this.onerror=null;this.src='{{ a.foto | relative_url }}'" alt="{{ a_nombre | strip }}" loading="lazy"></div>
+        <h3 class="asesor__nombre">{{ a_nombre | strip }}</h3>
+        {%- if a_cargo and a_cargo != "" %}<p class="asesor__cargo">{{ a_cargo }}</p>{% endif %}
+        {%- if a_frase and a_frase != "" %}<blockquote class="asesor__frase">“{{ a_frase }}”</blockquote>{% endif %}
+        {%- if a.certificado and a.certificado != "" %}<a class="asesor__cert" href="{{ a.certificado | relative_url }}" target="_blank" rel="noopener">{% include icono.html n="check" %}{% if L == "en" %}View certification{% else %}Ver certificación{% endif %}</a>{% endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
