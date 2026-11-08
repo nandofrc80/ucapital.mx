@@ -1,0 +1,101 @@
+{%- comment -%}
+  Ficha para Google (datos estructurados JSON-LD). No se ve en la página.
+  - En todas las páginas: el negocio (inmobiliaria) y el sitio.
+  - En cada desarrollo: la ficha del desarrollo con su rango de precios y la ruta (Inicio / Propiedades / Nombre).
+  - En cada nota de la Guía: el artículo y su ruta.
+  Se llena sola con los datos de _config.yml y de cada archivo en _propiedades/ y _notas/.
+{%- endcomment -%}
+{%- assign _base = site.url -%}
+{%- assign _neg = _base | append: "/#negocio" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateAgent",
+      "@id": {{ _neg | jsonify }},
+      "name": "U·Capital Inmobiliaria",
+      "url": {{ _base | append: "/" | jsonify }},
+      "logo": {{ "/assets/img/logo-navy.png" | absolute_url | jsonify }},
+      "image": {{ "/assets/img/og-ucapital.jpg" | absolute_url | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "telephone": "+52 999 956 2850",
+      "email": {{ site.email | jsonify }},
+      "address": { "@type": "PostalAddress", "addressLocality": "Mérida", "addressRegion": "Yucatán", "addressCountry": "MX" },
+      "areaServed": [
+        { "@type": "City", "name": "Mérida, Yucatán" },
+        { "@type": "AdministrativeArea", "name": "Costa de Yucatán" }
+      ],
+      "knowsLanguage": ["es", "en"],
+      "sameAs": [{{ site.redes.facebook | jsonify }}, {{ site.redes.instagram | jsonify }}]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ _base | append: "/#sitio" | jsonify }},
+      "name": "U·Capital Inmobiliaria",
+      "url": {{ _base | append: "/" | jsonify }},
+      "inLanguage": ["es-MX", "en"],
+      "publisher": { "@id": {{ _neg | jsonify }} }
+    }
+{%- if page.layout == "propiedad" and _pp.nombre %}
+{%- if L == "en" %}{% assign _desc = _pp.en.resumen | default: _pp.resumen %}{% else %}{% assign _desc = _pp.resumen %}{% endif -%}
+{%- assign _precios = _pp.modelos | where_exp: "m", "m.precio > 0" | map: "precio" | sort -%}
+{%- assign _disp = 0 -%}{%- for m in _pp.modelos %}{% if m.disponibles %}{% assign _disp = _disp | plus: m.disponibles %}{% endif %}{% endfor -%}
+{%- assign _fotos = _pp.fotos | default: "" -%}
+    ,{
+      "@type": "RealEstateListing",
+      "@id": {{ page.url | absolute_url | append: "#ficha" | jsonify }},
+      "name": {{ _pp.nombre | append: " — " | append: _tipo | append: " " | append: T.en_zona | append: " " | append: _pp.zona | append: ", " | append: _pp.ciudad | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "description": {{ _desc | strip_html | strip_newlines | jsonify }},
+      "inLanguage": {% if L == "en" %}"en"{% else %}"es-MX"{% endif %},
+      "image": [{% if _pp.portada %}{{ _pp.portada | absolute_url | jsonify }}{% endif %}{% for f in _fotos limit: 4 %}{% if f != _pp.portada %}, {{ f | absolute_url | jsonify }}{% endif %}{% endfor %}],
+      "contentLocation": { "@type": "Place", "name": {{ _pp.zona | append: ", " | append: _pp.ciudad | jsonify }}, "address": { "@type": "PostalAddress", "addressLocality": {{ _pp.zona | jsonify }}, "addressRegion": "Yucatán", "addressCountry": "MX" } },
+      "provider": { "@id": {{ _neg | jsonify }} }
+      {%- if _precios.size > 0 %},
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "MXN",
+        "lowPrice": {{ _precios.first }},
+        "highPrice": {{ _precios.last }},
+        {%- if _disp > 0 %}
+        "offerCount": {{ _disp }},
+        {%- endif %}
+        "availability": "https://schema.org/InStock",
+        "seller": { "@id": {{ _neg | jsonify }} }
+      }
+      {%- endif %}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": {{ T.inicio | jsonify }}, "item": {{ B | append: "/" | absolute_url | jsonify }} },
+        { "@type": "ListItem", "position": 2, "name": {{ T.nav_propiedades | jsonify }}, "item": {{ B | append: "/propiedades/" | absolute_url | jsonify }} },
+        { "@type": "ListItem", "position": 3, "name": {{ _pp.nombre | jsonify }}, "item": {{ page.url | absolute_url | jsonify }} }
+      ]
+    }
+{%- elsif page.collection == "notas" %}
+    ,{
+      "@type": "Article",
+      "headline": {{ page.titulo | jsonify }},
+      "description": {{ page.descripcion | strip_html | strip_newlines | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "image": {{ page.imagen | default: "/assets/img/og-ucapital.jpg" | absolute_url | jsonify }},
+      "inLanguage": "es-MX",
+      "articleSection": {{ page.categoria | jsonify }},
+      "author": { "@id": {{ _neg | jsonify }} },
+      "publisher": { "@id": {{ _neg | jsonify }} },
+      "mainEntityOfPage": {{ page.url | absolute_url | jsonify }}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": {{ "/" | absolute_url | jsonify }} },
+        { "@type": "ListItem", "position": 2, "name": "Guía de Mérida", "item": {{ "/guia/" | absolute_url | jsonify }} },
+        { "@type": "ListItem", "position": 3, "name": {{ page.titulo_corto | default: page.titulo | jsonify }}, "item": {{ page.url | absolute_url | jsonify }} }
+      ]
+    }
+{%- endif %}
+  ]
+}
+</script>
