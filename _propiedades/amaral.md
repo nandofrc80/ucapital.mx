@@ -86,12 +86,12 @@ modelos:
   "descripcion": |-
     Amaral offers two-story, 3-bedroom homes in the Real Montejo area, in north Mérida, with quick access to the Periférico, Av. Real Montejo and the north beltway.
 
-    These are street-front homes (not a gated community), so there are no shared amenities or maintenance fees for common areas. There are two models available: Malva, with a double-height living room and a ground-floor bedroom with its own bathroom, and Loto, a larger corner home with a covered back terrace.
+    These are street-front homes (not a gated community and without shared amenities). There are two models available: Malva, with a double-height living room and a ground-floor bedroom with its own bathroom, and Loto, a larger corner home with a covered back terrace.
 
     Both models have 3.5 bathrooms, a carport for 2 cars and air conditioning in the main bedroom. Pre-sale with estimated delivery in July 2027. Reserve with $10,000 MXN and a 10% down payment.
 ---
 Amaral ofrece casas de dos plantas y 3 recámaras en la zona de Real Montejo, al norte de Mérida, con acceso rápido al Periférico, a la avenida Real Montejo y al Arco Vial Norte.
 
-Son casas a pie de calle (no es una privada), así que no hay amenidades compartidas ni cuota de mantenimiento de áreas comunes. Hay dos modelos disponibles: Malva, con sala y comedor a doble altura y recámara en planta baja con baño propio, y Loto, una casa más amplia en esquina con terraza trasera techada.
+Son casas a pie de calle (no es una privada residencial ni tiene amenidades). Hay dos modelos disponibles: Malva, con sala y comedor a doble altura y recámara en planta baja con baño propio, y Loto, una casa más amplia en esquina con terraza trasera techada.
 
 Los dos modelos tienen 3.5 baños, cochera para 2 autos y aire acondicionado en la recámara principal. Preventa con entrega estimada en julio de 2027. Aparta con $10,000 y un enganche del 10%.
