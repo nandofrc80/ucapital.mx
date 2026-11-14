@@ -71,9 +71,17 @@ modelos:
     entrega: "Diciembre 2026"
     disponibles: 1
     descripcion: "Planta baja: cochera para 2 autos, sala, comedor, cocina integral, medio baño de visitas, jardín interior con ventanales y piscina en chukum. Planta alta: tres recámaras con clóset vestidor y baño; la principal con terraza."
-    adicionales: "Preventa: aparta con $20,000, 30% de enganche y 70% a la entrega. Incluye 4 aires acondicionados de 12,000 BTU, carpintería en tzalam, mosquiteros, parrilla de gas de 5 quemadores y tanque estacionario. Imagen de referencia."
+    adicionales: "Preventa: aparta con $20,000, 30% de enganche y 70% a la entrega. Incluye 4 aires acondicionados de 12,000 BTU, carpintería en tzalam, mosquiteros, parrilla de gas de 5 quemadores y tanque estacionario. Imágenes de referencia."
     fotos:
       - /fotos/aire-puro/it-97-1.jpg
+      - /fotos/aire-puro/it-97-2.jpg
+      - /fotos/aire-puro/it-97-3.jpg
+      - /fotos/aire-puro/it-97-4.jpg
+      - /fotos/aire-puro/it-97-5.jpg
+      - /fotos/aire-puro/it-97-6.jpg
+      - /fotos/aire-puro/it-97-7.jpg
+      - /fotos/aire-puro/it-97-8.jpg
+      - /fotos/aire-puro/it-97-9.jpg
   - nombre: "Casa de 242 m² · entrega inmediata"
     niveles: "2 plantas"
     recamaras: 3
@@ -118,7 +126,7 @@ modelos:
     "adicionales": "Pre-sale: reserve with $20,000 MXN, 30% down payment and 70% on delivery. Includes kitchen, closet and vanity cabinetry, insect screens, water heater and pressure pump. Covered carport (+$388,000 MXN) and covered terrace (+$126,000 MXN) are optional. Images for reference."
     "entrega": "April 2027"
   - "descripcion": "Ground floor: parking for 2 cars, living room, dining room, fitted kitchen, guest half bath, interior garden with large windows and chukum pool. Upstairs: three bedrooms with walk-in closet and bathroom; the main bedroom has a terrace."
-    "adicionales": "Pre-sale: reserve with $20,000 MXN, 30% down payment and 70% on delivery. Includes 4 air conditioners (12,000 BTU), tzalam wood cabinetry, insect screens, 5-burner gas cooktop and stationary gas tank. Image for reference."
+    "adicionales": "Pre-sale: reserve with $20,000 MXN, 30% down payment and 70% on delivery. Includes 4 air conditioners (12,000 BTU), tzalam wood cabinetry, insect screens, 5-burner gas cooktop and stationary gas tank. Images for reference."
     "entrega": "December 2026"
   - "descripcion": "Ground floor: covered carport for 3 cars, living room, dining room, kitchen with breakfast bar, bar area on the covered terrace, guest half bath, service room with bathroom, drying yard and chukum pool. Upstairs: main bedroom with walk-in closet and full bathroom, and two bedrooms with closet and private bathroom."
     "adicionales": "Limited-time discounted price (previously $5,295,000 MXN). Reserve with $10,000 MXN and 10% down payment. Maintenance fee around $2,400 MXN per month. Photos show the lot 58 model home."
