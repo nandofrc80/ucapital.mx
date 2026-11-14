@@ -1,7 +1,6 @@
 ---
 orden: 7
 seccion: vivir
-borrador: true
 titulo: "Cenotes cerca de Mérida: dónde nadar a menos de una hora de casa"
 titulo_corto: "Cenotes cerca de Mérida"
 categoria: "Vivir en Mérida"
@@ -39,6 +38,11 @@ Los tiempos son aproximados y dependen de tu punto de partida y del tráfico; la
 
 ## Cuzamá: los cenotes del "truck"
 
+<figure class="nota-foto">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Cuzam%C3%A1_Cenote_Bol%C3%B3n_Chojol.jpg" alt="Cenote Bolonchoojol en Cuzamá, una caverna con raíces que cuelgan hasta el agua azul" loading="lazy">
+  <figcaption>Cenote Bolonchoojol, en Cuzamá. Foto: <a href="https://commons.wikimedia.org/wiki/File:Cuzam%C3%A1_Cenote_Bol%C3%B3n_Chojol.jpg" target="_blank" rel="noopener">Yodigo</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 Lo que hace única a Cuzamá es la forma de llegar: un carrito de madera jalado por un caballo que corre sobre los antiguos rieles de las plantaciones de henequén.[^evaneos] El pueblo está a unos 45 kilómetros de Mérida.[^zonaturistica]
 
 El recorrido más conocido son unos siete kilómetros con paradas en tres cenotes: **Chelentún**, **Chak-Zinik-Ché** y **Bolonchoojol**, y dura alrededor de tres horas y media.[^zonaturistica] Chelentún es el más pequeño y menos profundo de los tres; Chak-Zinik-Ché y Bolonchoojol tienen aguas profundas y de un azul intenso.[^atlas-cuzama] Hay varias cooperativas locales, cada una con su propio recorrido.[^yt-cenotes]
@@ -56,13 +60,28 @@ Homún, vecino de Cuzamá y a cerca de una hora de Mérida,[^aaa-sb] es probable
 
 ## Santa Bárbara: el parador más completo para ir en familia
 
+<figure class="nota-foto">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Cenote_santa_barbara_homun.jpg" alt="Cenote de caverna con agua turquesa en el parador Santa Bárbara, Homún" loading="lazy">
+  <figcaption>Uno de los cenotes del parador Santa Bárbara, en Homún. Foto: <a href="https://commons.wikimedia.org/wiki/File:Cenote_santa_barbara_homun.jpg" target="_blank" rel="noopener">Kikanona22</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 De camino a Homún está el parador Cenotes Santa Bárbara, con cuatro cenotes —Cascabel, Chaksikín, Xooch' y Pool Cocom— y restaurante, baños, vestidores y regaderas.[^yt-homun] Entre un cenote y otro te mueves en bicicleta, en truck o en un trenecito, y uno de los cenotes tiene elevador para personas con movilidad reducida.[^yt-homun][^posta-sb] El chaleco salvavidas viene incluido y su uso es obligatorio.[^posta-sb]
 
 ## Hacienda Mucuyché: cenote con historia
 
+<figure class="nota-foto">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Cenote_Hacienda_Mucuych%C3%A9%2C_Yucat%C3%A1n_2024.jpg/1280px-Cenote_Hacienda_Mucuych%C3%A9%2C_Yucat%C3%A1n_2024.jpg" alt="Personas nadando en un cenote de la Hacienda Mucuyché, en Abalá" loading="lazy">
+  <figcaption>Cenote en la Hacienda Mucuyché, Abalá. Foto: <a href="https://commons.wikimedia.org/wiki/File:Cenote_Hacienda_Mucuych%C3%A9,_Yucat%C3%A1n_2024.jpg" target="_blank" rel="noopener">Philip N. Cohen</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 En Abalá, al sur de Mérida, la Hacienda Mucuyché combina una casa del siglo XVIII con un recorrido guiado por dos cenotes, **Carlota** y **Azul Maya**, conectados por un canal.[^posta-cercanos][^showcaves-muc] El nombre del cenote Carlota recuerda la visita de la emperatriz Carlota a la hacienda en 1865.[^showcaves-muc] Queda a entre 45 minutos y una hora de Mérida, y es de las opciones de mayor precio de esta lista; la visita es con recorrido guiado.[^posta-cercanos][^showcaves-muc]
 
 ## San Antonio Mulix: X'batún y Dzonbacal
+
+<figure class="nota-foto">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cenote_en_Xbatun.jpg/1280px-Cenote_en_Xbatun.jpg" alt="Cenote X'batún en San Antonio Mulix, de agua cristalina verde azulado" loading="lazy">
+  <figcaption>Cenote X'batún, en San Antonio Mulix. Foto: <a href="https://commons.wikimedia.org/wiki/File:Cenote_en_Xbatun.jpg" target="_blank" rel="noopener">Minerva Castro</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
 
 En San Antonio Mulix, comisaría de Umán, a unos 48 kilómetros de Mérida (entre 50 minutos y una hora en coche), hay dos cenotes administrados por la comunidad: **Dzonbacal** y **X'batún**.[^posta-cercanos][^posta-mulix][^showcaves-xb] X'batún es uno de los favoritos de los visitantes por sus aguas verde azulado rodeadas de árboles y lirios.[^dy-cercanos] Es un plan sencillo y de los más económicos.[^posta-cercanos]
 
@@ -71,6 +90,11 @@ En San Antonio Mulix, comisaría de Umán, a unos 48 kilómetros de Mérida (ent
 En Chocholá, a unos 40 minutos de Mérida por la carretera a Campeche, el cenote San Ignacio es de bóveda cerrada y cuenta con restaurante, alberca y cabañas; también ofrece visitas nocturnas.[^dy-2022]
 
 ## ¿Y en el norte de Mérida?
+
+<figure class="nota-foto">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Dzibilchalt%C3%BAn_%28Mexico%2C_December%2C_2019%29_-_21_%2850184385561%29.jpg/1280px-Dzibilchalt%C3%BAn_%28Mexico%2C_December%2C_2019%29_-_21_%2850184385561%29.jpg" alt="Cenote Xlacah a cielo abierto en la zona arqueológica de Dzibilchaltún" loading="lazy">
+  <figcaption>Cenote Xlacah, en Dzibilchaltún (2019). Hoy no se permite nadar en él. Foto: <a href="https://commons.wikimedia.org/wiki/File:Dzibilchalt%C3%BAn_(Mexico,_December,_2019)_-_21_(50184385561).jpg" target="_blank" rel="noopener">Bruno Rijsman</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
 
 El cenote más cercano al norte de la ciudad es **Xlacah**, dentro de la zona arqueológica de Dzibilchaltún, a unos 16 kilómetros del centro.[^todocenotes] Durante años fue un lugar para nadar muy popular entre los locales,[^showcaves-dzib] pero hoy no se puede nadar en él: según un reporte de julio de 2026, el cenote permanece cerrado al público.[^poresto-dzibil] Aun así vale la pena la visita a la zona arqueológica, que estrenó museo de sitio en 2026.[^inah-museo]
 

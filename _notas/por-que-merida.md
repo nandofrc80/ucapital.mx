@@ -11,7 +11,7 @@ cifras:
   - ["2", "homicidios por cada 100 mil habitantes en Yucatán en 2025, la tasa más baja del país"]
   - ["34%", "de los adultos en Mérida se siente inseguro, contra 58.1% del promedio nacional"]
   - ["+98%", "subió el índice de precios de la vivienda en Yucatán entre 2017 y 2025"]
-relacionadas: [temozon-norte, cholul-y-conkal, dzitya, donde-conviene-rentar, rumores-noviembre-2026]
+relacionadas: [cenotes-cerca-de-merida, temozon-norte, cholul-y-conkal, dzitya, donde-conviene-rentar, rumores-noviembre-2026]
 ---
 
 Cada semana platicamos con familias que están decidiendo dónde vivir: ¿qué ciudad, qué estado, qué zona? La respuesta depende de cada quien, pero la decisión es mejor con datos. Aquí juntamos lo que dicen las fuentes públicas más recientes, sin adornos, y también lo que conviene tener en cuenta.

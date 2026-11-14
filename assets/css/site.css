@@ -608,6 +608,10 @@ p { margin: 0 0 1em; }
 .guia-seccion__head h2 { font-size: clamp(1.7rem, 2.6vw, 2.2rem); margin: 0 0 6px; }
 .guia-seccion__head p { margin: 0; color: var(--ink-soft); }
 .guia-card--pronto { background: var(--sand); border-style: dashed; }
+.nota-foto { margin: 8px 0 28px; }
+.nota-foto img { display: block; width: 100%; height: auto; max-height: 520px; object-fit: cover; border-radius: var(--radius-lg); background: var(--sand); }
+.nota-foto figcaption { margin-top: 8px; font-size: .82rem; color: var(--ink-soft); line-height: 1.45; }
+.nota-foto figcaption a { color: inherit; text-decoration: underline; }
 .guia-card--pronto:hover { transform: none; box-shadow: none; border-color: var(--line); }
 
 .nota-hero { color: #fff; padding: 52px 0 58px; background: radial-gradient(120% 140% at 85% 10%, rgba(184,153,104,.35), transparent 55%), linear-gradient(135deg, var(--navy-bg) 0%, var(--navy-2) 100%); }
