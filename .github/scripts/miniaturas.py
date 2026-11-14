@@ -13,7 +13,8 @@ except Exception:
     registro = {}
 vistas, hechas = set(), 0
 for raiz, dirs, archivos in os.walk(ORIGEN):
-    if os.path.abspath(raiz).startswith(os.path.abspath(DESTINO)):
+    _r, _d = os.path.abspath(raiz), os.path.abspath(DESTINO)
+    if _r == _d or _r.startswith(_d + os.sep):
         continue
     dirs[:] = [d for d in dirs if os.path.join(raiz, d) != DESTINO]
     for n in archivos:
