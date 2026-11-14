@@ -15,7 +15,7 @@ resumen: "Casas de 2 y 3 recámaras en un gran complejo residencial con áreas v
 apartado: "Aparta con $10,000 MXN."
 enganche: "10% del valor total al firmar la promesa de compraventa, 7 días después del apartado."
 financiamiento: "El saldo se cubre con recursos propios, crédito bancario o Infonavit Total. Te asesoramos sin costo con las opciones y requisitos."
-precios_actualizados: "5 de noviembre de 2026"
+precios_actualizados: "14 de noviembre de 2026"
 promociones:
   - texto: "Casas de entrega inmediata (Carey, Quetzal y Quetzal Plus): bono de descuento de $100,000 en Carey y de $50,000 en Quetzal y Quetzal Plus. Incluyen clósets abiertos en recámaras, fijos de cristal templado en baños y puertas en clósets de blancos.\nModelo Ibis en preventa: 2 aires acondicionados de regalo (no incluye instalación). Sujeto a disponibilidad."
     en: "Move-in-ready homes (Carey, Quetzal and Quetzal Plus): $100,000 MXN discount bonus on Carey and $50,000 MXN on Quetzal and Quetzal Plus. They include open closets in the bedrooms, tempered-glass panels in the bathrooms and doors on the linen closets.\nIbis model (pre-sale): 2 air conditioners as a gift (installation not included). Subject to availability."
@@ -47,7 +47,9 @@ modelos:
     terreno: 197
     terreno_desde: true
     estacionamientos: 2
-    precio: 2589000
+    precio: 2759000
+    disponibles: 5
+    entrega: "Inmediata a diciembre 2026"
     descripcion: "Sala, comedor, cocina, medio baño, jardín interior, terraza techada y área de lavado en planta baja. En planta alta, recámara principal con clóset y baño completo, segunda recámara con clóset y balcón, y baño completo."
     adicionales: "Algunas casas se entregan con piscina y cochera techada, según disponibilidad."
     fotos:
@@ -62,6 +64,8 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 3049000
+    disponibles: 13
+    entrega: "Inmediata a diciembre 2026"
     descripcion: "La versión de 3 recámaras del Quetzal: sala, comedor, cocina, medio baño, jardín interior y terraza techada en planta baja; recámara principal con baño completo, segunda recámara con balcón y tercera recámara con baño completo en planta alta."
     adicionales: "Algunas casas se entregan con piscina y cochera techada, según disponibilidad."
     fotos:
@@ -75,6 +79,8 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 3299000
+    disponibles: 16
+    entrega: "Inmediata"
     descripcion: "Sala, comedor, cocina, medio baño, jardín interior y terraza techada en planta baja. En planta alta, recámara principal con clóset, baño completo y balcón, y dos recámaras más, cada una con clóset y baño completo."
     adicionales: "Algunas casas se entregan con piscina y cochera techada, según disponibilidad."
     fotos:
@@ -93,6 +99,8 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 3549000
+    disponibles: 57
+    entrega: "Abril a octubre 2027"
     descripcion: "El modelo más amplio: recámara con vestidor y baño completo en planta baja, sala, comedor, cocina, medio baño, terraza y piscina. En planta alta, sala de TV con balcón y dos recámaras con clóset y baño completo."
     fotos:
       - /fotos/estela-nativa/ibis-1.jpg

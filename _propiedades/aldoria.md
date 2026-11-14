@@ -12,7 +12,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a abril 2027"
 resumen: "Casas en privada con casa club y tres parques con más de 15 amenidades. Cuatro modelos de 2 a 4 recámaras al norte de Mérida."
-precios_actualizados: "5 de noviembre de 2026"
+precios_actualizados: "14 de noviembre de 2026"
 promociones:
   - texto: "Aires acondicionados de regalo en las recámaras (no incluye instalación)."
     en: "Air conditioners included in the bedrooms (installation not included)."
@@ -54,7 +54,9 @@ modelos:
     construccion_max: 233
     terreno: 253
     estacionamientos: 2
-    precio: 3225000
+    precio: 3345000
+    disponibles: 1
+    entrega: "Abril 2027"
     descripcion: "Todo en planta baja: recámara principal con clóset vestidor y baño completo, recámara secundaria con baño, sala-comedor, cocina con isla, jardín interior, área de lavado techada y terraza."
     adicionales: "Cochera techada, terraza techada, piscina y hasta 2 recámaras en planta alta."
     fotos:
@@ -67,9 +69,12 @@ modelos:
     banos: 2.5
     construccion: 119
     construccion_max: 235
-    terreno: 253
+    terreno: 248
     estacionamientos: 2
     precio: 3210000
+    disponibles: 4
+    entrega: "Inmediata a abril 2027"
+    terreno_desde: true
     descripcion: "Sala, comedor y cocina con barra de granito, medio baño de visitas, terraza, área de lavado y espacio para bodega en planta baja; en planta alta, recámara con clóset vestidor y baño, y recámara secundaria con baño."
     adicionales: "Cochera techada, terraza techada, piscina, recámara principal en planta alta y recámara en planta baja con vestidor y baño."
     fotos:
@@ -89,6 +94,8 @@ modelos:
     terreno: 253
     estacionamientos: 2
     precio: 3549000
+    disponibles: 7
+    entrega: "Inmediata a abril 2027"
     descripcion: "Tres recámaras en una sola planta, todas con baño completo; la principal con clóset vestidor. Sala, comedor y cocina con isla y barra de granito, y jardín interior."
     adicionales: "Cochera techada, terraza techada y piscina."
     fotos:
@@ -108,6 +115,8 @@ modelos:
     terreno: 253
     estacionamientos: 2
     precio: 3585000
+    disponibles: 5
+    entrega: "Inmediata a abril 2027"
     descripcion: "Recámara con baño en planta baja, sala-comedor, cocina con barra de granito, medio baño de visitas y terraza. En planta alta, recámara principal con vestidor, baño y balcón, y recámara secundaria con baño."
     adicionales: "Cochera techada, terraza techada, piscina y cuarta recámara con baño completo."
     fotos:

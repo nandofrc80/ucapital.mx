@@ -10,14 +10,14 @@ zona: "Conkal"
 ciudad: "Mérida, Yucatán"
 precio: 0
 precio_desde: true
-entrega: "Diciembre 2026 a julio 2027"
+entrega: "Inmediata a julio 2027"
 resumen: "Casas en la privada Sierra Madre, dentro de una comunidad planeada de 35 hectáreas en Conkal con gran parque central. Ocho modelos de 1 y 2 plantas."
 promociones:
   - texto: "Este mes de noviembre te regalamos gavetas bajas en cocina y 2 aires acondicionados (no incluye instalación). Válido en la privada Sierra Madre; consulta términos y condiciones."
     en: "This November we include lower kitchen cabinets and 2 air conditioners (installation not included). Valid in the Sierra Madre community; terms and conditions apply."
     hasta: "2026-11-30"
     imagen: /fotos/cumbres-novonorte/promo-2026-11.jpg
-precios_actualizados: "noviembre de 2026"
+precios_actualizados: "14 de noviembre de 2026"
 portada: /fotos/cumbres-novonorte/portada.jpg
 fotos:
   - /fotos/cumbres-novonorte/portada.jpg
@@ -48,6 +48,8 @@ modelos:
     terreno: 225
     estacionamientos: 2
     precio: 2300000
+    disponibles: 1
+    entrega: "Enero 2027"
     descripcion: "Todo en una planta: dos recámaras, sala, comedor, cocina con meseta de granito, baño con meseta de mármol, jardín frontal, pasillo de servicio y área de lavado."
     fotos:
       - /fotos/cumbres-novonorte/kita-1.jpg
@@ -62,9 +64,11 @@ modelos:
     recamaras: 2
     banos: 2.5
     construccion: 100
-    terreno: 225
+    terreno: 225.12
     estacionamientos: 2
     precio: 2900000
+    disponibles: 1
+    entrega: "Inmediata"
     descripcion: "Sala, comedor y cocina con meseta de granito, jardín frontal, patio de servicio, área para terraza, bodega y alacena. Dos recámaras en planta alta."
     fotos:
       - /fotos/cumbres-novonorte/abi-1.jpg
@@ -78,6 +82,8 @@ modelos:
     terreno: 225
     estacionamientos: 2
     precio: 3085000
+    disponibles: 5
+    entrega: "Inmediata a julio 2027"
     descripcion: "Sala y comedor a doble altura, cocina con meseta de granito, pasillo de servicio, área de lavado y jardín frontal. Dos recámaras."
     fotos:
       - /fotos/cumbres-novonorte/cervino-1.jpg
@@ -91,6 +97,8 @@ modelos:
     terreno: 225
     estacionamientos: 2
     precio: 3090000
+    disponibles: 7
+    entrega: "Inmediata a julio 2027"
     descripcion: "Tres recámaras, sala, comedor, cocina con meseta de granito, terraza techada, área de servicios, jardín frontal, bodega y alacena."
     fotos:
       - /fotos/cumbres-novonorte/balbi-1.jpg
@@ -104,6 +112,8 @@ modelos:
     terreno: 225
     estacionamientos: 2
     precio: 3140000
+    disponibles: 2
+    entrega: "Junio a julio 2027"
     descripcion: "Tres recámaras: una en planta baja y dos en planta alta. Sala-comedor, cocina con meseta de granito, terraza, patio de servicio y alacena."
     fotos:
       - /fotos/cumbres-novonorte/guna-1.jpg
@@ -118,6 +128,8 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 3245000
+    disponibles: 4
+    entrega: "Febrero a julio 2027"
     descripcion: "Tres recámaras, la principal con baño propio y vestidor. Sala-comedor, cocina con meseta de granito, pasillo de servicio, jardín frontal, bodega y alacena."
     fotos:
       - /fotos/cumbres-novonorte/dome-1.jpg
@@ -129,6 +141,8 @@ modelos:
     terreno: 225
     estacionamientos: 2
     precio: 3415000
+    disponibles: 3
+    entrega: "Febrero a julio 2027"
     descripcion: "Tres recámaras, la principal con clóset vestidor. Sala y comedor, cocina con meseta de granito, área de lavado, pasillo de servicio y jardín frontal."
     fotos:
       - /fotos/cumbres-novonorte/elbrus-1.jpg
@@ -143,12 +157,14 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 3610000
+    disponibles: 3
+    entrega: "Inmediata"
     descripcion: "Tres recámaras en una sola planta, con jardines interiores, sala, comedor, cocina con meseta de granito, área de servicios, alacena y jardín frontal. Los lotes disponibles incluyen metros excedentes de terreno."
     fotos:
       - /fotos/cumbres-novonorte/hito-1.jpg
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
-  "entrega": "December 2026 to July 2027"
+  "entrega": "Move-in ready to July 2027"
   "resumen": "Homes in the Sierra Madre gated community, within a 35-hectare master-planned community in Conkal with a large central park. Eight one- and two-story models."
   "amenidades":
   - "Large central park"
@@ -177,10 +193,10 @@ modelos:
 
     Sierra Madre is the newest of these neighborhoods. Each one has a security booth with controlled access, its own park and lounge club. All homes include parking for two cars and pre-installations for air conditioning, TV, phone and internet.
 
-    There are eight models to choose from, one or two stories, with 2 and 3 bedrooms, with deliveries scheduled between December 2026 and July 2027.
+    There are eight models to choose from, one or two stories, with 2 and 3 bedrooms, with move-in-ready homes and deliveries through July 2027.
 ---
 La primera comunidad planeada de Conkal: 35 hectáreas bardeadas con pórtico de acceso, donde más del 64% del terreno son áreas verdes y comunes. Al centro está el gran parque central, rodeado de nueve privadas residenciales con avenidas de baja velocidad, andadores y ciclovías.
 
 Sierra Madre es la privada más reciente. Cada privada tiene caseta de vigilancia con control de acceso, su propio parque y lounge club. Todas las casas incluyen cochera para dos autos y preparaciones para aire acondicionado, TV, telefonía e internet.
 
-Hay ocho modelos para elegir, de una y dos plantas, de 2 y 3 recámaras, con entregas programadas entre diciembre de 2026 y julio de 2027.
+Hay ocho modelos para elegir, de una y dos plantas, de 2 y 3 recámaras, con casas de entrega inmediata y entregas hasta julio de 2027.

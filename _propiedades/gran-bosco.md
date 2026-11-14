@@ -19,7 +19,7 @@ promociones:
 apartado: "Aparta con $10,000 MXN."
 enganche: "10% del valor de la casa."
 financiamiento: "Crédito bancario, recursos propios, Infonavit Total, Cofinavit o Fovissste para Todos. Te asesoramos sin costo con las opciones y requisitos."
-precios_actualizados: "noviembre de 2026"
+precios_actualizados: "14 de noviembre de 2026"
 portada: /fotos/gran-bosco/acceso.jpg
 fotos:
   - /fotos/gran-bosco/acceso.jpg
@@ -125,7 +125,7 @@ modelos:
     estacionamientos: 2
     precio: 2820000
     entrega: "Inmediata (1 casa) y de octubre 2027 a agosto 2028"
-    disponibles: 7
+    disponibles: 5
     descripcion: "Planta baja: cochera techada para 2 autos, sala, comedor, cocina, medio baño de visitas, terraza descubierta, área de lavado techada y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y recámara secundaria con área de clóset y baño completo."
     fotos:
       - "/fotos/gran-bosco/c-146-1.jpg"
