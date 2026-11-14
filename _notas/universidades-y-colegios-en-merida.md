@@ -60,6 +60,7 @@ Uno de los corredores de vivienda nueva con más movimiento de la ciudad, con pr
 
 ### Universidades
 
+- **UADY, Campus de Ciencias Sociales, Económico-Administrativas y Humanidades.** En el kilómetro 1 de la carretera Mérida-Tizimín, en Cholul.[^uady-saie] Es uno de los campus más grandes de la universidad pública: reúne seis facultades (Ciencias Antropológicas, Contaduría y Administración, Derecho, Economía, Educación y Psicología) y una unidad del Centro de Investigaciones Regionales Dr. Hideyo Noguchi.[^uady-ccseah] Abrió en 2005, y con la nueva sede de Contaduría y Administración, inaugurada en diciembre de 2022, quedó completo.[^uady-ccseah][^dy-contaduria] Ahí se estudian algunas de las carreras más solicitadas de la UADY, como Derecho, Contaduría y Psicología.[^uady-cifras-2024]
 - **Universidad Modelo.** Sobre la carretera a Cholul, a unos 200 metros del Periférico.[^ehu-modelo] Su origen es la Escuela Modelo, fundada en 1910.[^dy-modelo]
 
 ### Colegios
@@ -68,9 +69,9 @@ Uno de los corredores de vivienda nueva con más movimiento de la ciudad, con pr
 - **Colegio El Huerto Montessori.** Sobre la carretera Mérida-Cholul, con maternal, kínder y primaria.[^yl-2018]
 - **Miguel de Cervantes Saavedra.** Preparatoria en San Pedro Cholul, incorporada a la UADY.[^uady-incorporadas]
 
-## La UADY, la universidad pública
+## La UADY en el resto de la ciudad
 
-La Universidad Autónoma de Yucatán tiene campus en distintos puntos de la ciudad. Entrar es muy competido: para el ciclo 2026-2027 hubo casi 16 mil aspirantes para alrededor de 5,500 lugares, y en Médico Cirujano fueron casi 4,800 aspirantes para 238 lugares.[^poresto-2026] Sus preparatorias 1 y 2 también tienen mucha demanda cada año.[^poresto-prepas]
+Además del campus de Cholul, la Universidad Autónoma de Yucatán tiene campus en otros puntos de la ciudad, entre ellos el de Ciencias Exactas e Ingenierías, también al norte.[^mextudia-uady] Entrar es muy competido: para el ciclo 2026-2027 hubo casi 16 mil aspirantes para alrededor de 5,500 lugares, y en Médico Cirujano fueron casi 4,800 aspirantes para 238 lugares.[^poresto-2026] Sus preparatorias 1 y 2 también tienen mucha demanda cada año.[^poresto-prepas]
 
 ## Qué revisar antes de inscribir a tus hijos
 
@@ -108,3 +109,8 @@ La Universidad Autónoma de Yucatán tiene campus en distintos puntos de la ciud
 [^quadratin-smartium]: Quadratín Yucatán, "Inauguran instalaciones de la Smartium International School", 31 de enero de 2023. <https://yucatan.quadratin.com.mx/merida/inauguran-instalaciones-de-la-smartium-international-school/>
 [^poresto-2026]: Por Esto!, "Más de 12 mil jóvenes quedarán fuera de la UADY el próximo ciclo", 12 de junio de 2026. <https://www.poresto.com/yucatan/2026/6/12/mas-de-12-mil-jovenes-quedaran-fuera-de-la-uady-el-proximo-ciclo-nuevos-programas-ya-no-responden-a-la-demanda.html>
 [^poresto-prepas]: Por Esto!, "Ingreso a bachillerato UADY 2026: ¿Aún hay cupo en las preparatorias 1 y 2?", 16 de junio de 2026. <https://www.poresto.com/yucatan/2026/6/16/ingreso-a-bachillerato-uady-2026-aun-hay-cupo-en-las-preparatorias-1-y-2.html>
+[^uady-saie]: Universidad Autónoma de Yucatán, Servicio Social: ubicaciones. <https://www.saie.uady.mx/new.php?id=5>
+[^uady-ccseah]: Universidad Autónoma de Yucatán, Plan de Desarrollo del Campus de Ciencias Sociales, Económico-Administrativas y Humanidades. <https://www.dgplanei.uady.mx/planes/PDCCSEAH.pdf>
+[^dy-contaduria]: Diario de Yucatán, "Inaugura nueva sede la Facultad de Contaduría de la Uady", 21 de diciembre de 2022. <https://www.yucatan.com.mx/merida/2022/12/21/inaugura-nueva-sede-la-facultad-de-contaduria-de-la-uady-370102.html>
+[^uady-cifras-2024]: Universidad Autónoma de Yucatán, cifras del proceso de ingreso a licenciatura 2024. <https://ingreso.uady.mx/licenciatura/docs/cifras2024.pdf>
+[^mextudia-uady]: Mextudia, "UADY – Universidad Autónoma de Yucatán". <https://mextudia.com/universidades/uady/>
