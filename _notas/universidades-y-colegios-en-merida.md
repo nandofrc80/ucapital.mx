@@ -19,7 +19,7 @@ La UADY nació el 25 de febrero de 1922, por decreto del gobernador Felipe Carri
 
 Entrar no es fácil. Para el ciclo 2026-2027 hubo casi 16 mil aspirantes a licenciatura para alrededor de 5,500 lugares,[^poresto-2026] y el porcentaje de admisión bajó de 41% a 38%.[^dy-ingreso-2026]
 
-### Medicina: de las carreras más difíciles de entrar en México
+### Medicina: entra uno de cada 20 aspirantes
 
 La Facultad de Medicina es la joya de la UADY: en 2026 cumplió 193 años de fundada.[^dy-uady-2026] Su carrera de Médico Cirujano es la más codiciada de toda la universidad, con casi 4,800 aspirantes para apenas 238 lugares en 2026; es decir, entra aproximadamente uno de cada 20.[^poresto-2026] El año anterior fue parecido: de más de 3,700 aspirantes solo ingresaron 244.[^poresto-medicina-2025]
 
