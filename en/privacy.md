@@ -47,6 +47,8 @@ Your data is kept in systems with reasonable administrative, technical and physi
 
 This site uses Google Analytics, a Google service that uses cookies to generate anonymous statistics about how the site is used (for example, pages visited, time on site, device type and the approximate city or country of the visit). This information does not allow us to identify you personally, and we use it only to improve the site and our services. You can disable cookies in your browser settings or install the Google Analytics opt-out browser add-on.
 
+We also use the Google Signals features of Google Analytics, which give us aggregated demographic and interest data (for example, age ranges or gender) about visitors who are signed in to their Google account and have turned on ad personalization. We receive this information only in aggregated form, and it does not allow us to identify you. You can manage or turn off ad personalization at https://adssettings.google.com.
+
 ## 8. Changes to this notice
 
 Any change to this Privacy Notice will be published on this same page, indicating the date of the last update. We recommend that you review it periodically.

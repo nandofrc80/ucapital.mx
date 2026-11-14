@@ -46,6 +46,8 @@ Sus datos se conservan en sistemas con medidas administrativas, técnicas y fís
 
 Este sitio utiliza Google Analytics, un servicio de Google que emplea cookies para generar estadísticas anónimas sobre el uso del sitio (por ejemplo, páginas visitadas, tiempo de navegación, tipo de dispositivo y la ciudad o país aproximados de la visita). Esta información no nos permite identificarle personalmente y la usamos únicamente para mejorar el sitio y nuestros servicios. Usted puede deshabilitar las cookies desde la configuración de su navegador o instalar el complemento de inhabilitación de Google Analytics.
 
+Adicionalmente, utilizamos las funciones de Google Signals de Google Analytics, que nos permiten conocer datos demográficos y de intereses agregados (por ejemplo, rangos de edad o género) de visitantes que han iniciado sesión en su cuenta de Google y han activado la personalización de anuncios. Esta información se recibe únicamente de forma agrupada y no nos permite identificarle. Usted puede administrar o desactivar la personalización de anuncios en https://adssettings.google.com.
+
 ## 8. Cambios al aviso
 
 Cualquier modificación a este Aviso de Privacidad será publicada en esta misma página, indicando la fecha de la última actualización. Le recomendamos revisarla periódicamente.
