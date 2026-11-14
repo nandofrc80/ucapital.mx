@@ -45,7 +45,7 @@ body_class: pagina-propiedad
 <section class="section section--tight">
   <div class="shell ficha">
     <div class="ficha__main">
-      <p class="card__tipo">{{ p_tipo }}{% if p.estatus %} · {{ p_est }}{% endif %}{% if n_modelos > 0 %} · {{ n_modelos }} {{ T.modelos }}{% endif %}</p>
+      <p class="card__tipo">{{ p_tipo }}{% if p.estatus %} · {{ p_est }}{% endif %}{% if n_modelos > 0 %} · {{ n_modelos }} {% if n_modelos == 1 %}{{ T.modelo | downcase }}{% else %}{{ T.modelos }}{% endif %}{% endif %}</p>
       <h1 class="ficha__title">{{ p.nombre }}</h1>
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
       {%- if L == "es" %}{% for z in site.data.zonas %}{% if z.coincide contains p.zona %}<a class="ficha__zona" href="{{ '/guia/' | append: z.nota | append: '/' | relative_url }}">Conoce la zona: {{ z.es.nombre }} {% include icono.html n="flecha" %}</a>{% break %}{% endif %}{% endfor %}{% endif %}

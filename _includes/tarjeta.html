@@ -14,7 +14,7 @@
         {%- if PR_LIST.size > 0 %}<span class="badge badge--promo"{% if PR_HASTA != "" %} data-hasta="{{ PR_HASTA }}"{% endif %}>{{ T.promocion }}</span>{% endif -%}
         {%- if tp.datos_de_ejemplo %}<span class="badge badge--aviso">{{ T.datos_ejemplo }}</span>{% endif -%}
       </div>
-      {%- if n_modelos > 0 %}<span class="card__count">{{ n_modelos }} {{ T.modelos }}</span>{% elsif n_fotos > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ n_fotos }}</span>{% endif %}
+      {%- if n_modelos > 0 %}<span class="card__count">{{ n_modelos }} {% if n_modelos == 1 %}{{ T.modelo | downcase }}{% else %}{{ T.modelos }}{% endif %}</span>{% elsif n_fotos > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ n_fotos }}</span>{% endif %}
     </div>
     <div class="card__body">
       <p class="card__tipo">{{ tp_tipo }}</p>
