@@ -61,6 +61,7 @@ modelos:
       - /fotos/estela-nativa/quetzal-6.jpg
       - /fotos/estela-nativa/quetzal-7.jpg
       - /fotos/estela-nativa/quetzal-8.jpg
+      - /fotos/estela-nativa/quetzal-9.jpg
   - nombre: "Quetzal Plus"
     niveles: "2 plantas"
     recamaras: 3
@@ -124,7 +125,9 @@ modelos:
       - /fotos/estela-nativa/ibis-2.jpg
       - /fotos/estela-nativa/ibis-3.jpg
       - /fotos/estela-nativa/ibis-4.jpg
+      - /fotos/estela-nativa/ibis-5.jpg
       - /fotos/estela-nativa/ibis-6.jpg
+      - /fotos/estela-nativa/ibis-7.jpg
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "Immediate to October 2027"
