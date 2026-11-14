@@ -105,7 +105,7 @@ body_class: pagina-propiedad
     <header class="section__head">
       <div>
         <p class="eyebrow">{{ T.modelos_eyebrow }}</p>
-        <h2>{{ T.modelos_titulo }}</h2>
+        <h2>{% if p.tipo == "Departamento" %}{{ T.modelos_titulo_depto }}{% else %}{{ T.modelos_titulo }}{% endif %}</h2>
       </div>
       {%- if p.precios_actualizados %}<div class="section__head-side"><p class="actualizado">{% include icono.html n="calendario" %}{{ T.precios_actualizados }}: {% include fecha.html t=p.precios_actualizados %}</p></div>{% endif %}
     </header>
@@ -115,7 +115,7 @@ body_class: pagina-propiedad
       {%- assign m_slug = m.nombre | slugify -%}
       {%- assign m_wa = T.wa_modelo | replace: "__modelo__", m.nombre | replace: "__nombre__", p.nombre -%}
       {%- if X.modelos %}{% assign mx = X.modelos[forloop.index0] %}{% else %}{% assign mx = nil %}{% endif -%}
-      {%- assign m_niv = T.niveles[m.niveles] | default: m.niveles -%}
+      {%- assign m_niv = mx.niveles | default: T.niveles[m.niveles] | default: m.niveles -%}
       {%- assign m_desc = mx.descripcion | default: m.descripcion -%}
       {%- assign m_adic = mx.adicionales | default: m.adicionales -%}
       <article class="modelo" id="modelo-{{ m_slug }}">
@@ -137,7 +137,7 @@ body_class: pagina-propiedad
             {%- if m.estacionamientos and m.estacionamientos > 0 %}<li>{% include icono.html n="auto" %}<span>{{ m.estacionamientos }}</span><small>{{ T.autos }}</small></li>{% endif %}
           </ul>
           {%- assign m_ent = mx.entrega | default: m.entrega -%}
-          {%- if m_ent or m.disponibles %}<p class="modelo__disp">{% if m_ent %}{% include icono.html n="calendario" %}<span><strong>{{ T.entrega }}:</strong> {% include fecha.html t=m_ent %}</span>{% endif %}{% if m.disponibles %}<span class="modelo__n">{{ m.disponibles }} {% if m.disponibles == 1 %}{{ T.casa_disponible }}{% else %}{{ T.casas_disponibles }}{% endif %}</span>{% endif %}</p>{% endif %}
+          {%- if m_ent or m.disponibles %}<p class="modelo__disp">{% if m_ent %}{% include icono.html n="calendario" %}<span><strong>{{ T.entrega }}:</strong> {% include fecha.html t=m_ent %}</span>{% endif %}{% if m.disponibles %}<span class="modelo__n">{{ m.disponibles }} {% if p.tipo == "Departamento" %}{% if m.disponibles == 1 %}{{ T.depa_disponible }}{% else %}{{ T.depas_disponibles }}{% endif %}{% elsif m.disponibles == 1 %}{{ T.casa_disponible }}{% else %}{{ T.casas_disponibles }}{% endif %}</span>{% endif %}</p>{% endif %}
           {%- if m_desc %}<p class="modelo__desc">{{ m_desc }}</p>{% endif %}
           {%- if m_adic %}<p class="modelo__extra"><strong>{{ T.adicionales }}:</strong> {{ m_adic }}</p>{% endif %}
           <a class="btn btn--outline btn--sm modelo__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ m_wa | strip | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.me_interesa_modelo }} {{ m.nombre }}</a>
@@ -145,7 +145,7 @@ body_class: pagina-propiedad
       </article>
       {%- endfor %}
     </div>
-    <p class="modelos__nota">{{ T.modelos_nota }}</p>
+    <p class="modelos__nota">{% if p.tipo == "Departamento" %}{{ T.modelos_nota_depto }}{% else %}{{ T.modelos_nota }}{% endif %}</p>
   </div>
 </section>
 {%- endif %}

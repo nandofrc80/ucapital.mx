@@ -794,3 +794,18 @@ p { margin: 0 0 1em; }
 .asesor__cert .ico { width: 15px; height: 15px; color: var(--gold); }
 [data-theme="dark"] .asesor__cert { color: var(--gold); }
 @media (max-width: 860px) { .asesores, .asesores--2 { grid-template-columns: minmax(0, 380px); justify-content: center; gap: 48px; } .asesor__foto { width: 170px; height: 220px; } }
+
+/* Vitrina de la portada (pestañas Casas | Departamentos) */
+.tabs { display: inline-flex; gap: 4px; padding: 5px; margin: 0 0 30px; background: var(--ivory); border: 1px solid var(--line); border-radius: 999px; }
+.tab { border: 0; background: transparent; color: var(--navy); font: inherit; font-size: .95rem; letter-spacing: .02em; padding: 11px 24px; border-radius: 999px; cursor: pointer; transition: background .2s, color .2s; }
+.tab span { font-size: .78rem; opacity: .6; margin-left: 4px; }
+.tab:hover { color: var(--gold); }
+.tab.is-active { background: var(--navy-bg); color: #fff; }
+.tab.is-active span { opacity: .75; }
+.tab:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.vitrina__panel:not(.is-listo) > .card:nth-child(n+4) { display: none; }
+.vitrina__panel > .card[hidden] { display: none; }
+@media (max-width: 560px) {
+  .tabs { display: flex; width: 100%; }
+  .tab { flex: 1; padding: 11px 10px; }
+}

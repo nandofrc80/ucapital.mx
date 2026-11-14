@@ -64,20 +64,9 @@ alt: "/en/"
       </div>
       <div class="section__head-side">
         <p>Diseño, ubicación y plusvalía, evaluados antes de presentártelos.</p>
-        <div class="carousel__nav">
-          <button type="button" class="icon-btn" data-carousel-prev aria-label="Anterior">{% include icono.html n="flecha-izq" %}</button>
-          <button type="button" class="icon-btn" data-carousel-next aria-label="Siguiente">{% include icono.html n="flecha" %}</button>
-        </div>
       </div>
     </header>
-    <div class="carousel" data-carousel>
-      {%- for p in destacadas %}
-      {% include tarjeta.html p=p %}
-      {%- endfor %}
-    </div>
-    <div class="section__cta">
-      <a class="btn btn--outline" href="{{ '/propiedades/' | relative_url }}">Ver todas las propiedades {% include icono.html n="flecha" %}</a>
-    </div>
+    {% include vitrina.html %}
   </div>
 </section>
 

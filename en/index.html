@@ -66,20 +66,9 @@ body_class: pagina-inicio
       </div>
       <div class="section__head-side">
         <p>Design, location and appreciation potential, evaluated before we present them to you.</p>
-        <div class="carousel__nav">
-          <button type="button" class="icon-btn" data-carousel-prev aria-label="Previous">{% include icono.html n="flecha-izq" %}</button>
-          <button type="button" class="icon-btn" data-carousel-next aria-label="Next">{% include icono.html n="flecha" %}</button>
-        </div>
       </div>
     </header>
-    <div class="carousel" data-carousel>
-      {%- for p in destacadas %}
-      {% include tarjeta.html p=p %}
-      {%- endfor %}
-    </div>
-    <div class="section__cta">
-      <a class="btn btn--outline" href="{{ '/en/propiedades/' | relative_url }}">View all properties {% include icono.html n="flecha" %}</a>
-    </div>
+    {% include vitrina.html %}
   </div>
 </section>
 

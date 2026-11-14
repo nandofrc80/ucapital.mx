@@ -55,6 +55,44 @@
     if (next) next.addEventListener("click", function () { step(1); });
   }
 
+  /* Vitrina de la portada: pestañas Casas | Departamentos y 3 tarjetas sorteadas en cada visita */
+  var vit = $("[data-vitrina]");
+  if (vit) {
+    var MAX = 3;
+    $$("[data-panel]", vit).forEach(function (panel) {
+      var cs = $$(".card", panel);
+      for (var i = cs.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1)), t = cs[i]; cs[i] = cs[j]; cs[j] = t;
+      }
+      cs.forEach(function (c, k) { panel.appendChild(c); c.hidden = k >= MAX; });
+      panel.classList.add("is-listo");
+    });
+    var tabs = $$("[data-tab]", vit), cta = $("[data-vit-cta]", vit);
+    var activar = function (tab, foco) {
+      var cual = tab.getAttribute("data-tab");
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.classList.toggle("is-active", on);
+        t.setAttribute("aria-selected", String(on));
+        t.tabIndex = on ? 0 : -1;
+      });
+      $$("[data-panel]", vit).forEach(function (p) { p.hidden = p.getAttribute("data-panel") !== cual; });
+      if (cta) {
+        cta.href = cta.getAttribute("data-href-" + cual);
+        var sp = $("span", cta); if (sp) sp.textContent = cta.getAttribute("data-txt-" + cual);
+      }
+      if (foco) tab.focus();
+    };
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { activar(t); });
+      t.addEventListener("keydown", function (e) {
+        if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        e.preventDefault();
+        activar(tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length], true);
+      });
+    });
+  }
+
   /* Filtros del catálogo */
   var filtros = $("[data-filtros]"), grid = $("[data-grid]");
   if (filtros && grid) {

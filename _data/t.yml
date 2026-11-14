@@ -46,6 +46,14 @@ es:
   terreno: "Terreno"
   estacionamientos: "Estacionamientos"
   entrega: "Entrega"
+  vit_label: "Tipo de propiedad"
+  vit_casas: "Casas"
+  vit_deptos: "Departamentos"
+  vit_ver_casas: "Ver todas las casas"
+  vit_ver_deptos: "Ver todos los departamentos"
+  depa_disponible: "departamento disponible"
+  depas_disponibles: "departamentos disponibles"
+  modelos_nota_depto: "Precio \"desde\" del departamento más económico disponible de cada modelo. Precios y disponibilidad sujetos a cambio sin previo aviso."
   casa_disponible: "casa disponible"
   casas_disponibles: "casas disponibles"
   autos: "Autos"
@@ -74,6 +82,7 @@ es:
   asesoria_gratis_comprador: "Asesoría gratuita para el comprador"
   modelos_eyebrow: "Modelos"
   modelos_titulo: "Elige la casa <em>que va contigo.</em>"
+  modelos_titulo_depto: "Elige el departamento <em>que va contigo.</em>"
   precios_actualizados: "Precios actualizados"
   ver_fotos_modelo: "Ver fotos del modelo"
   pide_fotos: "Pide fotos de este modelo por WhatsApp"
@@ -131,7 +140,7 @@ es:
   en_redes: "U·Capital en"
   # Valores de datos
   tipos: { Casa: "Casa", Departamento: "Departamento", Townhouse: "Townhouse", Terreno: "Terreno" }
-  estatuses: { Preventa: "Preventa", "Entrega inmediata": "Entrega inmediata", Vendido: "Vendido" }
+  estatuses: { Preventa: "Preventa", "Entrega inmediata": "Entrega inmediata", "Últimas unidades": "Últimas unidades", Vendido: "Vendido" }
   niveles: { "1 planta": "1 planta", "1 planta (ampliable)": "1 planta (ampliable)", "2 plantas": "2 plantas", "3 plantas": "3 plantas" }
 
 en:
@@ -180,6 +189,14 @@ en:
   terreno: "Lot size"
   estacionamientos: "Parking"
   entrega: "Delivery"
+  vit_label: "Property type"
+  vit_casas: "Houses"
+  vit_deptos: "Apartments"
+  vit_ver_casas: "View all houses"
+  vit_ver_deptos: "View all apartments"
+  depa_disponible: "apartment available"
+  depas_disponibles: "apartments available"
+  modelos_nota_depto: "\"From\" price of the lowest-priced available apartment in each model. Prices and availability subject to change without notice."
   casa_disponible: "home available"
   casas_disponibles: "homes available"
   autos: "Cars"
@@ -208,6 +225,7 @@ en:
   asesoria_gratis_comprador: "Free advice for buyers"
   modelos_eyebrow: "Models"
   modelos_titulo: "Choose the home <em>that fits you.</em>"
+  modelos_titulo_depto: "Choose the apartment <em>that fits you.</em>"
   precios_actualizados: "Prices updated"
   ver_fotos_modelo: "View photos of the model"
   pide_fotos: "Ask us for photos of this model on WhatsApp"
@@ -262,6 +280,6 @@ en:
   pie_nota: "Prices, availability and images are for reference only and may change without notice."
   en_redes: "U·Capital on"
   tipos: { Casa: "House", Departamento: "Apartment", Townhouse: "Townhouse", Terreno: "Land" }
-  estatuses: { Preventa: "Pre-sale", "Entrega inmediata": "Move-in ready", Vendido: "Sold" }
+  estatuses: { Preventa: "Pre-sale", "Entrega inmediata": "Move-in ready", "Últimas unidades": "Last units", Vendido: "Sold" }
   niveles: { "1 planta": "1 story", "1 planta (ampliable)": "1 story (expandable)", "2 plantas": "2 stories", "3 plantas": "3 stories" }
   meses: "enero:January|febrero:February|marzo:March|abril:April|mayo:May|junio:June|julio:July|agosto:August|septiembre:September|octubre:October|noviembre:November|diciembre:December"

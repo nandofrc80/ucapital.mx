@@ -1,0 +1,29 @@
+{%- comment -%}
+  Portada: pestañas Casas | Departamentos. Cada visita sortea 3 tarjetas de cada tipo (ver site.js "Vitrina").
+  Casas = todo lo que no es Departamento (casas, townhouses, villas). Requiere la variable "publicadas".
+{%- endcomment -%}
+{%- assign v_casas = publicadas | where_exp: "p", "p.tipo != 'Departamento'" -%}
+{%- assign v_deptos = publicadas | where: "tipo", "Departamento" -%}
+<div class="vitrina" data-vitrina>
+  <div class="tabs" role="tablist" aria-label="{{ T.vit_label }}">
+    <button type="button" class="tab is-active" role="tab" id="tab-casas" aria-controls="vit-casas" aria-selected="true" data-tab="casas">{{ T.vit_casas }} <span>{{ v_casas.size }}</span></button>
+    {%- if v_deptos.size > 0 %}
+    <button type="button" class="tab" role="tab" id="tab-deptos" aria-controls="vit-deptos" aria-selected="false" tabindex="-1" data-tab="deptos">{{ T.vit_deptos }} <span>{{ v_deptos.size }}</span></button>
+    {%- endif %}
+  </div>
+  <div class="grid vitrina__panel" id="vit-casas" role="tabpanel" aria-labelledby="tab-casas" data-panel="casas">
+    {%- for p in v_casas %}
+    {% include tarjeta.html p=p %}
+    {%- endfor %}
+  </div>
+  {%- if v_deptos.size > 0 %}
+  <div class="grid vitrina__panel" id="vit-deptos" role="tabpanel" aria-labelledby="tab-deptos" data-panel="deptos" hidden>
+    {%- for p in v_deptos %}
+    {% include tarjeta.html p=p %}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+  <div class="section__cta">
+    <a class="btn btn--outline" data-vit-cta href="{{ B | append: '/propiedades/?tipo=Casa' | relative_url }}" data-href-casas="{{ B | append: '/propiedades/?tipo=Casa' | relative_url }}" data-href-deptos="{{ B | append: '/propiedades/?tipo=Departamento' | relative_url }}" data-txt-casas="{{ T.vit_ver_casas }}" data-txt-deptos="{{ T.vit_ver_deptos }}"><span>{{ T.vit_ver_casas }}</span> {% include icono.html n="flecha" %}</a>
+  </div>
+</div>
