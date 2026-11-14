@@ -1,4 +1,5 @@
 ---
+seccion: radar
 orden: 6
 titulo: "Lo que se dice en Mérida: Costco en Conkal y Palacio de Hierro (noviembre 2026)"
 titulo_corto: "Rumores del mes: Costco en Conkal y Palacio de Hierro"

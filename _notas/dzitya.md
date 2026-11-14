@@ -1,4 +1,5 @@
 ---
+seccion: zonas
 orden: 4
 titulo: "Dzityá y Real Montejo: el norponiente que está subiendo de precio"
 titulo_corto: "Dzityá y Real Montejo"

@@ -1,4 +1,5 @@
 ---
+seccion: zonas
 orden: 2
 titulo: "Temozón Norte y el corredor a Progreso: universidades, servicios y la mayor demanda de departamentos"
 titulo_corto: "Temozón Norte y el corredor a Progreso"

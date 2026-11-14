@@ -1,4 +1,5 @@
 ---
+seccion: vivir
 orden: 1
 titulo: "¿Por qué Mérida? Los datos detrás de la ciudad que todos están considerando"
 titulo_corto: "¿Por qué Mérida? Los datos para decidir"

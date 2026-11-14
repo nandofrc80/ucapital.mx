@@ -1,4 +1,5 @@
 ---
+seccion: zonas
 orden: 3
 titulo: "Cholul y Conkal: más casa por tu dinero en el corredor que más crece"
 titulo_corto: "Cholul y Conkal: más casa por tu dinero"

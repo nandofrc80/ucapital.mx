@@ -1,4 +1,5 @@
 ---
+seccion: zonas
 orden: 5
 titulo: "¿Dónde conviene comprar para rentar en Mérida?"
 titulo_corto: "¿Dónde conviene comprar para rentar?"

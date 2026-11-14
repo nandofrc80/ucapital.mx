@@ -91,7 +91,7 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Inicio", "item": {{ "/" | absolute_url | jsonify }} },
-        { "@type": "ListItem", "position": 2, "name": "Guía de Mérida", "item": {{ "/guia/" | absolute_url | jsonify }} },
+        { "@type": "ListItem", "position": 2, "name": "Cómo es vivir en Mérida", "item": {{ "/guia/" | absolute_url | jsonify }} },
         { "@type": "ListItem", "position": 3, "name": {{ page.titulo_corto | default: page.titulo | jsonify }}, "item": {{ page.url | absolute_url | jsonify }} }
       ]
     }

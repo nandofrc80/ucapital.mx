@@ -18,6 +18,8 @@
   {%- assign _img = _pp.portada | default: "/assets/img/og-ucapital.jpg" -%}
   <title>{{ _t }}</title>
   <meta name="description" content="{{ _d | strip_html | strip_newlines | escape }}">
+  {%- if page.borrador %}
+  <meta name="robots" content="noindex, nofollow">{% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   {%- if L == "en" %}{% assign _es = ALT %}{% assign _en = page.url %}{% else %}{% assign _es = page.url %}{% assign _en = ALT %}{% endif %}
   {%- unless page.url contains "404" %}
@@ -39,7 +41,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=18">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v=19">
   {% include datos-estructurados.html %}
 </head>
 <body class="{{ page.body_class }}">

@@ -2,22 +2,31 @@
 layout: default
 permalink: /guia/
 alt: "/en/"
-titulo: "Guía de Mérida: por qué vivir aquí y qué zona elegir"
-descripcion: "Datos con fuente sobre seguridad, empleo, inversión y plusvalía en Mérida, y notas por zona: Temozón Norte, Cholul, Conkal y Dzityá. Se actualiza cada mes."
+titulo: "Cómo es vivir en Mérida: datos, zonas y lo que tienes a la mano"
+descripcion: "Todo para decidir si Mérida es para ti: datos con fuente sobre seguridad, empleo y plusvalía; cenotes, playas y escapadas a menos de una hora; notas por zona (Temozón Norte, Cholul, Conkal, Dzityá) y el radar de lo que se dice en la ciudad. Se actualiza cada mes."
 body_class: pagina-guia
 ---
-{%- assign notas = site.notas | sort: "orden" -%}
-{%- assign principal = notas | first -%}
+{%- assign notas = site.notas | where_exp: "n", "n.borrador != true" | sort: "orden" -%}
+{%- assign principal = notas | where: "slug", "por-que-merida" | first -%}
+{%- assign vivir = notas | where: "seccion", "vivir" -%}
+{%- assign zonas = notas | where: "seccion", "zonas" -%}
+{%- assign radar = notas | where: "seccion", "radar" -%}
 <section class="page-head">
   <div class="shell">
-    <p class="eyebrow">Guía de Mérida · Edición noviembre 2026</p>
-    <h1>Mérida, <em>con datos.</em></h1>
-    <p>¿Estás evaluando a qué ciudad mudarte? Reunimos cifras públicas —cada una con su fuente— sobre seguridad, empleo, inversión y plusvalía, y después te contamos zona por zona qué hay, qué viene y qué se rumora. Actualizamos la guía cada mes.</p>
+    <p class="eyebrow">Cómo es vivir en Mérida · Edición noviembre 2026</p>
+    <h1>Cómo es vivir <em>en Mérida.</em></h1>
+    <p>¿Estás pensando en mudarte? Aquí reunimos lo que necesitas para imaginarte la vida en Mérida: los datos que pesan en la decisión —cada uno con su fuente—, lo que tienes a menos de una hora de casa, qué ofrece cada zona y lo que se dice en la ciudad. Actualizamos estas notas cada mes.</p>
+    <nav class="guia-indice" aria-label="Secciones">
+      <a href="#vivir">Vivir en Mérida</a>
+      <a href="#zonas">Zonas de Mérida</a>
+      <a href="#radar">Radar del mes</a>
+    </nav>
   </div>
 </section>
 
 <section class="section section--tight">
   <div class="shell">
+    {%- if principal %}
     <a class="guia-destacada" href="{{ principal.url | relative_url }}">
       <div class="guia-destacada__num">
         {%- for c in principal.cifras %}<div><strong>{{ c[0] }}</strong><span>{{ c[1] }}</span></div>{% endfor %}
@@ -29,16 +38,62 @@ body_class: pagina-guia
         <span class="guia-card__ver">Leer la nota {% include icono.html n="flecha" %}</span>
       </div>
     </a>
+    {%- endif %}
 
-    <div class="guia-grid">
-      {%- for n in notas offset: 1 %}
-      <a class="guia-card{% if n.rumores %} guia-card--rumor{% endif %}" href="{{ n.url | relative_url }}">
-        <p class="guia-card__cat">{{ n.categoria }}</p>
-        <h2>{{ n.titulo_corto | default: n.titulo }}</h2>
-        <p>{{ n.descripcion }}</p>
-        <span class="guia-card__ver">Leer {% include icono.html n="flecha" %}</span>
-      </a>
-      {%- endfor %}
+    <div class="guia-seccion" id="vivir">
+      <header class="guia-seccion__head">
+        <h2>Vivir en Mérida: lo que tienes a la mano</h2>
+        <p>Cenotes, playas, zonas arqueológicas y la vida de todos los días, a menos de una hora de casa.</p>
+      </header>
+      <div class="guia-grid">
+        {%- for n in vivir %}{% if n.slug != "por-que-merida" %}
+        <a class="guia-card" href="{{ n.url | relative_url }}">
+          <p class="guia-card__cat">{{ n.categoria }}</p>
+          <h2>{{ n.titulo_corto | default: n.titulo }}</h2>
+          <p>{{ n.descripcion }}</p>
+          <span class="guia-card__ver">Leer {% include icono.html n="flecha" %}</span>
+        </a>
+        {%- endif %}{% endfor %}
+        <div class="guia-card guia-card--pronto">
+          <p class="guia-card__cat">Próximamente</p>
+          <h2>Playas, zonas arqueológicas, escapadas y escuelas</h2>
+          <p>Cada mes sumamos una nota nueva sobre cómo es la vida en Mérida: la costa a minutos, Chichén Itzá y Uxmal, pueblos mágicos, el clima y las universidades y colegios de la ciudad.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="guia-seccion" id="zonas">
+      <header class="guia-seccion__head">
+        <h2>Zonas de Mérida</h2>
+        <p>Qué hay, qué viene y cuánto cuesta en cada zona del norte de la ciudad.</p>
+      </header>
+      <div class="guia-grid">
+        {%- for n in zonas %}
+        <a class="guia-card" href="{{ n.url | relative_url }}">
+          <p class="guia-card__cat">{{ n.categoria }}</p>
+          <h2>{{ n.titulo_corto | default: n.titulo }}</h2>
+          <p>{{ n.descripcion }}</p>
+          <span class="guia-card__ver">Leer {% include icono.html n="flecha" %}</span>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <div class="guia-seccion" id="radar">
+      <header class="guia-seccion__head">
+        <h2>Radar: lo que se dice en Mérida</h2>
+        <p>Cada mes separamos lo confirmado de lo que todavía es rumor, con su fuente.</p>
+      </header>
+      <div class="guia-grid">
+        {%- for n in radar %}
+        <a class="guia-card guia-card--rumor" href="{{ n.url | relative_url }}">
+          <p class="guia-card__cat">{{ n.categoria }}</p>
+          <h2>{{ n.titulo_corto | default: n.titulo }}</h2>
+          <p>{{ n.descripcion }}</p>
+          <span class="guia-card__ver">Leer {% include icono.html n="flecha" %}</span>
+        </a>
+        {%- endfor %}
+      </div>
     </div>
 
     <p class="guia-nota">Las notas recopilan información pública y citan su fuente en cada dato. No son asesoría financiera ni una promesa de plusvalía; los rumores se señalan como tales.</p>
