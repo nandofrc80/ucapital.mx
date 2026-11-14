@@ -4,6 +4,13 @@
   var EN = (document.documentElement.lang || "").indexOf("en") === 0;
 
   /* Medición en Google Analytics: clics a WhatsApp, formularios y asistente */
+  /* Desarrollo y tipo (Casa / Departamento) de la ficha donde ocurre el lead; "General" fuera de las fichas */
+  var contexto = function (datos) {
+    var b = document.body.dataset || {};
+    datos.desarrollo = b.desarrollo || "General";
+    datos.tipo_propiedad = b.tipo || "General";
+    return datos;
+  };
   var medir = function (evento, datos) {
     try { if (typeof window.gtag === "function") window.gtag("event", evento, datos || {}); } catch (e) {}
   };
@@ -18,7 +25,8 @@
       : a.closest(".footer") ? "pie"
       : a.closest(".asis") ? "asistente_directo"
       : "otro";
-    medir("generate_lead", { method: "whatsapp", origen: origen, idioma: EN ? "en" : "es" });
+    var mod = a.closest(".modelo"), mt = mod && mod.querySelector(".modelo__title");
+    medir("generate_lead", contexto({ method: "whatsapp", origen: origen, idioma: EN ? "en" : "es", modelo: mt ? mt.textContent.trim() : "" }));
   }, true);
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
@@ -200,7 +208,7 @@
         .then(function (r) {
           if (!r.ok) throw new Error("HTTP " + r.status);
           form.classList.add("is-sent");
-          medir("generate_lead", { method: "formulario", origen: form.classList.contains("form--compacto") ? "ficha" : "contacto", idioma: EN ? "en" : "es" });
+          medir("generate_lead", contexto({ method: "formulario", origen: form.classList.contains("form--compacto") ? "ficha" : "contacto", idioma: EN ? "en" : "es" }));
           if (ok) { ok.hidden = false; ok.scrollIntoView({ behavior: "smooth", block: "center" }); }
         })
         .catch(function () { if (err) err.hidden = false; })
