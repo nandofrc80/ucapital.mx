@@ -55,6 +55,12 @@ modelos:
     fotos:
       - /fotos/estela-nativa/quetzal-1.jpg
       - /fotos/estela-nativa/quetzal-2.jpg
+      - /fotos/estela-nativa/quetzal-3.jpg
+      - /fotos/estela-nativa/quetzal-4.jpg
+      - /fotos/estela-nativa/quetzal-5.jpg
+      - /fotos/estela-nativa/quetzal-6.jpg
+      - /fotos/estela-nativa/quetzal-7.jpg
+      - /fotos/estela-nativa/quetzal-8.jpg
   - nombre: "Quetzal Plus"
     niveles: "2 plantas"
     recamaras: 3
@@ -70,6 +76,13 @@ modelos:
     adicionales: "Algunas casas se entregan con piscina y cochera techada, según disponibilidad."
     fotos:
       - /fotos/estela-nativa/quetzal-plus-1.jpg
+      - /fotos/estela-nativa/quetzal-plus-2.jpg
+      - /fotos/estela-nativa/quetzal-plus-3.jpg
+      - /fotos/estela-nativa/quetzal-plus-4.jpg
+      - /fotos/estela-nativa/quetzal-plus-5.jpg
+      - /fotos/estela-nativa/quetzal-plus-6.jpg
+      - /fotos/estela-nativa/quetzal-plus-7.jpg
+      - /fotos/estela-nativa/quetzal-plus-8.jpg
   - nombre: "Carey"
     niveles: "2 plantas"
     recamaras: 3
@@ -90,6 +103,10 @@ modelos:
       - /fotos/estela-nativa/carey-4.jpg
       - /fotos/estela-nativa/carey-5.jpg
       - /fotos/estela-nativa/carey-6.jpg
+      - /fotos/estela-nativa/carey-7.jpg
+      - /fotos/estela-nativa/carey-8.jpg
+      - /fotos/estela-nativa/carey-9.jpg
+      - /fotos/estela-nativa/carey-10.jpg
   - nombre: "Ibis"
     niveles: "2 plantas"
     recamaras: 3
@@ -104,6 +121,10 @@ modelos:
     descripcion: "El modelo más amplio: recámara con vestidor y baño completo en planta baja, sala, comedor, cocina, medio baño, terraza y piscina. En planta alta, sala de TV con balcón y dos recámaras con clóset y baño completo."
     fotos:
       - /fotos/estela-nativa/ibis-1.jpg
+      - /fotos/estela-nativa/ibis-2.jpg
+      - /fotos/estela-nativa/ibis-3.jpg
+      - /fotos/estela-nativa/ibis-4.jpg
+      - /fotos/estela-nativa/ibis-6.jpg
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "Immediate to October 2027"
