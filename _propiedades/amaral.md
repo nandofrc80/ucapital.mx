@@ -8,6 +8,7 @@ tipo: "Casa"
 estatus: "Preventa"
 zona: "Real Montejo"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/J86Cx3K3BSuN7xAG9"
 precio: 0
 precio_desde: true
 entrega: "Julio 2027"

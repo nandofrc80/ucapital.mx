@@ -8,6 +8,7 @@ tipo: "Casa"
 estatus: "Preventa"
 zona: "Conkal"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/MW2CwLNBWqkwnWum9"
 precio: 0
 precio_desde: true
 entrega: "Inmediata a octubre 2027"

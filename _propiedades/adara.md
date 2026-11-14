@@ -8,6 +8,7 @@ tipo: "Casa"
 estatus: "Preventa"
 zona: "Temozón Norte"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/u8iQ2jdUaXbwzHDq9"
 precio: 0
 precio_desde: true
 entrega: "Inmediata a marzo 2027"

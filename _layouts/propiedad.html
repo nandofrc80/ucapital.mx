@@ -50,6 +50,7 @@ body_class: pagina-propiedad
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
       {%- if L == "es" %}{% for z in site.data.zonas %}{% if z.coincide contains p.zona %}<a class="ficha__zona" href="{{ '/guia/' | append: z.nota | append: '/' | relative_url }}">Conoce la zona: {{ z.es.nombre }} {% include icono.html n="flecha" %}</a>{% break %}{% endif %}{% endfor %}{% endif %}
       {%- if p.mapa %}<a class="ficha__mapa" href="{{ p.mapa }}" target="_blank" rel="noopener">{% include icono.html n="pin" %}{{ T.ver_mapa }} {% include icono.html n="flecha" %}</a>{% endif %}
+      {%- for mp in p.mapas %}{% if mp.url %}<a class="ficha__mapa" href="{{ mp.url }}" target="_blank" rel="noopener">{% include icono.html n="pin" %}{{ T.ver_mapa }}{% if mp.nombre %} · {{ mp.nombre }}{% endif %} {% include icono.html n="flecha" %}</a>{% endif %}{% endfor %}
       <div class="ficha__movil">
         <p class="precio precio--big">{% include precio.html p=p monto=st_precio %}</p>
         <a class="btn btn--wa btn--block" href="{{ wa_url }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.pregunta_wa }}</a>

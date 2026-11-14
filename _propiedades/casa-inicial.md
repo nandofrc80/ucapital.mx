@@ -8,6 +8,11 @@ tipo: "Casa"
 estatus: "Entrega inmediata"
 zona: "Cholul"
 ciudad: "Mérida, Yucatán"
+mapas:
+  - nombre: "Priv. Tres Lunas"
+    url: "https://maps.app.goo.gl/Y9u6ATDF2Dzs5pTc8"
+  - nombre: "Priv. Altozano"
+    url: "https://maps.app.goo.gl/SvBmdGWW6bcmQ9646"
 precio: 0
 precio_desde: true
 entrega: "Inmediata (Tres Lunas) u 8 meses (Altozano)"

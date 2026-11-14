@@ -8,6 +8,7 @@ tipo: "Casa"
 estatus: "Preventa"
 zona: "Conkal"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/3eR5aTeUyU4iAP2G6"
 precio: 0
 precio_desde: true
 entrega: "Nah-Yah: 8 meses tras la firma de la promesa de compra-venta"

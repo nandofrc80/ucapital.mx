@@ -8,6 +8,7 @@ tipo: "Casa"
 estatus: "Preventa"
 zona: "San Ignacio"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/5NUPjU7DjbCfAsHV6"
 precio: 0
 precio_desde: true
 entrega: "Inmediata a abril 2027"

@@ -821,3 +821,4 @@ p { margin: 0 0 1em; }
 .ficha__mapa { display: inline-flex; align-items: center; gap: 6px; margin: 6px 0 0; font-size: .92rem; color: var(--gold-dark); text-decoration: none; }
 .ficha__mapa:hover { text-decoration: underline; }
 @media (max-width: 860px) { .hero__media > img { height: 240px; } }
+.ficha__mapa + .ficha__mapa { margin-left: 18px; }

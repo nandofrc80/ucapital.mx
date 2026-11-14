@@ -67,6 +67,18 @@ content:
         label: Link de Google Maps
         type: string
         description: "Opcional. Pega el link de ubicación (maps.app.goo.gl/...). Aparece como botón 'Ver ubicación' en la ficha."
+      - name: mapas
+        label: Ubicaciones adicionales (si hay varias)
+        type: object
+        list: true
+        description: "Opcional. Para desarrollos con más de una ubicación (ej. dos privadas). Cada una aparece como su propio botón."
+        fields:
+          - name: nombre
+            label: Nombre (ej. Priv. Tres Lunas)
+            type: string
+          - name: url
+            label: Link de Google Maps
+            type: string
       - name: precio
         label: Precio (MXN, solo números)
         type: number
