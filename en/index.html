@@ -131,7 +131,7 @@ body_class: pagina-inicio
       <a class="btn btn--gold" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hi, I would like information about a development' | url_encode | replace: "+", "%20" }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Ask about any of them</a>
     </div>
     <ul class="catalogo__chips">
-      {%- assign nombres = "Estela Nativa|Aldoria|NAIA|Cumbres Novonorte|Arista Residencial|Gran Bosco|KAUA by Laja|UKUM|OLMOS|Santa Loreto|Livenza|El Origen|Residencial Dzidzil-ha|Campocielo|Casona 333|ANURA|PRANA|ETRO|VETA|Pájaro en Piedra|MACORA 86" | split: "|" -%}
+      {%- assign nombres = "Estela Nativa|Aldoria|NAIA|Cumbres Novonorte|Espiga Homes|Gran Bosco|KAUA by Laja|UKUM|OLMOS|Santa Loreto|Livenza|El Origen|Residencial Dzidzil-ha|Campocielo|Nadira|ANURA|PRANA|ETRO|VETA|Pájaro en Piedra|MACORA 86" | split: "|" -%}
       {%- for n in nombres %}{% assign _pub = publicadas | where: "nombre", n | first %}<li>{% if _pub %}<a href="{{ B | append: _pub.url | relative_url }}">{{ n }}</a>{% else %}{{ n }}{% endif %}</li>{% endfor %}
     </ul>
   </div>
