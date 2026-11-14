@@ -131,8 +131,26 @@
       var url = window.location.pathname + (q.toString() ? "?" + q.toString() : "");
       window.history.replaceState(null, "", url);
     };
-    filtros.addEventListener("change", aplicar);
-    filtros.addEventListener("reset", function () { setTimeout(aplicar, 0); });
+    /* Pestañas Todas | Casas | Departamentos (sincronizadas con el filtro Tipo) y orden por precio */
+    var catTabs = $$("[data-cat]");
+    var syncTabs = function () {
+      catTabs.forEach(function (t) { t.classList.toggle("is-active", t.getAttribute("data-cat") === filtros.elements.tipo.value); });
+    };
+    catTabs.forEach(function (t) {
+      t.addEventListener("click", function () { filtros.elements.tipo.value = t.getAttribute("data-cat"); aplicar(); syncTabs(); });
+    });
+    var ordenar = $("[data-ordenar]");
+    if (ordenar) ordenar.addEventListener("change", function () {
+      var v = ordenar.value, lista = cards.slice();
+      if (v) lista.sort(function (a, b) {
+        var pa = parseFloat(a.dataset.precio) || Infinity, pb = parseFloat(b.dataset.precio) || Infinity;
+        return v === "asc" ? pa - pb : (pb === Infinity ? -1 : pb) - (pa === Infinity ? -1 : pa);
+      });
+      lista.forEach(function (c) { grid.appendChild(c); });
+    });
+    filtros.addEventListener("change", function () { aplicar(); syncTabs(); });
+    filtros.addEventListener("reset", function () { setTimeout(function () { aplicar(); syncTabs(); }, 0); });
+    setTimeout(syncTabs, 0);
     aplicar();
   }
 
@@ -311,6 +329,15 @@
       $("[data-a=again]", body).addEventListener("click", function () { pregunta(0); });
     }
   })();
+
+  /* Ficha en celular: el formulario va después de los modelos (primero el producto) */
+  var fSide = $(".ficha__side"), fMod = $("#modelos");
+  if (fSide && fMod && window.matchMedia("(max-width: 860px)").matches) {
+    var sec = document.createElement("section"), sh = document.createElement("div");
+    sec.className = "section section--tight"; sh.className = "shell";
+    sh.appendChild(fSide); sec.appendChild(sh);
+    fMod.parentNode.insertBefore(sec, fMod.nextSibling);
+  }
 
   /* Aparición suave al hacer scroll */
   if ("IntersectionObserver" in window) {

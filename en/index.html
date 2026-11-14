@@ -17,7 +17,7 @@ body_class: pagina-inicio
     <div class="hero__text">
       <p class="eyebrow">U·Capital Real Estate · Mérida, Yucatán, Mexico</p>
       <h1>The home you <em>deserve</em> to live in.</h1>
-      <p class="hero__sub">For families and investors looking for more than just a property. Hundreds of options in Mérida and on the Yucatán coast, one single conversation, and no cost to the buyer.</p>
+      <p class="hero__sub">For families and investors looking for more than just a property. Access to more than 100 developments in Mérida and on the Yucatán coast, one single conversation, and no cost to the buyer.</p>
       <form class="buscador" action="{{ '/en/propiedades/' | relative_url }}" method="get" role="search">
         <label><span>Type</span>
           <select name="tipo"><option value="">All</option>{% for t in tipos %}<option value="{{ t }}">{{ T.tipos[t] | default: t }}</option>{% endfor %}</select>
@@ -27,7 +27,7 @@ body_class: pagina-inicio
         </label>
         <label><span>Budget (MXN)</span>
           <select name="max">
-            <option value="">Any</option><option value="2500000">Up to $2.5M</option><option value="3000000">Up to $3M</option><option value="3500000">Up to $3.5M</option><option value="4000000">Up to $4M</option><option value="5000000">Up to $5M</option></select>
+            <option value="">Any</option><option value="2000000">Up to $2M</option><option value="2500000">Up to $2.5M</option><option value="3000000">Up to $3M</option><option value="3500000">Up to $3.5M</option><option value="4000000">Up to $4M</option><option value="5000000">Up to $5M</option></select>
         </label>
         <button class="btn btn--navy" type="submit">Search</button>
       </form>
@@ -49,10 +49,10 @@ body_class: pagina-inicio
 
 <section class="metrics">
   <div class="shell metrics__grid">
-    <div><strong>200+</strong><span>Verified options in one place</span></div>
+    <div><strong>100+</strong><span>Developments within reach in Mérida and on the coast</span></div>
     <div><strong>$0</strong><span>Advisory cost for the buyer</span></div>
     <div><strong>&lt;24h</strong><span>We answer every request the same day</span></div>
-    <div><strong>100%</strong><span>Support from start to finish</span></div>
+    <div><strong>{{ publicadas.size }}</strong><span>Developments listed with up-to-date prices</span></div>
   </div>
 </section>
 
@@ -132,7 +132,7 @@ body_class: pagina-inicio
     </div>
     <ul class="catalogo__chips">
       {%- assign nombres = "Estela Nativa|Aldoria|NAIA|Cumbres Novonorte|Arista Residencial|Gran Bosco|KAUA by Laja|UKUM|OLMOS|Santa Loreto|Livenza|El Origen|Residencial Dzidzil-ha|Campocielo|Casona 333|ANURA|PRANA|ETRO|VETA|Pájaro en Piedra|MACORA 86" | split: "|" -%}
-      {%- for n in nombres %}<li>{{ n }}</li>{% endfor %}
+      {%- for n in nombres %}{% assign _pub = publicadas | where: "nombre", n | first %}<li>{% if _pub %}<a href="{{ B | append: _pub.url | relative_url }}">{{ n }}</a>{% else %}{{ n }}{% endif %}</li>{% endfor %}
     </ul>
   </div>
 </section>

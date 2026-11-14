@@ -8,6 +8,7 @@ tipo: "Departamento"
 estatus: "Preventa"
 zona: "Colonia Maya"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/H5tYw9LZzFadWtVA6"
 precio: 0
 precio_desde: true
 entrega: "Junio 2028"

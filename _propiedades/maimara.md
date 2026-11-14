@@ -8,6 +8,7 @@ tipo: "Departamento"
 estatus: "Entrega inmediata"
 zona: "Temozón Norte"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/GUdKM7xvhnnWEnfp7"
 precio: 0
 precio_desde: true
 entrega: "Inmediata"

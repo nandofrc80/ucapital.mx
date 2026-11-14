@@ -15,7 +15,7 @@ alt: "/en/"
     <div class="hero__text">
       <p class="eyebrow">U·Capital Inmobiliaria · Mérida, Yucatán</p>
       <h1>El hogar que <em>mereces</em> vivir.</h1>
-      <p class="hero__sub">Para familias e inversionistas que buscan más que una propiedad. Cientos de opciones en Mérida y la costa yucateca, una sola conversación y cero costo para el comprador.</p>
+      <p class="hero__sub">Para familias e inversionistas que buscan más que una propiedad. Acceso a más de 100 desarrollos en Mérida y la costa yucateca, una sola conversación y cero costo para el comprador.</p>
       <form class="buscador" action="{{ '/propiedades/' | relative_url }}" method="get" role="search">
         <label><span>Tipo</span>
           <select name="tipo"><option value="">Todos</option>{% for t in tipos %}<option>{{ t }}</option>{% endfor %}</select>
@@ -25,7 +25,7 @@ alt: "/en/"
         </label>
         <label><span>Presupuesto</span>
           <select name="max">
-            <option value="">Cualquiera</option><option value="2500000">Hasta $2.5M</option><option value="3000000">Hasta $3M</option><option value="3500000">Hasta $3.5M</option><option value="4000000">Hasta $4M</option><option value="5000000">Hasta $5M</option></select>
+            <option value="">Cualquiera</option><option value="2000000">Hasta $2M</option><option value="2500000">Hasta $2.5M</option><option value="3000000">Hasta $3M</option><option value="3500000">Hasta $3.5M</option><option value="4000000">Hasta $4M</option><option value="5000000">Hasta $5M</option></select>
         </label>
         <button class="btn btn--navy" type="submit">Buscar</button>
       </form>
@@ -47,10 +47,10 @@ alt: "/en/"
 
 <section class="metrics">
   <div class="shell metrics__grid">
-    <div><strong>200+</strong><span>Opciones verificadas en un solo lugar</span></div>
+    <div><strong>100+</strong><span>Desarrollos a tu alcance en Mérida y la costa</span></div>
     <div><strong>$0</strong><span>Costo de asesoría para el comprador</span></div>
     <div><strong>&lt;24h</strong><span>Respondemos cada solicitud el mismo día</span></div>
-    <div><strong>100%</strong><span>Acompañamiento de principio a fin</span></div>
+    <div><strong>{{ publicadas.size }}</strong><span>Desarrollos publicados con precios al día</span></div>
   </div>
 </section>
 
@@ -110,12 +110,30 @@ alt: "/en/"
   </div>
 </section>
 
-<section class="section section--tight">
+<section class="section section--tight" id="vivir-en-merida">
   <div class="shell">
-    <div class="mosaic">
-      {%- for i in (2..5) %}
-      <img src="{{ '/assets/img/insp-0' | append: i | append: '.jpg' | relative_url }}" alt="Espacios de desarrollos residenciales en Mérida" loading="lazy">
-      {%- endfor %}
+    <header class="section__head">
+      <div>
+        <p class="eyebrow">Vivir en Mérida</p>
+        <h2>¿Pensando en <em>mudarte</em> a Mérida?</h2>
+      </div>
+      <div class="section__head-side">
+        <p>Datos con fuente sobre la ciudad, sus zonas y la vida diaria, actualizados cada mes.</p>
+      </div>
+    </header>
+    <div class="guia-grid">
+      {%- assign _slugs = "por-que-merida|temozon-norte|cenotes-cerca-de-merida" | split: "|" -%}
+      {%- for s in _slugs %}{% assign n = site.notas | where: "slug", s | first %}{% if n %}
+      <a class="guia-card" href="{{ n.url | relative_url }}">
+        <p class="guia-card__cat">{{ n.categoria }}</p>
+        <h3>{{ n.titulo_corto | default: n.titulo }}</h3>
+        <p>{{ n.descripcion | truncate: 150 }}</p>
+        <span class="guia-card__ver">Leer {% include icono.html n="flecha" %}</span>
+      </a>
+      {%- endif %}{% endfor %}
+    </div>
+    <div class="section__cta">
+      <a class="btn btn--outline" href="{{ '/guia/' | relative_url }}">Ver todas las notas {% include icono.html n="flecha" %}</a>
     </div>
   </div>
 </section>
@@ -130,7 +148,7 @@ alt: "/en/"
     </div>
     <ul class="catalogo__chips">
       {%- assign nombres = "Estela Nativa|Aldoria|NAIA|Cumbres Novonorte|Arista Residencial|Gran Bosco|KAUA by Laja|UKUM|OLMOS|Santa Loreto|Livenza|El Origen|Residencial Dzidzil-ha|Campocielo|Casona 333|ANURA|PRANA|ETRO|VETA|Pájaro en Piedra|MACORA 86" | split: "|" -%}
-      {%- for n in nombres %}<li>{{ n }}</li>{% endfor %}
+      {%- for n in nombres %}{% assign _pub = publicadas | where: "nombre", n | first %}<li>{% if _pub %}<a href="{{ B | append: _pub.url | relative_url }}">{{ n }}</a>{% else %}{{ n }}{% endif %}</li>{% endfor %}
     </ul>
   </div>
 </section>

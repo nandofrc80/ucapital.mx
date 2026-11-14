@@ -63,6 +63,10 @@ content:
         label: Ciudad
         type: string
         default: "Mérida, Yucatán"
+      - name: mapa
+        label: Link de Google Maps
+        type: string
+        description: "Opcional. Pega el link de ubicación (maps.app.goo.gl/...). Aparece como botón 'Ver ubicación' en la ficha."
       - name: precio
         label: Precio (MXN, solo números)
         type: number

@@ -8,6 +8,7 @@ tipo: "Departamento"
 estatus: "Preventa"
 zona: "Temozón Norte"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.google.com/?q=21.069584,-89.604233"
 precio: 0
 precio_desde: true
 entrega: "Enero 2028"

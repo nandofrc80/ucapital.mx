@@ -8,6 +8,7 @@ tipo: "Departamento"
 estatus: "Preventa"
 zona: "Chuburná de Hidalgo"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/22SFrhDBSDnTpgqU9"
 precio: 0
 precio_desde: true
 entrega: "Marzo 2027 a junio 2028"
