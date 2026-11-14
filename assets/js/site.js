@@ -133,16 +133,32 @@
   }
 
   /* Formularios: envío a Formspree sin salir de la página */
+  /* Anti-bots: la dirección de Formspree no está en el HTML (solo aquí), y se descartan en silencio
+     los envíos que llenan un campo trampa, que llegan en menos de 3 s o sin que la persona toque el formulario */
+  var FS = "https://formspree.io/f/" + "ebaedeem".split("").reverse().join("");
+  var T0 = Date.now();
   $$("[data-form]").forEach(function (form) {
+    var tocado = false;
+    ["keydown", "input", "pointerdown", "touchstart"].forEach(function (ev) {
+      form.addEventListener(ev, function () { tocado = true; }, { passive: true });
+    });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var btn = $("[data-submit]", form), err = $("[data-error]", form), ok = $("[data-ok]", form);
+      var trampa = (form.elements.empresa && form.elements.empresa.value) || (form.elements._gotcha && form.elements._gotcha.value);
+      if (trampa || !tocado || Date.now() - T0 < 3000) {
+        form.classList.add("is-sent");
+        if (ok) ok.hidden = false;
+        return;
+      }
       var nombre = form.elements.nombre ? form.elements.nombre.value.trim() : "";
       var subj = $("[data-subject]", form);
       if (subj && nombre && subj.value.indexOf(nombre) === -1) subj.value = subj.value + " · " + nombre;
       if (err) err.hidden = true;
       if (btn) { btn.disabled = true; btn.dataset.label = btn.innerHTML; btn.textContent = EN ? "Sending…" : "Enviando…"; }
-      fetch(form.action, { method: "POST", body: new FormData(form), headers: { "Accept": "application/json" } })
+      var fd = new FormData(form);
+      fd.delete("empresa");
+      fetch(FS, { method: "POST", body: fd, headers: { "Accept": "application/json" } })
         .then(function (r) {
           if (!r.ok) throw new Error("HTTP " + r.status);
           form.classList.add("is-sent");

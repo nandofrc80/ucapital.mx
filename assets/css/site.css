@@ -303,7 +303,7 @@ p { margin: 0 0 1em; }
 .form__error { color: #9B2C2C; font-size: .9rem; background: #FDF0EF; padding: 12px 14px; border-radius: 10px; margin: 0; }
 .form__error a { text-decoration: underline; }
 .form.is-sent > :not([data-ok]) { display: none; }
-.hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
+.hp, .form__extra { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; opacity: 0; }
 .form--compacto { gap: 14px; }
 .form--compacto .form__row { grid-template-columns: 1fr; gap: 14px; }
 

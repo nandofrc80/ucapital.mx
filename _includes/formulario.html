@@ -1,10 +1,11 @@
 {%- assign compacto = include.compacto -%}
-<form class="form{% if compacto %} form--compacto{% endif %}" action="{{ site.formspree }}" method="POST" data-form>
+<form class="form{% if compacto %} form--compacto{% endif %}" method="POST" data-form>
   <input type="hidden" name="_subject" value="{{ T.f_asunto }}{% if include.propiedad %} — {{ include.propiedad }}{% endif %}" data-subject>
   {%- if include.propiedad %}<input type="hidden" name="propiedad" value="{{ include.propiedad }}">{% endif %}
   <input type="hidden" name="pagina" value="{{ page.url | absolute_url }}">
   {%- if L == "en" %}<input type="hidden" name="idioma" value="Inglés">{% endif %}
   <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+  <div class="form__extra" aria-hidden="true"><label>Empresa <input type="text" name="empresa" tabindex="-1" autocomplete="off"></label></div>
   <div class="form__row">
     <label class="field"><span>{{ T.f_nombre }} <em>*</em></span><input name="nombre" type="text" required autocomplete="name" placeholder="{{ T.f_nombre_ph }}"></label>
     <label class="field"><span>WhatsApp <em>*</em></span><input name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="{% if L == 'en' %}+1 555 000 0000{% else %}999 000 0000{% endif %}"></label>
@@ -51,5 +52,6 @@
     <h3>{{ T.f_ok_t }}</h3>
     <p>{{ T.f_ok_p }}</p>
   </div>
+  <noscript><p class="form__error">{% if L == "en" %}Please enable JavaScript to send this form, or{% else %}Activa JavaScript para enviar este formulario, o{% endif %} <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">{{ T.f_error_wa }}</a>.</p></noscript>
   <p class="form__error" data-error hidden>{{ T.f_error }} <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">{{ T.f_error_wa }}</a>.</p>
 </form>
