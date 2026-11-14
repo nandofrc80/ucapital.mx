@@ -60,7 +60,7 @@ Uno de los corredores de vivienda nueva con más movimiento de la ciudad, con pr
 
 ### Universidades
 
-- **UADY, Campus de Ciencias Sociales, Económico-Administrativas y Humanidades.** En el kilómetro 1 de la carretera Mérida-Tizimín, en Cholul.[^uady-saie] Es uno de los campus más grandes de la universidad pública: reúne seis facultades (Ciencias Antropológicas, Contaduría y Administración, Derecho, Economía, Educación y Psicología) y una unidad del Centro de Investigaciones Regionales Dr. Hideyo Noguchi.[^uady-ccseah] Abrió en 2005, y con la nueva sede de Contaduría y Administración, inaugurada en diciembre de 2022, quedó completo.[^uady-ccseah][^dy-contaduria] Ahí se estudian algunas de las carreras más solicitadas de la UADY, como Derecho, Contaduría y Psicología.[^uady-cifras-2024]
+- **UADY, Campus de Ciencias Sociales, Económico-Administrativas y Humanidades.** En el kilómetro 1 de la carretera Mérida-Tizimín, en Cholul.[^uady-saie] Reúne seis facultades (Ciencias Antropológicas, Contaduría y Administración, Derecho, Economía, Educación y Psicología) y una unidad del Centro de Investigaciones Regionales Dr. Hideyo Noguchi.[^uady-ccseah] Abrió en 2005, y con la nueva sede de Contaduría y Administración, inaugurada en diciembre de 2022, quedó completo.[^uady-ccseah][^dy-contaduria] Ahí se estudian algunas de las carreras más solicitadas de la UADY, como Derecho, Contaduría y Psicología.[^uady-cifras-2024][^poresto-2026]
 - **Universidad Modelo.** Sobre la carretera a Cholul, a unos 200 metros del Periférico.[^ehu-modelo] Su origen es la Escuela Modelo, fundada en 1910.[^dy-modelo]
 
 ### Colegios
