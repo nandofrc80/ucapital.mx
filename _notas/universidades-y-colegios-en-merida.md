@@ -1,7 +1,6 @@
 ---
 orden: 8
 seccion: vivir
-borrador: true
 titulo: "Escuelas y universidades en el norte de Mérida: opciones por zona para tu familia"
 titulo_corto: "Escuelas y universidades en el norte de Mérida"
 categoria: "Vivir en Mérida"
@@ -28,6 +27,11 @@ Es la zona con más universidades privadas de la ciudad y una de las de mayor cr
 - **Universidad Anáhuac Mayab.** En el kilómetro 15.5 de la carretera Mérida-Progreso.[^udm-anahuac] Fundada en 1984 como Universidad del Mayab, fue la primera universidad privada y católica del sureste; ofrece 31 licenciaturas y tiene alrededor de 8,000 alumnos.[^posta-anahuac] Tiene programas de doble titulación con seis universidades europeas.[^dy-anahuac-europa]
 - **Universidad Marista de Mérida.** En el Periférico Norte, sobre la carretera a Progreso.[^udm-marista] Fundada en 1996; su carrera con más alumnos es Medicina,[^datamexico-marista] y en 2026 su programa de Médico Cirujano recibió la acreditación internacional del Comaem.[^dy-marista]
 - **UVM (Universidad del Valle de México), campus Mérida.** En la calle 79, colonia Dzityá, Polígono Chuburná.[^uvm-rvoe] Además de licenciaturas, ofrece bachillerato con enfoque bicultural.[^uvm-rvoe]
+
+<figure class="nota-foto">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Universidad_Marista_de_M%C3%A9rida3.jpg" alt="Edificio de la Universidad Marista de Mérida con jardines al frente" loading="lazy">
+  <figcaption>Campus de la Universidad Marista de Mérida, en el Periférico Norte. Foto: <a href="https://commons.wikimedia.org/wiki/File:Universidad_Marista_de_M%C3%A9rida3.jpg" target="_blank" rel="noopener">AidyAA</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
 
 ### Colegios
 
@@ -71,7 +75,17 @@ Uno de los corredores de vivienda nueva con más movimiento de la ciudad, con pr
 
 ## La UADY en el resto de la ciudad
 
+<figure class="nota-foto">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/UADY_-_M%C3%A9rida%2C_Yucat%C3%A1n_2011.jpg/1280px-UADY_-_M%C3%A9rida%2C_Yucat%C3%A1n_2011.jpg" alt="Edificio central de la Universidad Autónoma de Yucatán en el Centro Histórico de Mérida" loading="lazy">
+  <figcaption>Edificio central de la UADY, en el Centro Histórico de Mérida. Foto: <a href="https://commons.wikimedia.org/wiki/File:UADY_-_M%C3%A9rida,_Yucat%C3%A1n_2011.jpg" target="_blank" rel="noopener">yankara</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
+
 Además del campus de Cholul, la Universidad Autónoma de Yucatán tiene campus en otros puntos de la ciudad, entre ellos el de Ciencias Exactas e Ingenierías, también al norte.[^mextudia-uady] Entrar es muy competido: para el ciclo 2026-2027 hubo casi 16 mil aspirantes para alrededor de 5,500 lugares, y en Médico Cirujano fueron casi 4,800 aspirantes para 238 lugares.[^poresto-2026] Sus preparatorias 1 y 2 también tienen mucha demanda cada año.[^poresto-prepas]
+
+<figure class="nota-foto">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Facultad_de_Medicina_de_la_Universidad_Aut%C3%B3noma_de_Yucat%C3%A1n.jpg/1280px-Facultad_de_Medicina_de_la_Universidad_Aut%C3%B3noma_de_Yucat%C3%A1n.jpg" alt="Fachada de la Facultad de Medicina de la Universidad Autónoma de Yucatán" loading="lazy">
+  <figcaption>Facultad de Medicina de la UADY. Foto: <a href="https://commons.wikimedia.org/wiki/File:Facultad_de_Medicina_de_la_Universidad_Aut%C3%B3noma_de_Yucat%C3%A1n.jpg" target="_blank" rel="noopener">Addicted04</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>, vía Wikimedia Commons.</figcaption>
+</figure>
 
 ## Qué revisar antes de inscribir a tus hijos
 
