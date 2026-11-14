@@ -1,9 +1,9 @@
 ---
 nombre: "Boreal"
 publicado: true
-destacado: true
+destacado: false
 datos_de_ejemplo: false
-orden: 3
+orden: 9
 tipo: "Casa"
 estatus: "Preventa"
 zona: "Conkal"
