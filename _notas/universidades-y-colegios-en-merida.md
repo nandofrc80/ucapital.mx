@@ -2,106 +2,109 @@
 orden: 8
 seccion: vivir
 borrador: true
-titulo: "Universidades y colegios en Mérida: dónde estudian (y de dónde salieron) los que mueven Yucatán"
-titulo_corto: "Universidades y colegios en Mérida"
+titulo: "Escuelas y universidades en el norte de Mérida: opciones por zona para tu familia"
+titulo_corto: "Escuelas y universidades en el norte de Mérida"
 categoria: "Vivir en Mérida"
-descripcion: "UADY, Anáhuac Mayab, Marista, Modelo y más: qué ofrece cada una, qué tan difícil es entrar a Medicina en la UADY, qué gobernadores y figuras públicas salieron de sus aulas y qué conviene revisar al elegir colegio para tus hijos."
+descripcion: "Colegios y universidades cerca de Temozón Norte, el corredor a Progreso, Dzityá, Cholul y Conkal: qué niveles ofrece cada uno, dónde están y qué conviene revisar antes de inscribir a tus hijos."
 edicion: "noviembre 2026"
-lectura: 7
-relacionadas: [temozon-norte, por-que-merida, cholul-y-conkal]
+lectura: 8
+relacionadas: [temozon-norte, cholul-y-conkal, dzitya]
 ---
 
-Para una familia que se muda, la escuela de los hijos suele decidir la zona antes que la casa. Mérida tiene una ventaja poco común para una ciudad de su tamaño: una universidad pública centenaria con algunas de las carreras más competidas del país, varias universidades privadas consolidadas y una oferta de colegios que creció junto con el norte de la ciudad.
+Si te mudas a Mérida con tu familia, la escuela de tus hijos probablemente va a definir en qué zona vivir. La buena noticia es que buena parte de los colegios y universidades privadas más conocidos de la ciudad están en el norte, cerca de las zonas donde hoy se construye más vivienda nueva.
 
-## Universidad Autónoma de Yucatán (UADY): la más demandada
+Aquí te contamos qué hay en cada zona. No es un ranking: es un mapa para que sepas por dónde empezar a buscar.
 
-La UADY nació el 25 de febrero de 1922, por decreto del gobernador Felipe Carrillo Puerto, con el nombre de Universidad Nacional del Sureste.[^uady-historia] Hoy ofrece 51 licenciaturas en Mérida y cinco más en Tizimín,[^dy-uady-2026] y prevé iniciar el ciclo escolar con hasta 34 mil 500 estudiantes.[^poresto-ciclo]
+<aside class="nota-aviso" markdown="1">
+**Cómo leer esta guía.** Muchas preparatorias privadas de Mérida están *incorporadas a la UADY*: siguen el plan de bachillerato de la Universidad Autónoma de Yucatán, y la universidad publica la lista oficial con sus direcciones.[^uady-incorporadas] Cuando lo mencionamos, es porque aparecen en esa lista. Las colegiaturas cambian cada año, así que no las incluimos: pide los costos directamente a cada escuela.
+</aside>
 
-Entrar no es fácil. Para el ciclo 2026-2027 hubo casi 16 mil aspirantes a licenciatura para alrededor de 5,500 lugares,[^poresto-2026] y el porcentaje de admisión bajó de 41% a 38%.[^dy-ingreso-2026]
+## Temozón Norte, el corredor a Progreso y Dzityá
 
-### Medicina: entra uno de cada 20 aspirantes
+Es la zona con más universidades privadas de la ciudad y una de las de mayor crecimiento residencial.
 
-La Facultad de Medicina es la joya de la UADY: en 2026 cumplió 193 años de fundada.[^dy-uady-2026] Su carrera de Médico Cirujano es la más codiciada de toda la universidad, con casi 4,800 aspirantes para apenas 238 lugares en 2026; es decir, entra aproximadamente uno de cada 20.[^poresto-2026] El año anterior fue parecido: de más de 3,700 aspirantes solo ingresaron 244.[^poresto-medicina-2025]
+### Universidades
 
-Detrás de Medicina, las carreras más demandadas son Medicina Veterinaria y Zootecnia, Derecho, Arquitectura, Odontología, Enfermería, Contaduría y Psicología.[^poresto-2026]
+- **Universidad Anáhuac Mayab.** En el kilómetro 15.5 de la carretera Mérida-Progreso.[^udm-anahuac] Fundada en 1984 como Universidad del Mayab, fue la primera universidad privada y católica del sureste; ofrece 31 licenciaturas y tiene alrededor de 8,000 alumnos.[^posta-anahuac] Tiene programas de doble titulación con seis universidades europeas.[^dy-anahuac-europa]
+- **Universidad Marista de Mérida.** En el Periférico Norte, sobre la carretera a Progreso.[^udm-marista] Fundada en 1996; su carrera con más alumnos es Medicina,[^datamexico-marista] y en 2026 su programa de Médico Cirujano recibió la acreditación internacional del Comaem.[^dy-marista]
+- **UVM (Universidad del Valle de México), campus Mérida.** En la calle 79, colonia Dzityá, Polígono Chuburná.[^uvm-rvoe] Además de licenciaturas, ofrece bachillerato con enfoque bicultural.[^uvm-rvoe]
 
-### Egresados que han marcado la vida pública de Yucatán
+### Colegios
 
-- **Eduardo Urzaiz Rodríguez**, médico cirujano, fue el primer rector de la universidad.[^uady-urzaiz][^uady-historia] Además de su labor como médico y educador, escribió *Eugenia* (1919), considerada por muchos la primera novela de ciencia ficción en México.[^ordiz][^dy-eugenia]
-- **Rolando Zapata Bello**, licenciado en Derecho por la UADY, fue gobernador de Yucatán de 2012 a 2018. La Facultad de Derecho lo reconoció como el primer egresado suyo en ocupar la gubernatura en este milenio.[^zapata-uady][^zapata-wiki]
-- **Jorge Carlos Ramírez Marín**, licenciado en Derecho por la UADY (1985), presidió la Cámara de Diputados en dos ocasiones, en 2010-2011 y en 2017-2018, y fue secretario de Desarrollo Agrario, Territorial y Urbano de 2012 a 2015.[^infobae-rm][^ecured-rm]
+- **CUAM y CEAM Mérida.** En Temozón Norte.[^nais-cuam] Secundaria (CEAM) y preparatoria (CUAM); llegaron a Mérida en 2016 desde la red que nació en la Ciudad de México.[^wiki-cuam]
+- **Comunidad Educativa Alianz.** Sobre la carretera a Progreso.[^uady-incorporadas] Colegio bilingüe con primaria, secundaria y preparatoria.[^yl-2018]
+- **Madison International School.** En Chablekal, con preparatoria incorporada a la UADY.[^uady-incorporadas]
+- **Colegio Iberoamericana.** Preparatoria en el Polígono Chuburná, incorporada a la UADY.[^uady-incorporadas]
+- **Instituto de Educación Progresiva The WorkShop.** Preparatoria sobre el acceso a Komchén, incorporada a la UADY.[^uady-incorporadas]
 
-## Universidad Anáhuac Mayab
+## Norte consolidado: Montebello, Altabrisa, San Ramón Norte y alrededores
 
-Fundada el 29 de agosto de 1984 con el nombre de Universidad del Mayab, fue la primera universidad privada y católica del sureste de México.[^posta-anahuac][^dy-anahuac-40] Ofrece 31 licenciaturas, tiene alrededor de 8,000 alumnos y suma más de 17,500 egresados.[^posta-anahuac] Está sobre la carretera Mérida-Progreso,[^udm-anahuac] y mantiene programas de doble titulación con seis universidades europeas.[^dy-anahuac-europa]
+Es el norte "de siempre": colonias ya establecidas, con colegios de muchos años de trayectoria y todos los servicios cerca.
 
-**Egresados en la vida pública:**
+### Universidades
 
-- **Renán Barrera Concha**, licenciado en Derecho y con posgrado en Administración Pública por la Anáhuac Mayab,[^sdp-barrera] fue presidente municipal de Mérida en dos etapas: de 2012 a 2015, y desde 2018, cargo en el que se reeligió en 2021.[^dy-barrera-2012][^wiki-vila][^datanoticias-barrera]
-- **Joaquín Díaz Mena**, gobernador de Yucatán desde 2024, cursó en la Anáhuac Mayab una maestría en Administración Pública y Gobierno.[^posta-diaz][^wiki-diaz]
+- **EBC (Escuela Bancaria y Comercial), campus Mérida.** En la calle 60, en Cordemex, junto a Plaza Chedraui Selecto Norte.[^chilango-ebc] Abrió en Mérida en 2016 y en 2024 inició operaciones un segundo campus en la ciudad.[^ebc-press] Se especializa en negocios: Contaduría, Finanzas y Banca, Mercadotecnia, Derecho y otras.[^gu-ebc]
 
-## Universidad Marista de Mérida
+### Colegios
 
-Fundada en mayo de 1996 por un grupo de Hermanos y exalumnos maristas, está en el Periférico Norte, sobre la carretera a Progreso.[^udm-marista] En 2022 tenía 3,063 estudiantes, y su carrera con más alumnos era Medicina.[^datamexico-marista] En febrero de 2026, su programa de Médico Cirujano recibió la acreditación internacional del Consejo Mexicano para la Acreditación de la Educación Médica (Comaem).[^dy-marista]
+- **Centro Universitario Montejo (CUM).** En la colonia Loma Bonita.[^uady-incorporadas] Colegio católico y marista con secundaria y preparatoria;[^micole-cum] su prepa sigue el Bachillerato General Universitario de la UADY.[^cum-prepa]
+- **Centro Educativo Piaget.** En Montes de Amé.[^uady-incorporadas] Ofrece de kínder a secundaria[^yl-2018] y preparatoria incorporada a la UADY.[^uady-incorporadas]
+- **Centro Educativo Renacimiento.** Primaria y secundaria en Montebello. Es bilingüe en todos sus niveles, con clases de gramática, matemáticas y ciencias completamente en inglés.[^yl-2018]
+- **Ateneo de Mérida.** En San Ramón Norte.[^uady-incorporadas] Colegio bilingüe desde educación inicial hasta preparatoria.[^expat-ateneo]
+- **Instituto Cumbres Mérida.** Junto a la glorieta Cumbres, al norte de la ciudad.[^cumbres-aviso] Forma parte de la red de colegios Cumbres, católicos y bilingües.[^wiki-cumbres]
+- **Otras preparatorias del norte incorporadas a la UADY:** Instituto Patria (Periférico, San Ramón Norte), Colegio Libanés Peninsular (México Norte), Rochavi Altabrisa (Vista Alegre Norte) y Colegio Peninsular Rogers Hall (Buenavista).[^uady-incorporadas]
 
-**Egresado en la vida pública:** **Mauricio Vila Dosal**, licenciado en Derecho por la Universidad Marista,[^tbn-vila] fue presidente municipal de Mérida de 2015 a 2018 y gobernador de Yucatán de 2018 a 2024.[^wiki-vila]
+## Cholul y Conkal (nororiente)
 
-## Universidad Modelo
+Uno de los corredores de vivienda nueva con más movimiento de la ciudad, con precios de entrada menores que en Temozón Norte, y donde están llegando colegios de construcción reciente.
 
-Su origen es la Escuela Modelo, fundada en 1910 con la vocación de dar una educación sólida y ayudar a reducir el analfabetismo.[^dy-modelo] Con los años creció a secundaria y después a educación superior,[^wiki-modelo] y hoy tiene presencia en Mérida, Valladolid y Chetumal.[^dy-modelo] Su campus de Mérida está sobre la antigua carretera a Cholul.[^udm-modelo]
+### Universidades
 
-**Un dato:** el gobernador Joaquín Díaz Mena estudió en la Escuela Modelo,[^dy-diaz-modelo] y su licenciatura la cursó en el Instituto Tecnológico de Mérida, institución pública.[^posta-diaz][^tvazteca-diaz]
+- **Universidad Modelo.** Sobre la carretera a Cholul, a unos 200 metros del Periférico.[^ehu-modelo] Su origen es la Escuela Modelo, fundada en 1910.[^dy-modelo]
 
-## Otras opciones
+### Colegios
 
-- **UNAM, ENES Mérida:** la Universidad Nacional Autónoma de México tiene en Mérida su Escuela Nacional de Estudios Superiores, con licenciaturas y posgrados.[^unam-enes]
-- **Medicina fuera de la UADY:** además de la UADY, en Mérida se puede estudiar Medicina en la Anáhuac Mayab, la Marista, la Modelo y otras instituciones privadas.[^udm-medicina]
+- **Smartium International School.** En Valle Conkal, Cholul.[^arquine-smartium] Atiende de kínder a bachillerato;[^micole-smartium] su edificio se inauguró en 2023.[^quadratin-smartium]
+- **Colegio El Huerto Montessori.** Sobre la carretera Mérida-Cholul, con maternal, kínder y primaria.[^yl-2018]
+- **Miguel de Cervantes Saavedra.** Preparatoria en San Pedro Cholul, incorporada a la UADY.[^uady-incorporadas]
 
-## Colegios: qué revisar antes de elegir
+## La UADY, la universidad pública
 
-Mérida tiene colegios para todos los perfiles: públicos y privados, bilingües, internacionales, laicos y religiosos. Antes de elegir, conviene:
+La Universidad Autónoma de Yucatán tiene campus en distintos puntos de la ciudad. Entrar es muy competido: para el ciclo 2026-2027 hubo casi 16 mil aspirantes para alrededor de 5,500 lugares, y en Médico Cirujano fueron casi 4,800 aspirantes para 238 lugares.[^poresto-2026] Sus preparatorias 1 y 2 también tienen mucha demanda cada año.[^poresto-prepas]
 
-- **Visitar en persona y preguntar por el modelo educativo:** bilingüe, internacional o tradicional; laico o religioso.
-- **Revisar que tenga reconocimiento oficial de la SEP** para el nivel que te interesa.
-- **Calcular los traslados.** En Mérida, vivir cerca de la escuela cambia la rutina diaria más que cualquier otra cosa.
-- **Pensar en la preparatoria desde antes.** Las preparatorias 1 y 2 de la UADY tienen mucha demanda cada año.[^poresto-prepas]
+## Qué revisar antes de inscribir a tus hijos
 
-Las grandes universidades privadas (Anáhuac Mayab, Marista y Modelo) están en el norte y nororiente de Mérida, cerca de zonas como Temozón Norte, el corredor a Progreso y Cholul. Para una familia con hijos en edad universitaria, la ubicación de la casa puede ahorrar horas de tráfico a la semana.
+- **Visita en persona** y pregunta por el modelo educativo: bilingüe, internacional o tradicional; laico o religioso.
+- **Confirma el reconocimiento oficial** de la SEP o, en preparatoria, la incorporación a la UADY u otra institución.
+- **Haz la prueba del traslado** en hora de entrada. En Mérida, vivir cerca de la escuela cambia más la rutina diaria que casi cualquier otra cosa.
+- **Pregunta por los tiempos de inscripción.** Algunos colegios llenan sus grupos con meses de anticipación.
+- **Piensa en la continuidad:** si el colegio llega hasta preparatoria, te ahorras otro cambio en unos años.
 
-Si estás pensando en mudarte y quieres saber qué desarrollos quedan cerca de la escuela o universidad que te interesa, escríbenos por WhatsApp.
+¿Ya sabes a qué escuela irán tus hijos? Escríbenos por WhatsApp y te mostramos los desarrollos que tenemos a pocos minutos.
 
-[^uady-historia]: Revista de la Universidad Autónoma de Yucatán, núm. 281, "La Universidad Nacional del Sureste, 1922-1938", 2022. <https://www.revistauniversitaria.uady.mx/pdf/281/ru281-15.pdf>
-[^dy-uady-2026]: Diario de Yucatán, "Fuera 2 de 3 de la Uady: los aspirantes triplican el cupo de las carreras", 11 de junio de 2026. <https://www.yucatan.com.mx/merida/2026/06/11/fuera-2-de-3-de-la-uady-los-aspirantes-triplican-el-cupo-de-las-carreras.html>
-[^poresto-ciclo]: Por Esto!, "¿Te quedaste fuera de la UADY? Aún puedes conseguir un lugar", 10 de agosto de 2026. <https://www.poresto.com/yucatan/2026/8/10/te-quedaste-fuera-de-la-uady-aun-puedes-conseguir-un-lugar-estas-son-las-fechas-y-licenciaturas-disponibles.html>
-[^poresto-2026]: Por Esto!, "Más de 12 mil jóvenes quedarán fuera de la UADY el próximo ciclo", 12 de junio de 2026. <https://www.poresto.com/yucatan/2026/6/12/mas-de-12-mil-jovenes-quedaran-fuera-de-la-uady-el-proximo-ciclo-nuevos-programas-ya-no-responden-a-la-demanda.html>
-[^dy-ingreso-2026]: Diario de Yucatán, "¿Qué tan difícil fue el ingreso a la Uady en 2026? Estas son las cifras", 29 de junio de 2026. <https://www.yucatan.com.mx/merida/2026/06/29/que-tan-dificil-fue-el-ingreso-a-la-uady-en-2026-estas-son-las-cifras.html>
-[^poresto-medicina-2025]: Por Esto!, "Más del 93% de aspirantes a Médico Cirujano en la UADY quedaron fuera", 30 de junio de 2025. <https://www.poresto.com/yucatan/2025/6/30/mas-del-93-de-aspirantes-a-medico-cirujano-en-la-uady-quedaron-fuera-ingresaron-244-de-3-mil-700-postulantes.html>
-[^uady-urzaiz]: Biblioteca Yucatanense (UADY), número dedicado al Dr. Eduardo Urzaiz Rodríguez, primer rector. <https://www.bibliotecas.uady.mx/bibyuc/num10.pdf>
-[^ordiz]: Javier Ordiz, "Los inicios de la novela de ciencia-ficción en México. La obra narrativa de Eduardo Urzáiz y Diego Cañedo", Universidad de León. <https://digitum.um.es/xmlui/bitstream/10201/42955/1/Los%20inicios%20de%20la%20novela.pdf>
-[^dy-eugenia]: Diario de Yucatán, "Nueva edición de Eugenia, primera novela de ciencia ficción, en la FILEY", 28 de abril de 2021. <https://www.yucatan.com.mx/imagen/2021/04/28/nueva-edicion-eugenia-primera-novela-de-ciencia-ficcion-en-la-filey.html>
-[^dy-barrera-2012]: Diario de Yucatán, "Ante doble privilegio", 18 de febrero de 2018. <https://www.yucatan.com.mx/merida/2018/02/18/ante-doble-privilegio.html>
-[^zapata-uady]: Portal Político, "Profesionistas del derecho podrán titularse en la Fiscalía General de Yucatán". <https://www.portalpolitico.tv/print/estados/profesionistas-del-derecho-podran-titularse-en-la-fiscalia-general-de-yucatan>
-[^zapata-wiki]: Wikipedia, "Rolando Zapata Bello". <https://en.wikipedia.org/wiki/Rolando_Zapata_Bello>
-[^infobae-rm]: Infobae, "Quién es Jorge Carlos Ramírez Marín", 22 de septiembre de 2023. <https://www.infobae.com/mexico/2023/09/22/quien-es-jorge-carlos-ramirez-marin-el-senador-priista-que-podria-sumarse-a-morena-antes-de-las-elecciones-de-2024/>
-[^ecured-rm]: EcuRed, "Jorge Carlos Ramírez Marín". <https://www.ecured.cu/Jorge_Carlos_Ram%C3%ADrez_Mar%C3%ADn>
-[^posta-anahuac]: Posta, "La Universidad Anáhuac Mayab celebra su 40º aniversario". <https://www.posta.com.mx/mexico/la-universidad-anahuac-mayab-celebra-su-40-aniversario/vl1605770>
-[^dy-anahuac-40]: Diario de Yucatán, "Anáhuac Mayab: calidad educativa e innovación a lo largo de 40 años", 31 de enero de 2025. <https://www.yucatan.com.mx/merida/2025/01/31/anahuac-mayab-calidad-educativa-e-innovacion-a-lo-largo-de-40-anos.html>
+[^uady-incorporadas]: Universidad Autónoma de Yucatán, "Escuelas preparatorias incorporadas" (lista oficial con direcciones). <https://desarrolloseleccion.uady.mx/bachillerato/docs/incorporadas.pdf>
 [^udm-anahuac]: Universidades de México, "Universidad Anáhuac Mayab". <https://universidadesdemexico.mx/universidades/universidad-anahuac-mayab>
+[^posta-anahuac]: Posta, "La Universidad Anáhuac Mayab celebra su 40º aniversario". <https://www.posta.com.mx/mexico/la-universidad-anahuac-mayab-celebra-su-40-aniversario/vl1605770>
 [^dy-anahuac-europa]: Diario de Yucatán, "Universidad Anáhuac Mayab fortalece puente académico con Europa", 6 de julio de 2026. <https://www.yucatan.com.mx/merida/2026/07/06/universidad-anahuac-mayab-fortalece-puente-academico-con-europa.html>
-[^sdp-barrera]: SDP Noticias, "¿Quién es Renán Barrera, candidato del PAN y PRI a gobernador de Yucatán?". <https://www.sdpnoticias.com/estados/quien-es-renan-barrera-candidato-del-pan-a-la-gubernatura-de-yucatan/>
-[^wiki-vila]: Wikipedia, "Mauricio Vila Dosal". <https://www.wikipedia.org/wiki/Mauricio_Vila_Dosal>
-[^datanoticias-barrera]: Data Noticias, "Biografía de Renán Barrera Concha", 8 de abril de 2024. <https://datanoticias.com/2024/04/08/biografia-renan-barrera-concha>
-[^posta-diaz]: Posta, "El gobernador de Yucatán destaca apoyo de familia que lo ayudó en Mérida". <https://www.posta.com.mx/mexico/el-gobernador-de-yucatan-destaca-apoyo-de-familia-que-lo-ayudo-en-merida/vl1733174>
-[^wiki-diaz]: Wikipedia, "Joaquín Díaz Mena". <https://en.wikipedia.org/wiki/Joaqu%C3%ADn_D%C3%ADaz_Mena>
 [^udm-marista]: Universidades de México, "Universidad Marista de Mérida". <https://universidadesdemexico.mx/universidades/universidad-marista-de-merida>
 [^datamexico-marista]: Data México (Secretaría de Economía), "Universidad Marista de Mérida". <https://www.economia.gob.mx/datamexico/es/profile/institution/universidad-marista-de-merida>
 [^dy-marista]: Diario de Yucatán, "Marista obtiene acreditación", 28 de febrero de 2026. <https://www.yucatan.com.mx/merida/2026/02/28/marista-obtiene-acreditacion.html>
-[^tbn-vila]: Tus Buenas Noticias, "¿Quién es Mauricio Vila?", 11 de noviembre de 2022. <https://www.tusbuenasnoticias.com/noticias/mexico/2022/11/11/16167-quien-es-mauricio-vila-el-hombre-que-gobierna-yucatan-el-estado-mas-pacifico-de-mexico>
+[^uvm-rvoe]: Universidad del Valle de México, relación de RVOE de Bachillerato Bicultural por campus. <https://uvm.mx/storage/app/uploads/public/665/7b1/a17/6657b1a179e4d418950971.pdf>
+[^nais-cuam]: NAIS, directorio de escuelas, "CUAM Mérida". <https://www.nais.org/school-directory/school/43525>
+[^wiki-cuam]: Wikipedia, "Centro Universitario Anglo Mexicano". <https://www.wikipedia.org/wiki/Centro_Universitario_Anglo_Mexicano>
+[^yl-2018]: Yucatán Living, "Schools in Mérida 2018". <https://mail.yucatanliving.com/education-language/schools-in-merida/>
+[^chilango-ebc]: Chilango, "¿Qué carreras hay en la Escuela Bancaria y Comercial?". <https://www.chilango.com/noticias/educacion/carreras-escuela-bancaria-y-comercial-campus-cdmx-mexico/amp/>
+[^ebc-press]: Escuela Bancaria y Comercial, *Press Kit*. <https://www.ebc.mx/pdf/EBC_Press_Kit.pdf>
+[^gu-ebc]: Generación Universitaria, "La educación superior va más allá de un resultado". <https://www.generacionuniversitaria.com.mx/?p=22672>
+[^micole-cum]: Micole, "Centro Universitario Montejo". <https://www.micole.net/mx/yucatan/merida/centro-montejo>
+[^cum-prepa]: Centro Universitario Montejo, reglamento de preparatoria 2026. <https://cum.edu.mx/wp-content/uploads/2026/09/PREPA-2026.pdf>
+[^expat-ateneo]: Expat Exchange, "Best International Schools and Bilingual Schools in Merida". <https://www.expatexchange.com/article/28771/->
+[^cumbres-aviso]: Instituto Cumbres Godwin Mérida, aviso de privacidad. <https://www.cumbresmerida.com/wp-content/uploads/2021/01/Aviso-de-privacidad-Cumbres-Godwin-Merida-2018.pdf>
+[^wiki-cumbres]: Wikipedia, "Cumbres Institute". <https://www.wikipedia.org/wiki/Cumbres_Institute>
+[^ehu-modelo]: Universidad Modelo, hoja informativa de su oficina internacional. <https://www.ehu.eus/documents/d/nazioarteko-harremanak/hoja-informativa-unimodelo>
 [^dy-modelo]: Diario de Yucatán, "Universidad Modelo celebra 30 años", 10 de septiembre de 2026. <https://www.yucatan.com.mx/merida/2026/09/10/universidad-modelo-celebra-30-anos-con-el-numero-25-de-al-pie-de-la-letra.html>
-[^wiki-modelo]: Wikipedia, "Universidad Modelo". <https://en.wikipedia.org/wiki/Universidad_Modelo>
-[^udm-modelo]: Universidades de México, "Universidad Modelo". <https://universidadesdemexico.mx/universidades/universidad-modelo>
-[^dy-diaz-modelo]: Diario de Yucatán, nota sobre la visita de Joaquín Díaz Mena a la UADY, 7 de mayo de 2024. <https://www.yucatan.com.mx/merida/2024/05/07/huacho-diaz-mena-financiamiento-de-la-uady.html>
-[^tvazteca-diaz]: TV Azteca, "Elecciones 2024 Yucatán: quién es Joaquín Jesús Díaz Mena". <https://www.tvazteca.com/aztecanoticias/elecciones-2024-yucatan-quien-es-joaquin-jesus-diaz-mena-candidato-gobernador-perfil>
-[^unam-enes]: Gaceta UNAM, "Inaugura la UNAM la ENES Mérida". <https://www.gaceta.unam.mx/inaugura-la-unam-la-enes-merida/>
-[^udm-medicina]: Universidades de México, "Licenciaturas de Medicina en Mérida". <https://universidadesdemexico.mx/explorar/medicina-licenciaturas-yucatan-merida-z-y-x-s-n-8-44-1-29-51>
+[^arquine-smartium]: Arquine, "Smartium International School Mérida: la escuela como organismo", noviembre de 2026. <https://arquine.com/obra/smartium-international-school-merida-la-escuela-como-organismo/>
+[^micole-smartium]: Micole, "Colegio Smartium". <https://www.micole.net/mx/yucatan/merida/colegio-smartium>
+[^quadratin-smartium]: Quadratín Yucatán, "Inauguran instalaciones de la Smartium International School", 31 de enero de 2023. <https://yucatan.quadratin.com.mx/merida/inauguran-instalaciones-de-la-smartium-international-school/>
+[^poresto-2026]: Por Esto!, "Más de 12 mil jóvenes quedarán fuera de la UADY el próximo ciclo", 12 de junio de 2026. <https://www.poresto.com/yucatan/2026/6/12/mas-de-12-mil-jovenes-quedaran-fuera-de-la-uady-el-proximo-ciclo-nuevos-programas-ya-no-responden-a-la-demanda.html>
 [^poresto-prepas]: Por Esto!, "Ingreso a bachillerato UADY 2026: ¿Aún hay cupo en las preparatorias 1 y 2?", 16 de junio de 2026. <https://www.poresto.com/yucatan/2026/6/16/ingreso-a-bachillerato-uady-2026-aun-hay-cupo-en-las-preparatorias-1-y-2.html>
