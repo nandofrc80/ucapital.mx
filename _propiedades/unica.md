@@ -23,6 +23,7 @@ fotos:
   - /fotos/unica/canal-nado.jpg
   - /fotos/unica/59-sala.jpg
   - /fotos/unica/85-fachada.jpg
+  - /fotos/unica/64-fachada.jpg
   - /fotos/unica/59-cocina.jpg
   - /fotos/unica/casa-club.jpg
   - /fotos/unica/85-alberca.jpg
@@ -95,6 +96,7 @@ modelos:
     disponibles: 1
     descripcion: "Planta baja: cochera techada para 3 autos, sala, comedor, cocina con alacena, cuarto de servicio, patio de tendido, recámara con baño, medio baño, terraza y alberca. Planta alta: family room, recámara principal con clóset vestidor y baño, dos recámaras con baño y balcón. El terreno más grande de los disponibles: 416 m²."
     fotos:
+      - "/fotos/unica/64-fachada.jpg"
       - "/fotos/unica/64-plano-pb.jpg"
       - "/fotos/unica/64-plano-pa.jpg"
 # ---- Traducción al inglés (páginas /en/) ----
