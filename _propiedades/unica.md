@@ -1,18 +1,18 @@
 ---
-nombre: "Única"
+nombre: "Única Living"
 publicado: true
 destacado: false
 datos_de_ejemplo: false
 orden: 52
 tipo: "Casa"
 estatus: "Preventa"
-zona: "Norte de Mérida"
+zona: "Zona Country"
 ciudad: "Mérida, Yucatán"
 mapa: "https://maps.app.goo.gl/Z5B2JfonT5DJfoB7A"
 precio: 0
 precio_desde: true
 entrega: "Diciembre 2026 a abril 2027"
-resumen: "Últimas 3 residencias de 4 recámaras en Única, privada en la zona residencial premium del norte de Mérida, con alberca propia y casa club con canal de nado, cancha de pádel, fitness club y kids club."
+resumen: "Últimas 3 residencias de 4 recámaras en Única Living, privada en la Zona Country, al norte de Mérida, con alberca propia y casa club con canal de nado, cancha de pádel, fitness club y kids club."
 precios_actualizados: "14 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "10% mínimo a la firma de la promesa."
@@ -103,7 +103,7 @@ modelos:
   "apartado": "Reserve with $10,000 MXN (refundable if requested within 7 days)."
   "enganche": "Minimum 10% when signing the purchase agreement."
   "financiamiento": "Bank mortgage or your own funds. We'll walk you through the options and requirements at no cost."
-  "resumen": "The last 3 four-bedroom homes at Única, a gated community in north Mérida's premium residential area, each with its own pool and a clubhouse with lap pool, padel court, fitness club and kids club."
+  "resumen": "The last 3 four-bedroom homes at Única Living, a gated community in the Country Club area of north Mérida, each with its own pool and a clubhouse with lap pool, padel court, fitness club and kids club."
   "amenidades":
   - "Pool with lap lane and sun decks"
   - "Padel court"
@@ -124,13 +124,13 @@ modelos:
     "entrega": "April 2027"
     "descripcion": "Ground floor: covered parking for 3 cars, living room, dining room, kitchen with pantry, service room, drying patio, bedroom with bathroom, half bath, terrace and pool. Upper floor: family room, primary bedroom with walk-in closet and bathroom, two bedrooms with bathrooms and balcony. The largest available lot: 416 m²."
   "descripcion": |-
-    Única is a gated community in north Mérida's premium residential area, where appreciation, connectivity and services make it one of the most sought-after places to live in the city.
+    Única Living is a gated community in the Country Club area, north Mérida's premium residential zone, where appreciation, connectivity and services make it one of the most sought-after places to live in the city.
 
     Its landscaping includes two central parks with interactive fountains, a pet park, street-level sidewalks and more than 200 types of native plants, shrubs and trees. The clubhouse has a pool with lap lane, sun decks, yoga area, padel court, kids club, fitness club, juniors club and gourmet kitchen.
 
     Three homes remain, each with 4 bedrooms, 5.5 bathrooms, family room, service room and a private pool. They are delivered with pool lighting, gas cooktop, oven and hood, fitted kitchen with granite countertop and double sink, water pressure system, gas water heater, 300-liter stationary gas tank, travertine marble staircase, tempered-glass shower panels and railings, and wood-look aluminum windows and doors. HOA fee: $2,500 MXN per month, billed quarterly ($7,500).
 ---
-Única es una privada en la zona residencial premium del norte de Mérida, donde la plusvalía, la conectividad y los servicios la convierten en uno de los lugares más buscados para vivir en la ciudad.
+Única Living es una privada en la Zona Country, la zona residencial premium del norte de Mérida, donde la plusvalía, la conectividad y los servicios la convierten en uno de los lugares más buscados para vivir en la ciudad.
 
 Su diseño de paisaje incluye dos parques centrales con fuentes interactivas, parque para mascotas, banquetas a nivel de calle y más de 200 tipos de plantas, arbustos y árboles de la región. La casa club tiene alberca con canal de nado, terrazas con asoleadero, área de yoga, cancha de pádel, kids club, fitness club, juniors club y gourmet kitchen.
 
