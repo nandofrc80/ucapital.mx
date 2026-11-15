@@ -50,6 +50,7 @@ modelos:
     construccion_max: 43
     estacionamientos: 1
     precio: 2990000
+    precio_max: 3325000
     entrega: "Marzo 2027"
     disponibles: 7
     descripcion: "Suite de 36 a 43 m² interiores más terraza o balcón de 9 a 19 m², con recámara y baño completo. Incluye 1 cajón de estacionamiento."
@@ -97,6 +98,7 @@ modelos:
     construccion_max: 103
     estacionamientos: 2
     precio: 5890000
+    precio_max: 5995000
     entrega: "Marzo 2027"
     disponibles: 3
     descripcion: "Departamento de 97 a 103 m² interiores más terraza de 10.5 a 11.4 m²: sala, comedor, cocina y dos recámaras, cada una con su baño. Incluye 2 cajones de estacionamiento y bodega en el nivel 15."

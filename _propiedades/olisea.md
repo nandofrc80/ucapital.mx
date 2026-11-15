@@ -54,6 +54,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 4430000
+    precio_max: 4590000
     entrega: "Junio 2027"
     disponibles: 2
     descripcion: "Planta baja: cochera techada para 2 autos, jardinera con árbol de chaká, sala a doble altura, comedor, cocina abierta con barra, bodega bajo escalera, recámara o estudio con baño completo, área de lavado y tendido, terraza techada, asoleadero, alberca y baño exterior. Planta alta: recámara con espacio para clóset y baño completo, y recámara principal con clóset vestidor y baño completo con doble lavabo con vista a la alberca."
@@ -80,6 +81,7 @@ modelos:
     terreno: 320
     estacionamientos: 2
     precio: 4800000
+    precio_max: 4990000
     entrega: "Inmediata"
     disponibles: 3
     descripcion: "Planta baja: cochera techada para 2 autos con jardín frontal, sala-comedor a doble altura, cocina con barra desayunadora, cuarto de servicio con baño, recámara o sala de TV con baño completo, medio baño de visitas, bodega, alberca con chapoteadero, asoleadero, terraza con pérgola y jardín posterior. Planta alta: recámara con baño completo y terraza, recámara principal con clóset vestidor y baño completo, y clóset de blancos."
@@ -106,6 +108,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 4800000
+    precio_max: 4850000
     entrega: "Inmediata a diciembre 2026"
     disponibles: 2
     descripcion: "La versión de 4 recámaras del modelo Nodox: sala a doble altura, cocina abierta con barra, recámara o estudio en planta baja con baño completo, terraza techada, asoleadero, alberca y baño exterior; en planta alta, tres recámaras con baño completo, la principal con clóset vestidor y vista a la alberca."

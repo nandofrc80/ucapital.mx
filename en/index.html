@@ -25,10 +25,7 @@ body_class: pagina-inicio
         <label><span>Area</span>
           <select name="zona"><option value="">All</option>{% for z in zonas %}<option>{{ z }}</option>{% endfor %}</select>
         </label>
-        <label><span>Budget (MXN)</span>
-          <select name="max">
-            <option value="">Any</option><option value="2000000">Up to $2M</option><option value="2500000">Up to $2.5M</option><option value="3000000">Up to $3M</option><option value="3500000">Up to $3.5M</option><option value="4000000">Up to $4M</option><option value="5000000">Up to $5M</option></select>
-        </label>
+        {% include filtro-precio.html modo="buscador" %}
         <button class="btn btn--navy" type="submit">Search</button>
       </form>
       <div class="hero__trust">

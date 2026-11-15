@@ -45,6 +45,7 @@ modelos:
     construccion: 50
     estacionamientos: 1
     precio: 1850000
+    precio_max: 1900000
     entrega: "Inmediata o abril 2027"
     disponibles: 9
     descripcion: "Departamento de 50 m²: sala-comedor, cocina, área de lavado, recámara con clóset y baño completo, y medio baño de visitas. Incluye bodega de 2.5 m² y 1 cajón de estacionamiento. Hay unidades en planta baja con jardín de 8 m²."

@@ -106,20 +106,33 @@
   if (filtros && grid) {
     var cards = $$(".card", grid), out = $("[data-resultados]"), vacio = $("[data-vacio]");
     var params = new URLSearchParams(window.location.search);
-    ["tipo", "zona", "estatus", "max", "rec"].forEach(function (k) {
+    ["tipo", "zona", "estatus", "min", "max", "rec"].forEach(function (k) {
       var el = filtros.elements[k];
       if (el && params.get(k)) el.value = params.get(k);
     });
+    /* Rango del buscador de inicio (?pres=3500000-4000000) */
+    if (params.get("pres")) {
+      var pz = params.get("pres").split("-");
+      if (filtros.elements.min && +pz[0]) filtros.elements.min.value = pz[0];
+      if (filtros.elements.max && +pz[1]) filtros.elements.max.value = pz[1];
+    }
     var aplicar = function () {
       var f = filtros.elements, n = 0;
       var tipo = f.tipo.value, zona = f.zona.value, est = f.estatus.value;
+      var min = f.min ? parseFloat(f.min.value) || 0 : 0;
       var max = parseFloat(f.max.value) || 0, rec = parseFloat(f.rec.value) || 0;
+      if (min && max && min > max) { var tmp = min; min = max; max = tmp; }
       cards.forEach(function (c) {
-        var precio = parseFloat(c.dataset.precio) || 0, r = parseFloat(c.dataset.recamaras) || 0;
+        var r = parseFloat(c.dataset.recamaras) || 0;
+        /* Precio: basta con que un modelo (de su precio "desde" a su precio más alto) caiga en el rango */
+        var rangos = (c.dataset.precios || "").split(",").filter(Boolean).map(function (x) { var p = x.split("-"); return [+p[0] || 0, +p[1] || +p[0] || 0]; });
+        var enRango = !min && !max ? true : rangos.length === 0 ? true : rangos.some(function (p) {
+          return (!max || p[0] <= max) && (!min || p[1] >= min);
+        });
         var ok = (!tipo || c.dataset.tipo === tipo) &&
                  (!zona || c.dataset.zona === zona) &&
                  (!est || c.dataset.estatus === est) &&
-                 (!max || (precio > 0 && precio <= max) || precio === 0) &&
+                 enRango &&
                  (!rec || r >= rec);
         c.hidden = !ok;
         if (ok) n++;
@@ -127,7 +140,7 @@
       if (out) out.textContent = EN ? (n === 1 ? "1 property" : n + " properties") : (n === 1 ? "1 propiedad" : n + " propiedades");
       if (vacio) vacio.hidden = n > 0;
       var q = new URLSearchParams();
-      ["tipo", "zona", "estatus", "max", "rec"].forEach(function (k) { if (f[k].value) q.set(k, f[k].value); });
+      ["tipo", "zona", "estatus", "min", "max", "rec"].forEach(function (k) { if (f[k] && f[k].value) q.set(k, f[k].value); });
       var url = window.location.pathname + (q.toString() ? "?" + q.toString() : "");
       window.history.replaceState(null, "", url);
     };

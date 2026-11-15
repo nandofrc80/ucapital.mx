@@ -48,6 +48,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 3950000
+    precio_max: 3990000
     entrega: "Inmediata"
     disponibles: 3
     descripcion: "Planta baja: cochera techada, sala, comedor, cocina, medio baño, área de servicio semitechada y alberca. Planta alta: recámara principal con baño y clóset vestidor, y dos recámaras secundarias, cada una con su baño."

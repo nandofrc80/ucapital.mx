@@ -46,6 +46,7 @@ modelos:
     terreno: 93.6
     estacionamientos: 2
     precio: 3290000
+    precio_max: 3330000
     entrega: "Inmediata"
     disponibles: 3
     descripcion: "Planta baja: cochera techada para 2 autos, jardín, sala y comedor, cocina con isla y medio baño de visitas. Planta alta: vestíbulo, recámara principal con clóset vestidor y baño completo, dos recámaras secundarias con clóset y baño completo. Rooftop: alberca, medio baño y barra de concreto con tarja."

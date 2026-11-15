@@ -52,6 +52,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 2350000
+    precio_max: 2480000
     disponibles: 52
     entrega: "Septiembre 2027 a noviembre 2028"
     descripcion: "La versión de 3 recámaras del Aurora: sala, comedor, cocina con gavetas inferiores, medio baño, cuarto de lavado y terraza en planta baja; recámara principal con clóset y baño completo, dos recámaras más con clóset y un baño completo en planta alta."

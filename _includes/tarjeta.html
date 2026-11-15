@@ -4,7 +4,8 @@
 {%- assign n_modelos = tp.modelos | size -%}
 {%- assign tp_tipo = T.tipos[tp.tipo] | default: tp.tipo -%}
 {%- assign tp_est = T.estatuses[tp.estatus] | default: tp.estatus -%}
-<article class="card" data-tipo="{{ tp.tipo }}" data-zona="{{ tp.zona }}" data-estatus="{{ tp.estatus }}" data-precio="{{ st_precio }}" data-recamaras="{{ st_rec_max }}">
+{%- capture tp_precios -%}{%- if tp.modelos and tp.modelos.size > 0 -%}{%- for m in tp.modelos -%}{%- if m.precio and m.precio > 0 -%}{{ m.precio }}-{{ m.precio_max | default: m.precio }},{%- endif -%}{%- endfor -%}{%- elsif st_precio and st_precio > 0 -%}{{ st_precio }}-{{ st_precio }}{%- endif -%}{%- endcapture -%}
+<article class="card" data-tipo="{{ tp.tipo }}" data-zona="{{ tp.zona }}" data-estatus="{{ tp.estatus }}" data-precio="{{ st_precio }}" data-precios="{{ tp_precios }}" data-recamaras="{{ st_rec_max }}">
   <a class="card__link" href="{{ B | append: tp.url | relative_url }}" aria-label="{{ T.ver }} {{ tp.nombre }}">
     <div class="card__media">
       {%- assign tp_img = tp.portada | default: tp.fotos.first -%}<img src="{{ tp_img | prepend: "@" | replace_first: "@/fotos/", "/fotos/min/" | remove_first: "@" | relative_url }}" onerror="this.onerror=null;this.src='{{ tp_img | relative_url }}'" alt="{{ tp.nombre }} — {{ tp_tipo }} {{ T.en_zona }} {{ tp.zona }}" loading="lazy" decoding="async">

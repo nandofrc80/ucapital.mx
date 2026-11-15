@@ -43,6 +43,7 @@ modelos:
     construccion: 78
     estacionamientos: 1
     precio: 2500000
+    precio_max: 2850000
     entrega: "Inmediata"
     disponibles: 4
     descripcion: "Departamento de 78 m² más balcón de 17 m²: sala, comedor, cocina con desayunador, medio baño, área de lavado, clóset de blancos u oficina, y recámara con clóset vestidor y baño completo. Incluye 1 cajón de estacionamiento."

@@ -48,6 +48,7 @@ modelos:
     construccion: 60
     estacionamientos: 1
     precio: 2395000
+    precio_max: 2849000
     entrega: "Mayo 2027"
     disponibles: 4
     descripcion: "Departamento de 60 m²: sala, comedor, cocina, clóset de lavado, recámara principal con clóset semi vestido y baño completo, y recámara secundaria con clóset y baño completo compartido con visitas. Incluye 1 cajón de estacionamiento."

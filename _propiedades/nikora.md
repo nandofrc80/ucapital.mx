@@ -51,6 +51,7 @@ modelos:
     construccion: 42.5
     estacionamientos: 1
     precio: 1690000
+    precio_max: 1890000
     entrega: "Junio 2028"
     disponibles: 6
     descripcion: "Departamento de 42.50 m²: sala, comedor, cocina con gavetas superiores e inferiores y meseta de granito, área de lavado y recámara con clóset semi vestido y baño completo. Incluye 1 cajón de estacionamiento asignado."
@@ -67,6 +68,7 @@ modelos:
     construccion: 64
     estacionamientos: 1
     precio: 2290000
+    precio_max: 2440000
     entrega: "Junio 2028"
     disponibles: 9
     descripcion: "Departamento de 64 m²: sala, comedor con barra desayunadora, cocina con gavetas superiores e inferiores y meseta de granito, área de lavado y dos recámaras con clóset semi vestido, cada una con su baño. Incluye 1 cajón de estacionamiento asignado."

@@ -90,6 +90,7 @@ modelos:
     terreno: 264
     terreno_desde: true
     precio: 8390000
+    precio_max: 8480000
     entrega: "Julio 2027"
     disponibles: 4
     descripcion: "Planta baja: cochera techada, medio baño de visitas, cocina, sala, comedor, cuarto de servicio, terraza y alberca. Planta alta: tres recámaras con baño completo; la principal con clóset vestidor."

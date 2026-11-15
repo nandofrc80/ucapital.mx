@@ -54,6 +54,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 2895000
+    precio_max: 3170000
     entrega: "Inmediata a noviembre 2027"
     disponibles: 3
     descripcion: "Planta baja: cochera para 2 autos, jardín frontal, sala, comedor, cocina con meseta de granito, medio baño de visitas, área de lavado y terraza. Planta alta: recámara principal con clóset vestidor, recámara secundaria y baño completo compartido."
@@ -87,6 +88,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 2975000
+    precio_max: 3210000
     entrega: "Inmediata a noviembre 2027"
     disponibles: 10
     descripcion: "Planta baja: cochera para 2 autos, jardín frontal, sala, comedor, cocina con meseta de granito, medio baño de visitas, patio de servicio, bodega y alacena. Planta alta: recámara principal con baño completo, recámara secundaria y baño completo."
@@ -104,6 +106,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 3240000
+    precio_max: 3490000
     entrega: "Inmediata a noviembre 2027"
     disponibles: 5
     descripcion: "Planta baja: cochera para 2 autos, jardín frontal, sala, comedor, cocina con alacena, medio baño de visitas, área de lavado, terraza y recámara principal con clóset vestidor y baño completo. Planta alta: dos recámaras con área de clóset y baño completo compartido."
@@ -119,6 +122,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 3370000
+    precio_max: 3490000
     entrega: "Inmediata a noviembre 2027"
     disponibles: 2
     descripcion: "Planta baja: cochera para 2 autos, jardín frontal, sala, comedor, cocina con meseta de granito, medio baño de visitas, patio de servicio, alacena y terraza techada. Planta alta: recámara principal con baño completo, dos recámaras secundarias y baño completo compartido."

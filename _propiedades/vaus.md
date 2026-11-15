@@ -51,6 +51,7 @@ modelos:
     construccion: 38
     estacionamientos: 1
     precio: 1590000
+    precio_max: 1890000
     entrega: "Enero 2029"
     disponibles: 4
     descripcion: "Departamento de 38 m² en niveles 1 a 4: cocina con isla, clóset de lavado, sala y comedor, y recámara con clóset y baño. Incluye 1 cajón de estacionamiento."
@@ -65,6 +66,7 @@ modelos:
     construccion: 43
     estacionamientos: 1
     precio: 1850000
+    precio_max: 1990000
     entrega: "Enero 2029"
     disponibles: 5
     descripcion: "Departamento de 43 m² más balcón de 4.5 m² en niveles 1 a 4: cocina con isla, clóset de lavado, sala y comedor con vista al balcón, y recámara con clóset y baño. Incluye 1 cajón de estacionamiento."
@@ -105,6 +107,7 @@ modelos:
     construccion: 60
     estacionamientos: 1
     precio: 2390000
+    precio_max: 2790000
     entrega: "Enero 2029"
     disponibles: 11
     descripcion: "Departamento de 60 m² más balcón de 4.5 m² en niveles 1 a 4: cocina con isla, clóset de lavado, sala y comedor con vista al balcón, y dos recámaras con clóset, cada una con su baño. Incluye 1 cajón de estacionamiento."
@@ -135,6 +138,7 @@ modelos:
     construccion: 90
     estacionamientos: 2
     precio: 3450000
+    precio_max: 3750000
     entrega: "Enero 2029"
     disponibles: 4
     descripcion: "Departamento de 90 m² más balcón de 4.5 m² en niveles 1 a 4: cocina con isla, clóset de lavado, sala y comedor, y tres recámaras con clóset y baño; la tercera con jardín interior. Incluye 2 cajones de estacionamiento."
@@ -149,6 +153,7 @@ modelos:
     construccion: 98
     estacionamientos: 2
     precio: 3590000
+    precio_max: 3790000
     entrega: "Enero 2029"
     disponibles: 3
     descripcion: "Departamento de 98 m² más balcón de 4.5 m² en niveles 1 a 4: cocina con isla, cuarto de lavado, medio baño, sala y comedor con vista al balcón, y tres recámaras con clóset y baño. Incluye 2 cajones de estacionamiento."

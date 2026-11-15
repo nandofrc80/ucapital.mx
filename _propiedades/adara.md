@@ -68,6 +68,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 5045000
+    precio_max: 5385000
     entrega: "Diciembre 2026 a febrero 2027"
     disponibles: 5
     descripcion: "Planta baja: cochera techada para 2 autos, sala-comedor con vista a la terraza, cocina con meseta de granito y alacena, medio baño de visitas, cuarto de servicio con baño y alberca. Planta alta: tres recámaras con balcón y baño completo; la principal y una secundaria con clóset vestidor."
@@ -89,6 +90,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 5045000
+    precio_max: 5850000
     entrega: "Inmediata a febrero 2027"
     disponibles: 7
     descripcion: "Planta baja: cochera techada para 2 autos, sala-comedor con vista a la terraza, cocina con meseta de granito, medio baño de visitas, lavadero, recámara con baño completo y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, y dos recámaras más con baño completo cada una."

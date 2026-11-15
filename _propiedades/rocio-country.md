@@ -72,6 +72,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 3
     precio: 7690000
+    precio_max: 7790000
     entrega: "Inmediata"
     disponibles: 4
     descripcion: "Casa de una planta: cochera techada para 3 autos, sala, comedor, cocina con alacena, cuarto de servicio con baño, medio baño de visitas, alberca, terraza techada y tres recámaras con clóset vestidor y baño completo."
@@ -95,6 +96,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 4
     precio: 7790000
+    precio_max: 8190000
     entrega: "Inmediata"
     disponibles: 4
     descripcion: "Planta baja: cochera para 4 autos (2 techados), sala, comedor, cocina con alacena, medio baño de visitas, cuarto de servicio con baño, bodega, alberca, terraza techada y recámara con clóset vestidor y baño. Planta alta: dos recámaras con clóset vestidor y baño, y recámara principal con clóset vestidor y baño."

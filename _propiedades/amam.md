@@ -45,6 +45,7 @@ modelos:
     terreno_desde: true
     estacionamientos: 2
     precio: 5970000
+    precio_max: 6170000
     entrega: "Junio 2027"
     disponibles: 3
     descripcion: "Planta baja: cochera para 2 autos, sala-comedor con vista a la terraza, cocina semiabierta con barra y carpintería superior e inferior, medio baño de visitas, cuarto de lavado, terraza, alberca con acabado chukum y pasillo de servicio. Planta alta: vestíbulo, recámara principal con clóset vestidor y baño completo con doble lavabo con vista a la alberca, y dos recámaras con espacio para clóset y baño completo."

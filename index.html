@@ -23,10 +23,7 @@ alt: "/en/"
         <label><span>Zona</span>
           <select name="zona"><option value="">Todas</option>{% for z in zonas %}<option>{{ z }}</option>{% endfor %}</select>
         </label>
-        <label><span>Presupuesto</span>
-          <select name="max">
-            <option value="">Cualquiera</option><option value="2000000">Hasta $2M</option><option value="2500000">Hasta $2.5M</option><option value="3000000">Hasta $3M</option><option value="3500000">Hasta $3.5M</option><option value="4000000">Hasta $4M</option><option value="5000000">Hasta $5M</option></select>
-        </label>
+        {% include filtro-precio.html modo="buscador" %}
         <button class="btn btn--navy" type="submit">Buscar</button>
       </form>
       <div class="hero__trust">

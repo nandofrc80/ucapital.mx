@@ -63,6 +63,7 @@ modelos:
     construccion: 44
     estacionamientos: 1
     precio: 1990000
+    precio_max: 2760000
     entrega: "Diciembre 2028 o marzo 2029"
     disponibles: 23
     descripcion: "Departamento de 44 m²: cocina, comedor, sala, baño de visitas, área de lavado, recámara con clóset vestidor y baño completo. Incluye 1 cajón de estacionamiento."
@@ -78,6 +79,7 @@ modelos:
     construccion: 65
     estacionamientos: 1
     precio: 2780000
+    precio_max: 2980000
     entrega: "Diciembre 2028 a junio 2029"
     disponibles: 8
     descripcion: "Departamento de 65 m²: cocina, comedor, sala, baño de visitas, área de lavado, recámara principal con clóset vestidor y baño completo, y recámara secundaria con clóset vestidor. Incluye 1 cajón de estacionamiento."

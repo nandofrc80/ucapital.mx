@@ -169,6 +169,10 @@ content:
           - name: precio
             label: Precio desde (MXN)
             type: number
+          - name: precio_max
+            label: Precio más alto del modelo (MXN, opcional)
+            type: number
+            description: "Solo si el modelo tiene unidades a distintos precios. Sirve para que el filtro de presupuesto encuentre el modelo en todo su rango."
           - name: recamaras
             label: Recámaras (base)
             type: number
