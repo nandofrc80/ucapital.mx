@@ -31,7 +31,6 @@ fotos:
   - /fotos/almavera/acceso.jpg
   - /fotos/almavera/foto-sala.jpg
   - /fotos/almavera/conjunto.jpg
-  - /fotos/almavera/foto-acceso.jpg
   - /fotos/almavera/aerea.jpg
 amenidades:
   - Acceso controlado con portón eléctrico
@@ -52,17 +51,18 @@ modelos:
     descripcion: "Planta baja: cochera techada para 2 autos, jardín, sala y comedor, cocina con isla y medio baño de visitas. Planta alta: vestíbulo, recámara principal con clóset vestidor y baño completo, dos recámaras secundarias con clóset y baño completo. Rooftop: alberca, medio baño y barra de concreto con tarja."
     adicionales: "Lotes 5 y 7: $3,290,000, con carpintería inferior en cocina. Lote 2: $3,330,000, con carpintería superior e inferior en cocina, muebles bajo lavabo, calentador eléctrico y lámparas sobre la barra."
     fotos:
+      - "/fotos/almavera/th-1.jpg"
+      - "/fotos/almavera/th-2.jpg"
+      - "/fotos/almavera/th-3.jpg"
+      - "/fotos/almavera/th-4.jpg"
+      - "/fotos/almavera/th-5.jpg"
+      - "/fotos/almavera/th-6.jpg"
+      - "/fotos/almavera/th-7.jpg"
+      - "/fotos/almavera/th-8.jpg"
+      - "/fotos/almavera/th-9.jpg"
       - "/fotos/almavera/plano-pb.jpg"
       - "/fotos/almavera/plano-pa.jpg"
       - "/fotos/almavera/plano-rooftop.jpg"
-      - "/fotos/almavera/planta-baja.jpg"
-      - "/fotos/almavera/foto-cocina.jpg"
-      - "/fotos/almavera/foto-estancia.jpg"
-      - "/fotos/almavera/recamara-principal.jpg"
-      - "/fotos/almavera/foto-vestidor.jpg"
-      - "/fotos/almavera/recamara-secundaria.jpg"
-      - "/fotos/almavera/foto-recamara.jpg"
-      - "/fotos/almavera/rooftop-2.jpg"
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "Immediate"
