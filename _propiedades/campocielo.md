@@ -60,8 +60,7 @@ modelos:
     precio_max: 3500000
     entrega: "Inmediata"
     disponibles: 3
-    descripcion: "Planta baja: cochera techada para 2 autos con piso de concreto estampado, medio baño de visitas con luz natural, sala-comedor, cocina, cuarto de lavado y recámara / flex con baño completo y espacio para clóset. Planta alta: recámara principal con baño completo y espacio para clóset. Ventanales de piso a techo hacia el jardín y techos de 2.70 m. Terrenos de 9 × 22 m. Disponibles las casas 247, 250 y 251 (estas dos junto al parque)."
-    adicionales: "Se entrega con cancelería de aluminio negro, puerta principal de seguridad, mesetas de porcelanato en cocina y baños, acabado en pasta en paredes interiores y preparación para aire acondicionado. Servicios de CFE y JAPAY, y drenaje con fosa séptica y biodigestor."
+    descripcion: "Planta baja: cochera techada para 2 autos con piso de concreto estampado, medio baño de visitas con luz natural, sala-comedor, cocina, cuarto de lavado y recámara / flex con baño completo y espacio para clóset. Planta alta: recámara principal con baño completo y espacio para clóset. Ventanales de piso a techo hacia el jardín y techos de 2.70 m. Terrenos de 9 × 22 m. Se entrega con cancelería de aluminio negro, puerta principal de seguridad, mesetas de porcelanato en cocina y baños, acabado en pasta en paredes interiores y preparación para aire acondicionado. Servicios de CFE y JAPAY, y drenaje con fosa séptica y biodigestor. Disponibles las casas 247, 250 y 251 (estas dos junto al parque)."
     fotos:
       - "/fotos/campocielo/01-fachada.jpg"
       - "/fotos/campocielo/plano-confort-2-recamaras.jpg"
@@ -93,8 +92,7 @@ modelos:
   "modelos":
   - "niveles": "2 floors"
     "entrega": "Move-in ready"
-    "descripcion": "Ground floor: covered parking for 2 cars with stamped concrete, guest half bath with natural light, living-dining room, kitchen, laundry room and a bedroom / flex room with full bathroom and closet space. Upper floor: primary bedroom with full bathroom and closet space. Floor-to-ceiling windows facing the garden and 2.70 m ceilings. 9 × 22 m lots. Available: homes 247, 250 and 251 (the last two next to the park)."
-    "adicionales": "Delivered with black aluminum window frames, security front door, porcelain countertops in kitchen and bathrooms, plaster-finish interior walls and A/C pre-installation. CFE power and JAPAY water service, and septic tank with biodigester."
+    "descripcion": "Ground floor: covered parking for 2 cars with stamped concrete, guest half bath with natural light, living-dining room, kitchen, laundry room and a bedroom / flex room with full bathroom and closet space. Upper floor: primary bedroom with full bathroom and closet space. Floor-to-ceiling windows facing the garden and 2.70 m ceilings. 9 × 22 m lots. Delivered with black aluminum window frames, security front door, porcelain countertops in kitchen and bathrooms, plaster-finish interior walls and A/C pre-installation. CFE power and JAPAY water service, and septic tank with biodigester. Available: homes 247, 250 and 251 (the last two next to the park)."
   "descripcion": |-
     Campocielo is a gated residential community in the Royal del Parque subdivision, in northern Mérida between Temozón and Dzityá. Its access road connects to the Mérida–Progreso highway, minutes from the ring road, shopping centers, schools and universities, and about 20 minutes from the beach.
 
