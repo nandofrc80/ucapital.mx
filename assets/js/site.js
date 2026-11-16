@@ -101,6 +101,13 @@
     });
   }
 
+  /* Buscador rápido de inicio: al elegir un nombre de la lista, busca de inmediato */
+  $$(".buscar-rapido").forEach(function (fr) {
+    var inp = $("input", fr), ops = $$("datalist option", fr).map(function (o) { return o.value; });
+    inp.addEventListener("change", function () { if (ops.indexOf(inp.value) !== -1) fr.submit(); });
+    fr.addEventListener("submit", function (e) { if (!inp.value.trim()) { e.preventDefault(); inp.focus(); } });
+  });
+
   /* Filtros del catálogo */
   var filtros = $("[data-filtros]"), grid = $("[data-grid]");
   if (filtros && grid) {
@@ -213,6 +220,14 @@
     aplicar();
     if (mas && masN && masN.textContent) mas.open = true;
     if (ordenar && ordenar.value) ordenar.dispatchEvent(new Event("change"));
+    /* Llegó desde el buscador de inicio (?q=aldoria): si hay un solo desarrollo, ábrelo directo */
+    if (params.get("q")) {
+      var pq = norm(params.get("q"));
+      var exactas = cards.filter(function (c) { return norm(c.dataset.nombre) === pq; });
+      var visibles = cards.filter(function (c) { return !c.hidden; });
+      var unico = exactas.length === 1 ? exactas[0] : (visibles.length === 1 ? visibles[0] : null);
+      if (unico) window.location.replace($("a", unico).href);
+    }
   }
 
   /* Galería con visor (una galería general y una por modelo) */

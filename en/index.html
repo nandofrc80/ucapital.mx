@@ -18,6 +18,12 @@ body_class: pagina-inicio
       <p class="eyebrow">U·Capital Real Estate · Mérida, Yucatán, Mexico</p>
       <h1>The home you <em>deserve</em> to live in.</h1>
       <p class="hero__sub">For families and investors looking for more than just a property. Access to more than 100 developments in Mérida and on the Yucatán coast, one single conversation, and no cost to the buyer.</p>
+      <form class="buscar-rapido" action="{{ '/en/propiedades/' | relative_url }}" method="get" role="search">
+        {% include icono.html n="buscar" %}
+        <input type="search" name="q" list="lista-desarrollos-inicio" autocomplete="off" enterkeyhint="go" placeholder="Already know which one? Type the development name" aria-label="Search development by name">
+        <datalist id="lista-desarrollos-inicio">{% assign _todas = site.propiedades | where_exp: "p", "p.publicado != false" | map: "nombre" | uniq | sort %}{% for n in _todas %}<option value="{{ n }}">{% endfor %}</datalist>
+        <button type="submit" class="buscar-rapido__btn" aria-label="Search development by name">{% include icono.html n="flecha" %}</button>
+      </form>
       <form class="buscador" action="{{ '/en/propiedades/' | relative_url }}" method="get" role="search">
         <label><span>Type</span>
           <select name="tipo"><option value="">All</option>{% for t in tipos %}<option value="{{ t }}">{{ T.tipos[t] | default: t }}</option>{% endfor %}</select>
