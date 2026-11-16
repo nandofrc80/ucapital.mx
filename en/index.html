@@ -20,7 +20,7 @@ body_class: pagina-inicio
       <p class="hero__sub">For families and investors looking for more than just a property. Access to more than 100 developments in Mérida and on the Yucatán coast, one single conversation, and no cost to the buyer.</p>
       <form class="buscar-rapido" action="{{ '/en/propiedades/' | relative_url }}" method="get" role="search">
         {% include icono.html n="buscar" %}
-        <input type="search" name="q" list="lista-desarrollos-inicio" autocomplete="off" enterkeyhint="go" placeholder="Search a development by name" aria-label="Search development by name">
+        <input type="search" name="q" list="lista-desarrollos-inicio" autocomplete="off" enterkeyhint="go" placeholder="Search by development or model" aria-label="Search development by name">
         <datalist id="lista-desarrollos-inicio">{% assign _todas = site.propiedades | where_exp: "p", "p.publicado != false" | map: "nombre" | uniq | sort %}{% for n in _todas %}<option value="{{ n }}">{% endfor %}</datalist>
         <button type="submit" class="buscar-rapido__btn" aria-label="Search development by name">{% include icono.html n="flecha" %}</button>
       </form>

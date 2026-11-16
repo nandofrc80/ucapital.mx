@@ -121,6 +121,27 @@
     });
     /* Búsqueda por nombre: sin acentos ni mayúsculas ("unica" encuentra "Única Living") */
     var norm = function (t) { return (t || "").toString().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim(); };
+    /* Modelos de cada tarjeta: [[nombre normalizado, ancla], ...] */
+    var modsDe = function (c) {
+      if (!c._mods) c._mods = (c.dataset.mods || "").split("|").filter(Boolean).map(function (x) { var p = x.split("::"); return [norm(p[0]), p[1]]; });
+      return c._mods;
+    };
+    /* Busca en nombre y zona; con 3+ letras también en los nombres de los modelos (ej. "kita" → Cumbres Novonorte) */
+    var coincide = function (c, q) {
+      if (norm(c.dataset.nombre + " " + c.dataset.zona).indexOf(q) !== -1) return true;
+      return q.length >= 3 && modsDe(c).some(function (m) { return m[0].indexOf(q) !== -1; });
+    };
+    /* Destino al buscar: la página del desarrollo, o directo al modelo si se buscó un modelo */
+    var destino = function (q) {
+      var exacta = cards.filter(function (c) { return norm(c.dataset.nombre) === q; });
+      if (exacta.length === 1) return $("a", exacta[0]).href;
+      var vis = cards.filter(function (c) { return !c.hidden; });
+      if (vis.length !== 1) return null;
+      var c = vis[0], url = $("a", c).href;
+      if (norm(c.dataset.nombre + " " + c.dataset.zona).indexOf(q) !== -1) return url;
+      var ms = modsDe(c), m = ms.filter(function (x) { return x[0] === q; })[0] || (ms.filter(function (x) { return x[0].indexOf(q) !== -1; }).length === 1 ? ms.filter(function (x) { return x[0].indexOf(q) !== -1; })[0] : null);
+      return m ? url + "#modelo-" + m[1] : url;
+    };
     var mas = $("[data-filtros-mas]", filtros), masN = $("[data-mas-n]", filtros);
     var modelosDe = function (c) {
       if (!c._m) { try { c._m = JSON.parse(c.dataset.modelos || "[]"); } catch (e) { c._m = []; } }
@@ -165,7 +186,7 @@
           if (!m.p) m = Object.assign({}, m, { p: 0, pm: Infinity });
           return modeloOk(m);
         });
-        var ok = (!q || norm(c.dataset.nombre + " " + c.dataset.zona).indexOf(q) !== -1) &&
+        var ok = (!q || coincide(c, q)) &&
                  (!tipo || c.dataset.tipo === tipo) &&
                  (!zona || c.dataset.zona === zona) &&
                  (!est || c.dataset.estatus === est) &&
@@ -205,10 +226,8 @@
     if (filtros.elements.q) {
       filtros.elements.q.addEventListener("input", aplicar);
       var ir = function () {
-        var vis = cards.filter(function (c) { return !c.hidden; });
-        var exacta = cards.filter(function (c) { return norm(c.dataset.nombre) === norm(filtros.elements.q.value); });
-        var dest = exacta.length === 1 ? exacta[0] : (vis.length === 1 ? vis[0] : null);
-        if (dest) window.location.href = $("a", dest).href;
+        var d = destino(norm(filtros.elements.q.value));
+        if (d) window.location.href = d;
       };
       filtros.elements.q.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); aplicar(); ir(); } });
       /* Al elegir una sugerencia de la lista, abre el desarrollo */
@@ -222,11 +241,8 @@
     if (ordenar && ordenar.value) ordenar.dispatchEvent(new Event("change"));
     /* Llegó desde el buscador de inicio (?q=aldoria): si hay un solo desarrollo, ábrelo directo */
     if (params.get("q")) {
-      var pq = norm(params.get("q"));
-      var exactas = cards.filter(function (c) { return norm(c.dataset.nombre) === pq; });
-      var visibles = cards.filter(function (c) { return !c.hidden; });
-      var unico = exactas.length === 1 ? exactas[0] : (visibles.length === 1 ? visibles[0] : null);
-      if (unico) window.location.replace($("a", unico).href);
+      var dq = destino(norm(params.get("q")));
+      if (dq) window.location.replace(dq);
     }
   }
 

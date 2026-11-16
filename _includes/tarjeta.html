@@ -11,7 +11,8 @@
 {%- else -%}{%- assign _ent = tp.entrega | default: "" | downcase -%}
 {"p":{{ st_precio | default: 0 }},"pm":{{ st_precio | default: 0 }},"r":{{ tp.recamaras | default: 0 }},"rm":{{ tp.recamaras | default: 0 }},"pl":0,"pb":"","al":"","co":"","te":{{ tp.terreno | default: 0 }},"in":{% if _ent contains "inmediata" %}1{% else %}0{% endif %}}
 {%- endif -%}]{%- endcapture -%}
-<article class="card" data-nombre="{{ tp.nombre | escape }}" data-tipo="{{ tp.tipo }}" data-zona="{{ tp.zona }}" data-estatus="{{ tp.estatus }}" data-precio="{{ st_precio }}" data-modelos='{{ tp_modelos | strip_newlines }}' data-recamaras="{{ st_rec_max }}">
+{%- capture tp_mods -%}{%- for m in tp.modelos -%}{{ m.nombre | escape }}::{{ m.nombre | slugify }}{% unless forloop.last %}|{% endunless %}{%- endfor -%}{%- endcapture -%}
+<article class="card" data-nombre="{{ tp.nombre | escape }}" data-mods="{{ tp_mods | strip }}" data-tipo="{{ tp.tipo }}" data-zona="{{ tp.zona }}" data-estatus="{{ tp.estatus }}" data-precio="{{ st_precio }}" data-modelos='{{ tp_modelos | strip_newlines }}' data-recamaras="{{ st_rec_max }}">
   <a class="card__link" href="{{ B | append: tp.url | relative_url }}" aria-label="{{ T.ver }} {{ tp.nombre }}">
     <div class="card__media">
       {%- assign tp_img = tp.portada | default: tp.fotos.first -%}<img src="{{ tp_img | prepend: "@" | replace_first: "@/fotos/", "/fotos/min/" | remove_first: "@" | relative_url }}" onerror="this.onerror=null;this.src='{{ tp_img | relative_url }}'" alt="{{ tp.nombre }} — {{ tp_tipo }} {{ T.en_zona }} {{ tp.zona }}" loading="lazy" decoding="async">

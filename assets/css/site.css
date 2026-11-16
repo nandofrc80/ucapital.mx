@@ -854,3 +854,4 @@ p { margin: 0 0 1em; }
 [data-theme="dark"] .buscar-rapido__btn { background: var(--gold); }
 [data-theme="dark"] .buscar-rapido__btn .ico { stroke: #0F1A2E; }
 [data-theme="dark"] .buscar-rapido__btn:hover { background: var(--gold-dark); }
+.modelo { scroll-margin-top: 110px; }
