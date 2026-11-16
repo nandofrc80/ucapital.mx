@@ -52,6 +52,7 @@ modelos:
     plantas: 2
     recamara_pb: "si"
     alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 5.5
     construccion: 562
@@ -78,6 +79,7 @@ modelos:
     plantas: 2
     recamara_pb: "si"
     alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 5.5
     construccion: 597
@@ -104,6 +106,7 @@ modelos:
     plantas: 2
     recamara_pb: "si"
     alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 5.5
     construccion: 659

@@ -38,6 +38,7 @@ modelos:
     plantas: 2
     recamara_pb: "si"
     alberca: "si"
+    cochera_techada: "no"
     recamaras: 3
     banos: 2
     construccion: 115

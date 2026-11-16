@@ -46,6 +46,7 @@ modelos:
     plantas: 1
     recamara_pb: "si"
     alberca: "no"
+    cochera_techada: "no"
     recamaras: 2
     banos: 1
     construccion: 79
@@ -68,6 +69,7 @@ modelos:
     plantas: 2
     recamara_pb: "no"
     alberca: "no"
+    cochera_techada: "no"
     recamaras: 2
     banos: 2.5
     construccion: 100
@@ -86,6 +88,7 @@ modelos:
     plantas: 2
     recamara_pb: "no"
     alberca: "no"
+    cochera_techada: "si"
     recamaras: 2
     banos: 1.5
     construccion: 131
@@ -104,6 +107,7 @@ modelos:
     plantas: 2
     recamara_pb: "no"
     alberca: "no"
+    cochera_techada: "no"
     recamaras: 3
     banos: 2.5
     construccion: 131
@@ -122,6 +126,7 @@ modelos:
     plantas: 2
     recamara_pb: "si"
     alberca: "no"
+    cochera_techada: "no"
     recamaras: 3
     banos: 2.5
     construccion: 127
@@ -140,6 +145,7 @@ modelos:
     plantas: 2
     recamara_pb: "no"
     alberca: "no"
+    cochera_techada: "si"
     recamaras: 3
     banos: 2.5
     construccion: 152
@@ -157,6 +163,7 @@ modelos:
     plantas: 2
     recamara_pb: "no"
     alberca: "no"
+    cochera_techada: "si"
     recamaras: 3
     banos: 2.5
     construccion: 167
@@ -175,6 +182,7 @@ modelos:
     plantas: 1
     recamara_pb: "si"
     alberca: "no"
+    cochera_techada: "no"
     recamaras: 3
     banos: 3.5
     construccion: 138
