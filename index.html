@@ -18,7 +18,7 @@ alt: "/en/"
       <p class="hero__sub">Para familias e inversionistas que buscan más que una propiedad. Acceso a más de 100 desarrollos en Mérida y la costa yucateca, una sola conversación y cero costo para el comprador.</p>
       <form class="buscar-rapido" action="{{ '/propiedades/' | relative_url }}" method="get" role="search">
         {% include icono.html n="buscar" %}
-        <input type="search" name="q" list="lista-desarrollos-inicio" autocomplete="off" enterkeyhint="go" placeholder="¿Ya sabes cuál buscas? Escribe el nombre del desarrollo" aria-label="Buscar desarrollo por nombre">
+        <input type="search" name="q" list="lista-desarrollos-inicio" autocomplete="off" enterkeyhint="go" placeholder="Busca un desarrollo por nombre" aria-label="Buscar desarrollo por nombre">
         <datalist id="lista-desarrollos-inicio">{% assign _todas = site.propiedades | where_exp: "p", "p.publicado != false" | map: "nombre" | uniq | sort %}{% for n in _todas %}<option value="{{ n }}">{% endfor %}</datalist>
         <button type="submit" class="buscar-rapido__btn" aria-label="Buscar desarrollo por nombre">{% include icono.html n="flecha" %}</button>
       </form>
