@@ -7,6 +7,14 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Tráfico interno: abrir una vez ucapital.mx/?interno=1 marca este navegador
+    // (?interno=0 lo desmarca). Analytics excluye lo marcado con el filtro "Internal Traffic".
+    try {
+      var _q = location.search;
+      if (/[?&]interno=1(&|$)/.test(_q)) localStorage.setItem('ucap_interno', '1');
+      if (/[?&]interno=0(&|$)/.test(_q)) localStorage.removeItem('ucap_interno');
+      if (localStorage.getItem('ucap_interno') === '1') gtag('set', {traffic_type: 'internal'});
+    } catch (e) {}
     gtag('js', new Date());
   </script>
   <meta charset="utf-8">
