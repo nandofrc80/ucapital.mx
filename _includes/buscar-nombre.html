@@ -1,0 +1,9 @@
+{%- comment -%} Buscador por nombre del desarrollo (catálogo ES/EN). {%- endcomment -%}
+{%- assign _en = false -%}{%- if page.lang == "en" %}{% assign _en = true %}{% endif -%}
+<div class="filtros__buscar">
+  {% include icono.html n="buscar" %}
+  <input type="search" name="q" list="lista-desarrollos" autocomplete="off" enterkeyhint="go"
+    placeholder="{% if _en %}Search by development name (e.g. Aldoria, Nativa, Cumbres){% else %}Busca por nombre del desarrollo (ej. Aldoria, Nativa, Cumbres){% endif %}"
+    aria-label="{% if _en %}Search by name{% else %}Buscar por nombre{% endif %}">
+  <datalist id="lista-desarrollos">{% assign _nombres = include.lista | map: "nombre" | uniq | sort %}{% for n in _nombres %}<option value="{{ n }}">{% endfor %}</datalist>
+</div>

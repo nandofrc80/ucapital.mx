@@ -29,6 +29,7 @@ body_class: pagina-catalogo
       <button type="button" class="tab" data-cat="Departamento">Apartments</button>
     </div>
     <form class="filtros" data-filtros>
+      {% include buscar-nombre.html lista=publicadas %}
       <label><span>Type</span><select name="tipo"><option value="">All</option>{% for t in tipos %}<option value="{{ t }}">{{ T.tipos[t] | default: t }}</option>{% endfor %}</select></label>
       <label><span>Area</span><select name="zona"><option value="">All</option>{% for z in zonas %}<option>{{ z }}</option>{% endfor %}</select></label>
       <label><span>Status</span><select name="estatus"><option value="">All</option>{% for e in estatuses %}<option value="{{ e }}">{{ T.estatuses[e] | default: e }}</option>{% endfor %}</select></label>
@@ -41,7 +42,7 @@ body_class: pagina-catalogo
     </form>
     <div class="resultados-bar">
   <p class="resultados" data-resultados aria-live="polite">{{ publicadas.size }} properties</p>
-      <label class="ordenar"><span>Sort</span><select data-ordenar><option value="">Recommended</option><option value="asc">Price: low to high</option><option value="desc">Price: high to low</option></select></label>
+      <label class="ordenar"><span>Sort</span><select data-ordenar><option value="az" selected>Name (A–Z)</option><option value="">Recommended</option><option value="asc">Price: low to high</option><option value="desc">Price: high to low</option></select></label>
     </div>
     <div class="grid" data-grid>
       {%- for p in publicadas %}

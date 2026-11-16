@@ -106,12 +106,14 @@
   if (filtros && grid) {
     var cards = $$(".card", grid), out = $("[data-resultados]"), vacio = $("[data-vacio]");
     var params = new URLSearchParams(window.location.search);
-    var CLAVES = ["tipo", "zona", "estatus", "min", "max", "rec", "plantas", "alberca", "cochera", "terreno", "pb"];
+    var CLAVES = ["q", "tipo", "zona", "estatus", "min", "max", "rec", "plantas", "alberca", "cochera", "terreno", "pb"];
     CLAVES.forEach(function (k) {
       var el = filtros.elements[k];
       if (!el || !params.get(k)) return;
       if (el.type === "checkbox") el.checked = params.get(k) === "1"; else el.value = params.get(k);
     });
+    /* Búsqueda por nombre: sin acentos ni mayúsculas ("unica" encuentra "Única Living") */
+    var norm = function (t) { return (t || "").toString().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim(); };
     var mas = $("[data-filtros-mas]", filtros), masN = $("[data-mas-n]", filtros);
     var modelosDe = function (c) {
       if (!c._m) { try { c._m = JSON.parse(c.dataset.modelos || "[]"); } catch (e) { c._m = []; } }
@@ -125,6 +127,7 @@
     }
     var aplicar = function () {
       var f = filtros.elements, n = 0;
+      var q = f.q ? norm(f.q.value) : "";
       var tipo = f.tipo.value, zona = f.zona.value, est = f.estatus.value;
       var min = f.min ? parseFloat(f.min.value) || 0 : 0;
       var max = parseFloat(f.max.value) || 0, rec = parseFloat(f.rec.value) || 0;
@@ -155,7 +158,8 @@
           if (!m.p) m = Object.assign({}, m, { p: 0, pm: Infinity });
           return modeloOk(m);
         });
-        var ok = (!tipo || c.dataset.tipo === tipo) &&
+        var ok = (!q || norm(c.dataset.nombre + " " + c.dataset.zona).indexOf(q) !== -1) &&
+                 (!tipo || c.dataset.tipo === tipo) &&
                  (!zona || c.dataset.zona === zona) &&
                  (!est || c.dataset.estatus === est) &&
                  porModelo;
@@ -183,17 +187,32 @@
     var ordenar = $("[data-ordenar]");
     if (ordenar) ordenar.addEventListener("change", function () {
       var v = ordenar.value, lista = cards.slice();
-      if (v) lista.sort(function (a, b) {
+      if (v === "az") lista.sort(function (a, b) { return norm(a.dataset.nombre).localeCompare(norm(b.dataset.nombre), "es"); });
+      else if (v) lista.sort(function (a, b) {
         var pa = parseFloat(a.dataset.precio) || Infinity, pb = parseFloat(b.dataset.precio) || Infinity;
         return v === "asc" ? pa - pb : (pb === Infinity ? -1 : pb) - (pa === Infinity ? -1 : pa);
       });
       lista.forEach(function (c) { grid.appendChild(c); });
     });
     filtros.addEventListener("change", function () { aplicar(); syncTabs(); });
+    if (filtros.elements.q) {
+      filtros.elements.q.addEventListener("input", aplicar);
+      var ir = function () {
+        var vis = cards.filter(function (c) { return !c.hidden; });
+        var exacta = cards.filter(function (c) { return norm(c.dataset.nombre) === norm(filtros.elements.q.value); });
+        var dest = exacta.length === 1 ? exacta[0] : (vis.length === 1 ? vis[0] : null);
+        if (dest) window.location.href = $("a", dest).href;
+      };
+      filtros.elements.q.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); aplicar(); ir(); } });
+      /* Al elegir una sugerencia de la lista, abre el desarrollo */
+      filtros.elements.q.addEventListener("change", function () { aplicar(); var v = norm(filtros.elements.q.value); if (cards.some(function (c) { return norm(c.dataset.nombre) === v; })) ir(); });
+    }
+    filtros.addEventListener("submit", function (e) { e.preventDefault(); });
     filtros.addEventListener("reset", function () { setTimeout(function () { aplicar(); syncTabs(); }, 0); });
     setTimeout(syncTabs, 0);
     aplicar();
     if (mas && masN && masN.textContent) mas.open = true;
+    if (ordenar && ordenar.value) ordenar.dispatchEvent(new Event("change"));
   }
 
   /* Galería con visor (una galería general y una por modelo) */

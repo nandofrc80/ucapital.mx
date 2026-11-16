@@ -229,6 +229,11 @@ p { margin: 0 0 1em; }
 .filtros { grid-template-columns: repeat(6, 1fr) auto; }
 .filtros label:nth-of-type(6) { border-right: 0; }
 .filtros .btn { align-self: center; }
+.filtros__buscar { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; padding: 6px 14px 10px; border-bottom: 1px solid var(--line); margin-bottom: 4px; }
+.filtros__buscar .ico { width: 20px; height: 20px; flex: none; stroke: var(--navy); fill: none; stroke-width: 1.8; }
+.filtros__buscar input { flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 1rem; color: var(--navy); padding: 8px 0; }
+.filtros__buscar input:focus { outline: none; }
+.filtros__buscar input::placeholder { color: var(--ink-soft); }
 .filtros__mas { grid-column: 1 / -1; border-top: 1px solid var(--line); padding: 4px 14px 2px; }
 .filtros__mas summary { cursor: pointer; list-style: none; padding: 10px 0 6px; font-size: .82rem; font-weight: 600; letter-spacing: .06em; color: var(--navy); }
 .filtros__mas summary::-webkit-details-marker { display: none; }
