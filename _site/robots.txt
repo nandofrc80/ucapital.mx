@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ucapital.mx/sitemap.xml
