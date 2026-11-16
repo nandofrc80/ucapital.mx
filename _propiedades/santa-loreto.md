@@ -47,6 +47,10 @@ amenidades:
 modelos:
   - nombre: "J"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
+    cochera_techada: "no"
     recamaras: 2
     banos: 1.5
     construccion: 104
@@ -63,6 +67,10 @@ modelos:
       - "/fotos/santa-loreto/fachada-j.jpg"
   - nombre: "A"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
+    cochera_techada: "no"
     recamaras: 2
     banos: 1.5
     construccion: 114
@@ -81,6 +89,10 @@ modelos:
       - "/fotos/santa-loreto/a-bano.jpg"
   - nombre: "A2"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
+    cochera_techada: "no"
     recamaras: 2
     banos: 2.5
     construccion: 114
@@ -99,6 +111,10 @@ modelos:
       - "/fotos/santa-loreto/a2-bano.jpg"
   - nombre: "G"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "no"
+    cochera_techada: "no"
     recamaras: 3
     banos: 2.5
     construccion: 132
@@ -115,6 +131,10 @@ modelos:
       - "/fotos/santa-loreto/fachada-g.jpg"
   - nombre: "B"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "algunas"
+    cochera_techada: "no"
     recamaras: 3
     banos: 2.5
     construccion: 142
@@ -133,6 +153,10 @@ modelos:
       - "/fotos/santa-loreto/b-recamara-2.jpg"
   - nombre: "C"
     niveles: "2 plantas · sala a doble altura"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
+    cochera_techada: "si"
     recamaras: 2
     banos: 1.5
     construccion: 140
@@ -150,6 +174,10 @@ modelos:
       - "/fotos/santa-loreto/c-bano.jpg"
   - nombre: "E"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
+    cochera_techada: "si"
     recamaras: 3
     banos: 2.5
     construccion: 178

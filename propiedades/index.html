@@ -35,6 +35,7 @@ alt: "/en/propiedades/"
         <select name="rec"><option value="">Cualquiera</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option></select>
       </label>
       <button type="reset" class="btn btn--ghost btn--sm" data-filtros-reset>Limpiar</button>
+      {% include filtros-mas.html %}
     </form>
     <div class="resultados-bar">
   <p class="resultados" data-resultados aria-live="polite">{{ publicadas.size }} propiedades</p>

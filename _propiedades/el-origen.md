@@ -49,6 +49,9 @@ amenidades:
 modelos:
   - nombre: "562"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
     recamaras: 4
     banos: 5.5
     construccion: 562
@@ -72,6 +75,9 @@ modelos:
       - "/fotos/el-origen/562-trasera.jpg"
   - nombre: "597"
     niveles: "2 plantas · sala a doble altura"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
     recamaras: 4
     banos: 5.5
     construccion: 597
@@ -95,6 +101,9 @@ modelos:
       - "/fotos/el-origen/597-trasera.jpg"
   - nombre: "659"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
     recamaras: 4
     banos: 5.5
     construccion: 659

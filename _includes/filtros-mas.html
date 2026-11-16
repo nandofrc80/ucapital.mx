@@ -1,0 +1,21 @@
+{%- comment -%} Filtros por características de la casa (por modelo). Se usan en el catálogo ES y EN. {%- endcomment -%}
+{%- assign _en = false -%}{%- if page.lang == "en" %}{% assign _en = true %}{% endif -%}
+<details class="filtros__mas" data-filtros-mas>
+  <summary>{% if _en %}More filters for houses{% else %}Más filtros para casas{% endif %} <span data-mas-n></span></summary>
+  <div class="filtros__mas-grid">
+    <label><span>{% if _en %}Floors{% else %}Plantas{% endif %}</span>
+      <select name="plantas"><option value="">{% if _en %}Any{% else %}Cualquiera{% endif %}</option><option value="1">{% if _en %}Single floor{% else %}Una planta{% endif %}</option><option value="2">{% if _en %}Two floors{% else %}Dos plantas{% endif %}</option></select>
+    </label>
+    <label><span>{% if _en %}Pool{% else %}Alberca{% endif %}</span>
+      <select name="alberca"><option value="">{% if _en %}Any{% else %}Cualquiera{% endif %}</option><option value="si">{% if _en %}Included{% else %}Que ya la incluya{% endif %}</option><option value="opc">{% if _en %}Included or optional{% else %}Incluida u opcional{% endif %}</option></select>
+    </label>
+    <label><span>{% if _en %}Covered garage{% else %}Cochera techada{% endif %}</span>
+      <select name="cochera"><option value="">{% if _en %}Any{% else %}Cualquiera{% endif %}</option><option value="si">{% if _en %}Included{% else %}Que ya la incluya{% endif %}</option><option value="opc">{% if _en %}Included or optional{% else %}Incluida u opcional{% endif %}</option></select>
+    </label>
+    <label><span>{% if _en %}Minimum lot{% else %}Terreno mínimo{% endif %}</span>
+      <select name="terreno"><option value="">{% if _en %}Any{% else %}Cualquiera{% endif %}</option>{% assign _t = "200,250,300,400,500" | split: "," %}{% for t in _t %}<option value="{{ t }}">{{ t }} m²+</option>{% endfor %}</select>
+    </label>
+    <label class="filtros__check"><input type="checkbox" name="pb" value="1"><span>{% if _en %}Bedroom on the ground floor{% else %}Recámara en planta baja{% endif %}</span></label>
+  </div>
+  <p class="filtros__nota">{% if _en %}We check each model. "Optional" means it can be added at an extra cost.{% else %}Revisamos cada modelo. "Opcional" significa que se puede agregar con costo adicional.{% endif %}</p>
+</details>

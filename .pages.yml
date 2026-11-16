@@ -166,6 +166,36 @@ content:
             label: Niveles
             type: string
             description: "Ej. 1 planta, 2 plantas, 1 planta (ampliable)"
+          - name: plantas
+            label: Número de plantas (para el buscador)
+            type: number
+            description: "1 o 2. Solo casas."
+          - name: recamara_pb
+            label: ¿Recámara en planta baja?
+            type: select
+            options:
+              values:
+                - { value: si, label: "Sí" }
+                - { value: "no", label: "No" }
+                - { value: opcional, label: "Opcional (con costo)" }
+          - name: alberca
+            label: Alberca
+            type: select
+            options:
+              values:
+                - { value: si, label: "Incluida" }
+                - { value: algunas, label: "Incluida en algunas casas" }
+                - { value: opcional, label: "Opcional (con costo)" }
+                - { value: "no", label: "No incluye" }
+          - name: cochera_techada
+            label: Cochera techada
+            type: select
+            options:
+              values:
+                - { value: si, label: "Incluida" }
+                - { value: algunas, label: "Incluida en algunas casas" }
+                - { value: opcional, label: "Opcional (con costo)" }
+                - { value: "no", label: "No incluye" }
           - name: precio
             label: Precio desde (MXN)
             type: number

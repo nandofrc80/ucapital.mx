@@ -46,6 +46,10 @@ amenidades:
 modelos:
   - nombre: "Lote 70 · una planta"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "opcional"
     recamaras: 3
     banos: 3.5
     construccion: 177.6
@@ -63,6 +67,9 @@ modelos:
       - /fotos/aire-puro/it-70-4.jpg
   - nombre: "Lote 97 · dos plantas"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
     recamaras: 3
     banos: 3.5
     construccion: 221.47
@@ -85,6 +92,10 @@ modelos:
       - /fotos/aire-puro/it-97-9.jpg
   - nombre: "Casa de 242 m² · entrega inmediata"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 242

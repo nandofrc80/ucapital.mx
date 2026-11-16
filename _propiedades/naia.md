@@ -42,6 +42,10 @@ amenidades:
 modelos:
   - nombre: "Suytún"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 2
     banos: 2.5
     construccion: 154
@@ -59,6 +63,10 @@ modelos:
       - /fotos/naia/suytun-6.jpg
   - nombre: "Nah-Yah"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 166
@@ -77,6 +85,10 @@ modelos:
       - /fotos/naia/nah-yah-7.jpg
   - nombre: "Zací"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3
     construccion: 179
@@ -94,6 +106,10 @@ modelos:
       - /fotos/naia/zaci-6.jpg
   - nombre: "Ik-Kil"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3
     construccion: 182

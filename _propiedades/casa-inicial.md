@@ -48,6 +48,9 @@ amenidades:
 modelos:
   - nombre: "Tres Lunas"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "no"
     recamaras: 2
     banos: 2.5
     construccion: 130
@@ -68,6 +71,9 @@ modelos:
       - "/fotos/casa-inicial/tl-planta-alta.jpg"
   - nombre: "Altozano (preventa)"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "opcional"
     recamaras: 2
     recamaras_max: 3
     banos: 2.5

@@ -106,10 +106,17 @@
   if (filtros && grid) {
     var cards = $$(".card", grid), out = $("[data-resultados]"), vacio = $("[data-vacio]");
     var params = new URLSearchParams(window.location.search);
-    ["tipo", "zona", "estatus", "min", "max", "rec"].forEach(function (k) {
+    var CLAVES = ["tipo", "zona", "estatus", "min", "max", "rec", "plantas", "alberca", "cochera", "terreno", "pb"];
+    CLAVES.forEach(function (k) {
       var el = filtros.elements[k];
-      if (el && params.get(k)) el.value = params.get(k);
+      if (!el || !params.get(k)) return;
+      if (el.type === "checkbox") el.checked = params.get(k) === "1"; else el.value = params.get(k);
     });
+    var mas = $("[data-filtros-mas]", filtros), masN = $("[data-mas-n]", filtros);
+    var modelosDe = function (c) {
+      if (!c._m) { try { c._m = JSON.parse(c.dataset.modelos || "[]"); } catch (e) { c._m = []; } }
+      return c._m;
+    };
     /* Rango del buscador de inicio (?pres=3500000-4000000) */
     if (params.get("pres")) {
       var pz = params.get("pres").split("-");
@@ -122,25 +129,46 @@
       var min = f.min ? parseFloat(f.min.value) || 0 : 0;
       var max = parseFloat(f.max.value) || 0, rec = parseFloat(f.rec.value) || 0;
       if (min && max && min > max) { var tmp = min; min = max; max = tmp; }
+      var pl = f.plantas ? +f.plantas.value || 0 : 0, al = f.alberca ? f.alberca.value : "", co = f.cochera ? f.cochera.value : "";
+      var te = f.terreno ? +f.terreno.value || 0 : 0, pb = f.pb ? f.pb.checked : false;
+      var extras = (pl ? 1 : 0) + (al ? 1 : 0) + (co ? 1 : 0) + (te ? 1 : 0) + (pb ? 1 : 0);
+      if (masN) masN.textContent = extras ? String(extras) : "";
+      /* "si" = la incluye; "opc" = la incluye o se puede agregar. "Algunas casas" cuenta como incluida. */
+      var cumple = function (v, quiere) {
+        if (!quiere) return true;
+        if (v === "si" || v === "algunas") return true;
+        return quiere === "opc" && v === "opcional";
+      };
+      /* Un desarrollo aparece si al menos UNO de sus modelos cumple todo a la vez */
+      var modeloOk = function (m) {
+        return (!max || m.p <= max) && (!min || (m.pm || m.p) >= min) &&
+               (!rec || (m.rm || m.r) >= rec) &&
+               (!pl || (pl === 1 ? m.pl === 1 : m.pl >= 2)) &&
+               (!pb || m.pb === "si" || m.pb === "opcional") &&
+               cumple(m.al, al) && cumple(m.co, co) &&
+               (!te || m.te >= te);
+      };
       cards.forEach(function (c) {
-        var r = parseFloat(c.dataset.recamaras) || 0;
-        /* Precio: basta con que un modelo (de su precio "desde" a su precio más alto) caiga en el rango */
-        var rangos = (c.dataset.precios || "").split(",").filter(Boolean).map(function (x) { var p = x.split("-"); return [+p[0] || 0, +p[1] || +p[0] || 0]; });
-        var enRango = !min && !max ? true : rangos.length === 0 ? true : rangos.some(function (p) {
-          return (!max || p[0] <= max) && (!min || p[1] >= min);
+        var ms = modelosDe(c);
+        var porModelo = !ms.length ? !extras : ms.some(function (m) {
+          /* Sin precio cargado no se descarta por precio */
+          if (!m.p) m = Object.assign({}, m, { p: 0, pm: Infinity });
+          return modeloOk(m);
         });
         var ok = (!tipo || c.dataset.tipo === tipo) &&
                  (!zona || c.dataset.zona === zona) &&
                  (!est || c.dataset.estatus === est) &&
-                 enRango &&
-                 (!rec || r >= rec);
+                 porModelo;
         c.hidden = !ok;
         if (ok) n++;
       });
       if (out) out.textContent = EN ? (n === 1 ? "1 property" : n + " properties") : (n === 1 ? "1 propiedad" : n + " propiedades");
       if (vacio) vacio.hidden = n > 0;
       var q = new URLSearchParams();
-      ["tipo", "zona", "estatus", "min", "max", "rec"].forEach(function (k) { if (f[k] && f[k].value) q.set(k, f[k].value); });
+      CLAVES.forEach(function (k) {
+        if (!f[k]) return;
+        if (f[k].type === "checkbox") { if (f[k].checked) q.set(k, "1"); } else if (f[k].value) q.set(k, f[k].value);
+      });
       var url = window.location.pathname + (q.toString() ? "?" + q.toString() : "");
       window.history.replaceState(null, "", url);
     };
@@ -165,6 +193,7 @@
     filtros.addEventListener("reset", function () { setTimeout(function () { aplicar(); syncTabs(); }, 0); });
     setTimeout(syncTabs, 0);
     aplicar();
+    if (mas && masN && masN.textContent) mas.open = true;
   }
 
   /* Galería con visor (una galería general y una por modelo) */

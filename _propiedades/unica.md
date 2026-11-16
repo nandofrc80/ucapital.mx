@@ -45,6 +45,10 @@ amenidades:
 modelos:
   - nombre: "Lote 59"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 5.5
     construccion: 307
@@ -65,6 +69,10 @@ modelos:
       - "/fotos/unica/59-trasera.jpg"
   - nombre: "Lote 85"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 5.5
     construccion: 311
@@ -86,6 +94,10 @@ modelos:
       - "/fotos/unica/85-trasera.jpg"
   - nombre: "Lote 64"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 5.5
     construccion: 316

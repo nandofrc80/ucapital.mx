@@ -42,6 +42,10 @@ amenidades:
 modelos:
   - nombre: "186"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 186
@@ -61,6 +65,10 @@ modelos:
       - /fotos/adara/186-7.jpg
   - nombre: "205"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "algunas"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 205
@@ -83,6 +91,10 @@ modelos:
       - /fotos/adara/205-7.jpg
   - nombre: "210"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 4.5
     construccion: 210
@@ -105,6 +117,10 @@ modelos:
       - /fotos/adara/210-7.jpg
   - nombre: "224"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 224
@@ -125,6 +141,10 @@ modelos:
       - /fotos/adara/224-7.jpg
   - nombre: "243"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 243
@@ -145,6 +165,10 @@ modelos:
       - /fotos/adara/243-7.jpg
   - nombre: "279"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 279
@@ -165,6 +189,10 @@ modelos:
       - /fotos/adara/279-7.jpg
   - nombre: "307"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 4
     construccion: 307
@@ -181,6 +209,10 @@ modelos:
       - /fotos/adara/307-3.jpg
   - nombre: "255"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 255

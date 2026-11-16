@@ -50,6 +50,10 @@ amenidades:
 modelos:
   - nombre: "Prototipo 1"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 194
@@ -68,6 +72,10 @@ modelos:
       - "/fotos/kimakol/p1-bano.jpg"
   - nombre: "Prototipo 2"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 209
@@ -84,6 +92,10 @@ modelos:
       - "/fotos/kimakol/p1-recamara.jpg"
   - nombre: "Prototipo 4"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 253
@@ -102,6 +114,10 @@ modelos:
       - "/fotos/kimakol/p3-recamara.jpg"
   - nombre: "Prototipo 3"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 4.5
     construccion: 325

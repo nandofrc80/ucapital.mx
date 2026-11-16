@@ -48,6 +48,10 @@ amenidades:
 modelos:
   - nombre: "Aurea"
     niveles: "1 planta (ampliable)"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "opcional"
+    cochera_techada: "opcional"
     recamaras: 2
     recamaras_max: 4
     banos: 2
@@ -65,6 +69,10 @@ modelos:
       - /fotos/aldoria/aurea-2.jpg
   - nombre: "Anara"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "opcional"
+    alberca: "opcional"
+    cochera_techada: "opcional"
     recamaras: 2
     recamaras_max: 4
     banos: 2.5
@@ -87,6 +95,10 @@ modelos:
       - /fotos/aldoria/anara-6.jpg
   - nombre: "Caria"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "opcional"
+    cochera_techada: "opcional"
     recamaras: 3
     recamaras_max: 3
     banos: 3
@@ -108,6 +120,10 @@ modelos:
       - /fotos/aldoria/caria-6.jpg
   - nombre: "Cinna"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "opcional"
+    cochera_techada: "opcional"
     recamaras: 3
     recamaras_max: 4
     banos: 3.5

@@ -30,6 +30,9 @@ fotos:
 modelos:
   - nombre: "Malva"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "no"
     recamaras: 3
     banos: 3.5
     construccion: 143.5
@@ -52,6 +55,9 @@ modelos:
       - "/fotos/amaral/malva-9.jpg"
   - nombre: "Loto"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
     recamaras: 3
     banos: 3.5
     construccion: 173.8

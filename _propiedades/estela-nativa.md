@@ -42,6 +42,10 @@ amenidades:
 modelos:
   - nombre: "Quetzal"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "algunas"
+    cochera_techada: "algunas"
     recamaras: 2
     banos: 2.5
     construccion: 114
@@ -65,6 +69,10 @@ modelos:
       - /fotos/estela-nativa/quetzal-9.jpg
   - nombre: "Quetzal Plus"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "algunas"
+    cochera_techada: "algunas"
     recamaras: 3
     banos: 2.5
     construccion: 128
@@ -87,6 +95,10 @@ modelos:
       - /fotos/estela-nativa/quetzal-plus-8.jpg
   - nombre: "Carey"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "algunas"
+    cochera_techada: "algunas"
     recamaras: 3
     banos: 3.5
     construccion: 139
@@ -111,6 +123,9 @@ modelos:
       - /fotos/estela-nativa/carey-10.jpg
   - nombre: "Ibis"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
     recamaras: 3
     banos: 3.5
     construccion: 159

@@ -56,6 +56,10 @@ amenidades:
 modelos:
   - nombre: "A-9-104"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 2
     banos: 2
     construccion: 104
@@ -72,6 +76,10 @@ modelos:
       - "/fotos/gran-bosco/a-104-3.jpg"
   - nombre: "A-9-126"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 2
     banos: 2.5
     construccion: 126
@@ -87,6 +95,10 @@ modelos:
       - "/fotos/gran-bosco/a-126-2.jpg"
   - nombre: "A-9-139"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 2
     banos: 2.5
     construccion: 139
@@ -102,6 +114,10 @@ modelos:
       - "/fotos/gran-bosco/a-139-2.jpg"
   - nombre: "E-11-142"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 2
     banos: 2.5
     construccion: 142
@@ -118,6 +134,10 @@ modelos:
       - "/fotos/gran-bosco/e-142-3.jpg"
   - nombre: "C-9-146"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 2
     banos: 2.5
     construccion: 146
@@ -134,6 +154,10 @@ modelos:
       - "/fotos/gran-bosco/c-146-3.jpg"
   - nombre: "B-9-147"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 2
     banos: 2
     construccion: 147
@@ -150,6 +174,10 @@ modelos:
       - "/fotos/gran-bosco/b-147-3.jpg"
   - nombre: "D-10-149"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3
     construccion: 149
@@ -166,6 +194,10 @@ modelos:
       - "/fotos/gran-bosco/d-149-3.jpg"
   - nombre: "B-9-167"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3
     construccion: 167
@@ -181,6 +213,10 @@ modelos:
       - "/fotos/gran-bosco/b-167-2.jpg"
   - nombre: "C-9-166"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 166
@@ -197,6 +233,10 @@ modelos:
       - "/fotos/gran-bosco/c-166-3.jpg"
   - nombre: "B-9-191"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 4
     construccion: 191
@@ -213,6 +253,10 @@ modelos:
       - "/fotos/gran-bosco/b-191-3.jpg"
   - nombre: "G-11-190"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 190
@@ -228,6 +272,10 @@ modelos:
       - "/fotos/gran-bosco/g-190-2.jpg"
   - nombre: "E-11-203"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 203
@@ -243,6 +291,10 @@ modelos:
       - "/fotos/gran-bosco/e-203-2.jpg"
   - nombre: "E-11-188"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 4.5
     construccion: 188

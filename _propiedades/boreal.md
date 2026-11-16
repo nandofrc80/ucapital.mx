@@ -27,6 +27,9 @@ amenidades:
 modelos:
   - nombre: "Aurora"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
     recamaras: 2
     banos: 2.5
     construccion: 104
@@ -45,6 +48,9 @@ modelos:
       - /fotos/boreal/aurora-5.jpg
   - nombre: "Aurora Plus"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "algunas"
     recamaras: 3
     banos: 2.5
     construccion: 118

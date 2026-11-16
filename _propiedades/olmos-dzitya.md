@@ -40,6 +40,10 @@ amenidades:
 modelos:
   - nombre: "Olmos"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3.5
     construccion: 164

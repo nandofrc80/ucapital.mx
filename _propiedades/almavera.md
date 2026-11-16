@@ -40,6 +40,10 @@ amenidades:
 modelos:
   - nombre: "Almavera TH"
     niveles: "2 plantas + rooftop"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 3
     construccion: 166

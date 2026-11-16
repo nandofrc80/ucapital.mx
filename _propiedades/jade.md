@@ -35,6 +35,9 @@ amenidades:
 modelos:
   - nombre: "115"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
     recamaras: 3
     banos: 2
     construccion: 115

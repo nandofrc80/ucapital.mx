@@ -43,6 +43,9 @@ amenidades:
 modelos:
   - nombre: "Kita"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "no"
     recamaras: 2
     banos: 1
     construccion: 79
@@ -62,6 +65,9 @@ modelos:
       - /fotos/cumbres-novonorte/kita-7.jpg
   - nombre: "Abi 2"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
     recamaras: 2
     banos: 2.5
     construccion: 100
@@ -77,6 +83,9 @@ modelos:
       - /fotos/cumbres-novonorte/abi-3.jpg
   - nombre: "Cervino"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
     recamaras: 2
     banos: 1.5
     construccion: 131
@@ -92,6 +101,9 @@ modelos:
       - /fotos/cumbres-novonorte/cervino-3.jpg
   - nombre: "Balbi"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
     recamaras: 3
     banos: 2.5
     construccion: 131
@@ -107,6 +119,9 @@ modelos:
       - /fotos/cumbres-novonorte/balbi-3.jpg
   - nombre: "Guna"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "no"
     recamaras: 3
     banos: 2.5
     construccion: 127
@@ -122,6 +137,9 @@ modelos:
       - /fotos/cumbres-novonorte/guna-3.jpg
   - nombre: "Dome"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
     recamaras: 3
     banos: 2.5
     construccion: 152
@@ -136,6 +154,9 @@ modelos:
       - /fotos/cumbres-novonorte/dome-1.jpg
   - nombre: "Elbrus"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "no"
     recamaras: 3
     banos: 2.5
     construccion: 167
@@ -151,6 +172,9 @@ modelos:
       - /fotos/cumbres-novonorte/elbrus-3.jpg
   - nombre: "Hito"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "no"
     recamaras: 3
     banos: 3.5
     construccion: 138

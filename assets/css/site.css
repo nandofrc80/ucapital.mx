@@ -229,6 +229,19 @@ p { margin: 0 0 1em; }
 .filtros { grid-template-columns: repeat(6, 1fr) auto; }
 .filtros label:nth-of-type(6) { border-right: 0; }
 .filtros .btn { align-self: center; }
+.filtros__mas { grid-column: 1 / -1; border-top: 1px solid var(--line); padding: 4px 14px 2px; }
+.filtros__mas summary { cursor: pointer; list-style: none; padding: 10px 0 6px; font-size: .82rem; font-weight: 600; letter-spacing: .06em; color: var(--navy); }
+.filtros__mas summary::-webkit-details-marker { display: none; }
+.filtros__mas summary::before { content: "+"; display: inline-block; width: 1.1em; color: var(--gold, #B89968); font-weight: 700; }
+.filtros__mas[open] summary::before { content: "−"; }
+.filtros__mas summary [data-mas-n]:not(:empty) { background: var(--navy); color: #fff; border-radius: 999px; padding: 1px 8px; font-size: .7rem; margin-left: 6px; letter-spacing: 0; text-transform: none; }
+.filtros__mas-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; align-items: end; }
+.filtros__mas-grid label { padding-inline: 0 14px; }
+.filtros__mas-grid label:nth-of-type(5) { border-right: 0; }
+.filtros .filtros__check { flex-direction: row; align-items: center; gap: 8px; cursor: pointer; }
+.filtros__check input { width: 18px; height: 18px; accent-color: var(--navy); flex: none; }
+.filtros__check span { text-transform: none !important; letter-spacing: 0 !important; font-size: .9rem !important; color: var(--navy) !important; }
+.filtros__nota { margin: 8px 0 6px; font-size: .76rem; color: var(--ink-soft); }
 
 /* ---------- Nosotros ---------- */
 .about { display: grid; grid-template-columns: .95fr 1.05fr; gap: 80px; align-items: center; }
@@ -446,6 +459,8 @@ p { margin: 0 0 1em; }
   .filtros { grid-template-columns: repeat(3, 1fr); }
   .filtros label:nth-of-type(3n) { border-right: 0; }
   .filtros label { border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .filtros__mas-grid { grid-template-columns: repeat(3, 1fr); }
+  .filtros__mas-grid label { border-bottom: 0; }
   .ficha { grid-template-columns: 1fr 340px; gap: 40px; }
   .modelos { grid-template-columns: 1fr; }
   .modelo { grid-template-columns: 1.1fr 1fr; }
@@ -511,6 +526,7 @@ p { margin: 0 0 1em; }
   .filtros { grid-template-columns: 1fr 1fr; }
   .filtros label { border-right: 0 !important; }
   .filtros .btn { grid-column: 1 / -1; }
+  .filtros__mas-grid { grid-template-columns: 1fr 1fr; }
   .ficha__amen ul { grid-template-columns: 1fr; }
   .modelo { grid-template-columns: 1fr; }
   .modelo__media { aspect-ratio: 16 / 10; min-height: 0; }

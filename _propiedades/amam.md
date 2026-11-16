@@ -38,6 +38,9 @@ amenidades:
 modelos:
   - nombre: "Amam 184"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "no"
+    alberca: "si"
     recamaras: 3
     banos: 3.5
     construccion: 184

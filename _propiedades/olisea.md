@@ -47,6 +47,10 @@ amenidades:
 modelos:
   - nombre: "Nodox A"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 4
     construccion: 215
@@ -74,6 +78,10 @@ modelos:
       - "/fotos/olisea/nodox-foto-alberca.jpg"
   - nombre: "Olivos"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 4.5
     construccion: 230
@@ -101,6 +109,10 @@ modelos:
       - "/fotos/olisea/olivos-patio-2.jpg"
   - nombre: "Nodox B"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 5
     construccion: 234

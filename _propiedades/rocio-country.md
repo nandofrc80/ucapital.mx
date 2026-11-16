@@ -44,6 +44,10 @@ amenidades:
 modelos:
   - nombre: "220"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 2
     banos: 3.5
     construccion: 220
@@ -65,6 +69,10 @@ modelos:
       - "/fotos/rocio-country/220-foto-alberca.jpg"
   - nombre: "270"
     niveles: "1 planta"
+    plantas: 1
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 3
     banos: 4.5
     construccion: 270
@@ -89,6 +97,10 @@ modelos:
       - "/fotos/rocio-country/270-foto-jardin.jpg"
   - nombre: "301"
     niveles: "2 plantas"
+    plantas: 2
+    recamara_pb: "si"
+    alberca: "si"
+    cochera_techada: "si"
     recamaras: 4
     banos: 5.5
     construccion: 301
