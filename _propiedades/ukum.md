@@ -16,6 +16,7 @@ resumen: "Privada residencial en Conkal Norte con casas de una sola planta dise�
 precios_actualizados: "Noviembre de 2026"
 apartado: "Aparta con $20,000 MXN."
 enganche: "10% a la firma de la promesa de compraventa."
+financiamiento: "Recursos propios, crédito bancario o Infonavit Total. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/ukum/01-fachada.jpg
 fotos:
   - /fotos/ukum/01-fachada.jpg
@@ -79,6 +80,7 @@ modelos:
 "en":
   "apartado": "Reserve with $20,000 MXN."
   "enganche": "10% when signing the purchase agreement."
+  "financiamiento": "Your own funds, bank mortgage or Infonavit Total. We'll walk you through the options and requirements at no cost."
   "entrega": "February–March 2027 and July–August 2027"
   "resumen": "A gated community in Conkal Norte with single-story homes designed by architect Gerard Boyancé: 3 bedrooms with full bathrooms, private pool, staff quarters and lots from 360 to 465 m², plus an air-conditioned clubhouse, padel, pickleball and soccer courts, playground and pet park."
   "amenidades":
