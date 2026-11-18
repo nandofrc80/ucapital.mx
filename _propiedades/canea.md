@@ -19,7 +19,7 @@ promociones:
     en: "Buen Mes promo: $30,000 off your apartment. Equipped apartments from $1,820,000."
     hasta: "2026-11-30"
 apartado: "Aparta con $10,000 MXN (válido por 10 días naturales; si solicitas la devolución, el reembolso tarda hasta 60 días naturales)."
-enganche: "Desde 15% de enganche y el saldo contra entrega. Te confirmamos el esquema vigente al apartar."
+enganche: "10% de enganche y el 90% restante contra entrega."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/canea/01-fachada.jpg
 fotos:
@@ -98,7 +98,7 @@ modelos:
 "en":
   "entrega": "December 2026 to March 2027 (estimated)"
   "apartado": "Reserve with $10,000 MXN (valid for 10 calendar days; if you request a refund, it takes up to 60 calendar days)."
-  "enganche": "From 15% down payment, balance at delivery. We'll confirm the current payment plan when you reserve."
+  "enganche": "10% down payment and the remaining 90% at delivery."
   "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "resumen": "A boutique building of 26 apartments in Temozón Norte, surrounded by greenery: one- and two-bedroom apartments with travertine marble floors, equipped kitchen and covered parking, plus a social rooftop, gatehouse and electric gate."
   "amenidades":
