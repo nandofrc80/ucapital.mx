@@ -391,6 +391,7 @@ p { margin: 0 0 1em; }
 
 /* Modelos */
 .actualizado { display: inline-flex; align-items: center; gap: 8px; font-size: .88rem; color: var(--gold-dark) !important; }
+.actualizado__nota { margin: 4px 0 0; font-size: .8rem; line-height: 1.4; color: var(--ink-soft); max-width: 360px; }
 .modelos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
 .modelo { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; display: grid; grid-template-columns: 1fr; box-shadow: var(--shadow-sm); transition: box-shadow .3s, transform .3s; }
 .modelo:hover { box-shadow: var(--shadow); transform: translateY(-3px); }

@@ -110,7 +110,7 @@ body_class: pagina-propiedad
         <p class="eyebrow">{{ T.modelos_eyebrow }}</p>
         <h2>{% if p.tipo == "Departamento" %}{{ T.modelos_titulo_depto }}{% else %}{{ T.modelos_titulo }}{% endif %}</h2>
       </div>
-      {%- if p.precios_actualizados %}<div class="section__head-side"><p class="actualizado">{% include icono.html n="calendario" %}{{ T.precios_actualizados }}: {% include fecha.html t=p.precios_actualizados %}</p></div>{% endif %}
+      {%- if p.precios_actualizados %}<div class="section__head-side"><p class="actualizado">{% include icono.html n="calendario" %}{{ T.precios_actualizados }}: {% include fecha.html t=p.precios_actualizados %}</p><p class="actualizado__nota">{{ T.precios_aviso }}</p></div>{% endif %}
     </header>
     <div class="modelos">
       {%- for m in p.modelos %}
