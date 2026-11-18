@@ -6,6 +6,8 @@ es:
   base: ""
   titulo_sitio: "U·Capital Inmobiliaria — El hogar que mereces vivir en Mérida"
   en_zona: "en"
+  en_venta: "en venta"
+  tipos_venta: { Casa: "Casas en venta", Departamento: "Departamentos en venta", Townhouse: "Townhouses en venta", Terreno: "Terrenos en venta" }
   nav_propiedades: "Propiedades"
   nav_nosotros: "Nosotros"
   nav_zonas: "Vivir en Mérida"
@@ -150,6 +152,8 @@ en:
   base: "/en"
   titulo_sitio: "U·Capital Real Estate — Find the home you deserve in Mérida, Mexico"
   en_zona: "in"
+  en_venta: "for sale"
+  tipos_venta: { Casa: "Homes for sale", Departamento: "Apartments for sale", Townhouse: "Townhouses for sale", Terreno: "Land for sale" }
   nav_propiedades: "Properties"
   nav_nosotros: "About us"
   nav_zonas: "Areas"

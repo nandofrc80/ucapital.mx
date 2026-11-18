@@ -22,6 +22,9 @@ collections:
   notas:
     output: true
     permalink: /guia/:name/
+  listados:
+    output: true
+    permalink: /:name/
 
 defaults:
   - scope:
@@ -35,6 +38,13 @@ defaults:
     values:
       layout: nota
       alt: "/en/"
+  - scope:
+      path: ""
+      type: listados
+    values:
+      layout: listado
+      alt: "/en/propiedades/"
+      sin_en: true
 
 markdown: kramdown
 exclude:

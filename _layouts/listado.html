@@ -1,0 +1,62 @@
+---
+layout: default
+---
+{%- comment -%}
+  Páginas de búsqueda: "Casas en venta en Conkal", "Departamentos en venta en Temozón Norte", etc.
+  Cada archivo en _listados/ genera una página en ucapital.mx/<nombre-del-archivo>/
+  La lista de desarrollos se arma SOLA con los filtros del encabezado del archivo:
+    tipo:       Casa | Departamento (vacío = todos)
+    zonas:      lista de zonas tal como aparecen en el campo "zona" de cada desarrollo (vacío = todas)
+    estatus:    Preventa | Entrega inmediata (vacío = todos)
+    una_planta: true = solo desarrollos con al menos un modelo de una planta
+  Al publicar un desarrollo nuevo, aparece aquí automáticamente si cumple los filtros.
+{%- endcomment -%}
+{%- include lang.html -%}
+{%- assign publicadas = site.propiedades | where_exp: "o", "o.publicado != false" | sort: "orden" -%}
+{%- assign lista = "" | split: "" -%}
+{%- for o in publicadas -%}
+  {%- assign ok = true -%}
+  {%- if page.tipo and o.tipo != page.tipo %}{% assign ok = false %}{% endif -%}
+  {%- if page.zonas and page.zonas.size > 0 %}{% unless page.zonas contains o.zona %}{% assign ok = false %}{% endunless %}{% endif -%}
+  {%- if page.estatus and o.estatus != page.estatus %}{% assign ok = false %}{% endif -%}
+  {%- if page.una_planta %}{% assign _up = o.modelos | where: "plantas", 1 | size %}{% if _up == 0 %}{% assign ok = false %}{% endif %}{% endif -%}
+  {%- if ok %}{% assign lista = lista | push: o %}{% endif -%}
+{%- endfor -%}
+{%- assign _todos = site.listados | sort: "orden" -%}
+{%- assign otros = "" | split: "" -%}
+{%- for x in _todos %}{% if x.url != page.url %}{% assign otros = otros | push: x %}{% endif %}{% endfor -%}
+{%- capture wa_txt %}Hola, vi en ucapital.mx la página de {{ page.titulo }} y quiero más información.{% endcapture -%}
+
+<section class="page-head">
+  <div class="shell">
+    <nav class="migas" aria-label="Ruta"><a href="{{ '/' | relative_url }}">Inicio</a><span>/</span><a href="{{ '/propiedades/' | relative_url }}">Propiedades</a><span>/</span><span aria-current="page">{{ page.titulo }}</span></nav>
+    <p class="eyebrow">{{ page.eyebrow | default: "Propiedades en venta" }}</p>
+    <h1>{{ page.h1 | default: page.titulo }}</h1>
+    {{ content }}
+    <p class="listado__cuenta">{{ lista.size }} {% if lista.size == 1 %}desarrollo publicado{% else %}desarrollos publicados{% endif %} · Precios actualizados cada quince días</p>
+    {%- if page.nota %}{% assign _n = site.notas | where: "slug", page.nota | first %}{% if _n %}<p class="listado__zona"><a class="ficha__zona" href="{{ _n.url | relative_url }}">Conoce la zona: {{ _n.titulo_corto | default: _n.titulo }} {% include icono.html n="flecha" %}</a></p>{% endif %}{% endif %}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="shell">
+    <div class="grid">
+      {%- for o in lista %}
+      {% include tarjeta.html p=o %}
+      {%- endfor %}
+    </div>
+
+    <div class="listado__cta">
+      <p><strong>¿No ves lo que buscas?</strong>Tenemos acceso a más de 100 proyectos en Mérida y la costa yucateca. Cuéntanos tu presupuesto y te mandamos opciones, aunque no estén publicadas aquí. La asesoría es sin costo para el comprador.</p>
+      <a class="btn btn--wa" href="https://wa.me/{{ site.whatsapp }}?text={{ wa_txt | strip | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}Escríbenos por WhatsApp</a>
+    </div>
+
+    {%- if otros.size > 0 %}
+    <div class="section__head" style="margin-top:48px"><div><p class="eyebrow">Otras búsquedas</p></div></div>
+    <nav class="busquedas" aria-label="Otras búsquedas">
+      {%- for x in otros %}<a class="chip-btn" href="{{ x.url | relative_url }}">{{ x.corto | default: x.titulo }}</a>{% endfor %}
+      <a class="chip-btn" href="{{ '/propiedades/' | relative_url }}">Ver todas las propiedades</a>
+    </nav>
+    {%- endif %}
+  </div>
+</section>

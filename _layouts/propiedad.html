@@ -46,9 +46,10 @@ body_class: pagina-propiedad
   <div class="shell ficha">
     <div class="ficha__main">
       <p class="card__tipo">{{ p_tipo }}{% if p.estatus %} · {{ p_est }}{% endif %}{% if n_modelos > 0 %} · {{ n_modelos }} {% if n_modelos == 1 %}{{ T.modelo | downcase }}{% else %}{{ T.modelos }}{% endif %}{% endif %}</p>
-      <h1 class="ficha__title">{{ p.nombre }}</h1>
+      <h1 class="ficha__title">{{ p.nombre }}<span class="ficha__sub">{{ T.tipos_venta[p.tipo] | default: p_tipo }} {{ T.en_zona }} {{ p.zona }}</span></h1>
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
       {%- if L == "es" %}{% for z in site.data.zonas %}{% if z.coincide contains p.zona %}<a class="ficha__zona" href="{{ '/guia/' | append: z.nota | append: '/' | relative_url }}">Conoce la zona: {{ z.es.nombre }} {% include icono.html n="flecha" %}</a>{% break %}{% endif %}{% endfor %}{% endif %}
+      {%- if L == "es" %}{% for ls in site.listados %}{% if ls.zonas %}{% if ls.tipo == nil or ls.tipo == p.tipo %}{% if ls.zonas contains p.zona %}<a class="ficha__zona" href="{{ ls.url | relative_url }}">Ver más {{ T.tipos_venta[p.tipo] | downcase }} en {{ ls.lugar }} {% include icono.html n="flecha" %}</a>{% break %}{% endif %}{% endif %}{% endif %}{% endfor %}{% endif %}
       {%- if p.mapa %}<a class="ficha__mapa" href="{{ p.mapa }}" target="_blank" rel="noopener">{% include icono.html n="pin" %}{{ T.ver_mapa }} {% include icono.html n="flecha" %}</a>{% endif %}
       {%- for mp in p.mapas %}{% if mp.url %}<a class="ficha__mapa" href="{{ mp.url }}" target="_blank" rel="noopener">{% include icono.html n="pin" %}{{ T.ver_mapa }}{% if mp.nombre %} · {{ mp.nombre }}{% endif %} {% include icono.html n="flecha" %}</a>{% endif %}{% endfor %}
       <div class="ficha__movil">

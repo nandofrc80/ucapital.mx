@@ -19,7 +19,7 @@ permalink: /sitemap.xml
   </url>
 {%- endfor -%}
 {%- endfor %}
-{%- assign guia = "/guia/" | split: "," -%}{%- for n in site.notas -%}{%- unless n.borrador -%}{%- assign guia = guia | push: n.url -%}{%- endunless -%}{%- endfor -%}
+{%- assign guia = "/guia/" | split: "," -%}{%- for l in site.listados -%}{%- assign guia = guia | push: l.url -%}{%- endfor -%}{%- for n in site.notas -%}{%- unless n.borrador -%}{%- assign guia = guia | push: n.url -%}{%- endunless -%}{%- endfor -%}
 {%- for x in guia %}
   <url>
     <loc>{{ x | absolute_url }}</loc>

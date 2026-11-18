@@ -16,6 +16,10 @@ alt: "/en/propiedades/"
     <p class="eyebrow">Propiedades</p>
     <h1>Encuentra tu <em>próximo hogar</em> en Mérida.</h1>
     <p>Una selección de desarrollos que conocemos a fondo. Si no ves lo que buscas, escríbenos: tenemos acceso a más de 100 proyectos.</p>
+    <nav class="busquedas" aria-label="Búsquedas populares">
+      {%- assign _ls = site.listados | sort: "orden" -%}
+      {%- for x in _ls %}<a class="chip-btn" href="{{ x.url | relative_url }}">{{ x.corto | default: x.titulo }}</a>{% endfor %}
+    </nav>
   </div>
 </section>
 
