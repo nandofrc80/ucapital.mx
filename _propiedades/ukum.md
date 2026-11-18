@@ -14,6 +14,8 @@ precio_desde: true
 entrega: "Febrero–marzo 2027 y julio–agosto 2027"
 resumen: "Privada residencial en Conkal Norte con casas de una sola planta diseñadas por el arquitecto Gerard Boyancé: 3 recámaras con baño completo, alberca privada, cuarto de servicio y terrenos de 360 a 465 m², con casa club climatizada, canchas de pádel, pickleball y fútbol, parque infantil y pet park."
 precios_actualizados: "Noviembre de 2026"
+apartado: "Aparta con $20,000 MXN."
+enganche: "10% a la firma de la promesa de compraventa."
 portada: /fotos/ukum/01-fachada.jpg
 fotos:
   - /fotos/ukum/01-fachada.jpg
@@ -75,6 +77,8 @@ modelos:
       - "/fotos/ukum/16-terraza-alberca.jpg"
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
+  "apartado": "Reserve with $20,000 MXN."
+  "enganche": "10% when signing the purchase agreement."
   "entrega": "February–March 2027 and July–August 2027"
   "resumen": "A gated community in Conkal Norte with single-story homes designed by architect Gerard Boyancé: 3 bedrooms with full bathrooms, private pool, staff quarters and lots from 360 to 465 m², plus an air-conditioned clubhouse, padel, pickleball and soccer courts, playground and pet park."
   "amenidades":
