@@ -17,6 +17,7 @@ precios_actualizados: "Noviembre de 2026"
 promociones:
   - texto: "Precio especial en los modelos Duo ($2,750,000) y Duo Plus ($3,010,000), con equipamiento y amueblado incluidos."
     en: "Special pricing on the Duo ($2,750,000) and Duo Plus ($3,010,000) models, with appliances and furniture included."
+    hasta: "2026-11-30"
 apartado: "Aparta con $20,000 MXN (si solicitas la devolución, el reembolso tarda hasta 45 días naturales). La promesa de compraventa se firma dentro de los 7 días siguientes al apartado."
 enganche: "20% de enganche y el saldo contra entrega."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
