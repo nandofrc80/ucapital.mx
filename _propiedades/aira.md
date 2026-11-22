@@ -58,6 +58,10 @@ modelos:
     entrega: "Julio 2026"
     disponibles: 4
     descripcion: "Lotes de 279.92 a 323.21 m² con frente de 11.20 m, en la etapa con caseta de acceso, barda perimetral, calles de concreto hidráulico, banquetas, alumbrado y servicios subterráneos de luz, agua, voz y datos. Precio de lista a $4,850 por m²; de contado, desde $1,189,660."
+    fotos:
+      - "/fotos/aira/acceso.jpg"
+      - "/fotos/aira/aerea.jpg"
+      - "/fotos/aira/plaza.jpg"
   - nombre: "Etapa 2"
     niveles: "Frente de 11 m"
     terreno: 265.10
@@ -67,6 +71,10 @@ modelos:
     entrega: "Julio 2027"
     disponibles: 31
     descripcion: "Lotes de 265.10 a 314.89 m²; la mayoría de 11 × 25 m (275 m²). Precio de lista a $4,850 por m²; de contado, desde $1,126,675. Las amenidades de la privada se entregan junto con esta etapa."
+    fotos:
+      - "/fotos/aira/canchas-aerea.jpg"
+      - "/fotos/aira/alberca.jpg"
+      - "/fotos/aira/padel-real.jpg"
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "July 2026 to July 2027"

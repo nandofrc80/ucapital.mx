@@ -58,6 +58,10 @@ modelos:
     entrega: "Inmediata"
     disponibles: 28
     descripcion: "Lotes unifamiliares de 224.98 a 385.13 m², la mayoría de 225 a 275 m². Precio de lista a $4,975 por m²; de contado ($4,475 por m²), desde $1,006,786."
+    fotos:
+      - "/fotos/alma-residencial/aerea.jpg"
+      - "/fotos/alma-residencial/acceso-real.jpg"
+      - "/fotos/alma-residencial/parque.jpg"
   - nombre: "Premium"
     niveles: "Unifamiliar premium"
     terreno: 224.99
@@ -67,6 +71,10 @@ modelos:
     entrega: "Inmediata"
     disponibles: 3
     descripcion: "Lotes unifamiliares premium de 224.99 a 284.07 m². Precio de lista a $5,425 por m²; de contado ($4,875 por m²), desde $1,096,826."
+    fotos:
+      - "/fotos/alma-residencial/parque.jpg"
+      - "/fotos/alma-residencial/aerea.jpg"
+      - "/fotos/alma-residencial/pista.jpg"
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "Immediate"
