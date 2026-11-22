@@ -224,6 +224,9 @@ content:
           - name: terreno_desde
             label: El terreno es "desde" (varía por lote)
             type: boolean
+          - name: terreno_max
+            label: m² de terreno máximo (terrenos con lotes de varias medidas)
+            type: number
           - name: estacionamientos
             label: Autos en cochera
             type: number

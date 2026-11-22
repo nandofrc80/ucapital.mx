@@ -18,6 +18,7 @@ body_class: pagina-propiedad
 {%- if fotos == nil or fotos.size == 0 %}{% assign fotos = "" | split: "" | push: p.portada %}{% endif -%}
 {%- assign n_fotos = fotos | size -%}
 {%- assign n_modelos = p.modelos | size -%}
+{%- assign es_lote = false -%}{%- if p.tipo == "Terreno" %}{% assign es_lote = true %}{% endif -%}
 {%- assign wa_texto = T.wa_propiedad | replace: "__nombre__", p.nombre | replace: "__tipo__", p_tipo | replace: "__zona__", p.zona -%}
 {%- capture wa_url %}https://wa.me/{{ site.whatsapp }}?text={{ wa_texto | strip | url_encode | replace: "+", "%20" }}{% endcapture -%}
 
@@ -45,7 +46,7 @@ body_class: pagina-propiedad
 <section class="section section--tight">
   <div class="shell ficha">
     <div class="ficha__main">
-      <p class="card__tipo">{{ p_tipo }}{% if p.estatus %} · {{ p_est }}{% endif %}{% if n_modelos > 0 %} · {{ n_modelos }} {% if n_modelos == 1 %}{{ T.modelo | downcase }}{% else %}{{ T.modelos }}{% endif %}{% endif %}</p>
+      <p class="card__tipo">{{ p_tipo }}{% if p.estatus %} · {{ p_est }}{% endif %}{% if n_modelos > 0 and es_lote == false %} · {{ n_modelos }} {% if n_modelos == 1 %}{{ T.modelo | downcase }}{% else %}{{ T.modelos }}{% endif %}{% endif %}</p>
       <h1 class="ficha__title">{{ p.nombre }}<span class="ficha__sub">{{ T.tipos_venta[p.tipo] | default: p_tipo }} {{ T.en_zona }} {{ p.zona }}</span></h1>
       <p class="card__loc">{% include icono.html n="pin" %}{{ p.zona }}{% if p.ciudad %}, {{ p.ciudad }}{% endif %}</p>
       {%- if L == "es" %}{% for z in site.data.zonas %}{% if z.coincide contains p.zona %}<a class="ficha__zona" href="{{ '/guia/' | append: z.nota | append: '/' | relative_url }}">Conoce la zona: {{ z.es.nombre }} {% include icono.html n="flecha" %}</a>{% break %}{% endif %}{% endfor %}{% endif %}
@@ -107,8 +108,8 @@ body_class: pagina-propiedad
   <div class="shell">
     <header class="section__head">
       <div>
-        <p class="eyebrow">{{ T.modelos_eyebrow }}</p>
-        <h2>{% if p.tipo == "Departamento" %}{{ T.modelos_titulo_depto }}{% else %}{{ T.modelos_titulo }}{% endif %}</h2>
+        <p class="eyebrow">{% if es_lote %}{{ T.lotes_eyebrow }}{% else %}{{ T.modelos_eyebrow }}{% endif %}</p>
+        <h2>{% if es_lote %}{{ T.lotes_titulo }}{% elsif p.tipo == "Departamento" %}{{ T.modelos_titulo_depto }}{% else %}{{ T.modelos_titulo }}{% endif %}</h2>
       </div>
       {%- if p.precios_actualizados %}<div class="section__head-side"><p class="actualizado">{% include icono.html n="calendario" %}{{ T.precios_actualizados }}: {% include fecha.html t=p.precios_actualizados %}</p><p class="actualizado__nota">{{ T.precios_aviso }}</p></div>{% endif %}
     </header>
@@ -116,7 +117,8 @@ body_class: pagina-propiedad
       {%- for m in p.modelos %}
       {%- assign m_fotos = m.fotos | default: "" -%}
       {%- assign m_slug = m.nombre | slugify -%}
-      {%- assign m_wa = T.wa_modelo | replace: "__modelo__", m.nombre | replace: "__nombre__", p.nombre -%}
+      {%- if es_lote %}{% assign m_wa_t = T.wa_lote %}{% else %}{% assign m_wa_t = T.wa_modelo %}{% endif -%}
+      {%- assign m_wa = m_wa_t | replace: "__modelo__", m.nombre | replace: "__nombre__", p.nombre -%}
       {%- if X.modelos %}{% assign mx = X.modelos[forloop.index0] %}{% else %}{% assign mx = nil %}{% endif -%}
       {%- assign m_niv = mx.niveles | default: T.niveles[m.niveles] | default: m.niveles -%}
       {%- assign m_desc = mx.descripcion | default: m.descripcion -%}
@@ -127,28 +129,30 @@ body_class: pagina-propiedad
           {%- if m.fotos.size > 1 %}<span class="card__count">{% include icono.html n="fotos" %}{{ m.fotos.size }}</span>{% endif %}
         </button>
         <div class="modelo__body">
-          <p class="card__tipo">{{ T.modelo }}{% if m.niveles %} · {{ m_niv }}{% endif %}</p>
+          <p class="card__tipo">{% if es_lote %}{{ T.lote }}{% else %}{{ T.modelo }}{% endif %}{% if m.niveles %} · {{ m_niv }}{% endif %}</p>
           <h3 class="modelo__title">{{ m.nombre }}</h3>
           <p class="precio">{% include precio.html p=p monto=m.precio desde=true %}</p>
           <ul class="specs specs--modelo">
-            <li>{% include icono.html n="cama" %}<span>{{ m.recamaras }}{% if m.recamaras_max and m.recamaras_max > m.recamaras %}<em>–{{ m.recamaras_max }}</em>{% endif %}</span><small>{{ T.recamaras }}</small></li>
-            <li>{% include icono.html n="regadera" %}<span>{{ m.banos }}</span><small>{{ T.banos }}</small></li>
+            {%- if m.recamaras %}
+            <li>{% include icono.html n="cama" %}<span>{{ m.recamaras }}{% if m.recamaras_max and m.recamaras_max > m.recamaras %}<em>–{{ m.recamaras_max }}</em>{% endif %}</span><small>{{ T.recamaras }}</small></li>{% endif %}
+            {%- if m.banos %}
+            <li>{% include icono.html n="regadera" %}<span>{{ m.banos }}</span><small>{{ T.banos }}</small></li>{% endif %}
             {%- if m.construccion %}
             <li>{% include icono.html n="construccion" %}<span>{{ m.construccion }}{% if m.construccion_max and m.construccion_max > m.construccion %}<em>–{{ m.construccion_max }}</em>{% endif %}</span><small>{{ T.m2_constr }}</small></li>{% endif %}
             {%- if m.terreno %}
-            <li>{% include icono.html n="terreno" %}<span>{{ m.terreno }}</span><small>{% if m.terreno_desde %}{{ T.m2_terr_min }}{% else %}{{ T.m2_terreno }}{% endif %}</small></li>{% endif %}
+            <li>{% include icono.html n="terreno" %}<span>{{ m.terreno }}{% if m.terreno_max and m.terreno_max > m.terreno %}<em>–{{ m.terreno_max }}</em>{% endif %}</span><small>{% if m.terreno_desde %}{{ T.m2_terr_min }}{% else %}{{ T.m2_terreno }}{% endif %}</small></li>{% endif %}
             {%- if m.estacionamientos and m.estacionamientos > 0 %}<li>{% include icono.html n="auto" %}<span>{{ m.estacionamientos }}</span><small>{{ T.autos }}</small></li>{% endif %}
           </ul>
           {%- assign m_ent = mx.entrega | default: m.entrega -%}
-          {%- if m_ent or m.disponibles %}<p class="modelo__disp">{% if m_ent %}{% include icono.html n="calendario" %}<span><strong>{{ T.entrega }}:</strong> {% include fecha.html t=m_ent %}</span>{% endif %}{% if m.disponibles %}<span class="modelo__n">{{ m.disponibles }} {% if p.tipo == "Departamento" %}{% if m.disponibles == 1 %}{{ T.depa_disponible }}{% else %}{{ T.depas_disponibles }}{% endif %}{% elsif m.disponibles == 1 %}{{ T.casa_disponible }}{% else %}{{ T.casas_disponibles }}{% endif %}</span>{% endif %}</p>{% endif %}
+          {%- if m_ent or m.disponibles %}<p class="modelo__disp">{% if m_ent %}{% include icono.html n="calendario" %}<span><strong>{{ T.entrega }}:</strong> {% include fecha.html t=m_ent %}</span>{% endif %}{% if m.disponibles %}<span class="modelo__n">{{ m.disponibles }} {% if es_lote %}{% if m.disponibles == 1 %}{{ T.lote_disponible }}{% else %}{{ T.lotes_disponibles }}{% endif %}{% elsif p.tipo == "Departamento" %}{% if m.disponibles == 1 %}{{ T.depa_disponible }}{% else %}{{ T.depas_disponibles }}{% endif %}{% elsif m.disponibles == 1 %}{{ T.casa_disponible }}{% else %}{{ T.casas_disponibles }}{% endif %}</span>{% endif %}</p>{% endif %}
           {%- if m_desc %}<p class="modelo__desc">{{ m_desc }}</p>{% endif %}
           {%- if m_adic %}<p class="modelo__extra"><strong>{{ T.adicionales }}:</strong> {{ m_adic }}</p>{% endif %}
-          <a class="btn btn--outline btn--sm modelo__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ m_wa | strip | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{{ T.me_interesa_modelo }} {{ m.nombre }}</a>
+          <a class="btn btn--outline btn--sm modelo__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ m_wa | strip | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">{% include icono.html n="whatsapp" %}{% if es_lote %}{{ T.me_interesa_lote }}{% else %}{{ T.me_interesa_modelo }}{% endif %} {{ m.nombre }}</a>
         </div>
       </article>
       {%- endfor %}
     </div>
-    <p class="modelos__nota">{% if p.tipo == "Departamento" %}{{ T.modelos_nota_depto }}{% else %}{{ T.modelos_nota }}{% endif %}</p>
+    <p class="modelos__nota">{% if es_lote %}{{ T.lotes_nota }}{% elsif p.tipo == "Departamento" %}{{ T.modelos_nota_depto }}{% else %}{{ T.modelos_nota }}{% endif %}</p>
   </div>
 </section>
 {%- endif %}
