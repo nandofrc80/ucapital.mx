@@ -12,7 +12,7 @@ mapa: "https://maps.app.goo.gl/hnSm7Ek1yykrZsmt6"
 precio: 0
 precio_desde: true
 entrega: "Inmediata"
-resumen: "Lotes urbanizados de 358 m² y más, a pie de calle y sin régimen de condominio, en Cholul, sobre la carretera Mérida–Chicxulub Puerto. Parque central con juegos infantiles, sin cuota de mantenimiento y financiamiento hasta 48 meses; acepta Infonavit."
+resumen: "Privada residencial en Cholul con lotes urbanizados de 358 m² y más, sin régimen de condominio, sobre la carretera Mérida–Chicxulub Puerto. Parque central con juegos infantiles, sin cuota de mantenimiento y financiamiento hasta 48 meses; acepta Infonavit."
 precios_actualizados: "22 de noviembre de 2026"
 promociones:
   - texto: "Descuento de contado: lotes desde $1,253,595 (el m² baja de $3,900 a $3,500 en lotes estándar y de $4,200 a $3,800 en lotes en esquina)."
@@ -70,7 +70,7 @@ modelos:
   "apartado": "Reserve with $10,000 MXN (refundable if requested within 7 days)."
   "enganche": "12-, 24-, 36- or 48-month plans: 10% down, 30% in monthly payments and the remaining 60% at the end of the term, with a deed under retention of title. Longer terms carry a higher price per m² ($3,900 to $4,500 on standard lots). Paying cash, you pay 100%."
   "financiamiento": "Your own funds, a bank mortgage or Infonavit (covering registration costs). We'll walk you through the options and requirements at no cost."
-  "resumen": "Serviced lots from 358 m², street-front with no condominium regime, in Cholul on the Mérida–Chicxulub Puerto highway. Central park with playground, no HOA fees and financing up to 48 months; Infonavit accepted."
+  "resumen": "A private residential community in Cholul with serviced lots from 358 m² and no condominium regime, on the Mérida–Chicxulub Puerto highway. Central park with playground, no HOA fees and financing up to 48 months; Infonavit accepted."
   "amenidades":
   - "Central park with playground"
   - "Green areas and walkways"
@@ -87,13 +87,13 @@ modelos:
     "entrega": "Immediate"
     "descripcion": "Corner lots from 536.63 to 569.77 m². 12-month price $4,200 per m²; paying cash ($3,800 per m²), from $2,039,194."
   "descripcion": |-
-    Alura Residencial is a development of 177 serviced residential lots in Cholul, north Mérida, with its entrance on the Mérida–Chicxulub Puerto highway — close to shopping, schools and services, and on the way to the beach. Lots are street-front and not under a condominium regime, so there's no HOA fee or reserve fund.
+    Alura Residencial is a private residential community of 177 serviced lots in Cholul, north Mérida, with its entrance on the Mérida–Chicxulub Puerto highway — close to shopping, schools and services, and on the way to the beach. Lots are not under a condominium regime, so there's no HOA fee or reserve fund.
 
     It's already an established community, with homes built and residents living there. Inside there's a central park with green areas, walkways and a playground, and retail spaces at the entrance. Lots come with power, street lighting, paved streets and JAPAY city water.
 
     Available lots are 358.17 m² (11 × 36.7 m), plus corner lots from 536 to 570 m², ready to build. Financing up to 48 months, bank mortgage or Infonavit — a good fit both for building now and for investing.
 ---
-Alura Residencial es un desarrollo de 177 lotes residenciales urbanizados en Cholul, al norte de Mérida, con entrada sobre la carretera Mérida–Chicxulub Puerto: cerca de plazas, escuelas y servicios, y de camino a la playa. Los lotes son a pie de calle y no están bajo régimen de condominio, así que no pagas cuota de mantenimiento ni fondo de reserva.
+Alura Residencial es una privada residencial de 177 lotes urbanizados en Cholul, al norte de Mérida, con entrada sobre la carretera Mérida–Chicxulub Puerto: cerca de plazas, escuelas y servicios, y de camino a la playa. Los lotes no están bajo régimen de condominio, así que no pagas cuota de mantenimiento ni fondo de reserva.
 
 Es una comunidad ya consolidada, con casas construidas y vecinos viviendo ahí. Adentro hay un parque central con áreas verdes, andadores y juegos infantiles, y en la entrada del desarrollo hay locales comerciales. Los lotes cuentan con energía eléctrica, alumbrado público, calles con carpeta asfáltica y agua potable de la JAPAY.
 
