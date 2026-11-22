@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a abril 2027"
 resumen: "Casas en privada con casa club y tres parques con más de 15 amenidades. Cuatro modelos de 2 a 4 recámaras al norte de Mérida."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "22 de noviembre de 2026"
 promociones:
   - texto: "Aires acondicionados de regalo en las recámaras (no incluye instalación)."
     en: "Air conditioners included in the bedrooms (installation not included)."

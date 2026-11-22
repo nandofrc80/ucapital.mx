@@ -3,7 +3,7 @@
 <div class="filtros__buscar">
   {% include icono.html n="buscar" %}
   <input type="search" name="q" list="lista-desarrollos" autocomplete="off" enterkeyhint="go"
-    placeholder="{% if _en %}Search by development or model (e.g. Aldoria, Nativa, Kita){% else %}Busca por desarrollo o modelo (ej. Aldoria, Nativa, Kita){% endif %}"
+    placeholder="{% if _en %}Search by development or model (e.g. Aldoria, Nativa, Hito){% else %}Busca por desarrollo o modelo (ej. Aldoria, Nativa, Hito){% endif %}"
     aria-label="{% if _en %}Search by name{% else %}Buscar por nombre{% endif %}">
   <datalist id="lista-desarrollos">{% assign _nombres = include.lista | map: "nombre" | uniq | sort %}{% for n in _nombres %}<option value="{{ n }}">{% endfor %}</datalist>
 </div>
