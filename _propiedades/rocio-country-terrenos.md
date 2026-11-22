@@ -89,4 +89,4 @@ Rocío Country Living es una privada exclusiva de solo 75 terrenos residenciales
 
 Las amenidades ya están construidas: casa club, albercas y canal de nado, gimnasio, business bar, canchas de pádel, área grill, área de fogata, juegos infantiles y kids club. Quedan los últimos cinco lotes, de 403 a 889 m², casi todos en esquina y todos con orientación norte-sur, listos para que construyas tu casa a tu gusto.
 
-Cuota de mantenimiento aproximada: $6.35 por m² al mes, sin fondo de reserva; el agua se paga aparte. Si prefieres una casa ya construida, revisa las [casas de Rocío Country Living](/en/propiedades/rocio-country/).
+Cuota de mantenimiento aproximada: $6.35 por m² al mes, sin fondo de reserva; el agua se paga aparte. Si prefieres una casa ya construida, revisa las [casas de Rocío Country Living](/propiedades/rocio-country/).
