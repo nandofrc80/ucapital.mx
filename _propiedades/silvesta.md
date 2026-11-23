@@ -14,9 +14,6 @@ precio_desde: true
 entrega: "Inmediata"
 resumen: "Privada de 196 lotes entre Cholul, Conkal y Chablekal, con casa club con alberca, canal de nado y jacuzzis, gimnasio, kids club, sport bar, dos canchas de pádel y cuatro parques temáticos. Lotes de 284 a 483 m² con entrega inmediata y hasta 24 meses de financiamiento."
 precios_actualizados: "22 de noviembre de 2026"
-promociones:
-  - texto: "Descuento de contado: lotes desde $1,004,263 (alrededor de $200 menos por m² que el plan a 12 meses)."
-    en: "Cash discount: lots from $1,004,263 (about $200 less per m² than the 12-month plan)."
 apartado: "Aparta con $10,000 MXN."
 enganche: "Planes a 12, 18 o 24 meses: 15% de enganche, mensualidades durante el plazo y el resto a la escrituración. A mayor plazo, mayor precio por m²."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
@@ -53,11 +50,11 @@ modelos:
     niveles: "Lotes irregulares"
     terreno: 283.69
     terreno_max: 483.28
-    precio: 1061001
-    precio_max: 1807467
+    precio: 1004263
+    precio_max: 1710811
     entrega: "Inmediata"
     disponibles: 22
-    descripcion: "Lotes de 283.69 a 483.28 m², la mayoría de 320 a 390 m². Precio a 12 meses de $3,440 a $3,740 por m² según la ubicación; de contado, desde $1,004,263."
+    descripcion: "Lotes de 283.69 a 483.28 m², la mayoría de 320 a 390 m². Precio de contado de $3,240 a $3,540 por m² según la ubicación; a 12 meses ($3,440 a $3,740 por m²), desde $1,061,001."
     fotos:
       - "/fotos/silvesta/plan-maestro.jpg"
       - "/fotos/silvesta/calle.jpg"
@@ -84,7 +81,7 @@ modelos:
   "modelos":
   - "niveles": "Irregular lots"
     "entrega": "Immediate"
-    "descripcion": "Lots from 283.69 to 483.28 m², most between 320 and 390 m². 12-month price $3,440 to $3,740 per m² depending on location; paying cash, from $1,004,263."
+    "descripcion": "Lots from 283.69 to 483.28 m², most between 320 and 390 m². Cash price $3,240 to $3,540 per m² depending on location; over 12 months ($3,440 to $3,740 per m²), from $1,061,001."
   "descripcion": |-
     Silvesta is a gated community of 196 residential lots in north Mérida, on the road from Chablekal to Conkal, between Cholul, Conkal and Chablekal — about 10 minutes from major shopping and services, surrounded by nature. It has acceleration and deceleration lanes for a safe entry and exit.
 

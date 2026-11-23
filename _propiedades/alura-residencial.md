@@ -14,9 +14,6 @@ precio_desde: true
 entrega: "Inmediata"
 resumen: "Lotes urbanizados de 358 m² y más, a pie de calle y sin régimen de condominio, en Cholul, sobre la carretera Mérida–Chicxulub Puerto. Parque central con juegos infantiles, sin cuota de mantenimiento y financiamiento hasta 48 meses; acepta Infonavit."
 precios_actualizados: "22 de noviembre de 2026"
-promociones:
-  - texto: "Descuento de contado: lotes desde $1,253,595 (el m² baja de $3,900 a $3,500 en lotes estándar y de $4,200 a $3,800 en lotes en esquina)."
-    en: "Cash discount: lots from $1,253,595 (price per m² drops from $3,900 to $3,500 on standard lots and from $4,200 to $3,800 on corner lots)."
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Planes a 12, 24, 36 o 48 meses: 10% de enganche, 30% en mensualidades y el 60% restante al final del plazo, con escritura con reserva de dominio. A mayor plazo, mayor precio por m² (de $3,900 a $4,500 en lotes estándar). De contado pagas el 100%."
 financiamiento: "Recursos propios, crédito bancario o Infonavit (cubriendo los gastos de inscripción). Te asesoramos sin costo con las opciones y requisitos."
@@ -44,11 +41,11 @@ modelos:
   - nombre: "Estándar"
     niveles: "11 × 36.7 m"
     terreno: 358.17
-    precio: 1396863
-    precio_max: 1396863
+    precio: 1253595
+    precio_max: 1253595
     entrega: "Inmediata"
     disponibles: 10
-    descripcion: "Lotes de 358.17 m² (11 m de frente por 36.7 m de fondo) sobre la calle 2. Precio a 12 meses a $3,900 por m²; de contado ($3,500 por m²), $1,253,595. A 48 meses, $1,611,765."
+    descripcion: "Lotes de 358.17 m² (11 m de frente por 36.7 m de fondo) sobre la calle 2. Precio de contado a $3,500 por m²: $1,253,595. A 12 meses ($3,900 por m²), $1,396,863; a 48 meses, $1,611,765."
     fotos:
       - "/fotos/alura-residencial/calle.jpg"
       - "/fotos/alura-residencial/aerea.jpg"
@@ -56,11 +53,11 @@ modelos:
     niveles: "Frente de 12 a 14 m"
     terreno: 536.63
     terreno_max: 569.77
-    precio: 2253846
-    precio_max: 2393034
+    precio: 2039194
+    precio_max: 2165126
     entrega: "Inmediata"
     disponibles: 3
-    descripcion: "Lotes en esquina de 536.63 a 569.77 m². Precio a 12 meses a $4,200 por m²; de contado ($3,800 por m²), desde $2,039,194."
+    descripcion: "Lotes en esquina de 536.63 a 569.77 m². Precio de contado a $3,800 por m²; a 12 meses ($4,200 por m²), desde $2,253,846."
     fotos:
       - "/fotos/alura-residencial/aerea.jpg"
       - "/fotos/alura-residencial/calle.jpg"
@@ -82,10 +79,10 @@ modelos:
   "modelos":
   - "niveles": "11 × 36.7 m"
     "entrega": "Immediate"
-    "descripcion": "358.17 m² lots (11 m frontage by 36.7 m deep) on Calle 2. 12-month price $3,900 per m²; paying cash ($3,500 per m²), $1,253,595. Over 48 months, $1,611,765."
+    "descripcion": "358.17 m² lots (11 m frontage by 36.7 m deep) on Calle 2. Cash price $3,500 per m²: $1,253,595. Over 12 months ($3,900 per m²), $1,396,863; over 48 months, $1,611,765."
   - "niveles": "12 to 14 m frontage"
     "entrega": "Immediate"
-    "descripcion": "Corner lots from 536.63 to 569.77 m². 12-month price $4,200 per m²; paying cash ($3,800 per m²), from $2,039,194."
+    "descripcion": "Corner lots from 536.63 to 569.77 m². Cash price $3,800 per m²; over 12 months ($4,200 per m²), from $2,253,846."
   "descripcion": |-
     Alura Residencial is a development of 177 serviced residential lots in Cholul, north Mérida, with its entrance on the Mérida–Chicxulub Puerto highway — close to shopping, schools and services, and on the way to the beach. Lots are street-front and not under a condominium regime, so there's no HOA fee or reserve fund.
 

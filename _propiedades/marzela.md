@@ -18,8 +18,6 @@ promociones:
   - texto: "Buen Mes: lotes de 212.96 m² a 60 meses, con 10% de enganche y mensualidades de $5,500; el saldo, contra entrega."
     en: "Buen Mes promo: 212.96 m² lots over 60 months, with 10% down and monthly payments of $5,500; the balance on delivery."
     hasta: "2026-11-30"
-  - texto: "Descuento de contado: el m² baja de $3,040 a $2,758.50. Lotes de contado desde $564,168."
-    en: "Cash discount: price per m² drops from $3,040 to $2,758.50. Lots from $564,168 paying cash."
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Planes a 12, 24, 36 o 48 meses sin intereses: 12% de enganche, mensualidades fijas y un saldo de alrededor del 40% contra entrega. A mayor plazo, mayor precio por m² (de $3,040 a $3,410). De contado: 80% a la firma y 20% contra entrega."
 financiamiento: "Recursos propios. Te asesoramos sin costo con el plan de pagos que más te convenga."
@@ -57,11 +55,11 @@ modelos:
     niveles: "204 a 234 m²"
     terreno: 204.52
     terreno_max: 234.39
-    precio: 621741
-    precio_max: 712546
+    precio: 564168
+    precio_max: 646565
     entrega: "Diciembre 2031"
     disponibles: 31
-    descripcion: "Lotes de 204.52 a 234.39 m², la mayoría de 212.96 m² (aplican a la promoción Buen Mes a 60 meses). Precio a 12 meses sin intereses a $3,040 por m²; de contado, desde $564,168."
+    descripcion: "Lotes de 204.52 a 234.39 m², la mayoría de 212.96 m² (aplican a la promoción Buen Mes a 60 meses). Precio de contado a $2,758.50 por m²; a 12 meses sin intereses ($3,040 por m²), desde $621,741."
     fotos:
       - "/fotos/marzela/acceso.jpg"
       - "/fotos/marzela/jardin.jpg"
@@ -69,11 +67,11 @@ modelos:
     niveles: "257 a 338 m²"
     terreno: 257.84
     terreno_max: 338.1
-    precio: 783834
-    precio_max: 1027824
+    precio: 711252
+    precio_max: 932649
     entrega: "Diciembre 2031"
     disponibles: 16
-    descripcion: "Lotes de 257.84 a 338.10 m², la mayoría de 266.20 m². Precio a 12 meses sin intereses a $3,040 por m²; de contado, desde $711,252."
+    descripcion: "Lotes de 257.84 a 338.10 m², la mayoría de 266.20 m². Precio de contado a $2,758.50 por m²; a 12 meses sin intereses ($3,040 por m²), desde $783,834."
     fotos:
       - "/fotos/marzela/casa-club.jpg"
       - "/fotos/marzela/alberca.jpg"
@@ -100,10 +98,10 @@ modelos:
   "modelos":
   - "niveles": "204 to 234 m²"
     "entrega": "December 2031"
-    "descripcion": "Lots from 204.52 to 234.39 m², most of them 212.96 m² (eligible for the 60-month Buen Mes promo). 12-month interest-free price $3,040 per m²; paying cash, from $564,168."
+    "descripcion": "Lots from 204.52 to 234.39 m², most of them 212.96 m² (eligible for the 60-month Buen Mes promo). Cash price $2,758.50 per m²; over 12 interest-free months ($3,040 per m²), from $621,741."
   - "niveles": "257 to 338 m²"
     "entrega": "December 2031"
-    "descripcion": "Lots from 257.84 to 338.10 m², most of them 266.20 m². 12-month interest-free price $3,040 per m²; paying cash, from $711,252."
+    "descripcion": "Lots from 257.84 to 338.10 m², most of them 266.20 m². Cash price $2,758.50 per m²; over 12 interest-free months ($3,040 per m²), from $783,834."
   "descripcion": |-
     Marzela is a gated community of 262 residential lots in Conkal, north Mérida — the city's fastest-growing area — with quick access to shopping, schools and services, and to the highway to Chicxulub Puerto beach, about 29 km away. Every lot faces north-south for better airflow and natural light.
 

@@ -14,9 +14,6 @@ precio_desde: true
 entrega: "Diciembre 2026"
 resumen: "Lotes a pie de calle en Santa Fe Norte (San Juan Bautista), entre el Periférico poniente y el Arco Vial Norte, con calles asfaltadas, banquetas, luz y agua. Sin régimen de condominio ni cuota de mantenimiento. Lotes de 271 a 282 m², financiamiento hasta 15 meses."
 precios_actualizados: "22 de noviembre de 2026"
-promociones:
-  - texto: "Precio de contado: lotes desde $1,055,000, con avalúo incluido."
-    en: "Cash price: lots from $1,055,000, appraisal included."
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Planes a 6, 12 o 15 meses: 20% de enganche y el 80% restante en mensualidades, sin saldo contra entrega. De contado pagas el 100%. El precio ya incluye el avalúo para la escrituración."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
@@ -41,11 +38,11 @@ modelos:
     niveles: "9 m de frente"
     terreno: 270.98
     terreno_max: 282.2
-    precio: 1107000
-    precio_max: 1155000
+    precio: 1055000
+    precio_max: 1100000
     entrega: "Diciembre 2026"
     disponibles: 4
-    descripcion: "Lotes de 270.98 a 282.20 m² con 9 m de frente y de 30 a 32 m de fondo. Precio a 12 meses desde $1,107,000; de contado, desde $1,055,000."
+    descripcion: "Lotes de 270.98 a 282.20 m² con 9 m de frente y de 30 a 32 m de fondo. De contado, desde $1,055,000 (incluye avalúo); a 12 meses, desde $1,107,000."
     fotos:
       - "/fotos/serena-santa-fe/ubicacion.jpg"
       - "/fotos/serena-santa-fe/calle.jpg"
@@ -67,7 +64,7 @@ modelos:
   "modelos":
   - "niveles": "9 m frontage"
     "entrega": "December 2026"
-    "descripcion": "Lots from 270.98 to 282.20 m² with 9 m frontage and 30 to 32 m depth. 12-month price from $1,107,000; paying cash, from $1,055,000."
+    "descripcion": "Lots from 270.98 to 282.20 m² with 9 m frontage and 30 to 32 m depth. Paying cash, from $1,055,000 (appraisal included); over 12 months, from $1,107,000."
   "descripcion": |-
     Serena Santa Fe (phase 3) is a set of 10 street-front lots in San Juan Bautista, Santa Fe Norte, in west-north Mérida, between the western Periférico and the Arco Vial Norte, 80 m from a four-lane avenue and about 10 minutes from Galerías, The Harbor, Dzityá and Caucel.
 

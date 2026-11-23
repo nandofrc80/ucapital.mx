@@ -14,9 +14,6 @@ precio_desde: true
 entrega: "Inmediata"
 resumen: "Desarrollo boutique de 86 lotes residenciales en Cholul con entrega inmediata: piscina con canal de nado, cancha de pádel panorámica, salones climatizados, parque arbolado y calles más amplias que el estándar. Lotes urbanizados de 225 a 385 m²."
 precios_actualizados: "22 de noviembre de 2026"
-promociones:
-  - texto: "Descuento de contado: lotes desde $1,006,786 (el m² baja de $4,975 a $4,475 en lotes tipo y de $5,425 a $4,875 en lotes premium)."
-    en: "Cash discount: lots from $1,006,786 (price per m² drops from $4,975 to $4,475 on standard lots and from $5,425 to $4,875 on premium lots)."
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Plan a 12 meses: 10% de enganche a la firma de la promesa, 15% en 12 mensualidades y el 75% restante al mes 12. De contado: 80% a la firma y 20% a la entrega."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
@@ -53,11 +50,11 @@ modelos:
     niveles: "Unifamiliar"
     terreno: 224.98
     terreno_max: 385.13
-    precio: 1119276
-    precio_max: 1916022
+    precio: 1006786
+    precio_max: 1723457
     entrega: "Inmediata"
     disponibles: 28
-    descripcion: "Lotes unifamiliares de 224.98 a 385.13 m², la mayoría de 225 a 275 m². Precio de lista a $4,975 por m²; de contado ($4,475 por m²), desde $1,006,786."
+    descripcion: "Lotes unifamiliares de 224.98 a 385.13 m², la mayoría de 225 a 275 m². Precio de contado a $4,475 por m²; a 12 meses ($4,975 por m²), desde $1,119,276."
     fotos:
       - "/fotos/alma-residencial/aerea.jpg"
       - "/fotos/alma-residencial/acceso-real.jpg"
@@ -66,11 +63,11 @@ modelos:
     niveles: "Unifamiliar premium"
     terreno: 224.99
     terreno_max: 284.07
-    precio: 1220571
-    precio_max: 1541080
+    precio: 1096826
+    precio_max: 1384841
     entrega: "Inmediata"
     disponibles: 3
-    descripcion: "Lotes unifamiliares premium de 224.99 a 284.07 m². Precio de lista a $5,425 por m²; de contado ($4,875 por m²), desde $1,096,826."
+    descripcion: "Lotes unifamiliares premium de 224.99 a 284.07 m². Precio de contado a $4,875 por m²; a 12 meses ($5,425 por m²), desde $1,220,571."
     fotos:
       - "/fotos/alma-residencial/parque.jpg"
       - "/fotos/alma-residencial/aerea.jpg"
@@ -97,10 +94,10 @@ modelos:
   "modelos":
   - "niveles": "Single-family"
     "entrega": "Immediate"
-    "descripcion": "Single-family lots from 224.98 to 385.13 m², most between 225 and 275 m². List price $4,975 per m²; paying cash ($4,475 per m²), from $1,006,786."
+    "descripcion": "Single-family lots from 224.98 to 385.13 m², most between 225 and 275 m². Cash price $4,475 per m²; over 12 months ($4,975 per m²), from $1,119,276."
   - "niveles": "Premium single-family"
     "entrega": "Immediate"
-    "descripcion": "Premium single-family lots from 224.99 to 284.07 m². List price $5,425 per m²; paying cash ($4,875 per m²), from $1,096,826."
+    "descripcion": "Premium single-family lots from 224.99 to 284.07 m². Cash price $4,875 per m²; over 12 months ($5,425 per m²), from $1,220,571."
   "descripcion": |-
     Alma Residencial is a boutique community of 86 residential lots on 4 hectares in Cholul, part of north Mérida's high-growth Cholul–Copó–Temozón corridor. It's about 10 minutes from the Periférico (ring road), close to schools, hospitals, supermarkets and shopping centers, and about 30 km from the beach.
 

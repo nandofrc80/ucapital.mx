@@ -14,9 +14,6 @@ precio_desde: true
 entrega: "Diciembre 2028"
 resumen: "Privada de 372 lotes residenciales sobre la Avenida Cumbres, en Sitpach, todos con orientación norte-sur. Casa club con alberca y canal de nado, rooftop bar, cine lounge, gimnasio, canchas de pádel y parques. Lotes de 190 a 543 m² con 25 mensualidades fijas sin intereses."
 precios_actualizados: "22 de noviembre de 2026"
-promociones:
-  - texto: "Descuento de contado: el m² baja de $4,450 a $4,000. Lotes de contado desde $762,720."
-    en: "Cash discount: price per m² drops from $4,450 to $4,000. Lots from $762,720 paying cash."
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Plan a 25 meses sin intereses: en lotes tipo, 10% de enganche y 25 mensualidades fijas de $5,999; en lotes frente a amenidades, 15% de enganche y 25 mensualidades fijas de $8,999. El saldo se paga al escriturar. De contado ($4,000 por m²): 80% a la firma y 20% contra entrega."
 financiamiento: "Recursos propios. Te asesoramos sin costo con el plan de pagos que más te convenga."
@@ -54,11 +51,11 @@ modelos:
     niveles: "Frente de 8 a 12.6 m"
     terreno: 190.68
     terreno_max: 293.18
-    precio: 848526
-    precio_max: 1304651
+    precio: 762720
+    precio_max: 1172720
     entrega: "Diciembre 2028"
     disponibles: 180
-    descripcion: "Lotes de 190.68 a 293.18 m², la mayoría de 200 a 235 m². Precio a 25 meses sin intereses a $4,450 por m², con 10% de enganche y mensualidades fijas de $5,999; de contado ($4,000 por m²), desde $762,720."
+    descripcion: "Lotes de 190.68 a 293.18 m², la mayoría de 200 a 235 m². Precio de contado a $4,000 por m²; a 25 meses sin intereses ($4,450 por m²), desde $848,526, con 10% de enganche y mensualidades fijas de $5,999."
     fotos:
       - "/fotos/cantori/parque-deportivo.jpg"
       - "/fotos/cantori/parque.jpg"
@@ -67,11 +64,11 @@ modelos:
     niveles: "Vista a parques y casa club"
     terreno: 233.42
     terreno_max: 542.95
-    precio: 1038719
-    precio_max: 2416128
+    precio: 933680
+    precio_max: 2171800
     entrega: "Diciembre 2028"
     disponibles: 46
-    descripcion: "Lotes de 233.42 a 542.95 m² frente a la casa club o a los parques. Precio a 25 meses sin intereses a $4,450 por m², con 15% de enganche y mensualidades fijas de $8,999; de contado ($4,000 por m²), desde $933,680."
+    descripcion: "Lotes de 233.42 a 542.95 m² frente a la casa club o a los parques. Precio de contado a $4,000 por m²; a 25 meses sin intereses ($4,450 por m²), desde $1,038,719, con 15% de enganche y mensualidades fijas de $8,999."
     fotos:
       - "/fotos/cantori/casa-club.jpg"
       - "/fotos/cantori/piscina.jpg"
@@ -99,10 +96,10 @@ modelos:
   "modelos":
   - "niveles": "8 to 12.6 m frontage"
     "entrega": "December 2028"
-    "descripcion": "Lots from 190.68 to 293.18 m², most between 200 and 235 m². 25-month interest-free price $4,450 per m², with 10% down and fixed monthly payments of $5,999; paying cash ($4,000 per m²), from $762,720."
+    "descripcion": "Lots from 190.68 to 293.18 m², most between 200 and 235 m². Cash price $4,000 per m²; over 25 interest-free months ($4,450 per m²), from $848,526, with 10% down and fixed monthly payments of $5,999."
   - "niveles": "Facing parks and clubhouse"
     "entrega": "December 2028"
-    "descripcion": "Lots from 233.42 to 542.95 m² facing the clubhouse or the parks. 25-month interest-free price $4,450 per m², with 15% down and fixed monthly payments of $8,999; paying cash ($4,000 per m²), from $933,680."
+    "descripcion": "Lots from 233.42 to 542.95 m² facing the clubhouse or the parks. Cash price $4,000 per m²; over 25 interest-free months ($4,450 per m²), from $1,038,719, with 15% down and fixed monthly payments of $8,999."
   "descripcion": |-
     Cantori is a gated community of 372 single-family residential lots on 13.8 hectares along Avenida Cumbres in Sitpach, north Mérida, surrounded by other residential developments. Every lot faces north-south, and the project is set up under a condominium regime.
 
