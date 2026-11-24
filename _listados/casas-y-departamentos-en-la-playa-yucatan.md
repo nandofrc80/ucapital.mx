@@ -1,8 +1,8 @@
 ---
-titulo: "Casas y departamentos en la playa en Yucatán"
+titulo: "Casas, departamentos y terrenos en la playa en Yucatán"
 h1: "Propiedades en la <em>playa</em>, Yucatán"
 eyebrow: "Costa yucateca"
-descripcion: "Departamentos, villas y casas en venta en la playa en Yucatán, a minutos de Progreso y de Mérida. Preventa con esquemas de pago a plazos. Asesoría sin costo para el comprador."
+descripcion: "Departamentos, villas, casas y terrenos en venta en la playa en Yucatán, a minutos de Progreso y de Mérida. Preventa con esquemas de pago a plazos. Asesoría sin costo para el comprador."
 corto: "En la playa"
 playa: true
 orden: 10
