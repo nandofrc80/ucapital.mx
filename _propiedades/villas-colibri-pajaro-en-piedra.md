@@ -8,7 +8,7 @@ tipo: "Casa"
 estatus: "Preventa"
 zona: "Paseo Norte"
 ciudad: "Mérida, Yucatán"
-mapa: "https://www.google.com/maps/search/?api=1&query=P%C3%A1jaro+en+Piedra+Paseo+Norte+M%C3%A9rida+Yucat%C3%A1n"
+mapa: "https://maps.app.goo.gl/omry2PeD61tdVY587"
 precio: 0
 precio_desde: true
 entrega: "Febrero 2027"
