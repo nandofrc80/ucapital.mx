@@ -12,7 +12,7 @@ mapa: "https://www.google.com/maps/search/?api=1&query=Dzidzil-H%C3%A1+Privada+R
 precio: 0
 precio_desde: true
 entrega: "Inmediata a junio 2027"
-resumen: "Casas de una planta con 3 recámaras, alberca y cuarto de servicio, en terrenos de 890 a 1,000 m², dentro de una privada con lago, casa club y canchas sobre la carretera a Progreso. Hay casas listas para entregar y en preventa, de Grupo Promid."
+resumen: "Casas de una planta con 3 recámaras, alberca y cuarto de servicio, en terrenos de 890 a 1,000 m², dentro de una privada con lago, casa club y canchas sobre la carretera a Progreso. Hay casas listas para entregar y en preventa."
 precios_actualizados: "23 de noviembre de 2026"
 apartado: "Aparta con $25,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días naturales)."
 enganche: "30% del valor de la casa."
@@ -180,7 +180,7 @@ modelos:
   "apartado": "Reserve with $25,000 MXN (refundable if requested within 7 calendar days)."
   "enganche": "30% of the home's price."
   "financiamiento": "Bank mortgage or your own funds. We'll walk you through the options and requirements at no cost."
-  "resumen": "One-story 3-bedroom homes with pool and service room on 890 to 1,000 m² lots, in a gated community with a lake, clubhouse and sports courts on the road to Progreso. Move-in ready and pre-sale homes, by Grupo Promid."
+  "resumen": "One-story 3-bedroom homes with pool and service room on 890 to 1,000 m² lots, in a gated community with a lake, clubhouse and sports courts on the road to Progreso. Move-in ready and pre-sale homes."
   "amenidades":
   - "Controlled access with security booth and perimeter wall"
   - "Lake with kayaks"
@@ -214,13 +214,13 @@ modelos:
     "adicionales": "Delivered fully equipped: air conditioning in bedrooms, living room and kitchen, internet installed, smart features, built-in walk-in closets, kitchen with wood cabinets and granite counter, travertine marble floors, ceiling fans, water softener and reverse osmosis, and a 114-liter Wi-Fi electric water heater."
     "entrega": "Move-in ready"
   "descripcion": |-
-    Dzidzil-Há is a gated residential community by Grupo Promid in Dzidzilché, on the Mérida–Progreso highway: about 17 minutes from the ring road, 14 minutes from Foro GNP and 17 minutes from the port of Progreso. It is built around a lake with kayaks, a clubhouse with café, pools with jacuzzi and water slide, an air-conditioned event room, padel and soccer courts and a jogging track.
+    Dzidzil-Há is a gated residential community in Dzidzilché, on the Mérida–Progreso highway: about 17 minutes from the ring road, 14 minutes from Foro GNP and 17 minutes from the port of Progreso. It is built around a lake with kayaks, a clubhouse with café, pools with jacuzzi and water slide, an air-conditioned event room, padel and soccer courts and a jogging track.
 
     All homes are one-story with 3 bedrooms, each with its own bathroom, a service room, covered carport and private pool, on large lots of 890 to 1,000 m². Ka'an and Haana are move-in ready and fully equipped; Sáasil delivers in December 2026, and K'áax, Nikté and Ya'ax are in pre-sale.
 
     Schedule a visit and we'll show you the available homes and help you compare models.
 ---
-Dzidzil-Há es una privada residencial de Grupo Promid en Dzidzilché, sobre la carretera Mérida–Progreso: a unos 17 minutos del Periférico, 14 minutos del Foro GNP y 17 minutos del puerto de Progreso. Está construida alrededor de un lago con kayak, casa club con cafetería, piscinas con jacuzzi y tobogán, salón de eventos climatizado, canchas de pádel y futbol y pista de jogging.
+Dzidzil-Há es una privada residencial en Dzidzilché, sobre la carretera Mérida–Progreso: a unos 17 minutos del Periférico, 14 minutos del Foro GNP y 17 minutos del puerto de Progreso. Está construida alrededor de un lago con kayak, casa club con cafetería, piscinas con jacuzzi y tobogán, salón de eventos climatizado, canchas de pádel y futbol y pista de jogging.
 
 Todas las casas son de una planta, con 3 recámaras con baño propio, cuarto de servicio, cochera y alberca propia, en terrenos amplios de 890 a 1,000 m². Ka'an y Haana están listas para entregar y totalmente equipadas; Sáasil se entrega en diciembre de 2026, y K'áax, Nikté y Ya'ax están en preventa.
 

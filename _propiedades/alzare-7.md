@@ -8,11 +8,11 @@ tipo: "Casa"
 estatus: "Preventa"
 zona: "Dzityá"
 ciudad: "Mérida, Yucatán"
-mapa: "https://www.google.com/maps/search/?api=1&query=Alz%C3%A1re+Residencial+Real+Montejo+Dzity%C3%A1+M%C3%A9rida"
+mapa: "https://maps.app.goo.gl/WezsK3rey3gfeQ4z5"
 precio: 0
 precio_desde: true
 entrega: "Abril 2027"
-resumen: "Casas de 3 recámaras de una y dos plantas a pie de calle en Real Montejo, Dzityá, a 3 minutos del Periférico, de Zenna Desarrollos. Alberca, terraza y cochera techadas como adicionales."
+resumen: "Casas de 3 recámaras de una y dos plantas a pie de calle en Real Montejo, Dzityá, a 3 minutos del Periférico. Alberca, terraza y cochera techadas como adicionales."
 precios_actualizados: "24 de noviembre de 2026"
 promociones:
   - texto: "Nos adelantamos al Buen Fin: te regalamos los aires acondicionados de todas las recámaras (18,000 BTU en la principal y 12,000 BTU en las secundarias; no incluye instalación, no aplica con otras promociones)."
@@ -20,7 +20,7 @@ promociones:
     hasta: "2026-11-30"
 apartado: "Aparta con $10,000 MXN por 7 días naturales."
 enganche: "10% a la firma de la promesa, a más tardar 7 días después del apartado (15% si agregas algún adicional)."
-financiamiento: "Crédito bancario (Banamex, BBVA, Banorte, Santander, Scotiabank y otros), Infonavit Total, Cofinavit, Banjercito (no aplica ISSFAM), Pemex o recursos propios. Te asesoramos sin costo con las opciones y requisitos."
+financiamiento: "Crédito bancario (Banamex, BBVA, Banorte, Santander, Scotiabank y otros), Infonavit Total, Cofinavit, Fovissste para Todos, Banjercito (no aplica ISSFAM), Pemex o recursos propios. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/alzare-7/1p-fachada-adicionales.jpg
 fotos:
   - /fotos/alzare-7/1p-fachada-adicionales.jpg
@@ -95,8 +95,8 @@ modelos:
   "entrega": "April 2027"
   "apartado": "Reserve with $10,000 MXN for 7 calendar days."
   "enganche": "10% when signing the purchase agreement, no later than 7 days after reserving (15% if you add any upgrade)."
-  "financiamiento": "Bank mortgage (Banamex, BBVA, Banorte, Santander, Scotiabank and others), Infonavit Total, Cofinavit, Banjercito (ISSFAM not accepted), Pemex or your own funds. We'll walk you through the options and requirements at no cost."
-  "resumen": "One- and two-story 3-bedroom homes on an open street in Real Montejo, Dzityá, 3 minutes from the ring road, by Zenna Desarrollos. Pool, covered terrace and covered carport available as upgrades."
+  "financiamiento": "Bank mortgage (Banamex, BBVA, Banorte, Santander, Scotiabank and others), Infonavit Total, Cofinavit, Fovissste para Todos, Banjercito (ISSFAM not accepted), Pemex or your own funds. We'll walk you through the options and requirements at no cost."
+  "resumen": "One- and two-story 3-bedroom homes on an open street in Real Montejo, Dzityá, 3 minutes from the ring road. Pool, covered terrace and covered carport available as upgrades."
   "amenidades":
   - "Homes on an open street in Real Montejo"
   - "3 minutes from the ring road"
@@ -110,13 +110,13 @@ modelos:
     "adicionales": "3 x 2.50 m pool with outdoor access to the ground-floor bathroom ($117,500 MXN), covered terrace ($73,500), covered carport ($156,500), kitchen island with granite ($20,500), balcony ($80,500), upper cabinets ($31,500), closets ($29,500 to $51,500 per bedroom) and shower panels ($5,500 to $6,000 each)."
     "entrega": "April 2027"
   "descripcion": |-
-    Alzáre 7 is a new phase of Alzáre Residencial by Zenna Desarrollos in Real Montejo, Dzityá, about 3 minutes from Mérida's ring road and close to schools, pharmacies, parks and restaurants. The homes face an open street, not a gated community.
+    Alzáre 7 is a new phase of Alzáre Residencial in Real Montejo, Dzityá, about 3 minutes from Mérida's ring road and close to schools, pharmacies, parks and restaurants. The homes face an open street, not a gated community.
 
     There are two 3-bedroom models: one-story (132.6 m²) and two-story (151.5 m², with a ground-floor bedroom), both on lots of about 261 m² with parking for 2 cars. You can add a pool, covered terrace and covered carport, among other upgrades.
 
     14 homes are available, delivering in April 2027. Ask us about visiting the model home.
 ---
-Alzáre 7 es una nueva etapa de Alzáre Residencial, de Zenna Desarrollos, en Real Montejo, Dzityá, a unos 3 minutos del Periférico y cerca de escuelas, farmacias, parques y restaurantes. Son casas a pie de calle, no una privada.
+Alzáre 7 es una nueva etapa de Alzáre Residencial en Real Montejo, Dzityá, a unos 3 minutos del Periférico y cerca de escuelas, farmacias, parques y restaurantes. Son casas a pie de calle, no una privada.
 
 Hay dos modelos de 3 recámaras: de una planta (132.6 m²) y de dos plantas (151.5 m², con recámara en planta baja), ambos en terrenos de unos 261 m² con cochera para 2 autos. Puedes agregar alberca, terraza techada y cochera techada, entre otros adicionales.
 

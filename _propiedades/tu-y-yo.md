@@ -132,10 +132,10 @@ modelos:
 
     The amenities are spread across the building: café bar, coworking, private lounge, cardio fitness and gaming room, and a rooftop with pool, bar and grill area. There are three types of units: Yo (1 bedroom), Loft (1 bedroom on two floors with double-height living room) and Duplex (2 bedrooms), some on the ground floor with a private garden.
 
-    Delivery is planned for summer 2028. Tú y Yo is developed by Escarpa Desarrollos.
+    Delivery is planned for summer 2028.
 ---
 Tú y Yo es un edificio de 24 departamentos en Temozón Norte, al norte de Mérida, pensado con servicios de hotel boutique: recepción, elevador, videoportero y café self-service.
 
 Las amenidades se reparten en el edificio: café bar, coworking, private lounge, cardio fitness y gaming room, y un rooftop con piscina, bar y área grill. Hay tres tipos de departamento: Yo (1 recámara), Loft (1 recámara en dos plantas con sala a doble altura) y Duplex (2 recámaras), algunos en planta baja con jardín privado.
 
-La entrega está prevista para el verano de 2028. Tú y Yo es un desarrollo de Escarpa Desarrollos.
+La entrega está prevista para el verano de 2028.

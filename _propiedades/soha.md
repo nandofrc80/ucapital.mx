@@ -168,13 +168,13 @@ modelos:
     "entrega": "March 2027"
     "descripcion": "91.4 m² single-floor apartment with kitchen, living room, dining area, 2 bedrooms, 2.5 bathrooms and a flex terrace, with 2 parking spaces. Delivered equipped (kitchen, refrigerator, microwave, coffee maker, mini-splits and cabinetry); full furniture at an extra cost. Available: Duflex 2, 4, 5 and 6 ($3,460,000) and Duflex 1, the model unit ($3,726,000)."
   "descripcion": |-
-    Soha ("Social Vibes, Country Life") is a building of 53 apartments and studios north of Mérida, toward Dzibilchaltún, developed by Grupo Ascala. Units are delivered equipped, and several models can include furniture.
+    Soha ("Social Vibes, Country Life") is a building of 53 apartments and studios north of Mérida, toward Dzibilchaltún. Units are delivered equipped, and several models can include furniture.
 
     On the ground floor there is a lobby lounge, coffee bar, community workspace, meeting room, social garden and pet park; on the rooftop, a pool, bar and grill area. The building has an elevator, electric gate and a package locker for each unit. Some ground-floor two-bedroom units have their own patio and plunge pool.
 
     Delivery of the units still for sale is scheduled for the end of March 2027.
 ---
-Soha ("Social Vibes, Country Life") es un edificio de 53 departamentos y estudios al norte de Mérida, rumbo a Dzibilchaltún, desarrollado por Grupo Ascala. Los departamentos se entregan equipados y varios modelos pueden incluir amueblado.
+Soha ("Social Vibes, Country Life") es un edificio de 53 departamentos y estudios al norte de Mérida, rumbo a Dzibilchaltún. Los departamentos se entregan equipados y varios modelos pueden incluir amueblado.
 
 En planta baja hay lobby lounge, coffee bar, community workspace, sala de juntas, social garden y pet park; en la azotea, alberca, bar y área grill. El edificio tiene elevador, portón eléctrico y cajón de paquetería para cada departamento. Algunos departamentos de 2 recámaras en planta baja tienen patio y alberca propios.
 

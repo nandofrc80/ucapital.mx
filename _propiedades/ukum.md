@@ -103,10 +103,10 @@ modelos:
 
     The homes are single-story, designed by award-winning architect Gerard Boyancé. Each has three bedrooms with full bathrooms, a private pool with a covered terrace, staff quarters and a large lot. The community offers an air-conditioned clubhouse, lounge terrace, padel, pickleball and soccer courts, playground, pet park and controlled access.
 
-    Seven homes are available: homes 29 and 30 with delivery in February–March 2027, and homes 21, 54, 58, 60 and 62 with delivery in July–August 2027. Ukum is developed by Inmobicorme.
+    Seven homes are available: homes 29 and 30 with delivery in February–March 2027, and homes 21, 54, 58, 60 and 62 with delivery in July–August 2027.
 ---
 Ukum es una privada residencial dentro de Conkal Norte, en una de las zonas con mayor crecimiento al norte de Mérida: a unos 15 minutos de Plaza La Isla, Altabrisa y los hospitales Star Médica y Faro del Mayab, a 20 minutos de la Universidad Anáhuac Mayab y a 25 minutos de la costa.
 
 Las casas son de una sola planta, con diseño del arquitecto Gerard Boyancé, ganador de varias bienales de arquitectura. Cada una tiene tres recámaras con baño completo, alberca privada con terraza techada, cuarto de servicio y un terreno amplio. La privada cuenta con casa club climatizada, terraza lounge, canchas de pádel, pickleball y fútbol, parque infantil, pet park y acceso controlado.
 
-Hay siete casas disponibles: la 29 y la 30, con entrega en febrero–marzo de 2027, y las casas 21, 54, 58, 60 y 62, con entrega en julio–agosto de 2027. Ukum es un desarrollo de Inmobicorme.
+Hay siete casas disponibles: la 29 y la 30, con entrega en febrero–marzo de 2027, y las casas 21, 54, 58, 60 y 62, con entrega en julio–agosto de 2027.

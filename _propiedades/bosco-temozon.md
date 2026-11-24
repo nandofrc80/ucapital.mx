@@ -147,10 +147,10 @@ modelos:
 
     The amenities include a pool with sun loungers, padel court, gym and yoga area, cinema room, coworking and meeting room, kids' room, lounge and grill areas, plus an elevator and reception. Ground-floor apartments have their own terrace.
 
-    There are three models: Cedro (1 bedroom, 43 m²) and Álamo and Olivo (2 bedrooms, about 65 m²). Phase 1 delivers in December 2027 and Phase 2 in December 2028. Bosco is developed by Consur.
+    There are three models: Cedro (1 bedroom, 43 m²) and Álamo and Olivo (2 bedrooms, about 65 m²). Phase 1 delivers in December 2027 and Phase 2 in December 2028.
 ---
 Bosco es un conjunto de departamentos en Temozón Norte, una de las zonas con mayor crecimiento al norte de Mérida. Sus edificios de baja altura se distribuyen alrededor de un bosque central con espejos de agua, y en planta baja hay locales comerciales.
 
 Las amenidades incluyen alberca con área de camastros, cancha de pádel, gimnasio y área de yoga, sala de cine, coworking y sala de juntas, ludoteca, áreas lounge y área grill, además de elevador y recepción. Los departamentos de planta baja tienen terraza propia.
 
-Hay tres modelos: Cedro (1 recámara, 43 m²) y Álamo y Olivo (2 recámaras, unos 65 m²). La Etapa 1 se entrega en diciembre de 2027 y la Etapa 2 en diciembre de 2028. Bosco es un desarrollo de Consur.
+Hay tres modelos: Cedro (1 recámara, 43 m²) y Álamo y Olivo (2 recámaras, unos 65 m²). La Etapa 1 se entrega en diciembre de 2027 y la Etapa 2 en diciembre de 2028.

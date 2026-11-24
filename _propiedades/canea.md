@@ -125,10 +125,10 @@ modelos:
 
     The apartments have travertine marble floors, European-style window frames and an equipped kitchen. Ground-floor units have a private garden, and the upper floors have balconies with views of the greenery. The building has a social rooftop with restrooms, covered parking, visitor parking, a gatehouse and an electric gate.
 
-    Twelve units are available: one-bedroom View and Garden apartments of 50.5 m² and two-bedroom View apartments of 98.7 m² with 2 parking spaces. Canea is developed by Cave Proyectos.
+    Twelve units are available: one-bedroom View and Garden apartments of 50.5 m² and two-bedroom View apartments of 98.7 m² with 2 parking spaces.
 ---
 Canea es un edificio boutique de 26 departamentos en Temozón Norte, una de las zonas con mayor crecimiento al norte de Mérida, diseñado alrededor de vegetación abundante.
 
 Los departamentos tienen piso de mármol travertino, cancelería línea europea y cocina equipada. Los de planta baja cuentan con jardín privado y los de los niveles superiores con balcón hacia la vegetación. El edificio tiene azotea con área social y baños, estacionamiento techado, estacionamiento para visitas, caseta de vigilancia y portón eléctrico.
 
-Hay doce departamentos disponibles: View y Garden de 1 recámara con 50.5 m², y View de 2 recámaras con 98.7 m² y 2 cajones de estacionamiento. Canea es un desarrollo de Cave Proyectos.
+Hay doce departamentos disponibles: View y Garden de 1 recámara con 50.5 m², y View de 2 recámaras con 98.7 m² y 2 cajones de estacionamiento.

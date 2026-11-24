@@ -12,7 +12,7 @@ mapa: "https://maps.app.goo.gl/4dnfcVXkDqrN93rs6"
 precio: 0
 precio_desde: true
 entrega: "Inmediata"
-resumen: "Casas de 3 recámaras con alberca en Dzityá, listas para entregar, cada recámara con su propio baño. Fraccionamiento abierto, sin cuota de mantenimiento, de VNP Desarrollos."
+resumen: "Casas de 3 recámaras con alberca en Dzityá, listas para entregar, cada recámara con su propio baño. Fraccionamiento abierto, sin cuota de mantenimiento."
 precios_actualizados: "14 de noviembre de 2026"
 promociones:
   - texto: "Este noviembre, $100,000 de descuento: casas desde $3,850,000."
@@ -72,7 +72,7 @@ modelos:
   "apartado": "Reserve with $10,000 MXN (refundable if requested within 7 days)."
   "enganche": "10% when signing the purchase agreement, balance at closing."
   "financiamiento": "Bank mortgage or your own funds. We'll walk you through the options and requirements at no cost."
-  "resumen": "Move-in-ready 3-bedroom homes with pool in Dzityá, each bedroom with its own bathroom. Open neighborhood with no HOA fee, by VNP Desarrollos."
+  "resumen": "Move-in-ready 3-bedroom homes with pool in Dzityá, each bedroom with its own bathroom. Open neighborhood with no HOA fee."
   "amenidades":
   - "Private pool in every home"
   - "Covered parking"
@@ -84,13 +84,13 @@ modelos:
     "descripcion": "Ground floor: covered parking, living room, dining room, kitchen, half bath, semi-covered service area and pool. Upper floor: primary bedroom with bathroom and walk-in closet, and two secondary bedrooms, each with its own bathroom."
     "adicionales": "Lots 2 and 3 (164 m² built, 258 m² lot): $3,950,000 MXN. Lot 1 (173 m² built, 283 m² lot): $3,990,000 MXN. Delivered with perimeter walls, kitchen, covered parking, shower panels, pool and stone details on the façade."
   "descripcion": |-
-    Olmos Dzityá replicates one of VNP Desarrollos' most successful designs: modern and versatile, ideal for families with a dynamic lifestyle. The house is oriented to take advantage of cross breezes, and every bedroom is spacious, with its own closet and bathroom.
+    Olmos Dzityá replicates one of its developer's most successful designs: modern and versatile, ideal for families with a dynamic lifestyle. The house is oriented to take advantage of cross breezes, and every bedroom is spacious, with its own closet and bathroom.
 
     It is in Dzityá, north of Mérida, in an open neighborhood, so there is no HOA fee or reserve fund. Three homes remain, all ready to move in.
 
     Each home comes with perimeter walls, kitchen, covered parking, shower panels, a private pool and stone details on the façade.
 ---
-Olmos Dzityá es la réplica de uno de los diseños más exitosos de VNP Desarrollos: moderno, versátil e ideal para familias con un estilo de vida dinámico. La casa está orientada para aprovechar el cruce de vientos, y cada recámara es amplia, con clóset y baño propio.
+Olmos Dzityá es la réplica de uno de los diseños más exitosos de su desarrolladora: moderno, versátil e ideal para familias con un estilo de vida dinámico. La casa está orientada para aprovechar el cruce de vientos, y cada recámara es amplia, con clóset y baño propio.
 
 Está en Dzityá, al norte de Mérida, en un fraccionamiento abierto, así que no paga cuota de mantenimiento ni fondo de reserva. Quedan tres casas, todas listas para entregarse.
 

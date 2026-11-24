@@ -96,12 +96,12 @@ modelos:
   "descripcion": |-
     Campocielo is a gated residential community in the Royal del Parque subdivision, in northern Mérida between Temozón and Dzityá. Its access road connects to the Mérida–Progreso highway, minutes from the ring road, shopping centers, schools and universities, and about 20 minutes from the beach.
 
-    The community has a perimeter wall, controlled access with 24/7 security, underground power lines, wide tree-lined streets and four parks. It is developed by Royal Inmobiliaria, a Mérida company with more than 30 years of experience.
+    The community has a perimeter wall, controlled access with 24/7 security, underground power lines, wide tree-lined streets and four parks. It is developed by a Mérida company with more than 30 years of experience.
 
     Three two-bedroom Confort homes are available, ready to move in: home 247 and homes 250 and 251, next to the park. They have a bedroom with full bathroom on the ground floor, covered parking for 2 cars and a 198 m² lot with a garden.
 ---
 Campocielo es una privada residencial en el Fraccionamiento Royal del Parque, al norte de Mérida, entre Temozón y Dzityá. Su vialidad de acceso conecta con la carretera Mérida–Progreso, a minutos del Periférico, de plazas comerciales, escuelas y universidades, y a unos 20 minutos de la playa.
 
-La privada cuenta con barda perimetral, acceso controlado con seguridad 24/7, conexión eléctrica subterránea, vialidades amplias y arboladas y cuatro parques. La desarrolla Royal Inmobiliaria, empresa meridana con más de 30 años de experiencia.
+La privada cuenta con barda perimetral, acceso controlado con seguridad 24/7, conexión eléctrica subterránea, vialidades amplias y arboladas y cuatro parques. La desarrolla una empresa meridana con más de 30 años de experiencia.
 
 Hay tres casas Confort de 2 recámaras disponibles con entrega inmediata: la casa 247 y las casas 250 y 251, junto al parque. Tienen recámara con baño completo en planta baja, cochera techada para 2 autos y terreno de 198 m² con jardín.

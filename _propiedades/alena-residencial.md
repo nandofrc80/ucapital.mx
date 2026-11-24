@@ -12,7 +12,7 @@ mapa: "https://www.google.com/maps/search/?api=1&query=Alena+Residencial+Rinc%C3
 precio: 0
 precio_desde: true
 entrega: "Agosto 2027"
-resumen: "Casas de una planta con 3 recámaras y alberca, en terrenos de 600 a 755 m², dentro de una privada con casa club, canchas de pádel y futbol, de Grupo Promid. A unos 13 minutos del Periférico, rumbo a Progreso."
+resumen: "Casas de una planta con 3 recámaras y alberca, en terrenos de 600 a 755 m², dentro de una privada con casa club, canchas de pádel y futbol. A unos 13 minutos del Periférico, rumbo a Progreso."
 precios_actualizados: "23 de noviembre de 2026"
 apartado: "Aparta con $20,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días naturales)."
 enganche: "30% durante la preventa (10 meses) y el saldo contra entrega."
@@ -67,7 +67,7 @@ modelos:
   "apartado": "Reserve with $20,000 MXN (refundable if requested within 7 calendar days)."
   "enganche": "30% during the 10-month pre-sale period and the balance on delivery."
   "financiamiento": "Bank mortgage or your own funds. We'll walk you through the options and requirements at no cost."
-  "resumen": "One-story 3-bedroom homes with pool on 600 to 755 m² lots, in a gated community with clubhouse, padel and soccer courts, by Grupo Promid. About 13 minutes from the ring road, toward Progreso."
+  "resumen": "One-story 3-bedroom homes with pool on 600 to 755 m² lots, in a gated community with clubhouse, padel and soccer courts. About 13 minutes from the ring road, toward Progreso."
   "amenidades":
   - "Controlled access with security booth and perimeter wall"
   - "Clubhouse with covered area and grill zone"
@@ -85,13 +85,13 @@ modelos:
     "adicionales": "Base version ($5,198,000 MXN, 233 m² built): includes A/C pre-installation, pressure pump, 45 x 90 ceramic floors, tempered-glass shower panels, mahogany-veneer doors, natural stone vanity tops and a 70-liter electric water heater. Equipped version ($5,678,000 MXN, 269 m²): adds a covered carport for 2 cars, built-in closets, kitchen with lower cabinets and island, lawn with irrigation, solar skylight and internet installation."
     "entrega": "August 2027"
   "descripcion": |-
-    Alena Residencial is a gated community of 220 residential lots by Grupo Promid in Rincón Paraíso, north of Mérida on the way to Progreso: about 13 minutes from the ring road, 10 minutes from Foro GNP and Universidad Anáhuac Mayab, and 8 minutes from Progreso.
+    Alena Residencial is a gated community of 220 residential lots in Rincón Paraíso, north of Mérida on the way to Progreso: about 13 minutes from the ring road, 10 minutes from Foro GNP and Universidad Anáhuac Mayab, and 8 minutes from Progreso.
 
     The Alena model is a one-story, 3-bedroom home with a pool on lots of 600 to 755 m². It comes in two versions: base, or equipped with a covered carport, built-in closets, kitchen island, lawn with irrigation and a solar skylight.
 
     Amenities include a clubhouse with grill area, pool with bar, kids' pool, padel, soccer and basketball courts, a sport terrace and a playground. The maintenance fee is $1,450 MXN per month.
 ---
-Alena Residencial es una privada de 220 terrenos residenciales de Grupo Promid en Rincón Paraíso, al norte de Mérida rumbo a Progreso: a unos 13 minutos del Periférico, 10 minutos del Foro GNP y de la Universidad Anáhuac Mayab, y 8 minutos de Progreso.
+Alena Residencial es una privada de 220 terrenos residenciales en Rincón Paraíso, al norte de Mérida rumbo a Progreso: a unos 13 minutos del Periférico, 10 minutos del Foro GNP y de la Universidad Anáhuac Mayab, y 8 minutos de Progreso.
 
 El modelo Alena es una casa de una planta con 3 recámaras y alberca, en terrenos de 600 a 755 m². Se ofrece en dos versiones: base, o con equipamiento, que suma cochera techada, clósets instalados, isla en cocina, pasto con riego y domo solar.
 
