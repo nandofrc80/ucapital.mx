@@ -19,7 +19,7 @@ promociones:
     en: "$150,000 MXN off the list price on every available home."
 apartado: "Aparta con $10,000 MXN por 3 días naturales."
 enganche: "10% a la firma de la promesa, a más tardar 3 días después del apartado (15% si agregas algún adicional)."
-financiamiento: "Crédito bancario o recursos propios (no aplica ISSFAM). Pregúntanos por los créditos que acepta; te asesoramos sin costo."
+financiamiento: "Crédito bancario, Infonavit Total o recursos propios (no aplica ISSFAM). Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/verna/foto-fachada.jpg
 fotos:
   - /fotos/verna/foto-fachada.jpg
@@ -74,7 +74,7 @@ modelos:
   "entrega": "Immediate"
   "apartado": "Reserve with $10,000 MXN for 3 calendar days."
   "enganche": "10% when signing the purchase agreement, no later than 3 days after reserving (15% if you add any upgrade)."
-  "financiamiento": "Bank mortgage or your own funds (ISSFAM not accepted). Ask us which loans apply; our advice is free."
+  "financiamiento": "Bank mortgage, Infonavit Total or your own funds (ISSFAM not accepted). We'll walk you through the options and requirements at no cost."
   "resumen": "A gated community of 33 homes on Conkal's main corridor, with kids' pool, gym, grill area and social area. 3-bedroom homes, one on the ground floor, ready to close."
   "amenidades":
   - "Controlled access"

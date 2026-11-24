@@ -15,7 +15,9 @@ precio_desde: true
 entrega: "Inmediata"
 resumen: "Villas de 3 recámaras frente al mar en Telchac Puerto, con alberca privada y terraza techada con vista al mar, listas para escriturar. Un conjunto de solo 18 villas a la orilla de la playa, a unos 50 minutos de Mérida."
 precios_actualizados: "24 de noviembre de 2026"
+apartado: "Aparta con $25,000 MXN."
 enganche: "10% del valor de la villa."
+financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/azul-telchac/fachada-playa.jpg
 fotos:
   - /fotos/azul-telchac/fachada-playa.jpg
@@ -64,7 +66,9 @@ modelos:
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "Immediate"
+  "apartado": "Reserve with $25,000 MXN."
   "enganche": "10% of the villa's price."
+  "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "resumen": "Beachfront 3-bedroom villas in Telchac Puerto, with private pool and covered terrace overlooking the sea, ready to close. A set of only 18 villas right on the beach, about 50 minutes from Mérida."
   "amenidades":
   - "Beachfront, right on the sand"
