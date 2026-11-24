@@ -9,6 +9,7 @@ layout: default
     zonas:      lista de zonas tal como aparecen en el campo "zona" de cada desarrollo (vacío = todas)
     estatus:    Preventa | Entrega inmediata (vacío = todos)
     una_planta: true = solo desarrollos con al menos un modelo de una planta
+    playa:      true = solo desarrollos marcados con playa: true (costa)
   Al publicar un desarrollo nuevo, aparece aquí automáticamente si cumple los filtros.
 {%- endcomment -%}
 {%- include lang.html -%}
@@ -19,6 +20,7 @@ layout: default
   {%- if page.tipo and o.tipo != page.tipo %}{% assign ok = false %}{% endif -%}
   {%- if page.zonas and page.zonas.size > 0 %}{% unless page.zonas contains o.zona %}{% assign ok = false %}{% endunless %}{% endif -%}
   {%- if page.estatus and o.estatus != page.estatus %}{% assign ok = false %}{% endif -%}
+  {%- if page.playa and o.playa != true %}{% assign ok = false %}{% endif -%}
   {%- if page.una_planta %}{% assign _up = o.modelos | where: "plantas", 1 | size %}{% if _up == 0 %}{% assign ok = false %}{% endif %}{% endif -%}
   {%- if ok %}{% assign lista = lista | push: o %}{% endif -%}
 {%- endfor -%}

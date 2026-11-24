@@ -33,6 +33,10 @@ content:
         label: Mostrar en "Propiedades destacadas" (portada)
         type: boolean
         default: false
+      - name: playa
+        label: "Mostrar en la pestaña \"Playa\" (desarrollos en la costa)"
+        type: boolean
+        default: false
       - name: datos_de_ejemplo
         label: Mostrar etiqueta "Datos de ejemplo"
         type: boolean
