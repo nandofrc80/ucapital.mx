@@ -8,13 +8,14 @@ tipo: "Departamento"
 estatus: "Entrega inmediata"
 zona: "Temozón Norte"
 ciudad: "Mérida, Yucatán"
-mapa: "https://www.google.com/maps/search/?api=1&query=Green+Urban+Jungle+Temoz%C3%B3n+Norte+M%C3%A9rida"
+mapa: "https://maps.app.goo.gl/fBpsmqdhEJrRUJ2T6"
 precio: 0
 precio_desde: true
 entrega: "Inmediata (etapa 2) y preventa (etapa 3)"
 resumen: "Departamentos de 1 y 2 recámaras en Temozón Norte, en una privada de 125 unidades rodeada de más de 50 especies de plantas, con tres albercas, carril de nado, cancha de pádel, bar, gimnasio y cowork. Algunos con alberca privada swim up."
 precios_actualizados: "24 de noviembre de 2026"
 apartado: "Aparta con $20,000 MXN, reembolsable si cambias de opinión. Al apartar se bloquea la unidad y tienes 7 días para firmar contrato."
+financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/green-temozon-norte/piscina-principal.jpg
 fotos:
   - /fotos/green-temozon-norte/piscina-principal.jpg
@@ -115,6 +116,7 @@ modelos:
 "en":
   "entrega": "Immediate (phase 2) and pre-sale (phase 3)"
   "apartado": "Reserve with $20,000 MXN, refundable if you change your mind. The unit is held for you and you have 7 days to sign the contract."
+  "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "resumen": "1- and 2-bedroom apartments in Temozón Norte, in a 125-unit gated community surrounded by more than 50 plant species, with three pools, a lap lane, padel court, bar, gym and coworking space. Some include a private swim-up pool."
   "amenidades":
   - "Three pools and a semi-Olympic lap lane"
