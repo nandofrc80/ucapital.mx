@@ -47,8 +47,7 @@ modelos:
     precio_max: 3178176
     entrega: "Inmediata"
     disponibles: 24
-    descripcion: "Planta baja: sala, comedor, cocina, medio baño de visitas, área de servicio y terraza con salida al patio. Planta alta: 2 recámaras con clóset y baño completo. Terrenos de 8 m de frente por 20 m de fondo; los lotes en esquina tienen más terreno."
-    adicionales: "La mayoría de las casas van de $2,475,700 a $2,531,606 en terrenos de 160 a 171 m². Lotes en esquina: 190.81 m² en $2,729,816 y 290.55 m² en $3,178,176."
+    descripcion: "Planta baja: sala, comedor, cocina, medio baño de visitas, área de servicio y terraza con salida al patio. Planta alta: 2 recámaras con clóset y baño completo. Terrenos de 8 m de frente por 20 m de fondo; los lotes en esquina tienen más terreno. La mayoría de las casas van de $2,475,700 a $2,531,606 en terrenos de 160 a 171 m². Lotes en esquina: 190.81 m² en $2,729,816 y 290.55 m² en $3,178,176."
     fotos:
       - "/fotos/puerta-de-piedra/kabah-fachada.jpg"
       - "/fotos/puerta-de-piedra/kabah-fachada-posterior.jpg"
@@ -108,8 +107,7 @@ modelos:
     precio_max: 4203400
     entrega: "Inmediata"
     disponibles: 13
-    descripcion: "Planta baja: cochera techada para 2 autos más un lugar descubierto, recibidor a doble altura, recámara con clóset y baño completo, sala-comedor con vista al patio, cocina con doble tarja y barra de granito, alacena, cuarto de servicio, terraza techada, patio y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, recámara con clóset y baño completo, y clóset de blancos. Terrenos de 12 m de frente."
-    adicionales: "La mayoría de las casas están en $4,075,000 con terreno de 240 m². Los lotes con más fondo van de $4,102,000 a $4,203,400 (246 a 272 m²)."
+    descripcion: "Planta baja: cochera techada para 2 autos más un lugar descubierto, recibidor a doble altura, recámara con clóset y baño completo, sala-comedor con vista al patio, cocina con doble tarja y barra de granito, alacena, cuarto de servicio, terraza techada, patio y alberca. Planta alta: recámara principal con clóset vestidor y baño completo, recámara con clóset y baño completo, y clóset de blancos. Terrenos de 12 m de frente. La mayoría de las casas están en $4,075,000 con terreno de 240 m². Los lotes con más fondo van de $4,102,000 a $4,203,400 (246 a 272 m²)."
     fotos:
       - "/fotos/puerta-de-piedra/tho-fachada.jpg"
       - "/fotos/puerta-de-piedra/tho-recibidor.jpg"
@@ -138,15 +136,13 @@ modelos:
   - "A few minutes from the ring road"
   - "Close to schools and supermarkets"
   "modelos":
-  - "descripcion": "Ground floor: living room, dining room, kitchen, guest half bath, service area and terrace opening onto the yard. Upstairs: 2 bedrooms with closets and a full bathroom. Lots are 8 m wide by 20 m deep; corner lots are larger."
-    "adicionales": "Most homes range from $2,475,700 to $2,531,606 MXN on 160 to 171 m² lots. Corner lots: 190.81 m² at $2,729,816 and 290.55 m² at $3,178,176."
+  - "descripcion": "Ground floor: living room, dining room, kitchen, guest half bath, service area and terrace opening onto the yard. Upstairs: 2 bedrooms with closets and a full bathroom. Lots are 8 m wide by 20 m deep; corner lots are larger. Most homes range from $2,475,700 to $2,531,606 MXN on 160 to 171 m² lots. Corner lots: 190.81 m² at $2,729,816 and 290.55 m² at $3,178,176."
     "entrega": "Immediate"
   - "descripcion": "Ground floor: living room, dining room, kitchen, service area, terrace, one bedroom and a full bathroom. Upstairs: 2 bedrooms and a full bathroom. Lots are 8.25 to 9 m wide by about 20 m deep."
     "entrega": "Immediate"
   - "descripcion": "Ground floor: separate living and dining rooms, kitchen with breakfast bar, guest half bath and a large window onto the yard. Upstairs: 2 bedrooms and a full bathroom. Lots are 8 to 8.25 m wide by about 20 m deep. The model comes in two versions (Tulum I and Tulum II)."
     "entrega": "Immediate"
-  - "descripcion": "Ground floor: covered carport for 2 cars plus one uncovered space, double-height entry, bedroom with closet and full bathroom, living-dining room overlooking the yard, kitchen with double sink and granite counter, pantry, service room, covered terrace, yard and pool. Upstairs: primary bedroom with walk-in closet and full bathroom, bedroom with closet and full bathroom, and linen closet. Lots are 12 m wide."
-    "adicionales": "Most homes are $4,075,000 MXN on 240 m² lots. Deeper lots range from $4,102,000 to $4,203,400 (246 to 272 m²)."
+  - "descripcion": "Ground floor: covered carport for 2 cars plus one uncovered space, double-height entry, bedroom with closet and full bathroom, living-dining room overlooking the yard, kitchen with double sink and granite counter, pantry, service room, covered terrace, yard and pool. Upstairs: primary bedroom with walk-in closet and full bathroom, bedroom with closet and full bathroom, and linen closet. Lots are 12 m wide. Most homes are $4,075,000 MXN on 240 m² lots. Deeper lots range from $4,102,000 to $4,203,400 (246 to 272 m²)."
     "entrega": "Immediate"
   "descripcion": |-
     Puerta de Piedra is a residential area in Dzityá, a quiet area north of Mérida a few minutes from the ring road and close to schools, supermarkets and the city's main points of interest. The homes face an open street, not a gated community, and there are no HOA fees.
