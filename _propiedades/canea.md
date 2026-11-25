@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Diciembre 2026 a marzo 2027 (estimada)"
 resumen: "Edificio boutique de 26 departamentos en Temozón Norte, rodeado de vegetación: departamentos de 1 y 2 recámaras con piso de mármol travertino, cocina equipada y estacionamiento techado, con azotea social, caseta de vigilancia y portón eléctrico."
-precios_actualizados: "Noviembre de 2026"
+precios_actualizados: "17 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes: $30,000 de descuento en tu departamento. Departamentos equipados desde $1,820,000."
     en: "Buen Mes promo: $30,000 off your apartment. Equipped apartments from $1,820,000."

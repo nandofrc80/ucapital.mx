@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Marzo 2027"
 resumen: "Edificio de 53 departamentos y estudios al norte de Mérida, rumbo a Dzibilchaltún, que se entregan equipados: estudios de 1 recámara, departamentos de 2 recámaras (algunos en planta baja con patio y alberca privada) y Duflex con área flex, con rooftop, alberca, coffee bar, coworking, elevador y social garden."
-precios_actualizados: "Noviembre de 2026"
+precios_actualizados: "18 de noviembre de 2026"
 promociones:
   - texto: "Precio especial en los modelos Duo ($2,750,000) y Duo Plus ($3,010,000), con equipamiento y amueblado incluidos."
     en: "Special pricing on the Duo ($2,750,000) and Duo Plus ($3,010,000) models, with appliances and furniture included."

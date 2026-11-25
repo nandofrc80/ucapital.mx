@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Desarrollo boutique de 86 lotes residenciales en Cholul con entrega inmediata: piscina con canal de nado, cancha de pádel panorámica, salones climatizados, parque arbolado y calles más amplias que el estándar. Lotes urbanizados de 225 a 385 m²."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "23 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Plan a 12 meses: 10% de enganche a la firma de la promesa, 15% en 12 mensualidades y el 75% restante al mes 12. De contado: 80% a la firma y 20% a la entrega."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."

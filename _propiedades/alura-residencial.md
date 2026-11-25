@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Lotes urbanizados de 358 m² y más, a pie de calle y sin régimen de condominio, en Cholul, sobre la carretera Mérida–Chicxulub Puerto. Parque central con juegos infantiles, sin cuota de mantenimiento y financiamiento hasta 48 meses; acepta Infonavit."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "23 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Planes a 12, 24, 36 o 48 meses: 10% de enganche, 30% en mensualidades y el 60% restante al final del plazo, con escritura con reserva de dominio. A mayor plazo, mayor precio por m² (de $3,900 a $4,500 en lotes estándar). De contado pagas el 100%."
 financiamiento: "Recursos propios, crédito bancario o Infonavit (cubriendo los gastos de inscripción). Te asesoramos sin costo con las opciones y requisitos."

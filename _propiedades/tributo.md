@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Junio–julio 2029"
 resumen: "Edificio de 31 departamentos de lujo en El Triunfo, zona Paseo Norte, con departamentos de 1, 2 y 3 recámaras, algunos con jardín en planta baja, lobby, 2 elevadores y rooftop con piscina, bar con aire acondicionado y área grill."
-precios_actualizados: "14 de octubre de 2026"
+precios_actualizados: "18 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes: tu departamento de 1 o 2 recámaras con 10% de enganche y 90% contra entrega. Válido para 5 unidades."
     en: "Buen Mes promo: your one- or two-bedroom apartment with 10% down and 90% at delivery. Valid for 5 units."

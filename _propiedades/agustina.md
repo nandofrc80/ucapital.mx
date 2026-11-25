@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata y preventa"
 resumen: "Privada familiar de 28 casas en Gran San Pedro Cholul, a 400 m del Periférico. Casas de 3 recámaras con recámara en planta baja, sala a doble altura y 145 m² de terreno, con casa club, alberca, asadores, cardio room y área infantil."
-precios_actualizados: "21 de octubre de 2026"
+precios_actualizados: "15 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días hábiles)."
 enganche: "15% a la firma del contrato y el saldo contra entrega. Los adicionales se pagan junto con el enganche."
 financiamiento: "Crédito bancario o recursos propios. El desarrollador ofrece esquemas para inversionistas que dan un enganche mayor. Te asesoramos sin costo con las opciones y requisitos."

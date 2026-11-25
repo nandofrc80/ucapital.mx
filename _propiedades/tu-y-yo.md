@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Verano 2028"
 resumen: "Edificio de 24 departamentos en Temozón Norte con lofts y departamentos de 1 y 2 recámaras, elevador, recepción y amenidades de hotel boutique: piscina y bar en el rooftop, café bar, coworking, private lounge, cardio fitness y gaming room."
-precios_actualizados: "Noviembre de 2026"
+precios_actualizados: "17 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes: tu departamento equipado y amueblado incluido, con 10% de enganche y 90% contra entrega. Válido para apartados del 12 de noviembre al 1 de diciembre de 2026, firmando a más tardar el 15 de diciembre."
     en: "Buen Mes promo: your apartment equipped and furnished at no extra cost, with 10% down and 90% at delivery. Valid for reservations from November 12 to December 1, 2026, signing no later than December 15."

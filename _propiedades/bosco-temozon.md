@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Diciembre 2027 (Etapa 1) y diciembre 2028 (Etapa 2)"
 resumen: "Departamentos de 1 y 2 recámaras en Temozón Norte, en un conjunto de edificios rodeados de un bosque central, con alberca, cancha de pádel, gimnasio, sala de cine, coworking, ludoteca, elevador y recepción. Planta baja con terraza."
-precios_actualizados: "9 de noviembre de 2026"
+precios_actualizados: "17 de noviembre de 2026"
 promociones:
   - texto: "Beneficio inversionista (Etapa 1): da tu enganche del 10% en 6 pagos mensuales y recibe un ingreso equivalente al 4% del valor del departamento, o da el 15% en 12 pagos mensuales y recibe el 8%."
     en: "Investor benefit (Phase 1): pay a 10% down payment in 6 monthly installments and receive income equal to 4% of the apartment's value, or pay 15% in 12 monthly installments and receive 8%."

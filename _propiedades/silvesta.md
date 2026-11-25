@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Privada de 196 lotes entre Cholul, Conkal y Chablekal, con casa club con alberca, canal de nado y jacuzzis, gimnasio, kids club, sport bar, dos canchas de pádel y cuatro parques temáticos. Lotes de 284 a 483 m² con entrega inmediata y hasta 24 meses de financiamiento."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "23 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN."
 enganche: "Planes a 12, 18 o 24 meses: 15% de enganche, mensualidades durante el plazo y el resto a la escrituración. A mayor plazo, mayor precio por m²."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."

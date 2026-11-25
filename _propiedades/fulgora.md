@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Privada residencial deportiva en Dzityá con 370 lotes y dos grandes parques: pista de jogging de 1 km, canchas de pádel y pickleball, casa club con alberca y canal de nado, gimnasio y sport bar. Lotes urbanizados de 231 a 442 m², listos para escriturar y construir, con hasta 36 meses sin intereses."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "23 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes: 5% de descuento + 36 meses sin intereses, válido en las primeras 6 unidades vendidas del 1 al 30 de noviembre."
     en: "Buen Mes promo: 5% off + 36 interest-free months, valid on the first 6 units sold from November 1 to 30."

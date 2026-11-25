@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Diciembre 2028"
 resumen: "Privada de 372 lotes residenciales sobre la Avenida Cumbres, en Sitpach, todos con orientación norte-sur. Casa club con alberca y canal de nado, rooftop bar, cine lounge, gimnasio, canchas de pádel y parques. Lotes de 190 a 543 m² con 25 mensualidades fijas sin intereses."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "23 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Plan a 25 meses sin intereses: en lotes tipo, 10% de enganche y 25 mensualidades fijas de $5,999; en lotes frente a amenidades, 15% de enganche y 25 mensualidades fijas de $8,999. El saldo se paga al escriturar. De contado ($4,000 por m²): 80% a la firma y 20% contra entrega."
 financiamiento: "Recursos propios. Te asesoramos sin costo con el plan de pagos que más te convenga."

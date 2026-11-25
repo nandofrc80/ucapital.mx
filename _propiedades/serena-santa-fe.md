@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Diciembre 2026"
 resumen: "Lotes a pie de calle en Santa Fe Norte (San Juan Bautista), entre el Periférico poniente y el Arco Vial Norte, con calles asfaltadas, banquetas, luz y agua. Sin régimen de condominio ni cuota de mantenimiento. Lotes de 271 a 282 m², financiamiento hasta 15 meses."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "23 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Planes a 6, 12 o 15 meses: 20% de enganche y el 80% restante en mensualidades, sin saldo contra entrega. De contado pagas el 100%. El precio ya incluye el avalúo para la escrituración."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."

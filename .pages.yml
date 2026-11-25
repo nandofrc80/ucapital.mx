@@ -114,9 +114,9 @@ content:
         type: string
         description: "Ej. Diciembre 2027 o Inmediata."
       - name: precios_actualizados
-        label: Precios actualizados al
+        label: Actualizado en la página al
         type: string
-        description: "Ej. 5 de noviembre de 2026"
+        description: "Fecha en que se subió o actualizó la información en la página (no la fecha de la lista del socio). Ej. 5 de noviembre de 2026"
       - name: promociones
         label: Promociones
         type: object

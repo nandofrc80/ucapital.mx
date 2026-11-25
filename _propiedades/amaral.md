@@ -16,7 +16,7 @@ resumen: "Casas de 2 plantas y 3 recámaras a pie de calle en la zona de Real Mo
 apartado: "Aparta con $10,000 MXN."
 enganche: "10% del valor de la casa."
 financiamiento: "Recursos propios, crédito bancario o Infonavit Total. Te asesoramos sin costo con las opciones y requisitos."
-precios_actualizados: "noviembre de 2026"
+precios_actualizados: "7 de noviembre de 2026"
 portada: /fotos/amaral/malva-1.jpg
 fotos:
   - /fotos/amaral/malva-1.jpg

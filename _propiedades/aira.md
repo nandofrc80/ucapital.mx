@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a julio 2027"
 resumen: "Privada de 99 lotes residenciales en Cholul, rodeada de vegetación, con acceso controlado 24/7, piscina familiar, cancha de pádel, salón de eventos climatizado y pet park. Lotes urbanizados de 265 a 323 m² para construir tu casa a tu gusto."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "23 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "Plan a 12 o 18 meses: 15% de enganche a la firma de la promesa, 10% en mensualidades y el 75% restante contra entrega. De contado ($4,250 por m²) pagas el 100% después del apartado o en 12 mensualidades."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."

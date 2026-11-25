@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Diciembre 2031"
 resumen: "Privada de 262 lotes residenciales en Conkal, todos con orientación norte-sur, con casa club, alberca con canal de nado, parque acuático infantil, canchas de pádel, gimnasio y sport bar. Lotes de 205 a 338 m² con financiamiento hasta 48 meses sin intereses."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "23 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes: lotes de 212.96 m² a 60 meses, con 10% de enganche y mensualidades de $5,500; el saldo, contra entrega."
     en: "Buen Mes promo: 212.96 m² lots over 60 months, with 10% down and monthly payments of $5,500; the balance on delivery."
