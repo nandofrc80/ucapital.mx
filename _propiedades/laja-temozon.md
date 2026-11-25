@@ -8,13 +8,13 @@ tipo: "Departamento"
 estatus: "Preventa"
 zona: "Temozón Norte"
 ciudad: "Mérida, Yucatán"
-mapa: "https://www.google.com/maps/search/?api=1&query=Laja+Yucat%C3%A1n+Temoz%C3%B3n+Norte+M%C3%A9rida"
+mapa: "https://maps.app.goo.gl/CLaoHLVZ5yGK6EZEA"
 precio: 0
 precio_desde: true
 entrega: "Inmediata (Kaua) y abril 2028 (Caliza)"
 resumen: "Departamentos en dos niveles de 2 y 3 recámaras en Temozón Norte, a 100 metros de la carretera Mérida–Progreso, con piscina, gimnasio, salón-bar, cowork, terraza y área grill. Unidades con entrega inmediata en la etapa Kaua y en preventa en la nueva etapa Caliza."
 precios_actualizados: "24 de noviembre de 2026"
-apartado: "Aparta con $15,000 MXN (vigencia de 7 días naturales)."
+apartado: "Aparta con $15,000 MXN, con vigencia de 7 días naturales y reembolsable."
 enganche: "Etapa Caliza (preventa): 20% de enganche y 80% contra entrega."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/laja-temozon/fachada.jpg
@@ -47,6 +47,7 @@ amenidades:
 modelos:
   - nombre: "3 recámaras · Kaua (entrega inmediata)"
     niveles: "2 niveles con jardín"
+    alberca: "algunas"
     recamaras: 3
     banos: 4.5
     construccion: 174
@@ -55,7 +56,7 @@ modelos:
     precio_max: 5350000
     entrega: "Inmediata"
     disponibles: 3
-    descripcion: "Departamento de 198 m² (174 m² habitables y 24 m² de jardín) en dos niveles, con 3 recámaras, 4.5 baños, cuarto de servicio y 2 cajones de estacionamiento. Cocina vestida con gavetas superiores e inferiores, isla, parrilla eléctrica y campana; clóset en cada recámara, cancel en regaderas y calentador eléctrico. Disponibles: D14 ($5,300,000), D15 ($5,350,000) y D11, el departamento muestra ($5,350,000)."
+    descripcion: "Departamento de 198 m² (174 m² habitables y 24 m² de jardín) en dos niveles, con 3 recámaras, 4.5 baños, cuarto de servicio y 2 cajones de estacionamiento. Cocina vestida con gavetas superiores e inferiores, isla, parrilla eléctrica y campana; clóset en cada recámara, cancel en regaderas y calentador eléctrico. Disponibles: D14 con alberca privada ($5,300,000), D15 ($5,350,000) y D11, el departamento muestra ($5,350,000)."
     adicionales: "Cuota de mantenimiento: $2,750 mensuales. Fondo de reserva de $8,250 antes de escriturar."
     fotos:
       - "/fotos/laja-temozon/3r-sala-comedor.jpg"
@@ -121,7 +122,7 @@ modelos:
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "Immediate (Kaua) and April 2028 (Caliza)"
-  "apartado": "Reserve with $15,000 MXN (valid for 7 calendar days)."
+  "apartado": "Reserve with $15,000 MXN, valid for 7 calendar days and refundable."
   "enganche": "Caliza phase (pre-sale): 20% down and 80% at delivery."
   "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "resumen": "Two-level 2- and 3-bedroom apartments in Temozón Norte, 100 meters from the Mérida–Progreso highway, with pool, gym, bar lounge, coworking, terrace and grill area. Units ready to move in at the Kaua phase and in pre-sale at the new Caliza phase."
@@ -137,7 +138,7 @@ modelos:
   - "Visitor parking"
   "modelos":
   - "niveles": "2 levels with garden"
-    "descripcion": "198 m² two-level apartment (174 m² of living space plus a 24 m² garden) with 3 bedrooms, 4.5 bathrooms, a maid's room and 2 parking spaces. Fitted kitchen with upper and lower cabinets, island, electric cooktop and hood; closets in every bedroom, glass shower panels and electric water heater. Available: D14 ($5,300,000 MXN), D15 ($5,350,000) and D11, the model apartment ($5,350,000)."
+    "descripcion": "198 m² two-level apartment (174 m² of living space plus a 24 m² garden) with 3 bedrooms, 4.5 bathrooms, a maid's room and 2 parking spaces. Fitted kitchen with upper and lower cabinets, island, electric cooktop and hood; closets in every bedroom, glass shower panels and electric water heater. Available: D14 with a private pool ($5,300,000 MXN), D15 ($5,350,000) and D11, the model apartment ($5,350,000)."
     "adicionales": "HOA fee: $2,750 MXN per month. $8,250 MXN reserve fund before closing."
     "entrega": "Immediate"
   - "niveles": "2 levels with terrace"
