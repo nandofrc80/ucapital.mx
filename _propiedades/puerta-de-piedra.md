@@ -74,7 +74,21 @@ modelos:
     entrega: "Inmediata"
     disponibles: 18
     descripcion: "Planta baja: sala, comedor, cocina, área de servicio, terraza, una recámara y un baño completo. Planta alta: 2 recámaras y un baño completo. Terrenos de 8.25 a 9 m de frente por unos 20 m de fondo."
-    fotos: []
+    fotos:
+      - "/fotos/puerta-de-piedra/palenque-fachada.jpg"
+      - "/fotos/puerta-de-piedra/palenque-fachada-2.jpg"
+      - "/fotos/puerta-de-piedra/palenque-sala-comedor.jpg"
+      - "/fotos/puerta-de-piedra/palenque-sala.jpg"
+      - "/fotos/puerta-de-piedra/palenque-comedor.jpg"
+      - "/fotos/puerta-de-piedra/palenque-cocina.jpg"
+      - "/fotos/puerta-de-piedra/palenque-alacena.jpg"
+      - "/fotos/puerta-de-piedra/palenque-escalera.jpg"
+      - "/fotos/puerta-de-piedra/palenque-recamara-1.jpg"
+      - "/fotos/puerta-de-piedra/palenque-recamara-2.jpg"
+      - "/fotos/puerta-de-piedra/palenque-closet.jpg"
+      - "/fotos/puerta-de-piedra/palenque-bano.jpg"
+      - "/fotos/puerta-de-piedra/palenque-plano-pb.jpg"
+      - "/fotos/puerta-de-piedra/palenque-plano-pa.jpg"
   - nombre: "Tulum"
     niveles: "2 plantas"
     plantas: 2
