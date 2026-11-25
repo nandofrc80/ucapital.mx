@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Última unidad disponible en este desarrollo terminado de Temozón Norte: loft de 1 recámara en dos niveles con balcón, a precio especial. Rooftop con alberca, cancha de pádel, cowork y terraza con asadores."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Última unidad: departamento 320 tipo E a $1,997,000 (precio de lista $2,250,000)."
     en: "Last unit: apartment 320, type E, at $1,997,000 MXN (list price $2,250,000 MXN)."

@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Mayo 2027"
 resumen: "Complejo de 36 departamentos en Santa Rita Cholul con sports bar y cava privada para cada departamento, green de golf, rooftop con alberca y zona zen. Departamentos de 2 recámaras y 60 m²."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes en Livia Duo: llévate el departamento con TV de 50\", cama matrimonial con base, 2 burós, 3 aires acondicionados de 12,000 BTU, sala, comedor para 4 y refrigerador de 14 pies."
     en: "Buen Mes promo on Livia Duo: get the apartment with a 50\" TV, queen bed with base, 2 nightstands, 3 12,000 BTU air conditioners, living room set, 4-seat dining set and a 14 cu ft refrigerator."

@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Septiembre 2027 a noviembre 2028"
 resumen: "Casas de 2 y 3 recámaras en preventa en Conkal, dentro del mismo gran complejo residencial que Estela Nativa. Desde $2,150,000."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 portada: /fotos/boreal/portada.jpg
 fotos:
   - /fotos/boreal/portada.jpg
@@ -61,7 +61,7 @@ modelos:
     estacionamientos: 2
     precio: 2350000
     precio_max: 2480000
-    disponibles: 52
+    disponibles: 51
     entrega: "Septiembre 2027 a noviembre 2028"
     descripcion: "La versión de 3 recámaras del Aurora: sala, comedor, cocina con gavetas inferiores, medio baño, cuarto de lavado y terraza en planta baja; recámara principal con clóset y baño completo, dos recámaras más con clóset y un baño completo en planta alta."
     adicionales: "También hay casas con piscina desde $2,480,000."

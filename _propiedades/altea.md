@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Edificio boutique de 26 departamentos en Altabrisa con rooftop, alberca y gimnasio. Últimos departamentos de 2 recámaras y 92 m², listos para entregar."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 apartado: "Aparta con $20,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "10% del valor del departamento."
 financiamiento: "Crédito bancario, Infonavit Total o recursos propios. Te asesoramos sin costo con las opciones y requisitos."
@@ -46,8 +46,10 @@ modelos:
     construccion: 92
     estacionamientos: 2
     precio: 3990000
+    precio_max: 4300000
     entrega: "Inmediata"
     disponibles: 4
+    adicionales: "Precio con descuento según nivel: 202 y 203 en $3,990,000; 302 en $4,200,000; 404 en $4,300,000."
     descripcion: "Departamento de 92 m² habitables con balcón y bodega: sala-comedor, cocina, clóset de lavado, recámara principal con clóset vestidor y baño completo, recámara secundaria con área de clóset y un segundo baño completo. Incluye 2 cajones de estacionamiento."
     fotos:
       - "/fotos/altea/b-amueblado-14.jpg"
@@ -76,6 +78,7 @@ modelos:
   "modelos":
   - "niveles": "2 bedrooms"
     "entrega": "Immediate"
+    "adicionales": "Discounted price by floor: units 202 and 203 at $3,990,000 MXN; 302 at $4,200,000 MXN; 404 at $4,300,000 MXN."
     "descripcion": "92 m² of living space with balcony and storage room: living-dining room, kitchen, laundry closet, main bedroom with walk-in closet and full bathroom, second bedroom with closet area and a second full bathroom. Includes 2 parking spaces."
   "descripcion": |-
     Altea is a boutique building of 26 apartments in Altabrisa, one of Mérida's most sought-after and secure areas, close to malls, banks, supermarkets, top hospitals, schools and universities.
