@@ -8,7 +8,7 @@ tipo: "Casa"
 estatus: "Entrega inmediata"
 zona: "Caucel"
 ciudad: "Mérida, Yucatán"
-mapa: "https://maps.app.goo.gl/oXYfZgrf18ZQPG1x5"
+mapa: "https://maps.app.goo.gl/Jb6UpRKQgVXMHosu9"
 precio: 0
 precio_desde: true
 entrega: "Inmediata"
