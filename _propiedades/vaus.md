@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Enero 2029"
 resumen: "45 departamentos de 1, 2 y 3 recámaras en Temozón Norte, con casa club con piscina, jardín central, cowork, game room, gimnasio y pet park. Opciones en planta baja con jardín privado y un esquema de enganche diferido a 24 meses."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "10% a la firma de la promesa, otro 10% diferido en 24 meses y el saldo a la escritura."
 financiamiento: "Crédito bancario o recursos propios. Te asesoramos sin costo con las opciones y requisitos."
@@ -152,12 +152,12 @@ modelos:
     banos: 3.5
     construccion: 98
     estacionamientos: 2
-    precio: 3590000
+    precio: 3690000
     precio_max: 3790000
     entrega: "Enero 2029"
-    disponibles: 3
+    disponibles: 2
     descripcion: "Departamento de 98 m² más balcón de 4.5 m² en niveles 1 a 4: cocina con isla, cuarto de lavado, medio baño, sala y comedor con vista al balcón, y tres recámaras con clóset y baño. Incluye 2 cajones de estacionamiento."
-    adicionales: "Precio según nivel: de $3,590,000 a $3,790,000."
+    adicionales: "Precio según nivel: de $3,690,000 a $3,790,000."
     fotos:
       - "/fotos/vaus/planta-e.jpg"
       - "/fotos/vaus/recamara-e.jpg"
@@ -220,7 +220,7 @@ modelos:
   - "niveles": "3 bedrooms · with balcony"
     "entrega": "January 2029"
     "descripcion": "98 m² apartment plus a 4.5 m² balcony on levels 1 to 4: kitchen with island, laundry room, half bath, living and dining area facing the balcony, and three bedrooms with closets and bathrooms. Includes 2 parking spaces."
-    "adicionales": "Price depends on the level: from $3,590,000 to $3,790,000 MXN."
+    "adicionales": "Price depends on the level: from $3,690,000 to $3,790,000 MXN."
   - "niveles": "3 bedrooms · ground floor with garden"
     "entrega": "January 2029"
     "descripcion": "95 m² ground-floor apartment with a 22 m² private garden: kitchen with island, laundry closet, living and dining area facing the garden, and three bedrooms with closets and bathrooms; the third has an indoor garden. Includes 2 parking spaces."

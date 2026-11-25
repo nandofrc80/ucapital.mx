@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a abril 2027"
 resumen: "Casas de 3 recámaras con alberca en una privada al norte de Mérida, a 500 m de la carretera a Progreso, con casa club, canal de nado, gimnasio, pádel y kids club."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Casas de entrega inmediata (lotes 57 y 58): $300,000 de descuento y equipamiento incluido: ventiladores de techo, boiler, mosquiteros, refrigerador, parrilla de gas, jardinería con riego automático y carpintería en cocina."
     en: "Move-in-ready homes (lots 57 and 58): $300,000 MXN discount plus equipment included: ceiling fans, water heater, insect screens, refrigerator, gas cooktop, landscaping with automatic irrigation and kitchen cabinetry."

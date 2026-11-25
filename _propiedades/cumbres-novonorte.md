@@ -18,7 +18,7 @@ promociones:
     en: "This November we include lower kitchen cabinets and 2 air conditioners (installation not included). Valid in the Sierra Madre community; terms and conditions apply."
     hasta: "2026-11-30"
     imagen: /fotos/cumbres-novonorte/promo-2026-11.jpg
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 portada: /fotos/cumbres-novonorte/portada.jpg
 fotos:
   - /fotos/cumbres-novonorte/portada.jpg

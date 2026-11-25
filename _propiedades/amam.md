@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Junio 2027"
 resumen: "11 residencias de 3 recámaras en San Ramón Norte, una de las zonas más consolidadas del norte de Mérida, con alberca con acabado chukum, jardín con riego y sin cuota de mantenimiento."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Este noviembre te regalamos 6 paneles solares. No aplica con otras promociones."
     en: "This November we include 6 solar panels. Cannot be combined with other promotions."

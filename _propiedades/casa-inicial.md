@@ -19,7 +19,7 @@ entrega: "Inmediata (Tres Lunas) u 8 meses (Altozano)"
 resumen: "Casa contemporánea de dos plantas con sala de doble altura, 2 recámaras y 2.5 baños. Disponible con entrega inmediata en la privada Tres Lunas, en Cholul, o en preventa en Altozano, sobre la carretera Mérida–Progreso, con opción de agregar alberca."
 apartado: "Aparta con $10,000 MXN."
 enganche: "10% del valor de la casa."
-precios_actualizados: "6 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 portada: /fotos/casa-inicial/fachada.jpg
 fotos:
   - /fotos/casa-inicial/fachada.jpg

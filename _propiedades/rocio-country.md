@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Privada de 15 residencias en terrenos desde 446 m² al norte de Mérida, de una y dos plantas, todas con alberca y listas para entregar. Casa club con gimnasio, canal de nado, canchas de pádel, kids club y pet park."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN."
 enganche: "10% mínimo a la firma de la promesa."
 financiamiento: "Crédito bancario o recursos propios. Te asesoramos sin costo con las opciones y requisitos."

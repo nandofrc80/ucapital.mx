@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Última etapa de residencias de 4 recámaras en Xcanatún, diseñadas por el despacho P11, con alberca propia y una casa club de más de 20 amenidades: canal de nado, canchas de pádel, gimnasio, kids club y coworking."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 apartado: "Aparta con $25,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "10% a la firma de la promesa."
 financiamiento: "Crédito bancario o recursos propios. Te asesoramos sin costo con las opciones y requisitos."

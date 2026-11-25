@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Marzo 2027 a junio 2028"
 resumen: "Desarrollo de 132 departamentos en Chuburná de Hidalgo con alberca, cancha de pádel, gimnasio y casa club. De 1 y 2 recámaras, de 55 a 76 m², y aceptan Infonavit y Fovissste."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes, exclusivo de la Etapa 1: en la compra de tu departamento te regalan un kit de equipamiento (TV de 50\", refrigerador, lavadora y cafetera), aires acondicionados y carpintería de clósets y baños."
     en: "Buen Mes promo, Phase 1 only: buy your apartment and get an appliance kit (50\" TV, refrigerator, washer and coffee maker), air conditioners and closet and bathroom cabinetry included."
@@ -67,7 +67,7 @@ modelos:
     estacionamientos: 1
     precio: 1985000
     entrega: "Marzo 2027 o junio 2028"
-    disponibles: 32
+    disponibles: 31
     descripcion: "Departamento de 62 m²: sala-comedor, cocina, área de lavado, recámara principal con baño y un estudio flexible que funciona como oficina o cuarto de visitas. Incluye 1 cajón de estacionamiento. Hay unidades en planta baja con jardín."
     adicionales: "Unidades en planta baja con jardín de 8 a 39 m² (precio mayor)."
     fotos:
@@ -83,9 +83,9 @@ modelos:
     estacionamientos: 1
     precio: 2405000
     entrega: "Marzo 2027 o junio 2028"
-    disponibles: 48
+    disponibles: 47
     descripcion: "Departamento de 76 m²: sala-comedor, cocina, área de lavado, recámara principal con baño y recámara secundaria con baño. Incluye 1 cajón en el nivel 2 y 2 cajones en planta baja y nivel 1."
-    adicionales: "Unidades en planta baja con jardín de 6 a 110 m² (precio mayor)."
+    adicionales: "Unidades en planta baja con jardín de 6 a 76 m² (precio mayor)."
     fotos:
       - "/fotos/livenza/planta-a.jpg"
       - "/fotos/livenza/recamara-a.jpg"
@@ -117,7 +117,7 @@ modelos:
   - "niveles": "2 bedrooms"
     "entrega": "March 2027 or June 2028"
     "descripcion": "76 m² apartment: living-dining room, kitchen, laundry area, main bedroom with bathroom and second bedroom with bathroom. 1 parking space on level 2; 2 spaces on the ground floor and level 1."
-    "adicionales": "Ground-floor units with a 6 to 110 m² garden (higher price)."
+    "adicionales": "Ground-floor units with a 6 to 76 m² garden (higher price)."
   "descripcion": |-
     Livenza is a 132-apartment development in Chuburná de Hidalgo, north-central Mérida, close to schools, shopping and services.
 

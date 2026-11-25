@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Casas de 3 recámaras con alberca en Dzityá, listas para entregar, cada recámara con su propio baño. Fraccionamiento abierto, sin cuota de mantenimiento."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Este noviembre, $100,000 de descuento: casas desde $3,850,000."
     en: "This November, $100,000 MXN off: homes from $3,850,000 MXN."

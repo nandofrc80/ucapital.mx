@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Julio 2027"
 resumen: "Privada de 66 residencias de 3 y 4 recámaras en la zona del Yucatán Country Club, todas con alberca y paneles solares. Casa club de tres niveles con canal de nado, gimnasio, cine, cowork, cancha de pádel y bar en roof top."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "10% a la firma de la promesa y el saldo a la escritura."
 financiamiento: "Crédito bancario o recursos propios. Te asesoramos sin costo con las opciones y requisitos."
@@ -59,7 +59,8 @@ modelos:
     construccion: 194
     terreno: 267
     terreno_desde: true
-    precio: 6350000
+    precio: 6395000
+    precio_max: 6470000
     entrega: "Julio 2027"
     disponibles: 2
     descripcion: "Casa de una planta: cochera techada, medio baño de visitas, cocina, sala, comedor, jardín interior, terraza, alberca y tres recámaras con baño completo; la principal con clóset vestidor. Cuarto de servicio en azotea."
@@ -81,7 +82,8 @@ modelos:
     construccion: 209
     terreno: 265
     terreno_desde: true
-    precio: 6665000
+    precio: 6695000
+    precio_max: 6770000
     entrega: "Julio 2027"
     disponibles: 2
     descripcion: "Casa de una planta: cochera techada, medio baño de visitas, cocina, sala, comedor, dos jardines interiores, alberca y tres recámaras con baño completo; la principal con clóset vestidor. Cuarto de servicio en azotea."
@@ -101,12 +103,12 @@ modelos:
     construccion: 253
     terreno: 264
     terreno_desde: true
-    precio: 8390000
-    precio_max: 8480000
+    precio: 8420000
+    precio_max: 8510000
     entrega: "Julio 2027"
     disponibles: 4
     descripcion: "Planta baja: cochera techada, medio baño de visitas, cocina, sala, comedor, cuarto de servicio, terraza y alberca. Planta alta: tres recámaras con baño completo; la principal con clóset vestidor."
-    adicionales: "Precio según lote: de $8,390,000 a $8,480,000."
+    adicionales: "Precio según lote: de $8,420,000 a $8,510,000."
     fotos:
       - "/fotos/kimakol/p4-fachada.jpg"
       - "/fotos/kimakol/p4-posterior.jpg"
@@ -123,7 +125,7 @@ modelos:
     construccion: 325
     terreno: 264
     terreno_desde: true
-    precio: 9350000
+    precio: 9395000
     entrega: "Julio 2027"
     disponibles: 3
     descripcion: "Planta baja: cochera techada, medio baño de visitas, cocina, sala, comedor, cuarto de servicio, terraza, alberca y recámara con baño completo. Planta alta: área de TV, balcón, dos recámaras con baño completo y recámara principal con clóset vestidor y baño completo."
@@ -163,7 +165,7 @@ modelos:
   - "niveles": "2 floors"
     "entrega": "July 2027"
     "descripcion": "Ground floor: covered parking, guest half bath, kitchen, living room, dining room, service room, terrace and pool. Upper floor: three bedrooms with full bathrooms; the primary with walk-in closet."
-    "adicionales": "Price depends on the lot: from $8,390,000 to $8,480,000 MXN."
+    "adicionales": "Price depends on the lot: from $8,420,000 to $8,510,000 MXN."
   - "niveles": "2 floors"
     "entrega": "July 2027"
     "descripcion": "Ground floor: covered parking, guest half bath, kitchen, living room, dining room, service room, terrace, pool and bedroom with full bathroom. Upper floor: TV area, balcony, two bedrooms with full bathrooms and primary bedroom with walk-in closet and full bathroom."

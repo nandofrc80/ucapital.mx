@@ -17,7 +17,7 @@ promociones:
   - texto: "¡Estrena hogar este noviembre en NAIA! Al comprar tu casa recibe aires acondicionados, canceles, boilers y jardín incluidos, para disfrutar desde el primer día de un espacio pensado para tu comodidad. Aplican términos y condiciones."
     en: "Move in this November at NAIA! Buy your home and get air conditioning, shower enclosures, water heaters and landscaped garden included, so you can enjoy a space designed for your comfort from day one. Terms and conditions apply."
     hasta: "2026-11-30"
-precios_actualizados: "5 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 portada: /fotos/naia/portada.jpg
 fotos:
   - /fotos/naia/portada.jpg

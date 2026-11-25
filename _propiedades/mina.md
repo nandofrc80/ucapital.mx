@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Diciembre 2028 a junio 2029"
 resumen: "Edificio de 76 departamentos en Temozón Norte con alberca, rooftop, cowork, cava y family kitchen. De 1 y 2 recámaras, de 39 a 65 m²; en planta baja hay opciones con jardín y alberca privada."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "10% a la firma de la promesa y otro 10% diferido a 24 meses; el saldo a la escritura."
 financiamiento: "Crédito bancario o recursos propios. Te asesoramos sin costo con las opciones y requisitos."
@@ -81,7 +81,7 @@ modelos:
     precio: 2780000
     precio_max: 2980000
     entrega: "Diciembre 2028 a junio 2029"
-    disponibles: 8
+    disponibles: 7
     descripcion: "Departamento de 65 m²: cocina, comedor, sala, baño de visitas, área de lavado, recámara principal con clóset vestidor y baño completo, y recámara secundaria con clóset vestidor. Incluye 1 cajón de estacionamiento."
     adicionales: "Nivel 3 con bodega desde $2,980,000."
     fotos:

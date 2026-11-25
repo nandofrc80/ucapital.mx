@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Privada de solo 8 townhouses de 3 recámaras en la zona de Caucel, al norte poniente de Mérida, cada una con rooftop y alberca privada. Listas para entregar, cerca del periférico y a minutos del aeropuerto."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes: este noviembre te incluimos los 3 clósets (walk-in clóset en la recámara principal y clósets en las dos secundarias)."
     en: "Buen Mes promo: this November all 3 closets are included (walk-in closet in the primary bedroom and closets in both secondary bedrooms)."

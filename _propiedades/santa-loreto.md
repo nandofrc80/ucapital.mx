@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a noviembre 2027"
 resumen: "Casas de 2 y 3 recámaras a unos metros del periférico en Caucel, alrededor de un gran parque central con canchas de pádel, skate park, yoga park, pet park y juegos infantiles. Casas listas para entregar en Privada Zamná y en preventa en Privada Balám."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes en Privada Zamná: te regalamos los clósets de las recámaras y la carpintería inferior de la cocina en los modelos participantes. En los modelos A y A2, además, te construimos la cochera sin costo."
     en: "Buen Mes promo at Privada Zamná: bedroom closets and lower kitchen cabinets free on participating models. On models A and A2, the carport is also built at no cost."
@@ -57,12 +57,12 @@ modelos:
     terreno: 205
     terreno_desde: true
     estacionamientos: 2
-    precio: 2895000
+    precio: 2860000
     precio_max: 3170000
     entrega: "Inmediata a noviembre 2027"
-    disponibles: 3
+    disponibles: 4
     descripcion: "Planta baja: cochera para 2 autos, jardín frontal, sala, comedor, cocina con meseta de granito, medio baño de visitas, área de lavado y terraza. Planta alta: recámara principal con clóset vestidor, recámara secundaria y baño completo compartido."
-    adicionales: "Privada Zamná, entrega inmediata: $2,895,000. Privada Balám, entrega noviembre 2027: $2,925,000 y $3,170,000."
+    adicionales: "Privada Zamná, entrega inmediata: $2,895,000, y una versión J's de 94 m² en $2,860,000. Privada Balám, entrega noviembre 2027: $2,925,000 y $3,170,000."
     fotos:
       - "/fotos/santa-loreto/fachada-j.jpg"
   - nombre: "A"
@@ -151,27 +151,6 @@ modelos:
       - "/fotos/santa-loreto/fachada-b.jpg"
       - "/fotos/santa-loreto/b-recamara.jpg"
       - "/fotos/santa-loreto/b-recamara-2.jpg"
-  - nombre: "C"
-    niveles: "2 plantas · sala a doble altura"
-    plantas: 2
-    recamara_pb: "no"
-    alberca: "no"
-    cochera_techada: "si"
-    recamaras: 2
-    banos: 1.5
-    construccion: 140
-    terreno: 238
-    estacionamientos: 2
-    precio: 3430000
-    entrega: "Noviembre 2027"
-    disponibles: 1
-    descripcion: "Planta baja: cochera techada para 2 autos, jardín frontal, sala y comedor a doble altura, cocina con meseta de granito, medio baño de visitas, área de lavado y tendido, bodega y alacena. Planta alta: dos recámaras con área de clóset y baño completo compartido."
-    adicionales: "En Privada Balám."
-    fotos:
-      - "/fotos/santa-loreto/fachada-c.jpg"
-      - "/fotos/santa-loreto/c-foto.jpg"
-      - "/fotos/santa-loreto/c-recamara.jpg"
-      - "/fotos/santa-loreto/c-bano.jpg"
   - nombre: "E"
     niveles: "2 plantas"
     plantas: 2
@@ -212,7 +191,7 @@ modelos:
   - "niveles": "2 floors"
     "entrega": "Immediate to November 2027"
     "descripcion": "Ground floor: parking for 2 cars, front garden, living room, dining room, kitchen with granite countertop, guest half bath, laundry area and terrace. Upper floor: primary bedroom with walk-in closet, secondary bedroom and shared full bathroom."
-    "adicionales": "Privada Zamná, immediate delivery: $2,895,000 MXN. Privada Balám, delivery November 2027: $2,925,000 and $3,170,000 MXN."
+    "adicionales": "Privada Zamná, immediate delivery: $2,895,000 MXN, plus a 94 m² J's version at $2,860,000 MXN. Privada Balám, delivery November 2027: $2,925,000 and $3,170,000 MXN."
   - "niveles": "2 floors"
     "entrega": "Immediate"
     "descripcion": "Ground floor: parking for 2 cars, front garden, living room, dining room, kitchen with granite countertop, guest half bath, service patio, storage and pantry. Upper floor: two bedrooms with closet space and shared full bathroom."
@@ -229,10 +208,6 @@ modelos:
     "entrega": "Immediate to November 2027"
     "descripcion": "Ground floor: parking for 2 cars, front garden, living room, dining room, kitchen with granite countertop, guest half bath, service patio, pantry and covered terrace. Upper floor: primary bedroom with full bathroom, two secondary bedrooms and shared full bathroom."
     "adicionales": "Privada Balám, delivery November 2027: $3,370,000 MXN. Privada Zamná, immediate delivery with pool: $3,490,000 MXN."
-  - "niveles": "2 floors · double-height living room"
-    "entrega": "November 2027"
-    "descripcion": "Ground floor: covered parking for 2 cars, front garden, double-height living and dining room, kitchen with granite countertop, guest half bath, laundry and drying area, storage and pantry. Upper floor: two bedrooms with closet space and shared full bathroom."
-    "adicionales": "At Privada Balám."
   - "niveles": "2 floors"
     "entrega": "November 2027"
     "descripcion": "Ground floor: covered parking for 2 cars, front garden, living room, dining room, kitchen with granite countertop, guest half bath, laundry and drying area, and pantry. Upper floor: primary bedroom with walk-in closet and full bathroom, two secondary bedrooms and shared full bathroom."

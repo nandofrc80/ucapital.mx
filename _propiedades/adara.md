@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a marzo 2027"
 resumen: "Privada de 75 residencias de 3 y 4 recámaras en Temozón Norte, todas con alberca y paneles solares. Ocho modelos, de una y dos plantas."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Este noviembre te regalamos 4 aires acondicionados inverter (uno de 18,000 BTU y tres de 12,000 BTU)."
     en: "This November we include 4 inverter air conditioners (one 18,000 BTU and three 12,000 BTU units)."
@@ -175,9 +175,10 @@ modelos:
     terreno: 298
     terreno_desde: true
     estacionamientos: 2
-    precio: 6395000
+    precio: 6840000
+    precio_max: 7465000
     entrega: "Enero 2027"
-    disponibles: 3
+    disponibles: 2
     descripcion: "Planta baja: cochera techada para 2 autos, vestíbulo a doble altura, sala a altura y media, comedor con vista al jardín, sala de TV, terraza techada, cocina con barra desayunadora, medio baño de visitas, cuarto de servicio con baño y alberca. Planta alta: tres recámaras con balcón y baño completo; la principal con clóset vestidor."
     fotos:
       - /fotos/adara/279-1.jpg

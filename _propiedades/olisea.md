@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata a junio 2027"
 resumen: "Privada de 25 residencias de 3 y 4 recámaras en Cholul, con alberca, paneles solares y casa club con gimnasio, canal de nado de 18 m, sport bar y salón infantil climatizados. Casas listas para entregar y en construcción."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes: te regalamos 4 aires acondicionados mini split inverter instalados (uno de 24,000 BTU y tres de 12,000 BTU) y el clóset de la recámara principal."
     en: "Buen Mes promo: 4 inverter mini-split air conditioners installed (one 24,000 BTU and three 12,000 BTU) plus the primary-bedroom closet, free."

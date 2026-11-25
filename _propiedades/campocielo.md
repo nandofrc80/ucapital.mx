@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Privada residencial en Royal del Parque, entre Temozón y Dzityá, con acceso por la carretera Mérida–Progreso. Casas Confort de 2 recámaras con recámara en planta baja, cochera techada para 2 autos y 198 m² de terreno, con parques, acceso controlado y seguridad 24/7."
-precios_actualizados: "16 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Precio especial de $100,000 menos sobre el precio de lista: $3,450,000 (lista $3,550,000) en la casa 247 y $3,500,000 (lista $3,600,000) en las casas 250 y 251, junto al parque."
     en: "Special price, $100,000 off the list price: $3,450,000 (list $3,550,000) for home 247 and $3,500,000 (list $3,600,000) for homes 250 and 251, next to the park."

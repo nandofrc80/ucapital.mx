@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Enero 2028"
 resumen: "Conjunto de 45 departamentos en Temozón Norte con terraza y alberca, bar climatizado, pet park, gimnasio y cowork. Departamentos de 2 recámaras con balcón o con jardín en planta baja."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 promociones:
   - texto: "Buen Mes: da el 20% de enganche y recibe gratis un aire acondicionado de 12,000 BTU por recámara (no incluye instalación)."
     en: "Buen Mes promo: put down 20% and get one 12,000 BTU air conditioner per bedroom at no cost (installation not included)."
@@ -52,8 +52,9 @@ modelos:
     construccion: 60
     estacionamientos: 1
     precio: 2645000
+    precio_max: 2699000
     entrega: "Enero 2028"
-    disponibles: 8
+    disponibles: 6
     descripcion: "Departamento de 60 m² habitables más balcón de 4.5 m²: sala-comedor, cocina con isla, área de lavado, recámara principal con clóset semi vestido y baño completo, y recámara secundaria con clóset y baño completo. Incluye 1 cajón de estacionamiento y preparación para paneles solares."
     fotos:
       - "/fotos/nuan/sala-balcon.jpg"

@@ -20,7 +20,7 @@ promociones:
 apartado: "Aparta con $10,000 MXN."
 enganche: "10% del valor de la casa."
 financiamiento: "Crédito bancario, recursos propios, Infonavit Total, Cofinavit o Fovissste para Todos. Te asesoramos sin costo con las opciones y requisitos."
-precios_actualizados: "22 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 portada: /fotos/gran-bosco/acceso.jpg
 fotos:
   - /fotos/gran-bosco/acceso.jpg

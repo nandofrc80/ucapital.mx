@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Abril 2027"
 resumen: "Últimas 2 casas de 3 recámaras en Chichí Suárez, al nororiente de Mérida, con alberca, cocina integral y barda perimetral. Fraccionamiento abierto, sin cuota de mantenimiento, cerca de Altabrisa y Macroplaza."
-precios_actualizados: "14 de noviembre de 2026"
+precios_actualizados: "25 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (puedes solicitar la devolución en un plazo máximo de 7 días)."
 enganche: "10% a la firma de la promesa y el saldo a la escritura."
 financiamiento: "Crédito bancario o recursos propios. Te asesoramos sin costo con las opciones y requisitos."
