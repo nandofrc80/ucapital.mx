@@ -90,7 +90,15 @@ modelos:
     entrega: "Inmediata"
     disponibles: 12
     descripcion: "Planta baja: sala y comedor separados, cocina con barra, medio baño de visitas y ventanal hacia el patio. Planta alta: 2 recámaras y un baño completo. Terrenos de 8 a 8.25 m de frente por unos 20 m de fondo. Hay dos versiones del modelo (Tulum I y Tulum II)."
-    fotos: []
+    fotos:
+      - "/fotos/puerta-de-piedra/tulum-fachada.jpg"
+      - "/fotos/puerta-de-piedra/tulum-patio.jpg"
+      - "/fotos/puerta-de-piedra/tulum-cocina.jpg"
+      - "/fotos/puerta-de-piedra/tulum-barra.jpg"
+      - "/fotos/puerta-de-piedra/tulum-medio-bano.jpg"
+      - "/fotos/puerta-de-piedra/tulum-escalera.jpg"
+      - "/fotos/puerta-de-piedra/tulum-recamara-1.jpg"
+      - "/fotos/puerta-de-piedra/tulum-recamara-2.jpg"
   - nombre: "THO"
     niveles: "2 plantas"
     plantas: 2
