@@ -8,7 +8,7 @@ tipo: "Departamento"
 estatus: "Preventa"
 zona: "Campestre"
 ciudad: "Mérida, Yucatán"
-mapa: "https://www.google.com/maps/search/?api=1&query=Panorama+Campestre+M%C3%A9rida+Yucat%C3%A1n"
+mapa: "https://maps.app.goo.gl/b4mKuowLNnFMjGgP8"
 precio: 0
 precio_desde: true
 entrega: "2028"
@@ -16,6 +16,7 @@ resumen: "Edificio boutique de 26 departamentos en la colonia Campestre, con dis
 precios_actualizados: "24 de noviembre de 2026"
 apartado: "Aparta con $15,000 MXN por 15 días naturales; si cancelas dentro de ese plazo, se te devuelve completo."
 enganche: "Esquema de lista 15 / 15 / 70: 15% de enganche, 15% durante la obra y 70% contra entrega."
+financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/panorama-campestre/fachada.jpg
 fotos:
   - /fotos/panorama-campestre/fachada.jpg
@@ -141,6 +142,7 @@ modelos:
   "entrega": "2028"
   "apartado": "Reserve with $15,000 MXN for 15 calendar days; if you cancel within that period, it is fully refunded."
   "enganche": "15 / 15 / 70 list plan: 15% down, 15% during construction and 70% at delivery."
+  "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "resumen": "A 26-unit boutique building in the Campestre neighborhood, with a stepped design that maximizes views and privacy, a pool, semi-Olympic lap lane, gym, coworking space, bar terrace and pet park. 1- and 2-bedroom apartments, a garden unit and a penthouse."
   "amenidades":
   - "Recreational pool"
