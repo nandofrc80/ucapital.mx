@@ -292,6 +292,7 @@
   /* Anti-bots: la dirección de Formspree no está en el HTML (solo aquí), y se descartan en silencio
      los envíos que llenan un campo trampa, que llegan en menos de 3 s o sin que la persona toque el formulario */
   var FS = "https://formspree.io/f/" + "ebaedeem".split("").reverse().join("");
+  var CRM = "https://crm.ucapital.mx/api/web.php";
   var T0 = Date.now();
   $$("[data-form]").forEach(function (form) {
     var tocado = false;
@@ -314,6 +315,8 @@
       if (btn) { btn.disabled = true; btn.dataset.label = btn.innerHTML; btn.textContent = EN ? "Sending…" : "Enviando…"; }
       var fd = new FormData(form);
       fd.delete("empresa");
+      /* Copia al CRM propio (crm.ucapital.mx). Si falla, no afecta el envío normal. */
+      try { fetch(CRM, { method: "POST", body: fd, keepalive: true }).catch(function () {}); } catch (e2) {}
       fetch(FS, { method: "POST", body: fd, headers: { "Accept": "application/json" } })
         .then(function (r) {
           if (!r.ok) throw new Error("HTTP " + r.status);
