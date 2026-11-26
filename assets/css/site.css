@@ -868,7 +868,7 @@ p { margin: 0 0 1em; }
 .listado__cta strong { display: block; color: var(--navy); font-family: var(--display); font-size: 1.35rem; font-weight: 600; margin-bottom: 4px; }
 
 /* Botón para compartir un modelo (liga directa a esa tarjeta) */
-.modelo__share { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1px solid var(--gold); border-radius: 999px; background: transparent; color: var(--gold-dark); font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; transition: background .2s, color .2s; }
+.modelo__share { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1px solid var(--gold); border-radius: 999px; background: transparent; color: var(--gold-dark); font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; transition: background .2s, color .2s; }
 .modelo__share:hover, .modelo__share.is-ok { background: var(--gold); color: #fff; }
 .modelo__disp .modelo__share svg { width: 15px; height: 15px; color: currentColor; }
 [data-theme="dark"] .modelo__share { color: var(--gold); }
