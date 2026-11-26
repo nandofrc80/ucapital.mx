@@ -463,3 +463,27 @@
   });
   pinta();
 })();
+
+/* Compartir un modelo: menú nativo en celular, copiar liga en computadora */
+(function () {
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-compartir]"); if (!b) return;
+    var url = location.origin + location.pathname + "#" + b.getAttribute("data-compartir");
+    var titulo = b.getAttribute("data-titulo");
+    if (navigator.share) { navigator.share({ title: titulo, text: titulo, url: url }).catch(function () {}); return; }
+    function listo() {
+      var s = b.querySelector("span"), t = s.textContent;
+      s.textContent = b.getAttribute("data-ok"); b.classList.add("is-ok");
+      setTimeout(function () { s.textContent = t; b.classList.remove("is-ok"); }, 2000);
+    }
+    if (navigator.clipboard) navigator.clipboard.writeText(url).then(listo, function () { prompt("", url); });
+    else prompt("", url);
+  });
+  // Al abrir una liga compartida: llevar a la tarjeta y resaltarla
+  var h = decodeURIComponent(location.hash.slice(1));
+  if (h.indexOf("modelo-") !== 0) return;
+  var el = document.getElementById(h); if (!el) return;
+  el.classList.add("is-in", "is-compartido");
+  window.addEventListener("load", function () { el.scrollIntoView({ block: "start" }); });
+  setTimeout(function () { el.classList.remove("is-compartido"); }, 4000);
+})();

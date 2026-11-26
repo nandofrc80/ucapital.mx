@@ -866,3 +866,11 @@ p { margin: 0 0 1em; }
 .listado__cta { margin-top: 40px; padding: 28px; border: 1px solid var(--line); border-radius: 14px; background: var(--ivory); display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
 .listado__cta p { margin: 0; max-width: 560px; color: var(--ink-soft); }
 .listado__cta strong { display: block; color: var(--navy); font-family: var(--display); font-size: 1.35rem; font-weight: 600; margin-bottom: 4px; }
+
+/* Botón para compartir un modelo (liga directa a esa tarjeta) */
+.modelo__share { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1px solid var(--gold); border-radius: 999px; background: transparent; color: var(--gold-dark); font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer; transition: background .2s, color .2s; }
+.modelo__share:hover, .modelo__share.is-ok { background: var(--gold); color: #fff; }
+.modelo__disp .modelo__share svg { width: 15px; height: 15px; color: currentColor; }
+[data-theme="dark"] .modelo__share { color: var(--gold); }
+[data-theme="dark"] .modelo__share:hover, [data-theme="dark"] .modelo__share.is-ok { color: #0F1A2E; }
+.modelo.is-compartido { box-shadow: 0 0 0 2px var(--gold), var(--shadow); }
