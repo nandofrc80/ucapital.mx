@@ -44,8 +44,8 @@ modelos:
     disponibles: 17
     descripcion: "Departamento de 65 m² en total (59 m² interiores y balcón de 6 m²): cocina, área social de sala y comedor, estudio, recámara con clóset vestidor, baño completo y clóset de lavado. Incluye 1 cajón de estacionamiento. Piso 1 desde $2,875,000, piso 2 desde $2,975,000 y piso 3 desde $3,125,000."
     fotos:
-      - "/fotos/montangelo/planta.jpg"
       - "/fotos/montangelo/sala-2.jpg"
+      - "/fotos/montangelo/planta.jpg"
       - "/fotos/montangelo/cocina.jpg"
       - "/fotos/montangelo/recamara.jpg"
       - "/fotos/montangelo/balcon.jpg"

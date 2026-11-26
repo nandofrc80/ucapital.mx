@@ -35,8 +35,8 @@ modelos:
     disponibles: 4
     descripcion: "Departamento de 1 recámara en planta baja: 52 m² interiores, terraza de 4 m² y jardín privado de 18 m² (74 m² en total)."
     fotos:
-      - "/fotos/palmer/recamara.jpg"
       - "/fotos/palmer/alberca.jpg"
+      - "/fotos/palmer/recamara.jpg"
   - nombre: "1 recámara con balcón"
     niveles: "Niveles 1 y 2"
     recamaras: 1
@@ -47,8 +47,8 @@ modelos:
     disponibles: 10
     descripcion: "Departamento de 1 recámara en nivel 1 o 2: 52 m² interiores y balcón de 4 m² (56 m² en total). Nivel 1 desde $2,500,000 y nivel 2 desde $2,400,000."
     fotos:
-      - "/fotos/palmer/recamara.jpg"
       - "/fotos/palmer/fachada.jpg"
+      - "/fotos/palmer/recamara.jpg"
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "April 2027"
