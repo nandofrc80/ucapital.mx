@@ -8,10 +8,13 @@ tipo: "Departamento"
 estatus: "Preventa"
 zona: "Montes de Amé"
 ciudad: "Mérida, Yucatán"
+mapa: "https://maps.app.goo.gl/HGeT4FdVzZwahYNFA"
 precio: 0
 precio_desde: true
 resumen: "Torre boutique de 24 departamentos en Montes de Amé, junto al Corredor San Angelo, con elevador. 1 recámara + estudio, 65 m² con balcón."
 precios_actualizados: "26 de noviembre de 2026"
+enganche: "10% de enganche."
+financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/montangelo/fachada.jpg
 fotos:
   - /fotos/montangelo/fachada.jpg
@@ -51,6 +54,8 @@ modelos:
       - "/fotos/montangelo/balcon.jpg"
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
+  "enganche": "10% down payment."
+  "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "resumen": "A 24-unit boutique tower in Montes de Amé, next to the San Angelo Corridor, with elevator. 1 bedroom + study, 65 m² with balcony."
   "amenidades":
   - "Elevator"
@@ -66,10 +71,10 @@ modelos:
 
     The building has an elevator, a lobby with smart intercom, a package room, a trash chute on every floor and two retail spaces on the ground floor. Every apartment has the same layout: one bedroom with walk-in closet, a study, a full bathroom and a balcony, with 1 parking space.
 
-    Its size and location make it a good fit both to live in and as a rental investment. Pre-sale.
+    Apartments are sold turnkey, with rental management included, so they work both to live in and as a rental investment. Estimated HOA fee: about $1,500 MXN per month.
 ---
 Montangelo es una torre boutique de 24 departamentos en Montes de Amé, en el corazón del norte de Mérida, junto al Corredor San Angelo: restaurantes, cafés, bancos, gimnasios y supermercados a cinco minutos.
 
 El edificio tiene elevador, lobby con portero inteligente, bodega para paquetería, ducto de basura en cada piso y dos locales comerciales en planta baja. Todos los departamentos tienen la misma distribución: 1 recámara con clóset vestidor, estudio, baño completo y balcón, con 1 cajón de estacionamiento.
 
-Por su tamaño y ubicación funciona tanto para vivir como para invertir en renta. Preventa.
+Los departamentos se venden llave en mano y con administración de renta incluida, así que funcionan tanto para vivir como para invertir. Cuota de mantenimiento aproximada: $1,500 al mes.

@@ -12,9 +12,11 @@ mapa: "https://maps.app.goo.gl/nDpEhcKMbaPK4NSMA"
 precio: 0
 precio_desde: true
 entrega: "Diciembre 2028"
-resumen: "Resort residencial en Temozón Norte con más de 15 amenidades: canal de nado, cancha de pádel, gym y sports bar. Departamentos de 1 y 2 recámaras y lofts, de 51 a 76 m²."
+resumen: "Resort residencial en Temozón Norte con amenidades por etapas: cancha de pádel, gym, salón con bar y, más adelante, piscina con carril de nado. Departamentos de 1 y 2 recámaras y lofts, de 51 a 76 m²."
 precios_actualizados: "26 de noviembre de 2026"
+apartado: "Aparta con $10,000 MXN (el apartado tiene vigencia de 7 días naturales)."
 enganche: "Cinco esquemas a elegir, todos con 18 meses para el pago financiado: desde 15% de enganche, 10% en mensualidades y 75% contra entrega, hasta 90% de enganche y 10% contra entrega. A mayor enganche, mayor descuento: 1%, 2.5%, 4% o 7% (con 20%, 25%, 40% o 90% de enganche), aplicado al saldo final."
+financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/punta-norte/fachada.jpg
 fotos:
   - /fotos/punta-norte/fachada.jpg
@@ -27,18 +29,18 @@ fotos:
   - /fotos/punta-norte/coworking.jpg
   - /fotos/punta-norte/estacionamiento.jpg
 amenidades:
-  - Piscina con canal de nado y asoleadero
-  - Terraza grill
   - Cancha de pádel
   - Gimnasio interior y exterior
-  - Salón con bar y sports bar
+  - Salón con bar
   - Salón privado con cava
-  - Coworking y sala de juntas
+  - Terraza al aire libre
   - Pet park y área de juegos infantiles
-  - Zona zen y andador de piedra
-  - Seguridad 24/7, acceso controlado y cámaras
+  - Piscina con carril de nado, asoleadero y terraza grill (2ª etapa)
+  - Sports bar, coworking, zona zen y andador de piedra (etapas finales)
+  - Caseta de vigilancia, pluma vehicular y acceso peatonal con código
+  - Cámaras de seguridad
   - Cargador para autos eléctricos
-  - Estacionamiento techado
+  - Estacionamiento techado y cajones de visita
 modelos:
   - nombre: "Aposento"
     niveles: "1 recámara · Nivel 2"
@@ -98,20 +100,22 @@ modelos:
 "en":
   "entrega": "December 2028"
   "enganche": "Five plans to choose from, all with 18 months for the financed portion: from 15% down, 10% in monthly payments and 75% on delivery, up to 90% down and 10% on delivery. The larger the down payment, the bigger the discount: 1%, 2.5%, 4% or 7% (with 20%, 25%, 40% or 90% down), applied to the final balance."
-  "resumen": "A residential resort in Temozón Norte with 15+ amenities: lap pool, padel court, gym and sports bar. One- and two-bedroom apartments and lofts from 51 to 76 m²."
+  "resumen": "A residential resort in Temozón Norte with amenities delivered in phases: padel court, gym, lounge bar and, later, a pool with lap lane. One- and two-bedroom apartments and lofts from 51 to 76 m²."
+  "apartado": "Reserve with $10,000 MXN (the reservation is valid for 7 calendar days)."
+  "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "amenidades":
-  - "Pool with lap lane and sun deck"
-  - "Grill terrace"
   - "Padel court"
   - "Indoor and outdoor gym"
-  - "Lounge bar and sports bar"
+  - "Lounge bar"
   - "Private room with wine cellar"
-  - "Coworking and meeting room"
+  - "Outdoor terrace"
   - "Pet park and kids' play area"
-  - "Zen garden and stone walkway"
-  - "24/7 security, controlled access and cameras"
+  - "Pool with lap lane, sun deck and grill terrace (phase 2)"
+  - "Sports bar, coworking, zen garden and stone walkway (final phases)"
+  - "Guard booth, vehicle gate and pedestrian access with code"
+  - "Security cameras"
   - "EV charger"
-  - "Covered parking"
+  - "Covered parking and visitor spaces"
   "modelos":
   - "niveles": "1 bedroom · Level 2"
     "entrega": "December 2028"
@@ -128,12 +132,16 @@ modelos:
   "descripcion": |-
     Punta Norte is a residential resort in Temozón Norte, north Mérida, surrounded by a handcrafted stone wall and inspired by Yucatán's haciendas. The first phase has 34 apartments.
 
-    It has more than 15 amenities across the master plan: a pool with lap lane, sun deck and grill terrace, padel court, indoor and outdoor gym, lounge bar, sports bar, private room with wine cellar, coworking, pet park, kids' play area and a zen garden. It also offers 24/7 security, smart access, an EV charger and covered parking. Concierge and property management (laundry, housekeeping) are available as third-party services at an extra cost.
+    Amenities are delivered in phases. Phase 1 includes a padel court, pet park, lounge bar, private room with wine cellar, outdoor terrace, kids' play area and indoor and outdoor gym; phase 2 adds the pool with lap lane, sun deck and grill terrace; the sports bar, coworking, zen garden and stone walkway come in the final phases. It has a guard booth, vehicle gate, coded pedestrian access, cameras, an EV charger, covered parking and visitor spaces. Three levels, no elevator, pet friendly.
 
-    There are four layouts: Aposento (1 bedroom, 51 m²), Casa del Patrón (two-level loft, 52 m²), Vista Hacienda (2 bedrooms with balcony, 76 m²) and Patio Piedra (2 bedrooms with private garden, 76 m²). Pre-sale; phase 1 delivery estimated for December 2028. Estimated HOA fee: about $2,900 MXN per month.
+    Apartments come with bedroom closets, fixed shower glass, vanities in the bedroom bathrooms, a fitted kitchen with upper and lower cabinets, a 4-burner electric cooktop and a smart lock on the front door.
+
+    There are four layouts: Aposento (1 bedroom, 51 m²), Casa del Patrón (two-level loft, 52 m²), Vista Hacienda (2 bedrooms with balcony, 76 m²) and Patio Piedra (2 bedrooms with private garden, 76 m²). Pre-sale; phase 1 delivery estimated for December 2028. Estimated HOA fee: about $2,900 MXN per month, plus a one-time $8,000 MXN reserve fund.
 ---
 Punta Norte es un resort residencial en Temozón Norte, al norte de Mérida, rodeado por un muro de piedra artesanal e inspirado en las haciendas yucatecas. La primera etapa tiene 34 departamentos.
 
-Cuenta con más de 15 amenidades en su plan maestro: piscina con canal de nado, asoleadero y terraza grill, cancha de pádel, gimnasio interior y exterior, salón con bar, sports bar, salón privado con cava, coworking, pet park, área de juegos infantiles y zona zen. Además tiene seguridad 24/7, acceso inteligente, cargador para autos eléctricos y estacionamiento techado. Servicio de concierge y property management (lavandería, housekeeping) disponibles con terceros, con costo adicional.
+Las amenidades se entregan por etapas. En la primera: cancha de pádel, pet park, salón con bar, salón privado con cava, terraza al aire libre, área de juegos infantiles y gimnasio interior y exterior; en la segunda, piscina con carril de nado, asoleadero y terraza grill; y en las últimas, sports bar, coworking, zona zen y andador de piedra. Tiene caseta de vigilancia, pluma vehicular, acceso peatonal con código, cámaras, cargador para autos eléctricos, estacionamiento techado y cajones de visita. Son tres niveles, sin elevador, y es pet friendly.
 
-Hay cuatro modelos: Aposento (1 recámara, 51 m²), Casa del Patrón (loft en 2 niveles, 52 m²), Vista Hacienda (2 recámaras con balcón, 76 m²) y Patio Piedra (2 recámaras con jardín privado, 76 m²). Preventa con entrega de la primera etapa estimada en diciembre de 2028. Cuota de mantenimiento aproximada: $2,900 al mes.
+Los departamentos se entregan con clósets en recámaras, cancel fijo en regaderas, muebles bajo lavabo en los baños de recámaras, cocina con gavetas superiores e inferiores, parrilla eléctrica de 4 quemadores y cerradura inteligente en la puerta principal.
+
+Hay cuatro modelos: Aposento (1 recámara, 51 m²), Casa del Patrón (loft en 2 niveles, 52 m²), Vista Hacienda (2 recámaras con balcón, 76 m²) y Patio Piedra (2 recámaras con jardín privado, 76 m²). Preventa con entrega de la primera etapa estimada en diciembre de 2028. Cuota de mantenimiento aproximada: $2,900 al mes, más un fondo de reserva de $8,000 que se paga una sola vez.
