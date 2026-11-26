@@ -422,8 +422,8 @@
     }
   })();
 
-  /* Ficha en celular: el formulario va después de los modelos (primero el producto) */
-  var fSide = $(".ficha__side"), fMod = $("#modelos");
+  /* Ficha en celular: el formulario va al final de la información (después de los modelos y del esquema de compra) */
+  var fSide = $(".ficha__side"), fMod = $("#como-comprar") || $("#modelos");
   if (fSide && fMod && window.matchMedia("(max-width: 860px)").matches) {
     var sec = document.createElement("section"), sh = document.createElement("div");
     sec.className = "section section--tight"; sh.className = "shell";
