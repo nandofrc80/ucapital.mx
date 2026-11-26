@@ -16,7 +16,7 @@ resumen: "Conjunto de 36 departamentos en Temozón Norte con piscina, cancha de 
 precios_actualizados: "26 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN (el apartado tiene vigencia de 7 días naturales)."
 enganche: "20% de enganche y 80% a la entrega."
-financiamiento: "Recursos propios, crédito bancario o Infonavit (según la regulación vigente). Te asesoramos sin costo con las opciones y requisitos."
+financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/palmer/acceso.jpg
 fotos:
   - /fotos/palmer/acceso.jpg
@@ -63,7 +63,7 @@ modelos:
   "entrega": "April 2027"
   "apartado": "Reserve with $10,000 MXN (the reservation is valid for 7 calendar days)."
   "enganche": "20% down payment and 80% on delivery."
-  "financiamiento": "Your own funds, bank mortgage or Infonavit (subject to current rules). We'll walk you through the options and requirements at no cost."
+  "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "resumen": "A 36-unit community in Temozón Norte with a pool, pickleball court, bar and grill terrace and TV room. 52 m² plus terrace or balcony; ground-floor units have a private garden."
   "amenidades":
   - "Pool area with loungers"
@@ -85,10 +85,10 @@ modelos:
 
     The available apartments have one bedroom and 52 m² of indoor space. Ground-floor units add a terrace and an 18 m² private garden; units on levels 1 and 2 have a balcony. Each apartment comes with bedroom closets, fixed shower glass, a fitted kitchen with upper and lower cabinets and a 4-burner electric cooktop, plus 1 parking space.
 
-    Pre-sale with estimated delivery in April 2027. 20% down payment and 80% on delivery; bank mortgages, your own funds and Infonavit (subject to current rules) are accepted. Estimated HOA fee: about $1,900 MXN per month, plus a $7,500 MXN reserve fund paid before closing.
+    Pre-sale with estimated delivery in April 2027. 20% down payment and 80% on delivery; bank mortgages and your own funds are accepted. Estimated HOA fee: about $1,900 MXN per month, plus a $7,500 MXN reserve fund paid before closing.
 ---
 Palmer es un conjunto de 36 departamentos en tres niveles en Temozón Norte, una de las zonas de mayor crecimiento del norte de Mérida. Tiene área de piscina con camastros, cancha de pickleball, terraza bar y grill y salón de usos múltiples con TV room, además de caseta de vigilancia, portón eléctrico y acceso peatonal con código. No tiene elevador.
 
 Los departamentos disponibles son de 1 recámara, con 52 m² interiores. Los de planta baja suman terraza y un jardín privado de 18 m²; los de los niveles 1 y 2 tienen balcón. Se entregan con clósets en recámaras, cancel fijo en regadera, cocina con gavetas superiores e inferiores y parrilla eléctrica de 4 quemadores, y 1 cajón de estacionamiento.
 
-Preventa con entrega estimada en abril de 2027. Enganche del 20% y 80% a la entrega; se acepta crédito bancario, recursos propios e Infonavit (según la regulación vigente). Cuota de mantenimiento aproximada: $1,900 al mes, más un fondo de reserva de $7,500 que se paga antes de escriturar.
+Preventa con entrega estimada en abril de 2027. Enganche del 20% y 80% a la entrega; se acepta crédito bancario o recursos propios. Cuota de mantenimiento aproximada: $1,900 al mes, más un fondo de reserva de $7,500 que se paga antes de escriturar.

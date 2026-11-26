@@ -14,6 +14,7 @@ precio_desde: true
 entrega: "Marzo 2027"
 resumen: "Torre boutique de 24 departamentos en Montes de Amé, junto al Corredor San Angelo, con elevador. 1 recámara + estudio, 65 m² con balcón."
 precios_actualizados: "26 de noviembre de 2026"
+apartado: "Aparta con $10,000 MXN."
 enganche: "Firma con 10% de enganche y el saldo en marzo de 2027."
 financiamiento: "Recursos propios o crédito bancario. Te asesoramos sin costo con las opciones y requisitos."
 portada: /fotos/montangelo/fachada.jpg
@@ -57,6 +58,7 @@ modelos:
 # ---- Traducción al inglés (páginas /en/) ----
 "en":
   "entrega": "March 2027"
+  "apartado": "Reserve with $10,000 MXN."
   "enganche": "Sign with a 10% down payment and pay the balance in March 2027."
   "financiamiento": "Your own funds or a bank mortgage. We'll walk you through the options and requirements at no cost."
   "resumen": "A 24-unit boutique tower in Montes de Amé, next to the San Angelo Corridor, with elevator. 1 bedroom + study, 65 m² with balcony."
