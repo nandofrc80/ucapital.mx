@@ -13,7 +13,7 @@ precio: 0
 precio_desde: true
 entrega: "Inmediata"
 resumen: "Casas nuevas de dos plantas con entrega inmediata, a pie de calle en Dzityá, a pocos minutos del Periférico. Modelos de 2 y 3 recámaras en terrenos desde 160 m², sin cuota de mantenimiento ni enganche."
-precios_actualizados: "25 de noviembre de 2026"
+precios_actualizados: "28 de noviembre de 2026"
 apartado: "Aparta con $10,000 MXN."
 enganche: "Sin enganche: solo apartas y se va directo a escritura, porque la entrega es inmediata."
 financiamiento: "Recursos propios, crédito bancario, Infonavit o Cofinavit. Te asesoramos sin costo con las opciones y requisitos."
@@ -72,7 +72,7 @@ modelos:
     precio: 2754078
     precio_max: 2819113
     entrega: "Inmediata"
-    disponibles: 18
+    disponibles: 17
     descripcion: "Planta baja: sala, comedor, cocina, área de servicio, terraza, una recámara y un baño completo. Planta alta: 2 recámaras y un baño completo. Terrenos de 8.25 a 9 m de frente por unos 20 m de fondo."
     fotos:
       - "/fotos/puerta-de-piedra/palenque-fachada.jpg"
@@ -97,13 +97,13 @@ modelos:
     banos: 1.5
     construccion: 90.06
     terreno: 160
-    terreno_max: 168.88
+    terreno_max: 166
     estacionamientos: 2
     precio: 2190000
-    precio_max: 2233080
+    precio_max: 2208000
     entrega: "Inmediata"
-    disponibles: 12
-    descripcion: "Planta baja: sala y comedor separados, cocina con barra, medio baño de visitas y ventanal hacia el patio. Planta alta: 2 recámaras y un baño completo. Terrenos de 8 a 8.25 m de frente por unos 20 m de fondo. Hay dos versiones del modelo (Tulum I y Tulum II)."
+    disponibles: 7
+    descripcion: "Planta baja: sala y comedor separados, cocina con barra, medio baño de visitas y ventanal hacia el patio. Planta alta: 2 recámaras y un baño completo. Terrenos de 8 m de frente por 20 a 20.75 m de fondo. Hay dos versiones del modelo (Tulum I y Tulum II)."
     fotos:
       - "/fotos/puerta-de-piedra/tulum-fachada.jpg"
       - "/fotos/puerta-de-piedra/tulum-patio.jpg"
@@ -162,7 +162,7 @@ modelos:
     "entrega": "Immediate"
   - "descripcion": "Ground floor: living room, dining room, kitchen, service area, terrace, one bedroom and a full bathroom. Upstairs: 2 bedrooms and a full bathroom. Lots are 8.25 to 9 m wide by about 20 m deep."
     "entrega": "Immediate"
-  - "descripcion": "Ground floor: separate living and dining rooms, kitchen with breakfast bar, guest half bath and a large window onto the yard. Upstairs: 2 bedrooms and a full bathroom. Lots are 8 to 8.25 m wide by about 20 m deep. The model comes in two versions (Tulum I and Tulum II)."
+  - "descripcion": "Ground floor: separate living and dining rooms, kitchen with breakfast bar, guest half bath and a large window onto the yard. Upstairs: 2 bedrooms and a full bathroom. Lots are 8 m wide by 20 to 20.75 m deep. The model comes in two versions (Tulum I and Tulum II)."
     "entrega": "Immediate"
   - "descripcion": "Ground floor: covered carport for 2 cars plus one uncovered space, double-height entry, bedroom with closet and full bathroom, living-dining room overlooking the yard, kitchen with double sink and granite counter, pantry, service room, covered terrace, yard and pool. Upstairs: primary bedroom with walk-in closet and full bathroom, bedroom with closet and full bathroom, and linen closet. Lots are 12 m wide. Most homes are $4,075,000 MXN on 240 m² lots. Deeper lots range from $4,102,000 to $4,203,400 (246 to 272 m²)."
     "entrega": "Immediate"
@@ -171,10 +171,10 @@ modelos:
 
     There are four two-story models, all ready for immediate delivery: Tulum (2 bedrooms, 90 m²), Kabah (2 bedrooms, 108 m²), Palenque (3 bedrooms, 127 m², with a ground-floor bedroom) and THO (3 bedrooms, 3 bathrooms, 216 m², with pool and covered carport included), on lots from 160 m².
 
-    67 homes are available. Reserve with $10,000 MXN and go straight to closing, with no down payment, using your own funds, a bank mortgage, Infonavit or Cofinavit.
+    61 homes are available. Reserve with $10,000 MXN and go straight to closing, with no down payment, using your own funds, a bank mortgage, Infonavit or Cofinavit.
 ---
 Puerta de Piedra es un residencial en Dzityá, una zona tranquila al norte de Mérida, a pocos minutos del Periférico y cerca de escuelas, supermercados y los principales puntos de la ciudad. Son casas a pie de calle, no una privada, y no pagan cuota de mantenimiento.
 
 Hay cuatro modelos de dos plantas, todos con entrega inmediata: Tulum (2 recámaras, 90 m²), Kabah (2 recámaras, 108 m²), Palenque (3 recámaras, 127 m², con recámara en planta baja) y THO (3 recámaras, 3 baños, 216 m², con alberca y cochera techada incluidas), en terrenos desde 160 m².
 
-Hay 67 casas disponibles. Aparta con $10,000 y pasa directo a escritura, sin enganche, con recursos propios, crédito bancario, Infonavit o Cofinavit.
+Hay 61 casas disponibles. Aparta con $10,000 y pasa directo a escritura, sin enganche, con recursos propios, crédito bancario, Infonavit o Cofinavit.
